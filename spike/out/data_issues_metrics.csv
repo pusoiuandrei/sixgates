@@ -1,0 +1,22 @@
+entity,severity,concept,period,description,detected_at
+AAPL,high,tangible_capital,2011,"tangible capital non-positive in FY2011 (-1,157 m): ROIC flagged, not computed",2026-10-31T21:26:07+00:00
+AAPL,high,tangible_capital,2016,"tangible capital non-positive in FY2016 (-677 m): ROIC flagged, not computed",2026-10-31T21:26:07+00:00
+AAPL,high,tangible_capital,2020,"tangible capital non-positive in FY2020 (-2,087 m): ROIC flagged, not computed",2026-10-31T21:26:07+00:00
+AAPL,high,tangible_capital,2022,"tangible capital non-positive in FY2022 (-3,654 m): ROIC flagged, not computed",2026-10-31T21:26:07+00:00
+AAPL,high,tangible_capital,2023,"tangible capital non-positive in FY2023 (-3,775 m): ROIC flagged, not computed",2026-10-31T21:26:07+00:00
+AAPL,high,tangible_capital,2024,"tangible capital non-positive in FY2024 (-22,017 m): ROIC flagged, not computed",2026-10-31T21:26:07+00:00
+AAPL,high,tangible_capital,2025,"tangible capital non-positive in FY2025 (-2,208 m): ROIC flagged, not computed",2026-10-31T21:26:07+00:00
+KO,high,tangible_capital,2024,"tangible capital non-positive in FY2024 (-1,373 m): ROIC flagged, not computed",2026-10-31T21:26:07+00:00
+MCO,medium,equity,2009,negative equity in FY2009 (-606 m): return on equity not meaningful; tangible capital is the basis,2026-10-31T21:26:07+00:00
+MCO,medium,equity,2010,negative equity in FY2010 (-310 m): return on equity not meaningful; tangible capital is the basis,2026-10-31T21:26:07+00:00
+MCO,medium,equity,2011,negative equity in FY2011 (-169 m): return on equity not meaningful; tangible capital is the basis,2026-10-31T21:26:07+00:00
+MCO,high,tangible_capital,2011,"tangible capital non-positive in FY2011 (-15 m): ROIC flagged, not computed",2026-10-31T21:26:07+00:00
+MCO,high,tangible_capital,2013,"tangible capital non-positive in FY2013 (-0 m): ROIC flagged, not computed",2026-10-31T21:26:07+00:00
+MCO,medium,equity,2014,negative equity in FY2014 (-188 m): return on equity not meaningful; tangible capital is the basis,2026-10-31T21:26:07+00:00
+MCO,medium,equity,2015,negative equity in FY2015 (-565 m): return on equity not meaningful; tangible capital is the basis,2026-10-31T21:26:07+00:00
+MCO,medium,equity,2016,"negative equity in FY2016 (-1,225 m): return on equity not meaningful; tangible capital is the basis",2026-10-31T21:26:07+00:00
+MCO,high,tangible_capital,2016,"tangible capital non-positive in FY2016 (-774 m): ROIC flagged, not computed",2026-10-31T21:26:07+00:00
+MCO,medium,equity,2017,negative equity in FY2017 (-328 m): return on equity not meaningful; tangible capital is the basis,2026-10-31T21:26:07+00:00
+MCO,high,tangible_capital,2020,"tangible capital non-positive in FY2020 (-131 m): ROIC flagged, not computed",2026-10-31T21:26:07+00:00
+MCO,high,tangible_capital,2021,"tangible capital non-positive in FY2021 (-40 m): ROIC flagged, not computed",2026-10-31T21:26:07+00:00
+SNP,info,all,,"currency RON: kept as reported, never converted or mixed",2026-10-31T21:26:07+00:00

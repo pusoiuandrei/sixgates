@@ -1,0 +1,10 @@
+{
+  "series": "DGS10",
+  "source_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10",
+  "sha256": "55e2559ffdb30b8ed921b119935fa6b3893dde3d1ed26ddede33fb59895f0659",
+  "fetched_at": "2026-10-31T21:26:06+00:00",
+  "latest_date": "2026-10-29",
+  "latest_value_pct": 4.98,
+  "as_rate": 0.049800000000000004,
+  "role": "long government bond yield, the floor and reference for the discount hurdle (default total hurdle 10%)"
+}

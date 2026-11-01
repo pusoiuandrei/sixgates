@@ -1,0 +1,17 @@
+# downloaded primary data (re-downloadable)
+spike/data/
+
+# python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+
+# secrets and local config
+.env
+*.local
+
+# editors and OS
+.DS_Store
+.idea/
+.vscode/
