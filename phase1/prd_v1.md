@@ -220,6 +220,25 @@ Propuși de PM, de validat pe setul de aur; modificabili doar de owner, versiona
 | Toleranțe | rotunjire 0,5% relativ sau o unitate de precizie; divergență materială peste 5%; acțiuni vendor față de depunere peste 1% | P7 | P7 |
 | Capex de întreținere | min(capex, amortizare); alternativ Greenwald | 1986 | P4 |
 
+### 4.11 Management: registrul promisiunilor (faza 3)
+
+Scop: a măsura sinceritatea și integritatea managementului cu dovezi, nu cu impresii: ce a promis, ce a livrat și cum a raportat ratările (1983, principiul 12: raportează ce ai vrea să afli dacă rolurile ar fi inversate; 1989 și 2024: greșelile publicate; 2002: managerii care promit mereu că „fac cifrele” vor fi la un moment dat tentați să inventeze cifrele).
+
+User stories:
+- Ca investitor, vreau lista promisiunilor făcute de management în ultimii 5 până la 10 ani, cu sursa, data, termenul și ținta, ca să judec recordul, nu retorica.
+- Ca investitor, vreau să văd la fiecare scadență dacă promisiunea a fost îndeplinită, ratată, retrasă explicit sau abandonată tăcit, ca să judec candoarea, nu doar execuția.
+
+Criterii de acceptare:
+- **AC-MG-1** (P1, P3; AC-X-3; 1983): Dat fiind un document primar nou ingerat (10-K cu scrisoarea către acționari și MD&A, 10-Q, comunicatul de rezultate din 8-K, DEF 14A, prezentările din 8-K; pentru UE și BVB raportul anual ESEF, raportul semestrial și rapoartele curente) / Când rulează extragerea / Atunci fiecare promisiune propusă de AI are: citarea verbatim verificată automat în textul stocat, documentul, pagina sau secțiunea, data declarației, autorul (CEO, CFO, consiliu), tipul (ghidare numerică, angajament strategic cu termen, alocare de capital), metrica și ținta când sunt numerice, termenul (dată sau exercițiu); fără citare verificată draftul este respins; promisiunea contează în registru doar după confirmarea unui om și poartă „propus de AI” până atunci.
+- **AC-MG-2** (P4, P7): Dat fiind o transcriere de conferință de rezultate sau o prezentare de pe site-ul de investitori (sursă secundară, în afara EDGAR și ESEF) / Când este încărcată de un utilizator / Atunci intră cu marcajul „sursă secundară, încărcată de <utilizator>”, cu linkul și data, iar promisiunile din ea sunt afișate separat și nu intră în indicatori fără confirmare.
+- **AC-MG-3** (P2, P4): Dat fiind o promisiune numerică mapată pe un concept canonic (venituri, marjă, EPS, capex, flux de numerar, datorie netă, răscumpărări, dividend) / Când se ingerează raportul care acoperă termenul / Atunci verificarea este automată: fapt față de țintă, cu toleranța declarată de companie sau cea implicită din 4.10, cu fact id-urile; o metrică redefinită între promisiune și verificare (de exemplu „ajustat” în locul cifrei raportate) marchează „ținta mutată” și cere judecată; o promisiune calitativă se verifică manual, cu dovadă (document, pagină) și autor.
+- **AC-MG-4** (P3, P9): Dat fiind o promisiune ajunsă la scadență / Când se stabilește starea / Atunci este exact una din: îndeplinită, parțial îndeplinită, ratată, retrasă explicit (cu citarea retragerii), abandonată tăcit (nu mai apare în următoarele două rapoarte și nu există retragere citată), neverificabilă (cu motivul); stările de ratare poartă și câmpul „recunoscută explicit de management: da sau nu”, cu citare.
+- **AC-MG-5** (P2, P8): Dat fiind registrul / Când se calculează indicatorii / Atunci apar, pe an și pe ferestre de 5 și 10 ani: rata de îndeplinire (îndeplinite împărțit la scadente, separat pentru promisiuni numerice și calitative), rata de candoare (ratări recunoscute explicit împărțit la ratări), numărul abandonurilor tăcute și al țintelor mutate, fiecare cu formula și cu lista promisiunilor din spatele cifrei; sub pragul de eșantion mic din 4.10 apare marcajul „eșantion mic” și indicatorii nu decid singuri.
+- **AC-MG-6** (P10, P3; 2002): Dat fiind indicatorii / Când se afișează / Atunci sunt fapte lângă judecata „management sincer și competent” din Poarta 4 și din modulul Management, nu un verdict propriu, fără nicio formulare de recomandare; un record perfect de ghidare trimestrială primește marcajul „de verificat: cifrele sunt făcute mereu”, nu un punct în plus.
+- **AC-MG-7** (P6; cadența): Dat fiind cadența / Când se planifică joburile / Atunci extragerea rulează la fiecare depunere nouă (trimestrial în SUA, semestrial în UE, trimestrial la BVB), verificarea rulează automat la ingestia raportului care acoperă termenul fiecărei promisiuni, iar revizuirea umană se face o dată pe an, la re-subscriere (Poarta 6), cu listele „promisiuni noi de confirmat” și „promisiuni scadente de judecat”; judecata se face pe recordul de 5 și 10 ani, nu trimestru cu trimestru.
+
+Parametri propuși pentru 4.10: toleranța implicită pentru ținte numerice 5%; „abandonată tăcit” după două rapoarte consecutive fără mențiune și fără retragere; eșantion mic sub 10 promisiuni scadente; ferestre de 5 și 10 ani.
+
 ## 5. Cerințe non-funcționale
 
 ### 5.1 Proveniență și reproductibilitate
@@ -355,6 +374,7 @@ Faza 1 fundație (în curs), faza 2 versiunea 1, faza 3 proprietar, faza 4 unive
 | SG-075 | Testul dolarului pe 5 și 10 ani (1983) | 3 | Must | AC de scris |
 | SG-076 | Răscumpărări: preț mediu plătit față de VI la acea dată; evoluția acțiunilor (2011, 2016) | 3 | Must | AC de scris |
 | SG-077 | Deprecieri de achiziții; insideri și compensație din proxy, extrase AI cu citare | 3 | Should | AC-X-3 |
+| SG-096 | Registrul promisiunilor managementului: extragere cu citare, verificare la scadență, rata de îndeplinire și de candoare pe 5 și 10 ani | 3 | Must | AC-MG-1..7 |
 | SG-078 | Epic: Judecăți propuse de AI | 3 | Must | AC-X-3 |
 | SG-079 | Verificator de citări verbatim | 3 | Must | AC-X-3 |
 | SG-080 | Draft AI pentru moat cu citări | 3 | Must | AC-X-3, AC-G4-3 |
