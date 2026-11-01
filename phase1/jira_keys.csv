@@ -1,0 +1,96 @@
+SG,Summary,Issue Type,Jira Key,Parent Key
+SG-001,SG-001 Fundație,Epic,SIX-1,
+SG-002,"SG-002 ADR-uri: stivă, Docker Compose, PostgreSQL, model fapt / calcul / judecată",Story,SIX-2,SIX-1
+SG-003,"SG-003 Spike de date: 5 companii reconciliate manual (3 SUA, 1 UE, 1 BVB)",Story,SIX-20,SIX-1
+SG-004,SG-004 Tabel de normalizare XBRL v0 cu jurnal de excepții,Story,SIX-21,SIX-1
+SG-005,"SG-005 Strategia de test, setul de aur (20 de companii), toleranțe",Story,SIX-22,SIX-1
+SG-006,"SG-006 Fluxuri și wireframes telefon / desktop, limbaj vizual fapt / calcul / judecată, stări date insuficiente",Story,SIX-23,SIX-1
+SG-007,"SG-007 Repo GitHub, CI cu teste, lint de vocabular, scanare de secrete",Story,SIX-24,SIX-1
+SG-008,SG-008 Review de fază 1 cu product owner,Story,SIX-25,SIX-1
+SG-009,SG-009 Ingestie și normalizare,Epic,SIX-3,
+SG-010,"SG-010 Adăugare companie la cerere (ticker, ISIN, CIK, LEI)",Story,SIX-26,SIX-3
+SG-011,"SG-011 Ingestie EDGAR companyfacts și index de depuneri, stocare brută locală",Story,SIX-27,SIX-3
+SG-012,SG-012 Ingestie ESEF din filings.xbrl.org (IFRS cu extensii),Story,SIX-28,SIX-3
+SG-013,"SG-013 Import manual validat: șablon CSV, validator, semnătura celui de-al doilea cititor",Story,SIX-29,SIX-3
+SG-014,SG-014 Normalizare cu tabel de mapare versionat și excepții în jurnal,Story,SIX-30,SIX-3
+SG-015,"SG-015 Prețuri, acțiuni în circulație, cursuri, randamente (EODHD, FRED, BCE, BNR)",Story,SIX-31,SIX-3
+SG-016,SG-016 Verificare încrucișată automată cu vendorul de fundamentale,Story,SIX-32,SIX-3
+SG-017,SG-017 Politica de restatări,Story,SIX-33,SIX-3
+SG-018,SG-018 Marcaj financiară / nefinanciară cu sursă,Story,SIX-34,SIX-3
+SG-019,SG-019 Motor de formule și proveniență,Epic,SIX-4,
+SG-020,"SG-020 Model de proveniență (fact, calc, judgment) cu id-uri și versiuni",Story,SIX-35,SIX-4
+SG-021,"SG-021 Motor de formule pur, versionat, teste cu rezultat cunoscut",Story,SIX-36,SIX-4
+SG-022,SG-022 Parametri globali versionați și scenariu față de valoare,Story,SIX-37,SIX-4
+SG-023,"SG-023 Regula celor 10 ani, stările date insuficiente, precedența verdictelor",Story,SIX-38,SIX-4
+SG-024,SG-024 Endpoint și panou explică,Story,SIX-39,SIX-4
+SG-025,SG-025 Poarta 2 înțelegi afacerea,Epic,SIX-5,
+SG-026,SG-026 Indicatori de stabilitate pe 10 ani și indiciul de instabilitate,Story,SIX-40,SIX-5
+SG-027,"SG-027 Intrări umane obligatorii: descriere 10 ani, 3 moduri de a muri, paragraf, clasificare",Story,SIX-41,SIX-5
+SG-028,SG-028 Verdict Poarta 2 și istoricul textelor,Story,SIX-42,SIX-5
+SG-029,SG-029 Poarta 3 randamente pe capital,Epic,SIX-6,
+SG-030,SG-030 OE 1986 cu capex de întreținere în două metode,Story,SIX-43,SIX-6
+SG-031,"SG-031 ROIC tangibil 10 ani, cu și fără fond comercial",Story,SIX-44,SIX-6
+SG-032,"SG-032 ROIC incremental 5 / 10, identitatea creșterii, capex / vânzări, conversie în numerar",Story,SIX-45,SIX-6
+SG-033,"SG-033 ROE pe capital de început lângă EPS, cu avertisment",Story,SIX-46,SIX-6
+SG-034,SG-034 Categoria 2007 și verdictul Poarta 3,Story,SIX-47,SIX-6
+SG-035,SG-035 Supraviețuire,Epic,SIX-7,
+SG-036,"SG-036 Datorie netă / OE, EBIT / dobânzi, scadențe cu intrare umană",Story,SIX-48,SIX-7
+SG-037,"SG-037 Test de stres: scenariu implicit, scenarii utilizator, forma 1990",Story,SIX-49,SIX-7
+SG-038,SG-038 Verdict supraviețuire,Story,SIX-50,SIX-7
+SG-039,SG-039 Poarta 4 moat dovezi,Epic,SIX-8,
+SG-040,"SG-040 Persistența ROIC, marje și tendințe pe 5 ani",Story,SIX-51,SIX-8
+SG-041,"SG-041 Intrări umane cu sursă: cotă de piață, retenție, preț față de inflație",Story,SIX-52,SIX-8
+SG-042,"SG-042 Formular de judecată: surse de moat, teste 1991 / 1998 / 2007, direcție",Story,SIX-53,SIX-8
+SG-043,SG-043 Verdict Poarta 4,Story,SIX-54,SIX-8
+SG-044,SG-044 Poarta 5 preț sub valoare,Epic,SIX-9,
+SG-045,"SG-045 DCF pe OE cu ipoteze fixe, interval VI",Story,SIX-55,SIX-9
+SG-046,SG-046 DCF invers,Story,SIX-56,SIX-9
+SG-047,SG-047 Randamentul OE față de obligațiunea la 10 ani,Story,SIX-57,SIX-9
+SG-048,"SG-048 Marja cerută, prețul pe care l-aș plăti, verdict",Story,SIX-58,SIX-9
+SG-049,SG-049 Stare preț sub prețul pe care l-aș plăti în aplicație,Story,SIX-59,SIX-9
+SG-050,SG-050 Multiplul capitalului tangibil plătit lângă ROIC (propus de PM),Story,SIX-60,SIX-9
+SG-051,SG-051 Proveniență în interfață și jurnal de probleme,Epic,SIX-10,
+SG-052,SG-052 Panou de proveniență pe orice cifră,Story,SIX-61,SIX-10
+SG-053,"SG-053 Jurnal de probleme de date pe companie, stări, blocarea porții",Story,SIX-62,SIX-10
+SG-054,SG-054 Test UI: nicio cifră fără proveniență,Story,SIX-63,SIX-10
+SG-055,SG-055 Marcare vizuală fapt / calcul / judecată,Story,SIX-64,SIX-10
+SG-056,SG-056 Dosar de decizie minim și export,Epic,SIX-11,
+SG-057,SG-057 Înghețare versionată și re-execuție identică,Story,SIX-65,SIX-11
+SG-058,SG-058 Paragraful de decizie cu patru câmpuri,Story,SIX-66,SIX-11
+SG-059,SG-059 Export CSV cu proveniență,Story,SIX-67,SIX-11
+SG-060,"SG-060 Autentificare, securitate, desfășurare",Epic,SIX-12,
+SG-061,"SG-061 Conturi prin invitație, roluri, sesiuni, limitare la autentificare",Story,SIX-68,SIX-12
+SG-062,SG-062 TOTP opțional,Story,SIX-69,SIX-12
+SG-063,SG-063 Jurnal de audit,Story,SIX-70,SIX-12
+SG-064,"SG-064 Docker Compose pe Mac Mini, TLS, secrete, backup și restaurare testată",Story,SIX-71,SIX-12
+SG-065,"SG-065 Pagină de stare a joburilor, jurnale de ingestie, consum vendori",Story,SIX-72,SIX-12
+SG-066,SG-066 Interfață EN / RO cu vocabular fix și lint de termeni interziși,Story,SIX-73,SIX-12
+SG-067,SG-067 QA v1,Epic,SIX-13,
+SG-068,SG-068 Regresie automată pe setul de aur,Story,SIX-74,SIX-13
+SG-069,SG-069 Al doilea cititor: recalcul independent din rapoarte brute,Story,SIX-75,SIX-13
+SG-070,"SG-070 Teste de proprietate: fără substituții tăcute, fără cifre fără sursă",Story,SIX-76,SIX-13
+SG-071,SG-071 Test de înțelegere cu utilizator nou,Story,SIX-77,SIX-13
+SG-072,SG-072 Teste de prospețime și integritate a datelor,Story,SIX-78,SIX-13
+SG-073,SG-073 Raport QA trece / nu trece pentru v1,Story,SIX-79,SIX-13
+SG-074,SG-074 Management,Epic,SIX-14,
+SG-075,SG-075 Testul dolarului pe 5 și 10 ani (1983),Story,SIX-80,SIX-14
+SG-076,SG-076 Răscumpărări: preț mediu plătit față de VI la acea dată; evoluția acțiunilor (2011 și 2016),Story,SIX-81,SIX-14
+SG-077,"SG-077 Deprecieri de achiziții; insideri și compensație din proxy, extrase AI cu citare",Story,SIX-82,SIX-14
+SG-078,SG-078 Judecăți propuse de AI,Epic,SIX-15,
+SG-079,SG-079 Verificator de citări verbatim,Story,SIX-83,SIX-15
+SG-080,SG-080 Draft AI pentru moat cu citări,Story,SIX-84,SIX-15
+SG-081,SG-081 Poarta 6 păstrezi cât țin faptele,Epic,SIX-16,
+SG-082,SG-082 Re-subscriere anuală cu diff (1996 și 2014),Story,SIX-85,SIX-16
+SG-083,"SG-083 Condiții de ieșire (1989, 1991, 2004, 2024) și jurnal de greșeli (1989, 2008)",Story,SIX-86,SIX-16
+SG-084,SG-084 Calculator de schimbare cu impozit (1989),Story,SIX-87,SIX-16
+SG-085,SG-085 Poarta 1 portofoliu,Epic,SIX-17,
+SG-086,"SG-086 Poziții, cost, look-through (1990 și 1991)",Story,SIX-88,SIX-17
+SG-087,"SG-087 Concentrare și dimensionare fracționată cu plafon 40% (1966, Munger 1994)",Story,SIX-89,SIX-17
+SG-088,"SG-088 Cadență, alerte, PDF",Epic,SIX-18,
+SG-089,SG-089 Alerte de preț și digest prin n8n,Story,SIX-90,SIX-18
+SG-090,SG-090 Memoriu PDF pe companie,Story,SIX-91,SIX-18
+SG-091,SG-091 Memento anual de re-estimare (2014),Story,SIX-92,SIX-18
+SG-092,SG-092 Univers,Epic,SIX-19,
+SG-093,"SG-093 Screening nocturn porțile 3 și 5 pe S&P 500, Stoxx 600, BVB",Story,SIX-93,SIX-19
+SG-094,SG-094 Import istoric asistat UE și BVB la scară,Story,SIX-94,SIX-19
+SG-095,SG-095 Jurnal de calitate a datelor pe univers,Story,SIX-95,SIX-19
