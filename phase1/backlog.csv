@@ -94,4 +94,4 @@ SG-092 Univers,Epic,High,,4,"universe,phase4","Screening nocturn și import isto
 "SG-093 Screening nocturn porțile 3 și 5 pe S&P 500, Stoxx 600, BVB",Story,High,SG-092 Univers,4,"universe,engine","Acceptare: AC-G3-8, AC-G5-8."
 SG-094 Import istoric asistat UE și BVB la scară,Story,High,SG-092 Univers,4,"universe,ingestion","Acceptare: AC-PR-5."
 SG-095 Jurnal de calitate a datelor pe univers,Story,Medium,SG-092 Univers,4,"universe,provenance","Acceptare: AC-PR-7."
-"SG-096 Registrul promisiunilor managementului: extragere cu citare, verificare la scadență, rata de îndeplinire și de candoare pe 5 și 10 ani",Story,Highest,SG-074 Epic: Management,3,"management,ai-citation,candour","Dev + QA. Extragere cu citare verificată, verificare la scadență, stări și indicatori pe 5 și 10 ani. Acceptare: AC-MG-1..7."
+"SG-096 Registrul promisiunilor managementului: extragere cu citare, verificare la scadență, rata de îndeplinire și de candoare pe 5 și 10 ani",Story,Highest,SG-074 Management,3,"management,ai-citation,candour","Dev + QA. Extragere cu citare verificată, verificare la scadență, stări și indicatori pe 5 și 10 ani. Acceptare: AC-MG-1..7."
