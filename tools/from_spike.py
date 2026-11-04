@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Build SixGates v2.2 analysis JSON files from the phase 1 spike outputs.
+"""Build SixGates v2.3 analysis JSON files from the phase 1 spike outputs.
 
 Input: spike/out/annual_us.csv (canonical annual facts per entity), spike/out/facts_us.csv
 (provenance per fact id), spike/out/data_issues_us.csv.
 Output: data/analyses/<TICKER>/<date>_v1.json, one per entity, following the schema in
-dashboard/schema.md. Formulas follow the framework v2.2 (framework/cadru_v2.md):
+dashboard/schema.md. Formulas follow the framework v2.3 (framework/cadru_v2.md):
 owner earnings as a range, tangible ROIC with the "negligible capital" state,
 no year-by-year working capital change, thresholds labelled as proposed parameters.
 
@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SPIKE = ROOT / "spike" / "out"
 OUT = ROOT / "data" / "analyses"
 
-FRAMEWORK_VERSION = "2.2"
+FRAMEWORK_VERSION = "2.3"
 TODAY = date.today().isoformat()
 
 NAMES = {

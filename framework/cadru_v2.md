@@ -15,7 +15,7 @@ Acest document se lipește la începutul unei sesiuni noi cu Claude, urmat de un
 
 Ce nu face cadrul: nu dă semnale de tranzacționare, nu prezice piața, nu înlocuiește cititul raportului anual. Dacă nu ai citit raportul integral, scorecard-ul este o hartă a cifrelor, nu o analiză. Pentru bănci și asigurători cadrul spune „formula nu se aplică” la porțile 3 și 5; ele cer alt cadru.
 
-Versiunea: v2.2, 4 noiembrie 2026 (v2.1 a adăugat pre-analiza din secțiunea 1.1; v2.2 adaugă exportul JSON din secțiunea 15 pentru dashboard-ul local și istoric). Față de v1, încorporează auditul pe surse primare (toate scrisorile Berkshire 1977 până la 2025, Owner's Manual, Florida 1998, Munger 1994 și 1995): formula câștigurilor proprietarului corectată, testul dolarului în forma din Owner's Manual, regulile de vânzare din 1987, iar fiecare prag numeric este etichetat „parametru propus”, nu regulă a lor.
+Versiunea: v2.3, 4 noiembrie 2026 (v2.1 a adăugat pre-analiza din secțiunea 1.1; v2.2 exportul JSON din secțiunea 15; v2.3 pașii prin care sesiunea reconstruiește și trimite dashboard-ul local). Față de v1, încorporează auditul pe surse primare (toate scrisorile Berkshire 1977 până la 2025, Owner's Manual, Florida 1998, Munger 1994 și 1995): formula câștigurilor proprietarului corectată, testul dolarului în forma din Owner's Manual, regulile de vânzare din 1987, iar fiecare prag numeric este etichetat „parametru propus”, nu regulă a lor.
 
 ## 1.1 Pre-analiza: filtrele de respingere rapidă
 
@@ -220,7 +220,7 @@ Cadrul analizează câte o companie; regulile de portofoliu sunt contextul în c
 Sesiunea livrează exact această structură, în markdown, cu marcajele [F], [C], [J], [AI] pe fiecare rând cu conținut, și cu „lipsă” acolo unde nu are date:
 
 ```markdown
-# [Companie] ([ticker]), scorecard SixGates v2.2, [data analizei]
+# [Companie] ([ticker]), scorecard SixGates v2.3, [data analizei]
 Aritmetică cu surse și judecăți atribuite, nu sfat de investiții.
 Sursă principală: [10-K FY2025, nr. depunerii, link]; exerciții: FY2016 la FY2025; monedă; standard; sfârșitul exercițiului.
 
@@ -333,6 +333,8 @@ Ultima verificare a sesiunii înainte de a livra: fiecare cifră are sursă; fie
 
 La finalul analizei (și la fiecare actualizare a judecăților), sesiunea emite un bloc de cod JSON cu structura de mai jos, pe care utilizatorul îl salvează ca fișier `data/analyses/<TICKER>/<AAAA-LL-ZZ>_v<N>.json` în repo-ul SixGates. Dashboard-ul local (`dashboard/sixgates_dashboard.html`, reconstruit cu `python3 dashboard/build.py`) citește aceste fișiere: un fișier pe versiune înseamnă istoric; aceeași companie cu dată și versiune noi apare ca versiune nouă, cu diferențele de verdict afișate. Fișierul poate fi și importat direct în pagină, cu butonul „Importă JSON”.
 
+Pașii prin care sesiunea construiește dashboard-ul singură (detaliați în `dashboard/README.md` și în skill): salvează JSON-ul ca fișier; clonează repo-ul public (`git clone --depth 1 https://github.com/pusoiuandrei/sixgates`); rulează `python3 dashboard/build.py --add <fișier>`; trimite `dashboard/sixgates_dashboard.html` reconstruit împreună cu fișierul JSON; face commit și push numai dacă repo-ul este atașat sesiunii cu drepturi de push. Versiunea este cea mai mare existentă pentru ticker plus 1; un fișier existent nu se suprascrie. Fără execuție de cod, sesiunea emite doar blocul JSON și spune că se adaugă cu `--add` sau cu „Importă JSON”.
+
 Reguli: fiecare cifră din JSON are aceeași proveniență ca în scorecard (etichetele XBRL în `facts.rows[].source_tags`, depunerile în `sources`); câmpurile necunoscute se scriu `null`, nu se inventează; textele judecăților rămân goale până le scrie omul; versiunea cadrului se scrie în `analysis.framework_version`; valorile monetare în unități întregi (nu milioane), dashboard-ul le scalează; procentele ca fracții (0,153 pentru 15,3%); `grid`, `perpetuity_check`, `reverse_dcf`, `oe_yield` și `price` rămân `null` cât timp poarta 5 este închisă; `data_issues[].type` este doar `info`, `warning` sau `blocking`.
 
 Structura (cheile și tipurile):
@@ -341,7 +343,7 @@ Structura (cheile și tipurile):
 {
  "schema_version": "sixgates-analysis-1.0",
  "company": {"name": "", "ticker": "", "market": "", "cik": "", "lei": null, "currency": "USD", "fiscal_year_end": "", "standard": "US GAAP"},
- "analysis": {"date": "AAAA-LL-ZZ", "version": 1, "framework_version": "2.2", "author": "", "status": "draft", "notice": "Aritmetică cu surse și judecăți atribuite, nu sfat de investiții.", "window": {"from": 2016, "to": 2025, "years_available": 17, "years_in_window": 10}},
+ "analysis": {"date": "AAAA-LL-ZZ", "version": 1, "framework_version": "2.3", "author": "", "status": "draft", "notice": "Aritmetică cu surse și judecăți atribuite, nu sfat de investiții.", "window": {"from": 2016, "to": 2025, "years_available": 17, "years_in_window": 10}},
  "preanalysis": {"decision": "continuam | pas | nedecis", "decided_at": null, "filters": [{"id": "K1", "name": "", "state": "respinge | trece | neclar", "fact": "", "source": ""}]},
  "gates": [{"id": "G2 | G3 | SURV | G4 | MGMT | G5", "name": "", "verdict": "trece | pica | necesita_judecata | date_insuficiente | inchisa", "reason": "", "pending_judgments": [""]}],
  "facts": {"unit": "USD", "display_scale": 1000000, "display_scale_label": "milioane", "years": [2016], "rows": [{"concept": "revenue", "label": "Venituri", "register": "F", "unit": "USD", "values": {"2016": 0}, "status": {"2016": "ok | lipsa | necesita_verificare | suma_partiala"}, "source_tags": ["us-gaap:Revenues"]}], "note": ""},
