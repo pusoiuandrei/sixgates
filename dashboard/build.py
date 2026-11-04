@@ -5,6 +5,13 @@ Collects data/analyses/**/*.json, validates the minimal fields, writes dashboard
 (window.SIXGATES_DATA = [...]) and dashboard/sixgates_dashboard.html, which is index.html
 with data.js inlined so the whole dashboard opens as one file (file://, no server).
 Python 3 standard library only.
+
+Usage:
+  python3 dashboard/build.py                      rebuild from data/analyses
+  python3 dashboard/build.py --add export.json    file an analysis JSON (emitted by a SixGates
+                                                  session) as data/analyses/<TICKER>/<date>_v<N>.json,
+                                                  then rebuild; repeat --add for several files;
+                                                  --force overwrites an existing version
 """
 from __future__ import annotations
 
@@ -36,7 +43,40 @@ def validate(obj) -> str | None:
     return None
 
 
+def add_file(src: Path, force: bool) -> int:
+    """Copy an analysis JSON into data/analyses/<TICKER>/<date>_v<N>.json after validation."""
+    try:
+        obj = json.loads(src.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        print(f"error: {src}: {exc}", file=sys.stderr)
+        return 1
+    err = validate(obj)
+    if err:
+        print(f"error: {src}: {err}", file=sys.stderr)
+        return 1
+    ticker = str(obj["company"]["ticker"]).upper().strip()
+    a = obj["analysis"]
+    if not re.match(r"^\d{4}-\d{2}-\d{2}$", str(a["date"])):
+        print(f"error: {src}: analysis.date must be AAAA-LL-ZZ, got {a['date']!r}", file=sys.stderr)
+        return 1
+    dest = DATA_DIR / ticker / f"{a['date']}_v{a['version']}.json"
+    if dest.exists() and not force:
+        print(f"error: {dest.relative_to(ROOT)} exists; use --force to overwrite or raise analysis.version",
+              file=sys.stderr)
+        return 1
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    dest.write_text(json.dumps(obj, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"added {dest.relative_to(ROOT)}")
+    return 0
+
+
 def main() -> int:
+    args = sys.argv[1:]
+    force = "--force" in args
+    to_add = [Path(args[i + 1]) for i, x in enumerate(args) if x == "--add" and i + 1 < len(args)]
+    for src in to_add:
+        if add_file(src, force):
+            return 1
     analyses, warnings = {}, []
     for path in sorted(DATA_DIR.glob("**/*.json")):
         rel = path.relative_to(ROOT)

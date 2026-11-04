@@ -4,9 +4,15 @@ O vedere pe companie, generată din fișierele JSON de analiză. Funcționează 
 
 ## Cum adaugi o analiză
 
-1. Salvează JSON-ul produs de sesiunea de analiză în `data/analyses/<TICKER>/<AAAA-LL-ZZ>_v<N>.json` (de exemplu `data/analyses/KO/2026-11-04_v1.json`).
-2. Rulează `python3 dashboard/build.py`. Scriptul validează câmpurile minime, scrie `dashboard/data.js` și `dashboard/sixgates_dashboard.html` și afișează un rezumat (companii, versiuni, verdicte).
-3. Deschide `dashboard/sixgates_dashboard.html` (un singur fișier, cu datele incluse).
+Calea scurtă, cu fișierul JSON emis de sesiunea de analiză (secțiunea 15 din cadru):
+
+```
+python3 dashboard/build.py --add GOOGL_2026-11-04_v1.json
+```
+
+Scriptul validează fișierul, îl pune la locul lui (`data/analyses/<TICKER>/<AAAA-LL-ZZ>_v<N>.json`, după `company.ticker`, `analysis.date` și `analysis.version`), refuză să suprascrie o versiune existentă fără `--force`, apoi reconstruiește `dashboard/data.js` și `dashboard/sixgates_dashboard.html` și afișează un rezumat (companii, versiuni, verdicte). Deschide apoi `dashboard/sixgates_dashboard.html` (un singur fișier, cu datele incluse).
+
+Sesiunea de analiză poate face singură acești pași: repo-ul este public, deci îl clonează (`git clone --depth 1 https://github.com/pusoiuandrei/sixgates`), rulează comanda de mai sus și trimite dashboard-ul reconstruit; dacă repo-ul este atașat sesiunii cu drepturi de push, face și commit, iar istoricul se completează de la sine. Fără asta, salvezi manual JSON-ul în `data/analyses/<TICKER>/` și rulezi `python3 dashboard/build.py`.
 
 Alternativ, în pagină: „Importă JSON” (unul sau mai multe fișiere, sau text lipit). Importurile stau în localStorage-ul browserului; „Exportă tot” descarcă toate analizele ca o listă JSON, „Șterge importurile” le golește. La aceeași cheie (ticker, dată, versiune), datele incluse în build au prioritate. `index.html` merge și fără `data.js`: atunci arată doar importurile.
 
