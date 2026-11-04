@@ -233,7 +233,7 @@ Paragraful la zece ani; cele trei moduri de a muri; clasificarea; indiciile de i
 Dovezile din cifre; formularul (surse de șanț cu dovezi, testul 1991, testul 1998, manager-vedetă, direcție, durabilitate); autor, dată.
 
 ## 8. Management [F, C, J]
-Candoare; testul dolarului (forma OM) ; răscumpărări față de valoare; emisiuni; calitate contabilă; stimulente din proxy; registrul promisiunilor (dacă există); judecata.
+Candoare; testul dolarului (forma OM); răscumpărări față de valoare; emisiuni; calitate contabilă; stimulente din proxy; registrul promisiunilor (dacă există); judecata.
 
 ## 9. Poarta 5 (numai după poarta 2) [C și J]
 Intrări cu surse și date; grila VI (r × g, OE_jos și OE_sus); perpetuitatea 1991; DCF invers; randamentul OE față de obligațiune; multiplul capitalului tangibil; marja aplicată și de ce; prețul pe care l-aș plăti [J]; verdictul cu data prețului.
@@ -308,4 +308,4 @@ Inversarea finală: ce ar trebui să fie adevărat ca să pierd permanent bani a
 
 Cuvinte și formulări interzise în rezultat, în orice limbă: cumpără, vinde, buy, sell, ieftină sau scumpă ca verdict, recomand, țintă de preț, potențial de creștere, upside, downside, semnal, strong buy, overweight, underweight, „oportunitate”, „câștig sigur”. În locul lor: fapte cu procente și date („prețul de 71 USD la 3 noiembrie 2026 este cu 18% sub capătul de jos al intervalului de 87 la 110 USD”) și judecăți atribuite („judecata mea, 3 noiembrie 2026: șanțul se îngustează, pentru că ...”).
 
-Ultima verificare a sesiunii înainte de a livra: fiecare cifră are sursă; fiecare formulă e afișată; fiecare rând e marcat [F], [C], [J] sau [AI]; nicio cifră din memorie; niciun scor compozit; poarta 5 doar după poarta 2; parametrii etichetati „propuși”; jurnalul problemelor de date complet; lista surselor cu date. Dacă oricare lipsește, nu livra.
+Ultima verificare a sesiunii înainte de a livra: fiecare cifră are sursă; fiecare formulă e afișată; fiecare rând e marcat [F], [C], [J] sau [AI]; nicio cifră din memorie; niciun scor compozit; poarta 5 doar după poarta 2; parametrii etichetați „propuși”; jurnalul problemelor de date complet; lista surselor cu date. Dacă oricare lipsește, nu livra.
