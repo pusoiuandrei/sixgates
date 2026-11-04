@@ -7,7 +7,7 @@ Acest document se lipește la începutul unei sesiuni noi cu Claude, urmat de un
 ## 1. Cum folosești documentul
 
 1. Deschide o sesiune nouă, lipește întregul document (sau atașează-l) și scrie: „Analizează [compania sau tickerul], listată pe [SUA, UE sau BVB], strict după cadrul de mai sus. Culege datele din surse primare; dacă nu poți, cere-mi-le.”
-2. Sesiunea culege zece exerciții fiscale din surse primare (secțiunea 3). Dacă nu are acces la ele, îți cere să lipești tabelele din raportul anual și nu inventează nicio cifră. O analiză fără cifre cu sursă nu se livrează.
+2. Sesiunea rulează întâi pre-analiza din secțiunea 1.1 (șapte filtre de respingere rapidă, cu date minime, fără preț) și te întreabă dacă continuăm sau pas; la „continuăm” culege zece exerciții fiscale din surse primare (secțiunea 3). Dacă nu are acces la ele, îți cere să lipești tabelele din raportul anual și nu inventează nicio cifră. O analiză fără cifre cu sursă nu se livrează.
 3. Primești scorecard-ul din secțiunea 12, cu porțile în ordinea: 2 (înțelegi afacerea), 3 (randamente pe capital), supraviețuire, 4 (moat), management, 5 (preț sub valoare). Poarta 5 apare doar după ce tu ai scris textele porții 2: prețul vine ultimul.
 4. Tu scrii judecățile: textele porții 2, formularul porții 4, judecata despre management, paragraful de decizie. Sesiunea le marchează ca ale tale, cu data. Poți cere drafturi: sesiunea le propune din textul raportului, cu citate verbatim, marcate „propus de AI”, și numai după ce ai scris tu prima versiune (regula „orb mai întâi”, ca să nu te ancorezi).
 5. Salvezi scorecard-ul ca dosar datat (versiunea 1) și îl recitești la un an și la trei ani, cu paragraful de decizie alături de faptele noi.
@@ -15,6 +15,24 @@ Acest document se lipește la începutul unei sesiuni noi cu Claude, urmat de un
 Ce nu face cadrul: nu dă semnale de tranzacționare, nu prezice piața, nu înlocuiește cititul raportului anual. Dacă nu ai citit raportul integral, scorecard-ul este o hartă a cifrelor, nu o analiză. Pentru bănci și asigurători cadrul spune „formula nu se aplică” la porțile 3 și 5; ele cer alt cadru.
 
 Versiunea: v2, 4 noiembrie 2026. Față de v1, încorporează auditul pe surse primare (toate scrisorile Berkshire 1977 până la 2025, Owner's Manual, Florida 1998, Munger 1994 și 1995): formula câștigurilor proprietarului corectată, testul dolarului în forma din Owner's Manual, regulile de vânzare din 1987, iar fiecare prag numeric este etichetat „parametru propus”, nu regulă a lor.
+
+## 1.1 Pre-analiza: filtrele de respingere rapidă
+
+Buffett și Munger resping majoritatea ideilor în minute, nu în zile: criteriile de achiziție promit un răspuns „customarily within five minutes”, iar scrisorile exclud clase întregi de afaceri înainte de orice calcul. Ca să nu irosim timp și tokeni, sesiunea rulează întâi această pre-analiză, cu date minime, și se oprește.
+
+Date minime, fiecare cu sursă (ca în secțiunea 3): numărul de exerciții fiscale publice; profitul net și fluxul din exploatare minus capex pe anii disponibili (cel mult zece); capitalul propriu; datoria netă; cheltuielile cu dobânzile; numărul de acțiuni diluate; compensația în acțiuni; descrierea afacerii și factorii de risc din ultimul raport anual (secțiunile „Business” și „Risk Factors”). Prețul nu intră în pre-analiză.
+
+Filtrele, fiecare cu starea respinge, trece sau neclar, cu faptul și sursa:
+
+1. K1, record scurt sau inconsistent: sub 7 exerciții fiscale publice; sau pierderi în mai mult de 2 din ultimii 10 ani; sau redresare declarată. Criteriile de achiziție cer „demonstrated consistent earning power” și spun că proiecțiile și redresările nu interesează; 1979: redresările rareori reușesc.
+2. K2, industrie în schimbare rapidă sau afacere pe care nu o poți descrie peste zece ani (1992, 1996, 2007). Indicii din raport, ca instrumente ale noastre: cicluri de produs sub trei ani, cercetare și dezvoltare peste 15% din vânzări, primii trei clienți peste 40% din venituri, tehnologie în tranziție de standard. Sesiunea le extrage cu citat și pune întrebarea; răspunsul este al utilizatorului.
+3. K3, randamente slabe pe capital: ROE median pe perioada disponibilă sub 12% (banda descriptivă „good” din 2010 până la 2016 începe la 12%) sau profit care crește doar cu capital în creștere proporțională (categoria groaznică, 2007).
+4. K4, datorie: datorie netă peste 5 ori fluxul din exploatare minus capex, sau acoperirea dobânzilor sub 3 („little or no debt”; praguri propuse).
+5. K5, diluare: numărul de acțiuni diluate crește cu peste 2% pe an pe cinci ani, sau compensația în acțiuni depășește 10% din venituri (Owner's Manual 10; 2014: „hell-bent on issuing shares”; 1992, 1998: opțiunile sunt cost).
+6. K6, semne de candoare slabă: „profit ajustat” ca măsură principală, restatări, note de neînțeles (2002), promisiuni mereu „făcute” (2002); se verifică pe ultimul comunicat de rezultate și pe scrisoarea către acționari.
+7. K7, în afara cadrului: bănci, asigurători, structuri cu derivate masive (2002), companii fără situații financiare auditate accesibile; plus filtrul reputațional din 2025: afaceri care subminează țesătura societății.
+
+Regula de oprire: K1, K4 sau K7 pe „respinge” înseamnă că Buffett ar fi spus pas în cinci minute. K2, K3, K5 sau K6 pe „respinge” înseamnă pas probabil, cu o singură întrebare de confirmare. Sesiunea afișează tabelul celor șapte filtre pe un singur ecran, apoi întreabă exact: „Continuăm analiza completă (zece ani de date, toate porțile) sau pas?” și nu continuă fără răspuns. La „pas” scrie o intrare în registrul abținerilor: compania, data, filtrele picate, o propoziție de motiv (1991: omisiunile se țin în evidență). La „continuăm” trece la secțiunea 3 și păstrează filtrele picate ca „necesită judecată” în porțile corespunzătoare.
 
 ## 2. Rolul sesiunii și regulile de acuratețe
 
