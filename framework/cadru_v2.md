@@ -327,3 +327,33 @@ Inversarea finală: ce ar trebui să fie adevărat ca să pierd permanent bani a
 Cuvinte și formulări interzise în rezultat, în orice limbă: cumpără, vinde, buy, sell, ieftină sau scumpă ca verdict, recomand, țintă de preț, potențial de creștere, upside, downside, semnal, strong buy, overweight, underweight, „oportunitate”, „câștig sigur”. În locul lor: fapte cu procente și date („prețul de 71 USD la 3 noiembrie 2026 este cu 18% sub capătul de jos al intervalului de 87 la 110 USD”) și judecăți atribuite („judecata mea, 3 noiembrie 2026: șanțul se îngustează, pentru că ...”).
 
 Ultima verificare a sesiunii înainte de a livra: fiecare cifră are sursă; fiecare formulă e afișată; fiecare rând e marcat [F], [C], [J] sau [AI]; nicio cifră din memorie; niciun scor compozit; poarta 5 doar după poarta 2; parametrii etichetați „propuși”; jurnalul problemelor de date complet; lista surselor cu date. Dacă oricare lipsește, nu livra.
+
+## 15. Exportul JSON pentru dashboard și istoric
+
+La finalul analizei (și la fiecare actualizare a judecăților), sesiunea emite un bloc de cod JSON cu structura de mai jos, pe care utilizatorul îl salvează ca fișier `data/analyses/<TICKER>/<AAAA-LL-ZZ>_v<N>.json` în repo-ul SixGates. Dashboard-ul local (`dashboard/sixgates_dashboard.html`, reconstruit cu `python3 dashboard/build.py`) citește aceste fișiere: un fișier pe versiune înseamnă istoric; aceeași companie cu dată și versiune noi apare ca versiune nouă, cu diferențele de verdict afișate. Fișierul poate fi și importat direct în pagină, cu butonul „Importă JSON”.
+
+Reguli: fiecare cifră din JSON are aceeași proveniență ca în scorecard (etichetele XBRL în `facts.rows[].source_tags`, depunerile în `sources`); câmpurile necunoscute se scriu `null`, nu se inventează; textele judecăților rămân goale până le scrie omul; versiunea cadrului se scrie în `analysis.framework_version`.
+
+Structura (cheile și tipurile):
+
+```json
+{
+ "schema_version": "sixgates-analysis-1.0",
+ "company": {"name": "", "ticker": "", "market": "", "cik": "", "lei": null, "currency": "USD", "fiscal_year_end": "", "standard": "US GAAP"},
+ "analysis": {"date": "AAAA-LL-ZZ", "version": 1, "framework_version": "2.1", "author": "", "status": "draft", "notice": "Aritmetică cu surse și judecăți atribuite, nu sfat de investiții.", "window": {"from": 2016, "to": 2025, "years_available": 17, "years_in_window": 10}},
+ "preanalysis": {"decision": "continuam | pas | nedecis", "decided_at": null, "filters": [{"id": "K1", "name": "", "state": "respinge | trece | neclar", "fact": "", "source": ""}]},
+ "gates": [{"id": "G2 | G3 | SURV | G4 | MGMT | G5", "name": "", "verdict": "trece | pica | necesita_judecata | date_insuficiente | inchisa", "reason": "", "pending_judgments": [""]}],
+ "facts": {"unit": "USD", "display_scale": 1000000, "display_scale_label": "milioane", "years": [2016], "rows": [{"concept": "revenue", "label": "Venituri", "register": "F", "unit": "USD", "values": {"2016": 0}, "status": {"2016": "ok | lipsa | necesita_verificare | suma_partiala"}, "source_tags": ["us-gaap:Revenues"]}], "note": ""},
+ "gate2": {"indicators": {"revenue_cagr_10y": 0, "revenue_max_deviation_from_trend": 0, "operating_margin_min": 0, "operating_margin_max": 0, "oe_low_cv": 0, "loss_years": 0, "instability_flag": false}, "parameters": {}},
+ "gate3": {"years": [2016], "rows": [{"metric": "oe_low", "label": "OE_jos", "formula": "", "unit": "USD | x | % | USD/acțiune", "register": "C", "values": {"2016": 0}, "flags": {"2016": ""}}], "incremental": {"5y": {"value": null, "state": "", "years": ""}, "10y": {}}, "oe_low_cagr": 0, "share_cagr": 0, "roic_above_hurdle_years": 0, "negligible_capital_years": 0, "category": {"value": null, "register": "J", "author": null, "date": null, "reason": ""}},
+ "survival": {"rows": [], "latest": {"year": 2025, "net_debt": 0, "net_debt_to_oe_low": 0, "net_debt_to_min_oe_low": 0, "interest_cover": 0}, "stress": {"assumption": "", "interest_cover_after_shock": 0, "years_to_repay_net_debt": 0, "maturities_5y": null, "maturities_note": ""}, "thresholds": {}},
+ "judgments": {"gate2": {"ten_year_paragraph": "", "three_ways_to_die": ["", "", ""], "classification": "in_cerc | prea_greu | in_afara | ", "author": "", "date": "", "register": "J"}, "gate4": {"moat_sources": [], "franchise_test_1991": {"needed_or_desired": "", "no_close_substitute": "", "price_unregulated": ""}, "capital_test_1998": "", "star_manager_2007": "", "direction": "", "durability_years": "", "author": "", "date": "", "register": "J"}, "management": {"candour": "", "incentives": "", "verdict": "", "author": "", "date": "", "register": "J"}, "decision_paragraph": {"ten_years": "", "why_moat_holds": "", "price_vs_value": "", "what_would_prove_me_wrong": [], "closed_market_5y": "", "author": "", "date": "", "register": "J"}},
+ "management_facts": {"buybacks": {"2016": 0}, "dividends": {"2016": 0}, "diluted_shares": {"2016": 0}, "share_cagr": 0, "dollar_test_owner_manual": {"value": null, "note": ""}},
+ "gate5": {"locked": true, "lock_reason": "", "inputs": {"oe_low_last": 0, "oe_high_last": 0, "oe_low_cagr_10y": 0, "bond_yield": null, "bond_yield_date": null, "price": null, "price_date": null, "shares_outstanding": null}, "grid": {"r": [0.06, 0.08, 0.10], "g": [0, 0.04, 0.08], "vi_low_per_share": [[0]], "vi_high_per_share": [[0]]}, "perpetuity_check": {"value_per_share": 0, "formula": ""}, "reverse_dcf": {"implied_growth": 0, "state": ""}, "oe_yield": {"value": 0, "bond_yield": 0, "bond_yield_date": "", "spread_pts": 0}, "margin": {"band": "", "register": "parametru propus"}, "price_i_would_pay": {"value": null, "register": "J", "author": null, "date": null}, "price": {"value": null, "date": null, "source": null}, "verdict": "inchisa"},
+ "data_issues": [{"type": "info | warning | blocking", "concept": "", "period": "", "description": "", "effect": ""}],
+ "parameters": [{"name": "", "value": "", "inspired_by": ""}],
+ "sources": [{"title": "", "url": "", "accessed": "AAAA-LL-ZZ"}]
+}
+```
+
+Convenții: valorile monetare în unități întregi (nu milioane), dashboard-ul le scalează; procentele ca fracții (0,153 pentru 15,3%); `grid`, `perpetuity_check`, `reverse_dcf`, `oe_yield` și `price` rămân `null` cât timp poarta 5 este închisă; `status` din `facts` marchează „necesita_verificare” pentru etichete XBRL care nu concordă între ele și „suma_partiala” când o linie este suma mai multor etichete.
