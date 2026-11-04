@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SixGates: analize pe companii</title>
+<style>
+/* Tokens: 8px grid, light theme by default, dark theme via prefers-color-scheme */
+:root {
+  --bg: #f6f6f3; --card: #ffffff; --fg: #1d1d1f; --muted: #6a6a70; --border: #dcdcd6; --soft: #f0f0ec;
+  --accent: #2b5f8e;
+  --pass: #0f766e; --fail: #a4461c; --judge: #a86b0c; --insuf: #6b7280; --closed: #475569;
+  --heat: 210, 55%, 42%;
+  --s1: 8px; --s2: 16px; --s3: 24px; --s4: 32px; --r: 12px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px; line-height: 1.5; color: var(--fg); background: var(--bg);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #131417; --card: #1c1e22; --fg: #e7e7ea; --muted: #9b9da4; --border: #34373d; --soft: #24272c;
+    --accent: #7fb0e0;
+    --pass: #3cc4b2; --fail: #e0845a; --judge: #e2b350; --insuf: #a0a6b0; --closed: #9aa8bb;
+    --heat: 210, 70%, 60%;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: var(--accent); }
+button, select, input, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+.muted { color: var(--muted); }
+.todo { color: var(--muted); font-style: italic; }
+.small { font-size: 13px; }
+
+/* Top bar */
+.topbar { position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; align-items: center; gap: var(--s1);
+  padding: var(--s1) var(--s2); background: var(--card); border-bottom: 1px solid var(--border); }
+.brand { font-weight: 700; font-size: 17px; margin-right: auto; }
+.brand span { font-weight: 400; color: var(--muted); font-size: 13px; margin-left: var(--s1); }
+.btn { border: 1px solid var(--border); background: var(--card); border-radius: 8px; padding: 4px 12px; }
+.btn:hover { background: var(--soft); }
+.btn.primary { border-color: var(--accent); color: var(--accent); }
+
+/* Layout: sidebar and main column; the sidebar becomes a select on phones */
+.layout { display: grid; grid-template-columns: 272px minmax(0, 1fr); gap: var(--s2); padding: var(--s2); max-width: 1440px; margin: 0 auto; }
+.sidebar { position: sticky; top: 64px; align-self: start; max-height: calc(100vh - 80px); overflow: auto; }
+.co { display: block; width: 100%; text-align: left; border: 1px solid var(--border); background: var(--card);
+  border-radius: var(--r); padding: var(--s1) var(--s2); margin-bottom: var(--s1); }
+.co[aria-current="true"] { border-color: var(--accent); box-shadow: inset 3px 0 0 var(--accent); }
+.co .cn { font-weight: 600; }
+.co .cm { font-size: 13px; color: var(--muted); }
+.dots { display: flex; gap: 6px; margin-top: 4px; }
+.dot { width: 12px; height: 12px; border-radius: 50%; background: var(--c); border: 1px solid var(--c); }
+.dot.v-insuf, .dot.v-closed { background: transparent; }
+.mobile-pick { display: none; margin-bottom: var(--s2); }
+.mobile-pick select { width: 100%; padding: var(--s1); border-radius: 8px; border: 1px solid var(--border); background: var(--card); }
+main { min-width: 0; }
+@media (max-width: 720px) {
+  .layout { grid-template-columns: minmax(0, 1fr); padding: var(--s1); }
+  .sidebar { display: none; }
+  .mobile-pick { display: block; }
+  .brand span { display: none; }
+  .sticky { min-width: 128px; max-width: 150px; }
+  .card { padding: 12px; }
+  .tiles { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+}
+
+/* Cards and sections */
+.card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: var(--s2); margin-bottom: var(--s2); }
+.sh { display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s1); margin-bottom: var(--s1); }
+.sh h2 { font-size: 18px; margin: 0; }
+h1 { font-size: 24px; margin: 0 0 4px; }
+h3 { font-size: 15px; margin: var(--s2) 0 var(--s1); }
+.meta { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: var(--s1) var(--s2); margin: var(--s2) 0; }
+.meta div { font-size: 13px; }
+.meta b { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
+.notice { padding: var(--s1) var(--s2); background: var(--soft); border-radius: 8px; }
+.row { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s2); align-items: center; margin-top: var(--s1); }
+.legend { display: flex; flex-wrap: wrap; gap: var(--s1); align-items: center; font-size: 13px; color: var(--muted); }
+
+/* Register chips: F solid neutral, C outlined, J dashed, AI dotted */
+.reg { display: inline-block; font-size: 12px; font-weight: 600; padding: 0 6px; border-radius: 6px; cursor: pointer; color: var(--fg); line-height: 20px; }
+.reg-F { background: var(--soft); border: 1px solid var(--muted); }
+.reg-C { background: transparent; border: 1px solid var(--fg); }
+.reg-J { background: transparent; border: 1px dashed var(--fg); }
+.reg-AI { background: transparent; border: 2px dotted var(--fg); }
+
+/* Verdict badges: always with text, never red or green trading colours */
+.v-pass { --c: var(--pass); } .v-fail { --c: var(--fail); } .v-judge { --c: var(--judge); }
+.v-insuf { --c: var(--insuf); } .v-closed { --c: var(--closed); }
+.badge { display: inline-flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 600; padding: 0 8px; border-radius: 999px;
+  color: var(--c); border: 1px solid var(--c); background: color-mix(in srgb, var(--c) 10%, transparent); white-space: nowrap; line-height: 22px; }
+
+/* Pre-analysis chips */
+.kchips { display: flex; flex-wrap: wrap; gap: var(--s1); }
+.kchip { display: inline-flex; align-items: center; gap: var(--s1); border: 1px solid var(--border); background: var(--card); border-radius: 999px; padding: 4px 8px 4px 12px; text-align: left; }
+.kchip[aria-expanded="true"] { border-color: var(--accent); }
+.kchip b { font-weight: 700; }
+.kdetail { margin-top: var(--s1); padding: var(--s1) var(--s2); border-left: 3px solid var(--border); background: var(--soft); border-radius: 0 8px 8px 0; font-size: 14px; }
+
+/* Gate cards */
+.gates { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--s2); }
+.gate { border: 1px solid var(--border); border-top: 4px solid var(--c); border-radius: var(--r); padding: var(--s2); }
+.gate h3 { margin: 0 0 var(--s1); display: flex; justify-content: space-between; gap: var(--s1); flex-wrap: wrap; }
+.gate p { margin: var(--s1) 0; font-size: 14px; }
+.gate ul { margin: 4px 0 0; padding-left: 20px; font-size: 14px; }
+.lock { display: inline-flex; vertical-align: -3px; }
+
+/* Tiles */
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(176px, 1fr)); gap: var(--s1); margin: var(--s1) 0 var(--s2); }
+.tile { border: 1px solid var(--border); border-radius: 8px; padding: var(--s1) 12px; }
+.tl { font-size: 12px; color: var(--muted); }
+.tv { font-size: 20px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.tv.txt { font-size: 13px; font-weight: 400; }
+.ts { font-size: 12px; color: var(--muted); }
+
+/* Tables: horizontal scroll inside the card, sticky first column */
+.tw { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
+table { border-collapse: separate; border-spacing: 0; width: 100%; font-size: 13px; }
+th, td { padding: 6px 8px; border-bottom: 1px solid var(--border); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; vertical-align: top; }
+thead th { background: var(--soft); font-weight: 600; position: sticky; top: 0; z-index: 2; }
+tr:last-child > * { border-bottom: 0; }
+.sticky { position: sticky; left: 0; z-index: 1; background: var(--card); text-align: left; white-space: normal; min-width: 180px; max-width: 240px; font-weight: 500; border-right: 1px solid var(--border); }
+thead .sticky { background: var(--soft); z-index: 3; }
+.rowbtn { border: 0; background: none; padding: 0; text-align: left; color: inherit; font-weight: 500; }
+.rowbtn::before { content: "\25B8\00A0"; color: var(--muted); }
+.rowbtn[aria-expanded="true"]::before { content: "\25BE\00A0"; }
+tr.detail td { background: var(--soft); text-align: left; white-space: normal; }
+.detail-in { position: sticky; left: 8px; max-width: min(720px, 84vw); font-size: 13px; }
+.flagged { color: var(--muted); border-bottom: 1px dotted var(--muted); cursor: help; }
+sup { font-size: 10px; color: var(--judge); font-weight: 700; margin-left: 1px; cursor: help; }
+.txt-table td, .txt-table th { white-space: normal; text-align: left; }
+.scrollbox { max-height: 70vh; overflow: auto; }
+.note { font-size: 12px; color: var(--muted); margin: 4px 0 0; }
+.foot { font-size: 12px; color: var(--muted); margin: var(--s1) 0 0; padding-left: var(--s2); }
+details { margin-top: var(--s1); }
+summary { cursor: pointer; color: var(--accent); font-size: 14px; }
+abbr[data-term] { text-decoration: underline dotted; text-underline-offset: 2px; cursor: help; }
+
+/* Bars for management facts (CSS widths only) */
+.barcell { display: flex; align-items: center; gap: var(--s1); justify-content: flex-end; }
+.bar { display: inline-block; height: 8px; border-radius: 4px; background: hsla(var(--heat), .55); }
+.barwrap { width: 72px; background: var(--soft); border-radius: 4px; display: inline-flex; }
+
+/* Judgment fields */
+.jgrid { display: grid; gap: var(--s1); }
+.jf { border: 1px dashed var(--border); border-radius: 8px; padding: var(--s1) 12px; }
+.jl { font-size: 12px; color: var(--muted); }
+.jv ul, .jv ol { margin: 4px 0; padding-left: 20px; }
+.jmeta { font-size: 12px; margin: var(--s1) 0 0; }
+.jbox { border: 1px dashed var(--fg); border-radius: 8px; padding: var(--s1) 12px; margin-bottom: var(--s2); }
+
+/* Gate 5 */
+.lockpanel { display: flex; gap: var(--s2); align-items: flex-start; padding: var(--s2); background: var(--soft); border-radius: 8px; }
+.heat td { color: var(--fg); }
+.kv { display: grid; grid-template-columns: minmax(140px, max-content) 1fr; gap: 4px var(--s2); font-size: 14px; }
+.kv dt { color: var(--muted); }
+.kv dd { margin: 0; }
+
+/* Filter chips */
+.fchips { display: flex; flex-wrap: wrap; gap: var(--s1); margin-bottom: var(--s1); }
+.fchip { border: 1px solid var(--border); background: var(--card); border-radius: 999px; padding: 2px 12px; font-size: 13px; }
+.fchip[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); font-weight: 600; }
+.t-info, .t-low { --c: var(--insuf); } .t-medium, .t-warning { --c: var(--judge); } .t-high, .t-blocking { --c: var(--fail); }
+
+/* Diff block */
+.diff { margin-top: var(--s1); padding: var(--s1) var(--s2); border: 1px solid var(--border); border-radius: 8px; font-size: 14px; }
+.diff ul { margin: 4px 0; padding-left: 20px; }
+
+/* Glossary drawer */
+.scrim { position: fixed; inset: 0; background: rgba(0,0,0,.3); z-index: 30; }
+.drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(440px, 100vw); background: var(--card); border-left: 1px solid var(--border);
+  z-index: 31; display: flex; flex-direction: column; }
+.drawer header { padding: var(--s2); border-bottom: 1px solid var(--border); display: grid; gap: var(--s1); }
+.drawer header div { display: flex; justify-content: space-between; align-items: center; }
+.drawer input { width: 100%; padding: var(--s1); border: 1px solid var(--border); border-radius: 8px; background: var(--bg); }
+.glist { overflow: auto; padding: var(--s1) var(--s2) var(--s4); }
+.gt { padding: var(--s1) 0; border-bottom: 1px solid var(--border); }
+.gt.hl { background: color-mix(in srgb, var(--accent) 12%, transparent); border-radius: 8px; padding-left: var(--s1); }
+.gn { font-weight: 600; }
+.gy { font-weight: 400; color: var(--muted); font-size: 12px; margin-left: 4px; }
+.gd { font-size: 14px; }
+[hidden] { display: none !important; }
+
+/* Import dialog */
+dialog { border: 1px solid var(--border); border-radius: var(--r); background: var(--card); color: var(--fg); width: min(640px, 94vw); padding: var(--s2); }
+dialog::backdrop { background: rgba(0,0,0,.35); }
+dialog textarea { width: 100%; min-height: 160px; padding: var(--s1); border: 1px solid var(--border); border-radius: 8px; background: var(--bg); font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; }
+.msg { font-size: 14px; white-space: pre-line; }
+footer.site { text-align: center; color: var(--muted); font-size: 13px; padding: var(--s3) var(--s2); }
+.empty { padding: var(--s4); text-align: center; }
+
+/* Print: the current company view as a dossier */
+@media print {
+  :root { --bg: #fff; --card: #fff; --fg: #000; --soft: #f2f2f2; }
+  .topbar, .sidebar, .mobile-pick, .no-print, dialog, .drawer, .scrim { display: none !important; }
+  .layout { display: block; padding: 0; }
+  .card { break-inside: avoid-page; border-color: #999; }
+  .tw, .scrollbox { overflow: visible; max-height: none; border: 0; }
+  .sticky { position: static; }
+  thead th { position: static; }
+  table { font-size: 10px; }
+  th, td { padding: 2px 4px; }
+}
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="brand">SixGates<span>cele șase porți, câte o vedere pe companie</span></div>
+  <button class="btn primary" id="btnImport" type="button">Importă JSON</button>
+  <button class="btn" id="btnExport" type="button">Exportă tot</button>
+  <button class="btn" id="btnClear" type="button">Șterge importurile</button>
+  <button class="btn" id="btnGloss" type="button" aria-controls="drawer">Glosar</button>
+</div>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Companii"></nav>
+  <main id="main">
+    <div class="mobile-pick"><label class="small muted" for="coSel">Companie</label><select id="coSel"></select></div>
+    <div id="view"></div>
+  </main>
+</div>
+<footer class="site">SixGates v2.1. Aritmetică cu surse și judecăți atribuite, nu sfat de investiții.</footer>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="drawer" id="drawer" hidden aria-label="Glosar">
+  <header>
+    <div><strong>Glosar</strong><button class="btn" id="btnGlossClose" type="button">Închide</button></div>
+    <input id="glossQ" type="search" placeholder="Caută un termen (de exemplu ROIC, franciză, K4)" autocomplete="off">
+    <span class="small muted" id="glossCount"></span>
+  </header>
+  <div class="glist" id="glist"></div>
+</aside>
+
+<dialog id="impDlg">
+  <h2 style="margin-top:0">Importă analize JSON</h2>
+  <p class="small muted">Unul sau mai multe fișiere .json (obiect sau listă de obiecte) cu schema_version „sixgates-analysis…”. Se păstrează în acest browser (localStorage). La aceeași cheie (ticker, dată, versiune), datele incluse în build au prioritate.</p>
+  <p><input type="file" id="impFile" accept=".json,application/json" multiple></p>
+  <p><label class="small" for="impText">sau lipește JSON aici</label><textarea id="impText" spellcheck="false"></textarea></p>
+  <div class="row"><button class="btn primary" id="impTextBtn" type="button">Importă textul</button><button class="btn" id="impClose" type="button">Închide</button></div>
+  <p class="msg" id="impMsg" aria-live="polite"></p>
+</dialog>
+
+<script src="data.js"></script>
+<script>
+"use strict";
+
+/* ===== Vocabulary ===== */
+const STORE_KEY = "sixgates.imports.v1";
+const VERDICT = {
+  trece: { l: "trece", c: "v-pass" }, pica: { l: "pică", c: "v-fail" },
+  necesita_judecata: { l: "necesită judecată", c: "v-judge" },
+  date_insuficiente: { l: "date insuficiente", c: "v-insuf" }, inchisa: { l: "închisă", c: "v-closed" }
+};
+const KSTATE = { trece: { l: "trece", c: "v-pass" }, respinge: { l: "respinge", c: "v-fail" }, neclar: { l: "neclar", c: "v-judge" } };
+const DECISION = { continuam: { l: "continuăm", c: "v-pass" }, "continuăm": { l: "continuăm", c: "v-pass" }, pas: { l: "pas", c: "v-fail" }, nedecis: { l: "nedecis", c: "v-insuf" } };
+const GATE_ORDER = ["G2", "G3", "SURV", "G4", "MGMT", "G5"];
+const GATE_SHORT = { G2: "Poarta 2", G3: "Poarta 3", SURV: "Supraviețuire", G4: "Poarta 4", MGMT: "Management", G5: "Poarta 5" };
+const REG = { F: "fapt", C: "calcul", J: "judecată", AI: "propus de AI" };
+const ISSUE_ORDER = ["info", "low", "medium", "warning", "high", "blocking"];
+const LOCK_SVG = '<svg class="lock" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="7" width="10" height="8" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M5 7V5a3 3 0 0 1 6 0v2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>';
+
+/* ===== Glossary: id, term, source year, abbreviations to underline (k), definition ===== */
+const GLOSSARY = [
+  { id: "oe", t: "OE (câștigurile proprietarului)", y: "1986", k: ["OE"], d: "Numerarul pe care proprietarul îl poate scoate din afacere fără să îi slăbească poziția: profit net plus D&A, minus capexul mediu necesar menținerii poziției competitive. Buffett spune că termenul (c) este o estimare, deci cadrul afișează un interval." },
+  { id: "oe-jos", t: "OE_jos", y: "", k: ["OE_jos"], d: "Capătul conservator al intervalului OE: profit net + D&A minus capexul total. Tot capexul este tratat ca menținere." },
+  { id: "oe-sus", t: "OE_sus", y: "", k: ["OE_sus"], d: "Capătul de sus al intervalului OE: profit net + D&A minus max(D&A, capexul de menținere după estimarea Greenwald)." },
+  { id: "da", t: "D&A (deprecieri și amortizări)", y: "1986", k: ["D&A"], d: "Cheltuieli fără numerar care alocă costul activelor pe durata lor de folosință. Pentru Buffett amortizarea este un cost real (1986, 2001, 2013 la 2015)." },
+  { id: "capex", t: "capex", y: "", k: ["capex", "Capex"], d: "Plățile pentru imobilizări corporale și necorporale, din situația fluxurilor de numerar (secțiunea de investiții)." },
+  { id: "capex-mentinere", t: "capex de menținere", y: "1986", k: [], d: "Partea din capex necesară ca afacerea să își păstreze poziția competitivă și volumul; termenul (c) din formula OE. Scrisoarea din 1986 spune că este o estimare („must be a guess”) și de obicei depășește amortizarea." },
+  { id: "greenwald", t: "estimarea Greenwald", y: "", k: ["Greenwald"], d: "Capex de menținere = capex minus capexul de creștere; capexul de creștere = creșterea veniturilor × raportul imobilizări / venituri (media celor trei ani anteriori). Instrument al lui Bruce Greenwald, nu regulă Buffett." },
+  { id: "cfo", t: "CFO (flux de numerar din exploatare)", y: "", k: ["CFO"], d: "Numerarul generat de activitatea de bază în an, din situația fluxurilor de numerar." },
+  { id: "cfo-capex", t: "CFO minus capex", y: "", k: [], d: "Verificare grosieră a OE, des numită flux de numerar liber. Include variația anuală a capitalului de lucru, pe care cadrul o tratează ca zgomot." },
+  { id: "nopat", t: "NOPAT", y: "", k: ["NOPAT"], d: "Profitul operațional după impozit: profit operațional × (1 minus rata efectivă de impozit), rata fiind limitată la intervalul 0 la 50%." },
+  { id: "roic", t: "ROIC (randamentul capitalului investit)", y: "", k: ["ROIC"], d: "NOPAT împărțit la capitalul investit. Cadrul îl calculează în două variante: tangibil și cu fond comercial." },
+  { id: "roic-tangibil", t: "ROIC tangibil", y: "1983", k: ["ROIC tangibil"], d: "NOPAT ÷ capital investit tangibil. Măsoară calitatea afacerii fără prețul plătit în achiziții (anexa din 1983; 2017; 2019)." },
+  { id: "capital-tangibil", t: "capital investit tangibil", y: "", k: [], d: "Capital de lucru net fără numerarul excedentar plus imobilizări corporale nete (plus alte active operaționale, când sunt raportate separat)." },
+  { id: "capital-neglijabil", t: "capital necesar neglijabil", y: "", k: [], d: "Stare, nu procent: capitalul tangibil este sub 5% din venituri sau negativ (parametru propus). Indiciu favorabil; procentul ROIC nu se forțează." },
+  { id: "fond-comercial", t: "fond comercial (goodwill)", y: "", k: [], d: "Diferența dintre prețul plătit într-o achiziție și valoarea justă a activelor nete identificabile ale firmei achiziționate." },
+  { id: "necorporale", t: "necorporale", y: "", k: [], d: "Imobilizări necorporale recunoscute în bilanț (mărci, licențe, relații cu clienții), de regulă din achiziții." },
+  { id: "roic-fc", t: "ROIC cu fond comercial", y: "1983", k: ["ROIC cu fond comercial"], d: "NOPAT ÷ (capital tangibil + fond comercial + necorporale). Arată randamentul pe prețul plătit, nu calitatea afacerii (1983)." },
+  { id: "roe", t: "ROE pe capital de început", y: "1977, 1979", k: ["ROE"], d: "Profit net ÷ capitalul propriu de la începutul anului. Stă lângă ROIC; în 1977 și 1979 Buffett judecă randamentul pe capital, nu creșterea EPS." },
+  { id: "roic-incremental", t: "ROIC incremental", y: "2007", k: ["ROIC incremental"], d: "ΔNOPAT ÷ Δcapital tangibil, cumulat pe cinci și zece ani. Arată cât aduce fiecare dolar nou investit; dacă profitul crește fără capital nou, este cel mai bun caz." },
+  { id: "identitate-crestere", t: "identitatea creșterii", y: "", k: [], d: "Creșterea implicită = rata de reinvestire × ROIC, comparată cu creșterea observată. O diferență mare cere verificarea achizițiilor, a levierului și a contabilității. Instrument al nostru." },
+  { id: "cagr", t: "CAGR (rata anuală compusă de creștere)", y: "", k: ["CAGR"], d: "(valoarea finală ÷ valoarea inițială) la puterea 1/ani, minus 1. Nu se calculează când un capăt este zero sau negativ." },
+  { id: "cv", t: "CV (coeficient de variație)", y: "", k: ["CV"], d: "Abaterea standard împărțită la medie. Folosit pentru stabilitatea OE; peste 0,5 este indiciu de instabilitate (parametru propus)." },
+  { id: "marja-op", t: "marja operațională", y: "", k: [], d: "Profit operațional ÷ venituri. Nivelul și tendința pe zece ani sunt dovezi pentru poarta 4." },
+  { id: "marja-bruta", t: "marja brută", y: "", k: [], d: "(Venituri minus costul vânzărilor) ÷ venituri. O scădere de peste trei puncte pe cinci ani slăbește dovada șanțului (parametru propus)." },
+  { id: "conversie", t: "conversie în numerar", y: "", k: [], d: "Cât din profitul contabil devine numerar: aici OE_jos ÷ profit net, pe fiecare an și ca mediană." },
+  { id: "datorie-neta", t: "datorie netă", y: "", k: [], d: "Datorii purtătoare de dobândă (termen lung, partea curentă, împrumuturi pe termen scurt) minus numerar și investiții pe termen scurt. Negativă înseamnă numerar peste datorii." },
+  { id: "acoperire", t: "acoperirea dobânzilor", y: "", k: [], d: "Profit operațional ÷ cheltuieli cu dobânzile. Câte ori acoperă profitul operațional dobânzile anului." },
+  { id: "stres", t: "test de stres", y: "", k: [], d: "Scenariu propus, nu regulă a lor: OE scade cu 50% doi ani la rând; se citesc acoperirea dobânzilor după șoc și anii necesari rambursării datoriei nete." },
+  { id: "scadente", t: "scadențe", y: "", k: [], d: "Sumele de datorie care ajung la plată în fiecare din următorii cinci ani, din notele la situațiile financiare (10-K), cu pagina citată." },
+  { id: "vi", t: "VI (valoare intrinsecă)", y: "1992, 1994", k: ["VI", "VI_jos", "VI_sus"], d: "Valoarea actualizată a numerarului care poate fi scos din afacere pe durata vieții ei. Este o estimare, dată ca interval VI_jos la VI_sus, cu două cifre semnificative." },
+  { id: "dcf", t: "DCF (actualizarea fluxurilor de numerar)", y: "", k: ["DCF"], d: "Suma fluxurilor viitoare actualizate cu rata r. Modelul pe zece ani cu valoare terminală este instrumentul nostru, nu metoda lor; rezultatul se dă grosier." },
+  { id: "dcf-invers", t: "DCF invers", y: "2000", k: ["DCF invers"], d: "Creșterea pe zece ani pe care o presupune prețul de azi, pusă lângă CAGR-ul istoric (2000: câte păsări sunt în tufiș și când)." },
+  { id: "perpetuitate", t: "perpetuitate", y: "1991", k: [], d: "Valoare = OE × (1 + g) ÷ (r minus g). Exemplul din 1991: un profit de 1 milion care crește cu 6%, actualizat cu 10%, valorează 25 de milioane." },
+  { id: "r", t: "r (rata de actualizare)", y: "2000", k: [], d: "max(randamentul obligațiunii de stat lungi în moneda de raportare, podeaua de 6% în USD). Fără primă de risc ascunsă; grila folosește r, r + 2 și r + 4 puncte." },
+  { id: "g", t: "g (creșterea explicită)", y: "", k: [], d: "Creșterea OE pe primii zece ani: cel mult CAGR-ul istoric al OE, plafonată la 8%; zero dacă CAGR-ul este negativ (parametru propus)." },
+  { id: "g-terminal", t: "g terminal", y: "", k: [], d: "Creșterea după anul zece, între 2 și 3% (parametru propus)." },
+  { id: "grila", t: "grila de sensibilitate", y: "", k: [], d: "Tabelul VI pe acțiune pentru mai multe valori r (rânduri) și g (coloane), cu OE_jos și OE_sus. Minimul și maximul rezonabil dau intervalul, nu un punct." },
+  { id: "marja-siguranta", t: "marja de siguranță", y: "1992, 2019", k: [], d: "Distanța cerută între valoare și preț. Buffett nu dă un procent; benzile cadrului (afacere 30 la 50%, franciză 15 la 25%) sunt parametri propuși." },
+  { id: "pret-platit", t: "prețul pe care l-aș plăti", y: "", k: [], d: "Judecata omului [J], scrisă cu motivul, pornind de la VI_jos × (1 minus marja). Sesiunea arată calculul, omul scrie cifra." },
+  { id: "franciza", t: "franciză", y: "1991", k: [], d: "Produs necesar sau dorit, fără substitut apropiat în mintea clientului, cu preț nereglementat. Franciza tolerează proasta administrare; afacerea obișnuită nu." },
+  { id: "moat", t: "moat / șanț", y: "2007", k: ["moat"], d: "Avantajul durabil care protejează randamentele mari, pentru că orice castel profitabil este atacat: cost scăzut, brand, scară, efect de rețea, costuri de schimbare, licențe." },
+  { id: "test-capital", t: "testul capitalului", y: "1998", k: [], d: "Dacă un rival capabil ar primi o sumă foarte mare ca să ia afacerea, ar reuși? Răspunsul „da” pică poarta 4 (Florida 1998)." },
+  { id: "manager-vedeta", t: "manager-vedetă", y: "2007", k: [], d: "O afacere al cărei succes depinde de un manager extraordinar nu este o afacere extraordinară." },
+  { id: "inevitabili", t: "inevitabili", y: "1996", k: [], d: "Companii care vor domina domeniul lor timp de decenii (exemplele lui: Coca-Cola, Gillette), opuse impostorilor care doar par așa." },
+  { id: "test-dolar", t: "testul dolarului", y: "Owner's Manual 9", k: [], d: "Pe cinci ani, creșterea valorii contabile pe acțiune a depășit S&P 500 cu dividende, iar acțiunea s-a tranzacționat constant peste valoarea contabilă? Varianta din 1984 rămâne doar indiciu." },
+  { id: "rascumparari", t: "răscumpărări", y: "1984, 2011", k: [], d: "Achiziția propriilor acțiuni de la acționari. Au sens doar cu lichiditate suficientă și la un preț sub VI estimată conservator (2011: ce e deștept la un preț e prostesc la altul)." },
+  { id: "diluare", t: "diluare", y: "Owner's Manual 10", k: [], d: "Creșterea numărului de acțiuni prin emisiuni, opțiuni sau SBC, care micșorează cota fiecărui acționar. Filtrul K5 o urmărește." },
+  { id: "look-through", t: "look-through (câștiguri)", y: "1990, 1991", k: ["look-through"], d: "Cota ta din profiturile reținute ale participațiilor plus dividendele primite, după impozitul ipotetic. Măsura progresului unui portofoliu." },
+  { id: "registru-promisiuni", t: "registrul promisiunilor", y: "1983, 2002", k: [], d: "Promisiunile managementului din scrisori și 10-K, cu citat, dată, termen și țintă, verificate la scadență: îndeplinită, parțial, ratată, retrasă, abandonată tăcit, neverificabilă." },
+  { id: "abandon-tacit", t: "abandon tăcit", y: "", k: [], d: "O promisiune care dispare din următoarele două rapoarte fără nicio explicație." },
+  { id: "tinta-mutata", t: "ținta mutată", y: "", k: [], d: "Metrica promisă este redefinită între momentul promisiunii și momentul verificării." },
+  { id: "candoare", t: "candoare", y: "1983, 2002", k: [], d: "Raportează ce ai vrea să afli dacă rolurile ar fi inversate (1983, principiul 12; Owner's Manual 12). Notele de neînțeles indică de obicei un management de neîncredere (2002)." },
+  { id: "imperativ", t: "imperativul instituțional", y: "1989", k: [], d: "Tendința organizațiilor de a imita colegii, de a justifica orice achiziție cu studii și de a folosi tot numerarul disponibil." },
+  { id: "k1", t: "K1: record scurt sau inconsistent", y: "1979", k: ["K1"], d: "Respinge sub 7 exerciții publice, cu pierderi în mai mult de 2 din ultimii 10 ani sau cu redresare declarată. Criteriile de achiziție cer „demonstrated consistent earning power”." },
+  { id: "k2", t: "K2: industrie în schimbare rapidă", y: "1992, 1996, 2007", k: ["K2"], d: "Afacere pe care nu o poți descrie peste zece ani. Indicii: cicluri de produs sub trei ani, cercetare peste 15% din vânzări, clienți foarte concentrați. Răspunsul este al omului." },
+  { id: "k3", t: "K3: randamente slabe pe capital", y: "2007", k: ["K3"], d: "ROE median sub 12% sau profit care crește doar cu capital în creștere proporțională (categoria groaznică din 2007)." },
+  { id: "k4", t: "K4: datorie", y: "", k: ["K4"], d: "Datorie netă peste 5 ori CFO minus capex sau acoperirea dobânzilor sub 3 (praguri propuse; criteriile cer „little or no debt”)." },
+  { id: "k5", t: "K5: diluare", y: "Owner's Manual 10, 2014", k: ["K5"], d: "Acțiunile diluate cresc cu peste 2% pe an pe cinci ani sau SBC depășește 10% din venituri." },
+  { id: "k6", t: "K6: candoare slabă", y: "2002", k: ["K6"], d: "„Profit ajustat” ca măsură principală, restatări, note de neînțeles, promisiuni mereu „făcute”. Se verifică pe ultimul comunicat de rezultate și pe scrisoarea către acționari." },
+  { id: "k7", t: "K7: în afara cadrului", y: "2002, 2025", k: ["K7"], d: "Bănci, asigurători, structuri cu derivate masive, companii fără situații auditate accesibile; plus filtrul reputațional din 2025." },
+  { id: "reg-F", t: "[F] fapt", y: "", k: [], d: "Cifră din raport, cu documentul, exercițiul, eticheta XBRL, unitatea și linkul. Stil fix: chenar plin pe fond neutru." },
+  { id: "reg-C", t: "[C] calcul", y: "", k: [], d: "Rezultat al unei formule vizibile aplicate pe fapte [F]. Stil fix: chenar subțire, fără fond." },
+  { id: "reg-J", t: "[J] judecată", y: "", k: [], d: "Text sau alegere a omului, cu autor și dată. O judecată nu arată niciodată ca un fapt. Stil fix: chenar întrerupt." },
+  { id: "reg-AI", t: "[AI] propus de AI", y: "", k: [], d: "Draft propus de sesiune, cu citat verbatim din document, neconfirmat de om. Nu trece singur o poartă. Stil fix: chenar punctat." },
+  { id: "v-trece", t: "trece", y: "", k: [], d: "Verdict: poarta este îndeplinită cu datele și judecățile disponibile, după regulile secțiunii respective din cadru." },
+  { id: "v-pica", t: "pică", y: "", k: [], d: "Verdict: o condiție de picare din cadru este îndeplinită (de exemplu acoperirea dobânzilor sub 1)." },
+  { id: "v-judecata", t: "necesită judecată", y: "", k: [], d: "Verdict: cifrele nu decid singure; lipsește un text al omului sau dovezile și judecata nu concordă." },
+  { id: "v-insuf", t: "date insuficiente", y: "", k: [], d: "Verdict: lipsesc datele minime (de exemplu sub 7 exerciții). Are precedență față de celelalte verdicte." },
+  { id: "v-inchisa", t: "închisă", y: "", k: [], d: "Starea porții 5 până când omul scrie textele porții 2 și există preț și randament cu dată: prețul vine ultimul." },
+  { id: "10k", t: "10-K", y: "", k: ["10-K"], d: "Raportul anual depus la SEC, cu situațiile financiare auditate, notele, MD&A și factorii de risc." },
+  { id: "10q", t: "10-Q", y: "", k: ["10-Q"], d: "Raportul trimestrial depus la SEC, cu situații financiare neauditate." },
+  { id: "8k", t: "8-K", y: "", k: ["8-K"], d: "Raport curent depus la SEC pentru evenimente importante, inclusiv comunicatele de rezultate." },
+  { id: "def14a", t: "DEF 14A (proxy)", y: "", k: ["DEF 14A"], d: "Declarația pentru adunarea acționarilor: compensația conducerii, metricile bonusurilor, proprietatea insiderilor." },
+  { id: "xbrl", t: "XBRL", y: "", k: ["XBRL"], d: "Formatul electronic în care companiile etichetează fiecare cifră din raport (de exemplu us-gaap:Revenues), ca să poată fi citită automat." },
+  { id: "companyfacts", t: "companyfacts", y: "", k: ["companyfacts"], d: "API-ul SEC care întoarce toate faptele XBRL depuse de o companie, pe CIK. Nu conține notele text (de exemplu scadențele)." },
+  { id: "edgar", t: "EDGAR", y: "", k: ["EDGAR"], d: "Sistemul public al SEC pentru depunerile companiilor listate în SUA." },
+  { id: "esef", t: "ESEF", y: "", k: ["ESEF"], d: "Formatul electronic european unic pentru rapoartele anuale (XHTML cu etichete), obligatoriu în UE din exercițiul 2020 sau 2021." },
+  { id: "fy", t: "FY (exercițiu fiscal)", y: "", k: ["FY"], d: "Anul contabil al companiei; poate să nu coincidă cu anul calendaristic (Apple încheie în septembrie)." },
+  { id: "sbc", t: "SBC (compensație în acțiuni)", y: "1992, 1998", k: ["SBC"], d: "Plata angajaților în acțiuni sau opțiuni. Este cost real și nu se adaugă înapoi la OE (1992, 1998, 2015, 2016, 2018)." },
+  { id: "eps", t: "EPS (profit pe acțiune)", y: "1977, 1979", k: ["EPS"], d: "Profit net ÷ numărul de acțiuni. Singur nu măsoară nimic: creșterea lui poate veni doar din capital reținut." },
+  { id: "ebitda", t: "EBITDA", y: "2002, 2015", k: ["EBITDA"], d: "Profit înainte de dobânzi, impozite, depreciere și amortizare. Nu se folosește: ignoră amortizarea, care este cost real (2002, 2015)." },
+  { id: "gaap", t: "GAAP", y: "", k: ["GAAP"], d: "Principiile contabile general acceptate din SUA (US GAAP), standardul situațiilor depuse la SEC." },
+  { id: "ifrs", t: "IFRS", y: "", k: ["IFRS"], d: "Standardele internaționale de raportare financiară, folosite în UE și pe BVB." },
+  { id: "split", t: "split", y: "", k: ["split"], d: "Împărțirea acțiunilor (de exemplu 4 la 1). Istoricul numărului de acțiuni se ajustează consecvent, cu notă." },
+  { id: "restatare", t: "restatare", y: "", k: [], d: "Valoarea unei perioade este modificată într-o depunere ulterioară. Cadrul folosește cea mai recentă și o notează în jurnal." },
+  { id: "suma-partiala", t: "sumă parțială", y: "", k: [], d: "Valoare obținută prin adunarea componentelor raportate când totalul lipsește; marcată cu „p” în tabel." },
+  { id: "parametru", t: "parametru propus", y: "", k: [], d: "Prag sau ipoteză fixă a cadrului, instrument al nostru, niciodată prezentat ca regulă a lui Buffett sau Munger." },
+  { id: "scenariu", t: "scenariu", y: "", k: [], d: "Rezultat cu alte valori decât parametrii propuși, cerute de utilizator; se afișează lângă valoarea implicită, nu în locul ei." },
+  { id: "dosar", t: "dosar înghețat", y: "", k: [], d: "Versiune salvată și datată a analizei (status „frozen”), care nu se mai modifică; o schimbare produce o versiune nouă." },
+  { id: "post-mortem", t: "post-mortem", y: "1989, 2024", k: [], d: "Recitirea dosarului la un an și la trei ani: paragraful de decizie lângă faptele noi, cu ce ai greșit și ce ai omis." },
+  { id: "abtineri", t: "registrul abținerilor", y: "1991", k: [], d: "Companiile analizate și refuzate, cu data și motivul; greșelile de omisiune se țin în evidență (1991)." }
+];
+const TERM = {};
+GLOSSARY.forEach(t => { TERM[t.id] = t; });
+
+/* ===== Small helpers ===== */
+function esc(s) { return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+const isNum = v => typeof v === "number" && isFinite(v);
+function has(v) {
+  if (v === null || v === undefined || v === "") return false;
+  if (Array.isArray(v)) return v.some(has);
+  if (typeof v === "object") return Object.values(v).some(has);
+  return true;
+}
+const obj = v => (v && typeof v === "object" && !Array.isArray(v)) ? v : {};
+const arr = v => Array.isArray(v) ? v : [];
+const MISSING = '<span class="muted">lipsă</span>';
+const TODO = '<span class="todo">de completat de om</span>';
+const NF = {};
+function nf(dec) { return NF[dec] || (NF[dec] = new Intl.NumberFormat("ro-RO", { minimumFractionDigits: dec, maximumFractionDigits: dec })); }
+const NF_SIG2 = new Intl.NumberFormat("ro-RO", { maximumSignificantDigits: 2 });
+const NF_SIGNED = new Intl.NumberFormat("ro-RO", { minimumFractionDigits: 1, maximumFractionDigits: 1, signDisplay: "exceptZero" });
+function num(v, dec = 0) { return isNum(v) ? nf(dec).format(v) : MISSING; }
+function pct(v, dec = 1) { return isNum(v) ? nf(dec).format(v * 100) + "%" : MISSING; }
+function pctSigned(v) { return isNum(v) ? NF_SIGNED.format(v * 100) + "%" : MISSING; }
+function times(v) { return isNum(v) ? nf(2).format(v) + "x" : MISSING; }
+function mil(v, scale) { return isNum(v) ? nf(0).format(v / (scale || 1e6)) : MISSING; }
+function sig2(v) { return isNum(v) ? NF_SIG2.format(v) : MISSING; }
+function txt(v) { return has(v) ? esc(v) : MISSING; }
+/* Rates may arrive as fractions (0.06) or as points (6) */
+function rate(v) { return isNum(v) ? (Math.abs(v) < 1 ? pct(v, 1) : nf(1).format(v) + "%") : MISSING; }
+function safeUrl(u) { return (typeof u === "string" && /^https?:\/\//i.test(u)) ? u : null; }
+function link(u, label) { const s = safeUrl(u); return s ? `<a href="${esc(s)}" target="_blank" rel="noopener noreferrer">${esc(label || s)}</a>` : txt(label); }
+function fmtUnit(v, unit, scale) {
+  if (unit === "USD") return mil(v, scale);
+  if (unit === "x") return times(v);
+  if (unit === "%") return pct(v, 1);
+  return num(v, 2);
+}
+function fold(s) { return String(s).normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); }
+
+/* Wrap glossary abbreviations found in plain text with <abbr>; the text is escaped piece by piece */
+const ABBR_MAP = {};
+GLOSSARY.forEach(t => t.k.forEach(k => { ABBR_MAP[k] = t; }));
+const ABBR_RE = new RegExp("(?<![\\p{L}\\p{N}_])(" + Object.keys(ABBR_MAP).sort((a, b) => b.length - a.length)
+  .map(k => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|") + ")(?![\\p{L}_])", "gu");
+function shortDef(t) { const i = t.d.indexOf(". "); return i > 0 ? t.d.slice(0, i + 1) : t.d; }
+function ab(s) {
+  if (!has(s)) return MISSING;
+  s = String(s);
+  let out = "", last = 0;
+  s.replace(ABBR_RE, (m, g1, off) => {
+    const t = ABBR_MAP[m];
+    out += esc(s.slice(last, off)) + `<abbr data-term="${t.id}" title="${esc(shortDef(t))}" tabindex="0">${esc(m)}</abbr>`;
+    last = off + m.length;
+    return m;
+  });
+  return out + esc(s.slice(last));
+}
+const NOTE_ABBR = '<p class="note">Termenii subliniați au explicații în Glosar.</p>';
+
+function badge(map, v) { const m = map[v] || { l: has(v) ? String(v) : "lipsă", c: "v-insuf" }; return `<span class="badge ${m.c}">${esc(m.l)}</span>`; }
+const vBadge = v => badge(VERDICT, v);
+function regChip(r) { return `<span class="reg reg-${esc(r)}" data-term="reg-${esc(r)}" title="${esc(REG[r] || r)}" role="button" tabindex="0">[${esc(r)}]</span>`; }
+function section(id, title, regs, body) {
+  return `<section class="card" id="${id}"><header class="sh"><h2>${title}</h2>${regs.map(regChip).join(" ")}</header>${body}</section>`;
+}
+function tile(label, value, sub, textual) {
+  return `<div class="tile"><div class="tl">${label}</div><div class="tv${textual ? " txt" : ""}">${value}</div>${sub ? `<div class="ts">${sub}</div>` : ""}</div>`;
+}
+let uid = 0;
+const nextId = p => `${p}${++uid}`;
+
+/* ===== Data: bundled (window.SIXGATES_DATA) plus localStorage imports ===== */
+function keyOf(o) { const c = obj(o.company), a = obj(o.analysis); return `${c.ticker}|${a.date}|${a.version}`; }
+function validate(o) {
+  if (!o || typeof o !== "object" || Array.isArray(o)) return "nu este un obiect JSON";
+  if (typeof o.schema_version !== "string" || !o.schema_version.startsWith("sixgates-analysis")) return "schema_version lipsă sau diferită de „sixgates-analysis…”";
+  if (!has(obj(o.company).ticker)) return "company.ticker lipsă";
+  if (!has(obj(o.analysis).date) || !has(obj(o.analysis).version)) return "analysis.date sau analysis.version lipsă";
+  return null;
+}
+function loadImports() {
+  try { const v = JSON.parse(localStorage.getItem(STORE_KEY) || "[]"); return Array.isArray(v) ? v.filter(o => !validate(o)) : []; }
+  catch (e) { return []; }
+}
+function saveImports(list) {
+  try { localStorage.setItem(STORE_KEY, JSON.stringify(list)); return true; }
+  catch (e) { return false; }
+}
+/* Returns {ticker: [{data, origin, key}] sorted by date then version} ; bundled data wins on equal keys */
+function collect() {
+  const byKey = new Map();
+  loadImports().forEach(o => byKey.set(keyOf(o), { data: o, origin: "importat" }));
+  arr(window.SIXGATES_DATA).forEach(o => { if (!validate(o)) byKey.set(keyOf(o), { data: o, origin: "inclus în build" }); });
+  const groups = {};
+  byKey.forEach((e, k) => { e.key = k; const t = String(e.data.company.ticker); (groups[t] = groups[t] || []).push(e); });
+  Object.values(groups).forEach(list => list.sort((a, b) =>
+    String(a.data.analysis.date).localeCompare(String(b.data.analysis.date)) || (Number(a.data.analysis.version) - Number(b.data.analysis.version))));
+  return groups;
+}
+
+/* ===== State and routing (hash = ticker|key) ===== */
+const state = { groups: {}, ticker: null, key: null, issueFilter: "toate" };
+function readHash() {
+  const h = decodeURIComponent(location.hash.slice(1));
+  if (!h) return;
+  const [t, ...rest] = h.split("|");
+  state.ticker = t; state.key = rest.length ? h : null;
+}
+function writeHash() { const h = state.key || state.ticker || ""; if (decodeURIComponent(location.hash.slice(1)) !== h) history.replaceState(null, "", "#" + encodeURIComponent(h)); }
+
+function render() {
+  state.groups = collect();
+  const tickers = Object.keys(state.groups).sort();
+  if (!state.ticker || !state.groups[state.ticker]) state.ticker = tickers[0] || null;
+  const list = state.groups[state.ticker] || [];
+  if (!list.some(e => e.key === state.key)) state.key = list.length ? list[list.length - 1].key : null;
+  renderSidebar(tickers);
+  const view = document.getElementById("view");
+  if (!state.ticker) {
+    view.innerHTML = `<div class="card empty"><h1>Nicio analiză încărcată</h1><p>Rulează <code>python3 dashboard/build.py</code> și deschide <code>sixgates_dashboard.html</code>, sau folosește „Importă JSON”.</p></div>`;
+    return;
+  }
+  const idx = list.findIndex(e => e.key === state.key);
+  view.innerHTML = renderCompany(list[idx], list, idx > 0 ? list[idx - 1] : null);
+  writeHash();
+}
+
+function renderSidebar(tickers) {
+  const sb = document.getElementById("sidebar"), sel = document.getElementById("coSel");
+  sb.innerHTML = tickers.map(t => {
+    const list = state.groups[t], last = list[list.length - 1].data;
+    const gates = arr(last.gates);
+    const dots = GATE_ORDER.map(id => {
+      const g = gates.find(x => x.id === id) || {};
+      const m = VERDICT[g.verdict] || { l: "lipsă", c: "v-insuf" };
+      return `<span class="dot ${m.c}" title="${esc(GATE_SHORT[id] + ": " + m.l)}" aria-label="${esc(GATE_SHORT[id] + ": " + m.l)}"></span>`;
+    }).join("");
+    return `<button class="co" type="button" data-ticker="${esc(t)}" aria-current="${t === state.ticker}">
+      <div class="cn">${txt(obj(last.company).name)}</div>
+      <div class="cm">${esc(t)} · ${txt(obj(last.analysis).date)}${list.length > 1 ? ` · ${list.length} versiuni` : ""}</div>
+      <div class="dots">${dots}</div></button>`;
+  }).join("");
+  sel.innerHTML = tickers.map(t => {
+    const last = state.groups[t][state.groups[t].length - 1].data;
+    return `<option value="${esc(t)}"${t === state.ticker ? " selected" : ""}>${esc(t)}: ${esc(obj(last.company).name || "")} (${esc(obj(last.analysis).date || "")})</option>`;
+  }).join("");
+}
+
+/* ===== Company view ===== */
+function renderCompany(entry, list, prev) {
+  const a = entry.data;
+  return [
+    renderHeader(a, entry, list, prev),
+    renderPre(a), renderGates(a), renderFacts(a), renderGate3(a), renderSurvival(a),
+    renderGate2(a), renderGate4(a), renderMgmt(a), renderGate5(a), renderDecision(a),
+    renderIssues(a), renderParams(a), renderSources(a)
+  ].join("");
+}
+
+function renderHeader(a, entry, list, prev) {
+  const c = obj(a.company), an = obj(a.analysis), w = obj(an.window);
+  const src = arr(a.sources)[0];
+  const status = an.status === "draft" ? "draft (ciornă)" : (an.status === "frozen" ? "înghețat (frozen)" : an.status);
+  const meta = [
+    ["Ticker", txt(c.ticker)], ["Piață", txt(c.market)], ["Monedă", txt(c.currency)], ["Sfârșitul exercițiului", txt(c.fiscal_year_end)],
+    ["Standard", ab(c.standard)], ["CIK", txt(c.cik)], ["Data analizei", txt(an.date)], ["Versiune", has(an.version) ? "v" + esc(an.version) : MISSING],
+    ["Status", txt(status)], ["Versiunea cadrului", txt(an.framework_version)], ["Fereastră", has(w.from) ? `${ab("FY" + w.from)} la ${ab("FY" + w.to)}` : MISSING],
+    ["Origine", esc(entry.origin)]
+  ].map(([k, v]) => `<div><b>${k}</b>${v}</div>`).join("");
+  const verSel = list.length > 1
+    ? `<label class="small muted" for="verSel">Versiune</label> <select id="verSel" class="no-print">${list.map(e =>
+        `<option value="${esc(e.key)}"${e.key === entry.key ? " selected" : ""}>${esc(e.data.analysis.date)} v${esc(e.data.analysis.version)} (${esc(e.origin)})</option>`).join("")}</select>`
+    : "";
+  return `<section class="card" id="antet">
+    <h1>${txt(c.name)} <span class="muted">(${txt(c.ticker)})</span></h1>
+    <p class="notice">${txt(an.notice)}</p>
+    <div class="meta">${meta}</div>
+    <div><b class="small muted">Autor:</b> ${txt(an.author)}</div>
+    <div class="small">Sursă principală: ${src ? link(src.url, src.title) : MISSING}</div>
+    <div class="row">${verSel}</div>
+    ${renderDiff(a, prev)}
+    <div class="legend" style="margin-top:8px"><span>Registre:</span>${["F", "C", "J", "AI"].map(r => regChip(r) + " " + esc(REG[r])).join(" &nbsp; ")}</div>
+  </section>`;
+}
+
+function renderDiff(a, prev) {
+  if (!prev) return `<div class="diff">Diferențe față de versiunea anterioară: <span class="muted">prima versiune</span></div>`;
+  const p = prev.data, items = [];
+  const old = {}; arr(p.gates).forEach(g => { old[g.id] = g.verdict; });
+  arr(a.gates).forEach(g => {
+    if (old[g.id] !== g.verdict) items.push(`${esc(GATE_SHORT[g.id] || g.id)}: ${vBadge(old[g.id])} -&gt; ${vBadge(g.verdict)}`);
+  });
+  const d0 = obj(p.preanalysis).decision, d1 = obj(a.preanalysis).decision;
+  if (d0 !== d1) items.push(`Decizia pre-analizei: ${badge(DECISION, d0)} -&gt; ${badge(DECISION, d1)}`);
+  return `<div class="diff"><strong>Diferențe față de versiunea anterioară</strong> (${esc(p.analysis.date)} v${esc(p.analysis.version)}):
+    ${items.length ? `<ul>${items.map(i => `<li>${i}</li>`).join("")}</ul>` : ` <span class="muted">niciun verdict schimbat</span>`}</div>`;
+}
+
+function renderPre(a) {
+  const pre = obj(a.preanalysis);
+  const chips = arr(pre.filters).map(f => {
+    const id = nextId("kd");
+    return { chip: `<button class="kchip" type="button" data-toggle="${id}" aria-expanded="false"><b>${esc(f.id || "")}</b> ${ab(f.name)} ${badge(KSTATE, f.state)}</button>`,
+      detail: `<div class="kdetail" id="${id}" hidden><b>${ab(f.id)}</b>: ${ab(f.fact)}<br><span class="muted">Sursă:</span> ${ab(f.source)}</div>` };
+  });
+  const body = `<div class="row" style="margin:0 0 8px">Decizie: ${badge(DECISION, pre.decision)}${has(pre.decided_at) ? ` <span class="small muted">la ${esc(pre.decided_at)}</span>` : ""}</div>
+    <div class="kchips">${chips.map(c => c.chip).join("")}</div>${chips.map(c => c.detail).join("")}
+    <p class="note">Apasă pe un filtru pentru fapt și sursă. Termenii subliniați au explicații în Glosar.</p>`;
+  return section("preanaliza", "Pre-analiză", ["F", "C", "J"], body);
+}
+
+function renderGates(a) {
+  const gates = arr(a.gates);
+  const cards = GATE_ORDER.map(id => {
+    const g = gates.find(x => x.id === id);
+    if (!g) return `<div class="gate v-insuf"><h3>${esc(GATE_SHORT[id])} ${vBadge(null)}</h3><p class="muted">poarta lipsește din fișier</p></div>`;
+    const m = VERDICT[g.verdict] || { c: "v-insuf" };
+    const locked = id === "G5" && (obj(a.gate5).locked || g.verdict === "inchisa");
+    const pend = arr(g.pending_judgments);
+    return `<div class="gate ${m.c}"><h3><span>${locked ? LOCK_SVG + " " : ""}${ab(g.name || GATE_SHORT[id])}</span>${vBadge(g.verdict)}</h3>
+      <p>${ab(g.reason)}</p>
+      ${locked ? `<p class="small"><b>Motivul închiderii:</b> ${ab(obj(a.gate5).lock_reason)}</p>` : ""}
+      <div class="small muted">Judecăți de completat</div>
+      ${pend.length ? `<ul>${pend.map(p => `<li>${ab(p)}</li>`).join("")}</ul>` : `<p class="small muted">niciuna</p>`}</div>`;
+  }).join("");
+  return section("porti", "Porți", ["C", "J"], `<div class="gates">${cards}</div><p class="note">Fără scor compozit: fiecare poartă are verdictul ei. Termenii subliniați au explicații în Glosar.</p>`);
+}
+
+/* Generic table with years as columns; rows may expand to show a detail line */
+function yearTable(years, rows, labelFn, cellFn, detailFn) {
+  const head = `<thead><tr><th class="sticky">Indicator</th>${years.map(y => `<th>FY${esc(y)}</th>`).join("")}</tr></thead>`;
+  const body = rows.map(r => {
+    const cells = years.map(y => `<td>${cellFn(r, String(y))}</td>`).join("");
+    if (!detailFn) return `<tr><th class="sticky">${labelFn(r)}</th>${cells}</tr>`;
+    const id = nextId("rd");
+    return `<tr><th class="sticky"><button class="rowbtn" type="button" data-toggle="${id}" aria-expanded="false">${labelFn(r)}</button></th>${cells}</tr>
+      <tr class="detail" id="${id}" hidden><td colspan="${years.length + 1}"><div class="detail-in">${detailFn(r)}</div></td></tr>`;
+  }).join("");
+  return `<div class="tw"><table>${head}<tbody>${body}</tbody></table></div>`;
+}
+
+function renderFacts(a) {
+  const f = obj(a.facts), years = arr(f.years), scale = isNum(f.display_scale) ? f.display_scale : 1e6;
+  const scaleLbl = f.display_scale_label || "milioane";
+  const cell = (r, y) => {
+    const st = obj(r.status)[y], v = obj(r.values)[y];
+    let h = isNum(v) ? mil(v, scale) : MISSING;
+    if (st === "necesita_verificare") h += '<sup title="necesită verificare">?</sup>';
+    else if (st === "suma_partiala") h += '<sup title="sumă parțială">p</sup>';
+    return h;
+  };
+  const label = r => ab(r.label || r.concept) + (r.unit && r.unit !== "USD" ? ` <span class="small muted">(${esc(scaleLbl)} ${esc(r.unit)})</span>` : "");
+  const tags = arr(f.rows).map(r => `<li>${ab(r.label || r.concept)}: ${arr(r.source_tags).length ? arr(r.source_tags).map(esc).join(", ") : MISSING}</li>`).join("");
+  const body = `${yearTable(years, arr(f.rows), label, cell)}
+    <p class="foot"><sup>?</sup> necesită verificare: valori divergente între depuneri, vezi jurnalul problemelor de date. <sup>p</sup> sumă parțială: totalul este suma componentelor raportate.${has(f.note) ? `<br>Notă: ${ab(f.note)}` : ""}</p>
+    ${NOTE_ABBR}
+    <details><summary>Etichete XBRL și surse</summary><ul class="small">${tags}</ul></details>`;
+  return section("fapte", `Fapte pe zece ani <span class="small muted">(${esc(f.unit || "USD")} ${esc(scaleLbl)})</span>`, ["F"], body);
+}
+
+/* Cell for calculated rows: a null value with a flag shows a short state, full text on hover and in the row detail */
+function shortFlag(f) { const s = fold(f); if (s.includes("neglijabil")) return "neglijabil"; if (s.startsWith("lips")) return "lipsă"; return "verif."; }
+function calcCell(scale) {
+  return (r, y) => {
+    const v = obj(r.values)[y], f = obj(r.flags)[y];
+    if (!isNum(v)) return has(f) ? `<span class="flagged" title="${esc(f)}">${esc(shortFlag(f))}</span>` : MISSING;
+    return fmtUnit(v, r.unit, scale) + (has(f) ? `<sup title="${esc(f)}">?</sup>` : "");
+  };
+}
+function calcDetail(r) {
+  const flags = Object.entries(obj(r.flags)).filter(([, v]) => has(v));
+  return `<div><b>Formula:</b> ${ab(r.formula)} <span class="muted">(unitate: ${txt(r.unit)}, registru ${txt(r.register)})</span></div>` +
+    (flags.length ? `<ul>${flags.map(([y, v]) => `<li>${ab("FY" + y)}: ${ab(v)}</li>`).join("")}</ul>` : `<div class="muted">fără marcaje</div>`);
+}
+const calcLabel = r => ab(r.label || r.metric);
+const factScale = a => isNum(obj(a.facts).display_scale) ? a.facts.display_scale : 1e6;
+
+function incTile(label, inc) {
+  inc = obj(inc);
+  let v, textual = false;
+  if (isNum(inc.value)) v = inc.value > 2 ? "&gt; 200%" : pct(inc.value);
+  else { v = ab(inc.state); textual = true; }
+  const sub = [has(inc.years) ? esc(inc.years) : "", isNum(inc.delta_nopat) ? `ΔNOPAT ${mil(inc.delta_nopat)}; Δcapital ${mil(inc.delta_capital)} (USD mil.)` : ""].filter(Boolean).join("<br>");
+  return tile(label, v, sub, textual);
+}
+
+function judgedBox(label, j) {
+  j = obj(j);
+  const filled = has(j.value);
+  return `<div class="jbox"><div class="sh"><strong>${label}</strong>${regChip("J")}</div>
+    ${filled ? `<div>${esc(j.value)}</div><p class="jmeta">Autor: ${txt(j.author)}, data: ${txt(j.date)}</p>` : TODO}
+    ${has(j.reason) ? `<div class="small muted">${ab(j.reason)}</div>` : ""}</div>`;
+}
+
+function renderGate3(a) {
+  const g = obj(a.gate3), years = arr(g.years), n = years.length || 10, inc = obj(g.incremental);
+  const tiles = [
+    tile(ab("CAGR OE_jos"), pct(g.oe_low_cagr), years.length ? `${ab("FY" + years[0])} la ${ab("FY" + years[n - 1])}` : ""),
+    tile(ab("CAGR acțiuni diluate"), pctSigned(g.share_cagr), "pe an"),
+    tile(ab("Ani cu ROIC peste prag sau capital neglijabil"), isNum(g.roic_above_hurdle_years) ? `${g.roic_above_hurdle_years} din ${n}` : MISSING, "prag: 6% USD (parametru propus)"),
+    tile("Ani cu capital neglijabil", isNum(g.negligible_capital_years) ? `${g.negligible_capital_years} din ${n}` : MISSING, "capital tangibil sub 5% din venituri"),
+    incTile(ab("ROIC incremental 5 ani"), inc["5y"]),
+    incTile(ab("ROIC incremental 10 ani"), inc["10y"])
+  ].join("");
+  const body = `<div class="tiles">${tiles}</div>${judgedBox("Categoria 2007", g.category)}
+    ${yearTable(years, arr(g.rows), calcLabel, calcCell(factScale(a)), calcDetail)}
+    <p class="note">USD milioane, cu excepția rândurilor în x, % sau USD pe acțiune. Apasă pe numele unui rând pentru formulă și marcaje. Termenii subliniați au explicații în Glosar.</p>`;
+  return section("poarta3", "Poarta 3: randamente pe capital", ["C"], body);
+}
+
+const THRESH = {
+  surv_pass_net_debt_to_oe: ["trece: datorie netă / OE_jos cel mult", times],
+  surv_fail_net_debt_to_oe: ["pică: datorie netă / OE_jos peste", times],
+  surv_pass_cover: ["trece: acoperirea dobânzilor cel puțin", times],
+  surv_fail_cover: ["pică: acoperirea dobânzilor sub", times],
+  stress_cover_min: ["stres: acoperirea după șoc cel puțin", times],
+  stress_years_to_repay_max: ["stres: ani de rambursare cel mult", v => num(v, 1)]
+};
+function renderSurvival(a) {
+  const s = obj(a.survival), l = obj(s.latest), st = obj(s.stress), scale = factScale(a);
+  const yr = has(l.year) ? ab("FY" + l.year) : "";
+  const tiles = [
+    tile("Datorie netă (USD mil.)", mil(l.net_debt, scale), yr),
+    tile(ab("Datorie netă / OE_jos"), times(l.net_debt_to_oe_low), yr),
+    tile(ab("Datorie netă / OE_jos minim (10 ani)"), times(l.net_debt_to_min_oe_low), "varianta conservatoare"),
+    tile("Acoperirea dobânzilor", times(l.interest_cover), yr)
+  ].join("");
+  const stress = `<h3>Test de stres <span class="small muted">(parametru propus)</span></h3>
+    <dl class="kv"><dt>Ipoteza</dt><dd>${ab(st.assumption)}</dd>
+    <dt>Acoperire după șoc</dt><dd>${times(st.interest_cover_after_shock)}</dd>
+    <dt>Ani de rambursare</dt><dd>${isNum(st.years_to_repay_net_debt) ? num(st.years_to_repay_net_debt, 1) + " ani de OE stresat" : MISSING}</dd>
+    <dt>Scadențe 5 ani</dt><dd>${isNum(st.maturities_5y) ? mil(st.maturities_5y, scale) + " USD mil." : MISSING}${has(st.maturities_note) ? `<br><span class="small muted">${ab(st.maturities_note)}</span>` : ""}</dd></dl>`;
+  const th = Object.entries(obj(s.thresholds)).map(([k, v]) => {
+    const d = THRESH[k];
+    return `<li>${d ? ab(d[0]) + " " + d[1](v) : esc(k) + ": " + (isNum(v) ? num(v, 2) : txt(v))}</li>`;
+  }).join("");
+  const body = `<div class="tiles">${tiles}</div>${stress}
+    <h3>Parametri propuși</h3><ul class="small">${th || "<li>" + MISSING + "</li>"}</ul>
+    ${yearTable(arr(obj(a.gate3).years).length ? a.gate3.years : arr(obj(a.facts).years), arr(s.rows), calcLabel, calcCell(scale), calcDetail)}
+    ${NOTE_ABBR}`;
+  return section("supravietuire", "Supraviețuire", ["C"], body);
+}
+
+/* Read-only judgment field; empty means "de completat de om" */
+function fmtJ(v) {
+  if (Array.isArray(v)) return `<ul>${v.filter(has).map(x => `<li>${fmtJ(x)}</li>`).join("")}</ul>`;
+  if (v && typeof v === "object") return Object.entries(v).filter(([, x]) => has(x)).map(([k, x]) => `<div><b>${esc(k)}</b>: ${fmtJ(x)}</div>`).join("");
+  return esc(String(v)).replace(/\n/g, "<br>");
+}
+function jField(label, v) { return `<div class="jf"><div class="jl">${label}</div><div class="jv">${has(v) ? fmtJ(v) : TODO}</div></div>`; }
+function jMeta(j) {
+  return has(j.author) || has(j.date) ? `<p class="jmeta">Autor: ${txt(j.author)}, data: ${txt(j.date)}</p>` : `<p class="jmeta muted">fără autor și dată: nicio judecată scrisă încă</p>`;
+}
+
+function renderGate2(a) {
+  const g = obj(a.gate2), i = obj(g.indicators), p = obj(g.parameters), j = obj(obj(a.judgments).gate2);
+  const tiles = [
+    tile("CAGR venituri, 10 ani", pct(i.revenue_cagr_10y)),
+    tile("Abaterea maximă față de trend", pct(i.revenue_max_deviation_from_trend), `prag ${pct(p.instab_revenue_deviation, 0)}`),
+    tile("Marja operațională min.", pct(i.operating_margin_min)),
+    tile("Marja operațională max.", pct(i.operating_margin_max)),
+    tile(ab("CV al OE_jos"), num(i.oe_low_cv, 2), `prag ${num(p.instab_cv_oe, 1)}`),
+    tile("Ani cu pierdere", isNum(i.loss_years) ? String(i.loss_years) : MISSING, `prag ${isNum(p.instab_loss_years) ? p.instab_loss_years : "lipsă"} din 10`),
+    tile("Indiciu de instabilitate", typeof i.instability_flag === "boolean" ? (i.instability_flag ? "da" : "nu") : MISSING, "informație, nu verdict: oricare prag depășit")
+  ].join("");
+  const ways = arr(j.three_ways_to_die);
+  const waysHtml = has(ways) ? `<ol>${[0, 1, 2].map(k => `<li>${has(ways[k]) ? fmtJ(ways[k]) : TODO}</li>`).join("")}</ol>` : TODO;
+  const body = `<h3>Indicii din cifre ${regChip("C")}</h3><div class="tiles">${tiles}</div>
+    <h3>Textele omului ${regChip("J")}</h3><div class="jgrid">
+    ${jField("Paragraful la zece ani", j.ten_year_paragraph)}
+    <div class="jf"><div class="jl">Cele trei moduri de a muri</div><div class="jv">${waysHtml}</div></div>
+    ${jField("Clasificarea (în cerc, prea greu, în afară)", j.classification)}</div>${jMeta(j)}${NOTE_ABBR}`;
+  return section("poarta2", "Poarta 2: înțelegi afacerea", ["J"], body);
+}
+
+function renderGate4(a) {
+  const g3 = obj(a.gate3), i = obj(obj(a.gate2).indicators), j = obj(obj(a.judgments).gate4), ft = obj(j.franchise_test_1991);
+  const n = arr(g3.years).length || 10;
+  const tiles = [
+    tile(ab("Ani cu ROIC peste prag sau capital neglijabil"), isNum(g3.roic_above_hurdle_years) ? `${g3.roic_above_hurdle_years} din ${n}` : MISSING, "parametru propus: cel puțin 8 din 10"),
+    tile("Marja operațională min.", pct(i.operating_margin_min)),
+    tile("Marja operațională max.", pct(i.operating_margin_max))
+  ].join("");
+  const franchise = has(ft) ? `<ul>
+      <li>necesar sau dorit: ${has(ft.needed_or_desired) ? esc(ft.needed_or_desired) : TODO}</li>
+      <li>fără substitut apropiat: ${has(ft.no_close_substitute) ? esc(ft.no_close_substitute) : TODO}</li>
+      <li>preț nereglementat: ${has(ft.price_unregulated) ? esc(ft.price_unregulated) : TODO}</li></ul>` : TODO;
+  const body = `<h3>Dovezi din cifre ${regChip("C")}</h3><div class="tiles">${tiles}</div>
+    <h3>Formularul omului ${regChip("J")}</h3><div class="jgrid">
+    ${jField("Sursele șanțului, cu dovezi", j.moat_sources)}
+    <div class="jf"><div class="jl">Testul francizei (1991)</div><div class="jv">${franchise}</div></div>
+    ${jField("Testul capitalului (1998)", j.capital_test_1998)}
+    ${jField("Manager-vedetă (2007)", j.star_manager_2007)}
+    ${jField("Direcția șanțului", j.direction)}
+    ${jField("Durabilitatea estimată (ani)", j.durability_years)}</div>${jMeta(j)}${NOTE_ABBR}`;
+  return section("poarta4", "Poarta 4: moat", ["J", "C"], body);
+}
+
+function renderMgmt(a) {
+  const m = obj(a.management_facts), j = obj(obj(a.judgments).management), scale = factScale(a);
+  const bb = obj(m.buybacks), dv = obj(m.dividends), sh = obj(m.diluted_shares);
+  const years = [...new Set([...Object.keys(bb), ...Object.keys(dv), ...Object.keys(sh)])].sort();
+  const vals = o => Object.values(o).filter(isNum);
+  const maxCash = Math.max(1, ...vals(bb), ...vals(dv)), maxSh = Math.max(1, ...vals(sh));
+  const bar = (v, max) => isNum(v) ? `<span class="barcell">${mil(v, scale)}<span class="barwrap"><span class="bar" style="width:${Math.max(0, Math.min(100, v / max * 100)).toFixed(1)}%"></span></span></span>` : MISSING;
+  const rows = years.map(y => `<tr><th class="sticky">${ab("FY" + y)}</th><td>${bar(bb[y], maxCash)}</td><td>${bar(dv[y], maxCash)}</td><td>${bar(sh[y], maxSh)}</td></tr>`).join("");
+  const dt = obj(m.dollar_test_owner_manual);
+  const body = `<div class="tiles">${tile(ab("CAGR acțiuni diluate"), pctSigned(m.share_cagr), "pe an, pe fereastră")}
+      ${tile("Testul dolarului (Owner's Manual 9)", has(dt.value) ? esc(String(dt.value)) : MISSING, has(dt.note) ? ab(dt.note) : "")}</div>
+    <h3>Alocarea capitalului ${regChip("F")}</h3>
+    <div class="tw"><table><thead><tr><th class="sticky">An</th><th>Răscumpărări (USD mil.)</th><th>Dividende (USD mil.)</th><th>Acțiuni diluate (mil.)</th></tr></thead><tbody>${rows}</tbody></table></div>
+    <p class="note">Barele răscumpărărilor și dividendelor au aceeași scară; barele acțiunilor au scara lor. Termenii subliniați au explicații în Glosar.</p>
+    <h3>Judecata omului ${regChip("J")}</h3><div class="jgrid">
+    ${jField("Candoare", j.candour)}${jField("Stimulente (din proxy)", j.incentives)}${jField("Sincer și competent: da, nu, nesigur", j.verdict)}</div>${jMeta(j)}`;
+  return section("management", "Management", ["F", "C", "J"], body);
+}
+
+/* Heat table for an r × g grid; one hue, shading by value */
+function heat(grid, key, title) {
+  const rs = arr(grid.r), gs = arr(grid.g), m = arr(grid[key]);
+  const all = m.flat().filter(isNum);
+  if (!rs.length || !gs.length || !all.length) return `<h3>${title}</h3>${MISSING}`;
+  const lo = Math.min(...all), hi = Math.max(...all);
+  const cell = v => isNum(v) ? `<td style="background:hsla(var(--heat), ${(0.08 + 0.5 * (hi > lo ? (v - lo) / (hi - lo) : 0)).toFixed(2)})">${sig2(v)}</td>` : `<td>${MISSING}</td>`;
+  return `<h3>${title}</h3><div class="tw"><table class="heat"><thead><tr><th class="sticky">r \\ g</th>${gs.map(g => `<th>${rate(g)}</th>`).join("")}</tr></thead>
+    <tbody>${rs.map((r, i) => `<tr><th class="sticky">${rate(r)}</th>${gs.map((g, k) => cell(arr(m[i])[k])).join("")}</tr>`).join("")}</tbody></table></div>`;
+}
+function renderGate5(a) {
+  const g = obj(a.gate5), inp = obj(g.inputs), scale = factScale(a);
+  const lastYear = obj(obj(a.survival).latest).year;
+  const yr = has(lastYear) ? ab("FY" + lastYear) : "ultimul an";
+  const inputs = `<div class="tiles">${tile(ab("OE_jos"), mil(inp.oe_low_last, scale), yr + ", USD mil.")}${tile(ab("OE_sus"), mil(inp.oe_high_last, scale), yr + ", USD mil.")}
+    ${tile(ab("CAGR OE_jos, 10 ani"), pct(inp.oe_low_cagr_10y))}${tile("Randamentul obligațiunii", rate(inp.bond_yield), has(inp.bond_yield_date) ? esc(inp.bond_yield_date) : "")}
+    ${tile("Prețul", num(inp.price, 2), has(inp.price_date) ? esc(inp.price_date) : "")}</div>`;
+  const margin = obj(g.margin), pip = obj(g.price_i_would_pay);
+  const marginLine = `<p><b>Marja de siguranță:</b> ${txt(margin.band)} <span class="small muted">(${txt(margin.register)})</span></p>`;
+  if (g.locked || !g.grid) {
+    const body = `<div class="lockpanel">${LOCK_SVG.replace('width="16" height="16"', 'width="32" height="32"')}<div><strong>Poarta 5 este închisă.</strong> ${vBadge(g.verdict || "inchisa")}
+      <p>${ab(g.lock_reason)}</p><p class="small muted">Prețul vine ultimul: poarta se deschide după textele porții 2, cu preț și randament cu dată.</p></div></div>
+      <h3>Intrări disponibile</h3>${inputs}${marginLine}`;
+    return section("poarta5", "Poarta 5: preț sub valoare", ["C", "J"], body);
+  }
+  const pc = obj(g.perpetuity_check), rd = obj(g.reverse_dcf), oy = obj(g.oe_yield);
+  const price = obj(g.price);
+  const pv = isNum(price.value) ? price.value : inp.price, pd = has(price.date) ? price.date : inp.price_date;
+  const body = `${inputs}
+    ${heat(g.grid, "vi_low_per_share", ab("VI_jos pe acțiune (din OE_jos)"))}
+    ${heat(g.grid, "vi_high_per_share", ab("VI_sus pe acțiune (din OE_sus)"))}
+    <p class="note">r pe rânduri, g pe coloane; nuanța mai închisă înseamnă valoare mai mare. Două cifre semnificative.</p>
+    <dl class="kv" style="margin-top:16px">
+      <dt>Perpetuitate (1991)</dt><dd>${sig2(pc.value_per_share)} pe acțiune${has(pc.formula) ? ` <span class="small muted">${ab(pc.formula)}</span>` : ""}</dd>
+      <dt>${ab("DCF invers")}</dt><dd>creștere implicită ${rate(rd.implied_growth)}${has(rd.state) ? ` <span class="small muted">(${esc(rd.state)})</span>` : ""}</dd>
+      <dt>Randamentul OE</dt><dd>${rate(oy.value)} față de obligațiune ${rate(oy.bond_yield)} (${txt(oy.bond_yield_date)}), diferență ${isNum(oy.spread_pts) ? num(oy.spread_pts, 1) + " puncte" : MISSING}</dd>
+      <dt>Prețul</dt><dd>${num(pv, 2)} la ${txt(pd)}${has(price.source) ? `, sursa: ${esc(price.source)}` : ""}</dd>
+    </dl>${marginLine}
+    <div class="jbox"><div class="sh"><strong>Prețul pe care l-aș plăti</strong>${regChip("J")}</div>${isNum(pip.value) ? num(pip.value, 2) + jMeta(pip) : TODO}</div>
+    <p>Verdict: ${vBadge(g.verdict)} <span class="small muted">la data prețului ${txt(pd)}</span></p>${NOTE_ABBR}`;
+  return section("poarta5", "Poarta 5: preț sub valoare", ["C", "J"], body);
+}
+
+function renderDecision(a) {
+  const j = obj(obj(a.judgments).decision_paragraph);
+  const body = `<div class="jgrid">${jField("1. Cum arată afacerea peste zece ani", j.ten_years)}${jField("2. De ce ține șanțul", j.why_moat_holds)}
+    ${jField("3. Ce plătesc față de cât valorează", j.price_vs_value)}${jField("4. Ce m-ar contrazice (fapte măsurabile)", j.what_would_prove_me_wrong)}
+    ${jField("5. Testul bursei închise: aș păstra-o cinci ani?", j.closed_market_5y)}</div>${jMeta(j)}`;
+  return section("decizie", "Paragraful de decizie", ["J"], body);
+}
+
+function renderIssues(a) {
+  const all = arr(a.data_issues);
+  const present = [...new Set(all.map(i => i.type).filter(has))];
+  const types = [...new Set(["info", "warning", "blocking", ...present])].sort((x, y) => {
+    const ix = ISSUE_ORDER.indexOf(x), iy = ISSUE_ORDER.indexOf(y);
+    return (ix < 0 ? 99 : ix) - (iy < 0 ? 99 : iy);
+  });
+  const f = state.issueFilter, shown = f === "toate" ? all : all.filter(i => i.type === f);
+  const chip = (t, n) => `<button class="fchip" type="button" data-issue-filter="${esc(t)}" aria-pressed="${t === f}">${esc(t)} (${n})</button>`;
+  const chips = chip("toate", all.length) + types.map(t => chip(t, all.filter(i => i.type === t).length)).join("");
+  const rows = shown.map(i => `<tr><td><span class="badge t-${esc(i.type)}">${txt(i.type)}</span></td><td>${ab(i.concept)}</td><td>${txt(i.period)}</td><td>${ab(i.description)}</td><td>${ab(i.effect)}</td></tr>`).join("");
+  const body = `<div class="fchips no-print">${chips}</div><p class="small muted">${shown.length} din ${all.length} probleme afișate</p>
+    <div class="tw scrollbox"><table class="txt-table"><thead><tr><th>Tip</th><th>Concept</th><th>Perioadă</th><th>Descriere</th><th>Efect</th></tr></thead>
+    <tbody>${rows || `<tr><td colspan="5" class="muted">nicio problemă de acest tip</td></tr>`}</tbody></table></div>${NOTE_ABBR}`;
+  return section("jurnal", "Jurnalul problemelor de date", ["F"], body);
+}
+
+function renderParams(a) {
+  const rows = arr(a.parameters).map(p => `<tr><td>${ab(p.name)}</td><td>${ab(p.value)}</td><td>${ab(p.inspired_by)}</td></tr>`).join("");
+  return section("parametri", "Parametri folosiți", ["C"], `<p class="small muted">Instrumente ale noastre, nu reguli ale lor.</p>
+    <div class="tw"><table class="txt-table"><thead><tr><th>Parametru</th><th>Valoare</th><th>Inspirat din (nu regulă)</th></tr></thead><tbody>${rows}</tbody></table></div>${NOTE_ABBR}`);
+}
+
+function renderSources(a) {
+  const items = arr(a.sources).map(s => `<li>${link(s.url, s.title)} <span class="small muted">accesat ${txt(s.accessed)}</span></li>`).join("");
+  return section("surse", "Surse", ["F"], `<ol class="small">${items || "<li>" + MISSING + "</li>"}</ol>`);
+}
+
+/* ===== Glossary drawer ===== */
+function renderGlossary(q) {
+  const fq = fold(q || "");
+  const list = GLOSSARY.filter(t => !fq || fold(t.t + " " + t.d + " " + t.k.join(" ")).includes(fq));
+  document.getElementById("glist").innerHTML = list.map(t =>
+    `<div class="gt" id="g-${t.id}"><div class="gn">${esc(t.t)}${t.y ? `<span class="gy">${esc(t.y)}</span>` : ""}</div><div class="gd">${esc(t.d)}</div></div>`).join("") ||
+    `<p class="muted">niciun termen găsit</p>`;
+  document.getElementById("glossCount").textContent = `${list.length} din ${GLOSSARY.length} termeni`;
+}
+function openGlossary(id) {
+  const q = document.getElementById("glossQ");
+  document.getElementById("drawer").hidden = false;
+  document.getElementById("scrim").hidden = false;
+  if (id) q.value = "";
+  renderGlossary(q.value);
+  const el = id && document.getElementById("g-" + id);
+  if (el) { el.classList.add("hl"); el.scrollIntoView({ block: "start" }); } else q.focus();
+}
+function closeGlossary() { document.getElementById("drawer").hidden = true; document.getElementById("scrim").hidden = true; }
+
+/* ===== Import, export, clear ===== */
+function importObjects(list, label) {
+  const imp = loadImports(), bad = [];
+  let ok = 0;
+  const bundled = new Set(arr(window.SIXGATES_DATA).map(keyOf));
+  let shadowed = 0;
+  list.forEach((o, i) => {
+    const err = validate(o);
+    if (err) { bad.push(`${label} #${i + 1}: ${err}`); return; }
+    const k = keyOf(o), at = imp.findIndex(x => keyOf(x) === k);
+    if (at >= 0) imp[at] = o; else imp.push(o);
+    if (bundled.has(k)) shadowed++;
+    ok++;
+  });
+  if (ok && !saveImports(imp)) return "Nu am putut scrie în localStorage (spațiu plin sau blocat de browser).";
+  render();
+  return `${label}: ${ok} analize importate.` + (shadowed ? ` ${shadowed} au aceeași cheie ca datele incluse în build, care au prioritate.` : "") + (bad.length ? "\nRespinse:\n" + bad.join("\n") : "");
+}
+function parseAndImport(text, label) {
+  let v;
+  try { v = JSON.parse(text); } catch (e) { return `${label}: JSON invalid (${e.message}).`; }
+  return importObjects(Array.isArray(v) ? v : [v], label);
+}
+function download(name, text) {
+  const url = URL.createObjectURL(new Blob([text], { type: "application/json" }));
+  const el = Object.assign(document.createElement("a"), { href: url, download: name });
+  document.body.appendChild(el); el.click(); el.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+/* ===== Events (delegated) ===== */
+document.addEventListener("click", ev => {
+  const t = ev.target.closest("[data-term],[data-toggle],[data-ticker],[data-issue-filter]");
+  if (!t) return;
+  if (t.dataset.term) { ev.stopPropagation(); ev.preventDefault(); openGlossary(t.dataset.term); return; }
+  if (t.dataset.toggle) {
+    const el = document.getElementById(t.dataset.toggle);
+    if (el) { el.hidden = !el.hidden; t.setAttribute("aria-expanded", String(!el.hidden)); }
+  } else if (t.dataset.ticker) {
+    state.ticker = t.dataset.ticker; state.key = null; state.issueFilter = "toate"; render(); window.scrollTo(0, 0);
+  } else if (t.dataset.issueFilter) {
+    state.issueFilter = t.dataset.issueFilter;
+    const sec = document.getElementById("jurnal"), list = state.groups[state.ticker], e = list.find(x => x.key === state.key);
+    sec.outerHTML = renderIssues(e.data);
+  }
+});
+document.addEventListener("keydown", ev => {
+  if (ev.key === "Escape") closeGlossary();
+  if (ev.key === "Enter" && ev.target.dataset && ev.target.dataset.term) openGlossary(ev.target.dataset.term);
+});
+document.addEventListener("change", ev => {
+  if (ev.target.id === "verSel") { state.key = ev.target.value; render(); }
+  if (ev.target.id === "coSel") { state.ticker = ev.target.value; state.key = null; state.issueFilter = "toate"; render(); }
+});
+window.addEventListener("hashchange", () => { readHash(); render(); });
+document.getElementById("btnGloss").onclick = () => openGlossary(null);
+document.getElementById("btnGlossClose").onclick = closeGlossary;
+document.getElementById("scrim").onclick = closeGlossary;
+document.getElementById("glossQ").oninput = ev => renderGlossary(ev.target.value);
+const dlg = document.getElementById("impDlg"), impMsg = document.getElementById("impMsg");
+document.getElementById("btnImport").onclick = () => { impMsg.textContent = ""; dlg.showModal(); };
+document.getElementById("impClose").onclick = () => dlg.close();
+document.getElementById("impTextBtn").onclick = () => {
+  const t = document.getElementById("impText").value.trim();
+  impMsg.textContent = t ? parseAndImport(t, "Text lipit") : "Nu ai lipit nimic.";
+};
+document.getElementById("impFile").onchange = async ev => {
+  const msgs = [];
+  for (const f of ev.target.files) {
+    try { msgs.push(parseAndImport(await f.text(), f.name)); } catch (e) { msgs.push(`${f.name}: nu am putut citi fișierul.`); }
+  }
+  impMsg.textContent = msgs.join("\n");
+  ev.target.value = "";
+};
+document.getElementById("btnExport").onclick = () => {
+  const all = Object.values(collect()).flat().map(e => e.data);
+  download(`sixgates_export_${new Date().toISOString().slice(0, 10)}.json`, JSON.stringify(all, null, 1));
+};
+document.getElementById("btnClear").onclick = () => {
+  const n = loadImports().length;
+  if (!n) { alert("Nu există analize importate în acest browser."); return; }
+  if (confirm(`Ștergi cele ${n} analize importate din acest browser? Datele incluse în build rămân.`)) {
+    try { localStorage.removeItem(STORE_KEY); } catch (e) { /* storage blocked: nothing to remove */ }
+    render();
+  }
+};
+
+readHash();
+render();
+</script>
+</body>
+</html>

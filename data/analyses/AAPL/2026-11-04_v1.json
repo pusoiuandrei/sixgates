@@ -32,49 +32,49 @@
     "id": "K1",
     "name": "Record scurt sau inconsistent",
     "state": "trece",
-    "fact": "17 exercitii in companyfacts (2009 la 2025); 0 ani cu pierdere in fereastra 2016 la 2025",
-    "source": "SEC EDGAR companyfacts; criteriile de achizitie Berkshire: demonstrated consistent earning power"
+    "fact": "17 exerciții în companyfacts (2009 la 2025); 0 ani cu pierdere în fereastra 2016 la 2025",
+    "source": "SEC EDGAR companyfacts; criteriile de achiziție Berkshire: demonstrated consistent earning power"
    },
    {
     "id": "K2",
-    "name": "Industrie in schimbare rapida",
+    "name": "Industrie în schimbare rapidă",
     "state": "neclar",
-    "fact": "necesita citirea sectiunilor Business si Risk Factors din ultimul 10-K; indiciile (cicluri de produs, R&D pe vanzari, concentrarea clientilor) nu sunt in companyfacts",
+    "fact": "necesită citirea secțiunilor Business și Risk Factors din ultimul 10-K; indiciile (cicluri de produs, R&D pe vânzări, concentrarea clienților) nu sunt în companyfacts",
     "source": "1992, 1996, 2007; judecata utilizatorului"
    },
    {
     "id": "K3",
     "name": "Randamente slabe pe capital",
     "state": "trece",
-    "fact": "ROE median pe capitalul de inceput de an: 104.2%; ani cu ROIC tangibil peste prag sau capital neglijabil: 10 din 10",
-    "source": "1977, 1979; banda descriptiva 12 la 20% (2010 pana la 2016)"
+    "fact": "ROE median pe capitalul de început de an: 104,2%; ani cu ROIC tangibil peste prag sau capital neglijabil: 10 din 10",
+    "source": "1977, 1979; banda descriptivă 12 la 20% (2010 până la 2016)"
    },
    {
     "id": "K4",
     "name": "Datorie",
     "state": "trece",
-    "fact": "datorie neta 44.0 mld USD; datorie neta pe (CFO minus capex) 0.4x; acoperirea dobanzilor lipsa (FY2025)",
-    "source": "criteriile de achizitie: little or no debt; praguri propuse"
+    "fact": "datorie netă 44,0 mld USD; datorie netă pe (CFO minus capex) 0,4x; acoperirea dobânzilor lipsă (FY2025)",
+    "source": "criteriile de achiziție: little or no debt; praguri propuse"
    },
    {
     "id": "K5",
     "name": "Diluare",
     "state": "trece",
-    "fact": "CAGR actiuni diluate 2016 la 2025: -4.2% pe an; compensatia in actiuni: lipsa in extractie",
+    "fact": "CAGR acțiuni diluate 2016 la 2025: -4,2% pe an; compensația în acțiuni: lipsă în extracție",
     "source": "Owner's Manual 10; 2014; 1992, 1998"
    },
    {
     "id": "K6",
     "name": "Candoare",
     "state": "neclar",
-    "fact": "necesita citirea ultimului comunicat de rezultate si a scrisorii catre actionari (profit ajustat, restatari, promisiuni)",
+    "fact": "necesită citirea ultimului comunicat de rezultate și a scrisorii către acționari (profit ajustat, restatări, promisiuni)",
     "source": "1983 principiul 12; 2002"
    },
    {
     "id": "K7",
-    "name": "In afara cadrului",
+    "name": "În afara cadrului",
     "state": "trece",
-    "fact": "companie nefinanciara cu situatii auditate in EDGAR; filtrul reputational (2025) ramane judecata",
+    "fact": "companie nefinanciară cu situații auditate în EDGAR; filtrul reputațional (2025) rămâne judecată",
     "source": "2002; 2025"
    }
   ]
@@ -95,7 +95,7 @@
    "id": "G3",
    "name": "Poarta 3: randamente pe capital",
    "verdict": "necesita_judecata",
-   "reason": "capital tangibil neglijabil in 8 din 10 ani (semnal pozitiv); ROIC tangibil median 351% in anii cu capital masurabil; ROIC incremental 5 ani: capital aproape neschimbat (sub 5% din venituri), profit in crestere: randament incremental foarte mare, procentul nu se forteaza; categoria 2007 este judecata (de completat)",
+   "reason": "capital tangibil neglijabil în 8 din 10 ani (semnal pozitiv); ROIC tangibil median 351% în anii cu capital măsurabil; ROIC incremental 5 ani: capital aproape neschimbat (sub 5% din venituri), profit în creștere: randament incremental foarte mare, procentul nu se forțează; categoria 2007 este judecată (de completat)",
    "pending_judgments": [
     "categoria 2007 (excelentă, bună, groaznică)",
     "alegerea lui (c), capexul de menținere, dacă diferă de interval"
@@ -105,7 +105,7 @@
    "id": "SURV",
    "name": "Supraviețuire",
    "verdict": "necesita_judecata",
-   "reason": "datorie neta pe OE_jos 0.40x; acoperirea dobanzilor lipsa (cheltuiala cu dobanzile neraportata separat in companyfacts) (intre pragurile de trecere si de picare)",
+   "reason": "datorie netă pe OE_jos 0,40x; acoperirea dobânzilor lipsă (cheltuiala cu dobânzile neraportată separat în companyfacts) (între pragurile de trecere și de picare)",
    "pending_judgments": [
     "scadențele pe cinci ani din notele 10-K"
    ]
@@ -126,7 +126,7 @@
    "id": "MGMT",
    "name": "Management",
    "verdict": "necesita_judecata",
-   "reason": "fapte disponibile: răscumpărări și dividende pe zece ani, CAGR acțiuni -4.2%; candoarea, stimulentele și testul dolarului (forma Owner's Manual, cere valoarea contabilă pe acțiune și indexul) nu sunt evaluate",
+   "reason": "fapte disponibile: răscumpărări și dividende pe zece ani, CAGR acțiuni -4,2%; candoarea, stimulentele și testul dolarului (forma Owner's Manual, cere valoarea contabilă pe acțiune și indexul) nu sunt evaluate",
    "pending_judgments": [
     "candoare",
     "stimulente din proxy",
@@ -332,7 +332,7 @@
     "register": "F",
     "unit": "USD",
     "values": {
-     "2016": null,
+     "2016": 10505000000.0,
      "2017": 10157000000.0,
      "2018": 10903000000.0,
      "2019": 12547000000.0,
@@ -861,8 +861,8 @@
     "register": "F",
     "unit": "USD",
     "values": {
-     "2016": null,
-     "2017": null,
+     "2016": 12150000000.0,
+     "2017": 12769000000.0,
      "2018": 13712000000.0,
      "2019": 14119000000.0,
      "2020": 14081000000.0,
@@ -1153,14 +1153,14 @@
      "2025": null
     },
     "flags": {
-     "2016": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forteaza",
-     "2017": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forteaza",
-     "2020": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forteaza",
-     "2021": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forteaza",
-     "2022": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forteaza",
-     "2023": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forteaza",
-     "2024": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forteaza",
-     "2025": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forteaza"
+     "2016": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forțează",
+     "2017": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forțează",
+     "2020": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forțează",
+     "2021": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forțează",
+     "2022": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forțează",
+     "2023": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forțează",
+     "2024": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forțează",
+     "2025": "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forțează"
     }
    },
    {
@@ -1182,12 +1182,12 @@
      "2025": null
     },
     "flags": {
-     "2020": "capital (inclusiv fond comercial) neglijabil fata de venituri",
-     "2021": "capital (inclusiv fond comercial) neglijabil fata de venituri",
-     "2022": "capital (inclusiv fond comercial) neglijabil fata de venituri",
-     "2023": "capital (inclusiv fond comercial) neglijabil fata de venituri",
-     "2024": "capital (inclusiv fond comercial) neglijabil fata de venituri",
-     "2025": "capital (inclusiv fond comercial) neglijabil fata de venituri"
+     "2020": "capital (inclusiv fond comercial) neglijabil față de venituri",
+     "2021": "capital (inclusiv fond comercial) neglijabil față de venituri",
+     "2022": "capital (inclusiv fond comercial) neglijabil față de venituri",
+     "2023": "capital (inclusiv fond comercial) neglijabil față de venituri",
+     "2024": "capital (inclusiv fond comercial) neglijabil față de venituri",
+     "2025": "capital (inclusiv fond comercial) neglijabil față de venituri"
     }
    },
    {
@@ -1294,14 +1294,14 @@
   "incremental": {
    "5y": {
     "value": null,
-    "state": "capital aproape neschimbat (sub 5% din venituri), profit in crestere: randament incremental foarte mare, procentul nu se forteaza",
+    "state": "capital aproape neschimbat (sub 5% din venituri), profit în creștere: randament incremental foarte mare, procentul nu se forțează",
     "delta_nopat": 55557033729.70895,
     "delta_capital": 2711920000.0,
     "years": "2020 la 2025"
    },
    "10y": {
     "value": null,
-    "state": "capital aproape neschimbat (sub 5% din venituri), profit in crestere: randament incremental foarte mare, procentul nu se forteaza",
+    "state": "capital aproape neschimbat (sub 5% din venituri), profit în creștere: randament incremental foarte mare, procentul nu se forțează",
     "delta_nopat": 67597380063.00397,
     "delta_capital": 2479440000.0,
     "years": "2016 la 2025"
@@ -1380,8 +1380,8 @@
      "2025": null
     },
     "flags": {
-     "2024": "lipsa: cheltuieli cu dobanzile neraportate separat",
-     "2025": "lipsa: cheltuieli cu dobanzile neraportate separat"
+     "2024": "lipsă: cheltuieli cu dobânzile neraportate separat",
+     "2025": "lipsă: cheltuieli cu dobânzile neraportate separat"
     }
    }
   ],
@@ -1393,11 +1393,11 @@
    "interest_cover": null
   },
   "stress": {
-   "assumption": "OE scade cu 50% doi ani la rand (parametru propus)",
+   "assumption": "OE scade cu 50% doi ani la rând (parametru propus)",
    "interest_cover_after_shock": null,
    "years_to_repay_net_debt": 0.7921220257133332,
    "maturities_5y": null,
-   "maturities_note": "lipsa: scadentele pe cinci ani nu sunt in companyfacts; se completeaza din notele 10-K cu pagina"
+   "maturities_note": "lipsă: scadențele pe cinci ani nu sunt în companyfacts; se completează din notele 10-K cu pagina"
   },
   "thresholds": {
    "surv_pass_net_debt_to_oe": 2.0,
@@ -1613,28 +1613,28 @@
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "revenue",
    "period": "2016-09-24",
    "description": "source tag changed from us-gaap:SalesRevenueNet to us-gaap:Revenues",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "revenue",
    "period": "2017-09-30",
    "description": "source tag changed from us-gaap:Revenues to us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "d_and_a",
    "period": "2016-09-24",
    "description": "restated us-gaap:DepreciationDepletionAndAmortization: 8,300,000,000 (0000320193-17-000070, filed 2017-11-03) to 10,505,000,000 (0000320193-18-000145, filed 2018-11-05); latest kept",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "d_and_a",
    "period": "2017-09-30",
    "description": "restated us-gaap:DepreciationDepletionAndAmortization: 8,200,000,000 (0000320193-17-000070, filed 2017-11-03) to 10,157,000,000 (0000320193-19-000119, filed 2019-10-31); latest kept",
@@ -1648,406 +1648,406 @@
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "d_and_a",
    "period": "2015-09-26",
    "description": "source tag changed from us-gaap:DepreciationAndAmortization to us-gaap:DepreciationAmortizationAndAccretionNet",
    "effect": ""
   },
   {
-   "type": "high",
+   "type": "blocking",
    "concept": "d_and_a",
    "period": "2016-09-24",
    "description": "synonym tags disagree for FY2016: us-gaap:DepreciationDepletionAndAmortization=10,505,000,000 (0000320193-18-000145); us-gaap:DepreciationAndAmortization=8,300,000,000 (0001628280-16-020309); latest filed kept, needs an override or a reconciliation",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "d_and_a",
    "period": "2016-09-24",
    "description": "source tag changed from us-gaap:DepreciationAmortizationAndAccretionNet to us-gaap:DepreciationDepletionAndAmortization",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "cfo",
    "period": "2016-09-24",
    "description": "restated us-gaap:NetCashProvidedByUsedInOperatingActivities: 65,824,000,000 (0000320193-17-000070, filed 2017-11-03) to 66,231,000,000 (0000320193-18-000145, filed 2018-11-05); latest kept",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "cfo",
    "period": "2017-09-30",
    "description": "restated us-gaap:NetCashProvidedByUsedInOperatingActivities: 63,598,000,000 (0000320193-17-000070, filed 2017-11-03) to 64,225,000,000 (0000320193-19-000119, filed 2019-10-31); latest kept",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "cfo",
    "period": "2015-09-26",
    "description": "source tag changed from us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations to us-gaap:NetCashProvidedByUsedInOperatingActivities",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_investments",
    "period": "2015-09-26",
    "description": "partial sum for FY2015, components absent: ShortTermInvestments|OtherShortTermInvestments",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_investments",
    "period": "2016-09-24",
    "description": "partial sum for FY2016, components absent: ShortTermInvestments|OtherShortTermInvestments",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_investments",
    "period": "2017-09-30",
    "description": "partial sum for FY2017, components absent: ShortTermInvestments|OtherShortTermInvestments",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_investments",
    "period": "2018-09-29",
    "description": "partial sum for FY2018, components absent: ShortTermInvestments|OtherShortTermInvestments",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_investments",
    "period": "2018-09-29",
    "description": "source tag changed from us-gaap:AvailableForSaleSecuritiesCurrent to us-gaap:MarketableSecuritiesCurrent",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_investments",
    "period": "2019-09-28",
    "description": "partial sum for FY2019, components absent: ShortTermInvestments|OtherShortTermInvestments",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_investments",
    "period": "2020-09-26",
    "description": "partial sum for FY2020, components absent: ShortTermInvestments|OtherShortTermInvestments",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_investments",
    "period": "2021-09-25",
    "description": "partial sum for FY2021, components absent: ShortTermInvestments|OtherShortTermInvestments",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_investments",
    "period": "2022-09-24",
    "description": "partial sum for FY2022, components absent: ShortTermInvestments|OtherShortTermInvestments",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_investments",
    "period": "2023-09-30",
    "description": "partial sum for FY2023, components absent: ShortTermInvestments|OtherShortTermInvestments",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_investments",
    "period": "2024-09-28",
    "description": "partial sum for FY2024, components absent: ShortTermInvestments|OtherShortTermInvestments",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_investments",
    "period": "2025-09-27",
    "description": "partial sum for FY2025, components absent: ShortTermInvestments|OtherShortTermInvestments",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_borrowings",
    "period": "2015-09-26",
    "description": "fallback tag CommercialPaper used for FY2015 (no synonym tag filed)",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_borrowings",
    "period": "2016-09-24",
    "description": "fallback tag CommercialPaper used for FY2016 (no synonym tag filed)",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_borrowings",
    "period": "2017-09-30",
    "description": "fallback tag CommercialPaper used for FY2017 (no synonym tag filed)",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_borrowings",
    "period": "2018-09-29",
    "description": "fallback tag CommercialPaper used for FY2018 (no synonym tag filed)",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_borrowings",
    "period": "2019-09-28",
    "description": "fallback tag CommercialPaper used for FY2019 (no synonym tag filed)",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_borrowings",
    "period": "2020-09-26",
    "description": "fallback tag CommercialPaper used for FY2020 (no synonym tag filed)",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_borrowings",
    "period": "2021-09-25",
    "description": "fallback tag CommercialPaper used for FY2021 (no synonym tag filed)",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_borrowings",
    "period": "2022-09-24",
    "description": "fallback tag CommercialPaper used for FY2022 (no synonym tag filed)",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_borrowings",
    "period": "2023-09-30",
    "description": "fallback tag CommercialPaper used for FY2023 (no synonym tag filed)",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_borrowings",
    "period": "2024-09-28",
    "description": "fallback tag CommercialPaper used for FY2024 (no synonym tag filed)",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "st_borrowings",
    "period": "2025-09-27",
    "description": "fallback tag CommercialPaper used for FY2025 (no synonym tag filed)",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "debt_long",
    "period": "2015-09-26",
    "description": "restated us-gaap:LongTermDebtNoncurrent: 53,463,000,000 (0001193125-15-356351, filed 2015-10-28) to 53,329,000,000 (0001628280-16-020309, filed 2016-10-26); latest kept",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "interest_expense",
    "period": "2024-09-28",
    "description": "no standard-taxonomy fact for FY2024 (candidates: InterestExpense, InterestExpenseBorrowings, InterestExpenseNonoperating, InterestExpenseDebt); marked missing",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "interest_expense",
    "period": "2025-09-27",
    "description": "no standard-taxonomy fact for FY2025 (candidates: InterestExpense, InterestExpenseBorrowings, InterestExpenseNonoperating, InterestExpenseDebt); marked missing",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "goodwill",
    "period": "2018-09-29",
    "description": "no standard-taxonomy fact for FY2018 (candidates: Goodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "goodwill",
    "period": "2019-09-28",
    "description": "no standard-taxonomy fact for FY2019 (candidates: Goodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "goodwill",
    "period": "2020-09-26",
    "description": "no standard-taxonomy fact for FY2020 (candidates: Goodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "goodwill",
    "period": "2021-09-25",
    "description": "no standard-taxonomy fact for FY2021 (candidates: Goodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "goodwill",
    "period": "2022-09-24",
    "description": "no standard-taxonomy fact for FY2022 (candidates: Goodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "goodwill",
    "period": "2023-09-30",
    "description": "no standard-taxonomy fact for FY2023 (candidates: Goodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "goodwill",
    "period": "2024-09-28",
    "description": "no standard-taxonomy fact for FY2024 (candidates: Goodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "goodwill",
    "period": "2025-09-27",
    "description": "no standard-taxonomy fact for FY2025 (candidates: Goodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "intangibles",
    "period": "2018-09-29",
    "description": "no standard-taxonomy fact for FY2018 (candidates: IntangibleAssetsNetExcludingGoodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "intangibles",
    "period": "2019-09-28",
    "description": "no standard-taxonomy fact for FY2019 (candidates: IntangibleAssetsNetExcludingGoodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "intangibles",
    "period": "2020-09-26",
    "description": "no standard-taxonomy fact for FY2020 (candidates: IntangibleAssetsNetExcludingGoodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "intangibles",
    "period": "2021-09-25",
    "description": "no standard-taxonomy fact for FY2021 (candidates: IntangibleAssetsNetExcludingGoodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "intangibles",
    "period": "2022-09-24",
    "description": "no standard-taxonomy fact for FY2022 (candidates: IntangibleAssetsNetExcludingGoodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "intangibles",
    "period": "2023-09-30",
    "description": "no standard-taxonomy fact for FY2023 (candidates: IntangibleAssetsNetExcludingGoodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "intangibles",
    "period": "2024-09-28",
    "description": "no standard-taxonomy fact for FY2024 (candidates: IntangibleAssetsNetExcludingGoodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "low",
+   "type": "info",
    "concept": "intangibles",
    "period": "2025-09-27",
    "description": "no standard-taxonomy fact for FY2025 (candidates: IntangibleAssetsNetExcludingGoodwill); marked missing",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "current_liabilities",
    "period": "2018-09-29",
    "description": "restated us-gaap:LiabilitiesCurrent: 116,866,000,000 (0000320193-18-000145, filed 2018-11-05) to 115,929,000,000 (0000320193-19-000119, filed 2019-10-31); latest kept",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "diluted_shares",
    "period": "2018-09-29",
    "description": "restated us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding: 5,000,109,000 (0000320193-18-000145, filed 2018-11-05) to 20,000,435,000 (0000320193-20-000096, filed 2020-10-30); latest kept",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "diluted_shares",
    "period": "2018-09-29",
    "description": "restated us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding: 5,000,109,000 (0000320193-19-000119, filed 2019-10-31) to 20,000,435,000 (0000320193-20-000096, filed 2020-10-30); latest kept",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "diluted_shares",
    "period": "2019-09-28",
    "description": "restated us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding: 4,648,913,000 (0000320193-19-000119, filed 2019-10-31) to 18,595,651,000 (0000320193-21-000105, filed 2021-10-29); latest kept",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "dividends_paid",
    "period": "2015-09-26",
    "description": "restated us-gaap:PaymentsOfDividends: 11,431,000,000 (0001193125-15-356351, filed 2015-10-28) to 11,561,000,000 (0000320193-17-000070, filed 2017-11-03); latest kept",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "dividends_paid",
    "period": "2015-09-26",
    "description": "restated us-gaap:PaymentsOfDividends: 11,431,000,000 (0001628280-16-020309, filed 2016-10-26) to 11,561,000,000 (0000320193-17-000070, filed 2017-11-03); latest kept",
    "effect": ""
   },
   {
-   "type": "medium",
+   "type": "warning",
    "concept": "dividends_paid",
    "period": "2016-09-24",
    "description": "restated us-gaap:PaymentsOfDividends: 11,965,000,000 (0001628280-16-020309, filed 2016-10-26) to 12,150,000,000 (0000320193-18-000145, filed 2018-11-05); latest kept",
    "effect": ""
   },
   {
-   "type": "high",
+   "type": "blocking",
    "concept": "dividends_paid",
    "period": "2016-09-24",
    "description": "synonym tags disagree for FY2016: us-gaap:PaymentsOfDividends=12,150,000,000 (0000320193-18-000145); us-gaap:PaymentsOfDividendsCommonStock=11,965,000,000 (0000320193-17-000070); latest filed kept, needs an override or a reconciliation",
    "effect": ""
   },
   {
-   "type": "high",
+   "type": "blocking",
    "concept": "dividends_paid",
    "period": "2017-09-30",
    "description": "synonym tags disagree for FY2017: us-gaap:PaymentsOfDividends=12,769,000,000 (0000320193-19-000119); us-gaap:PaymentsOfDividendsCommonStock=12,563,000,000 (0000320193-17-000070); latest filed kept, needs an override or a reconciliation",
    "effect": ""
   },
   {
-   "type": "high",
+   "type": "blocking",
    "concept": "diluted_shares",
    "period": "2018-09-29",
    "description": "share count ratio 3.81 vs FY2017: comparatives restated for a split in a later filing; per-share series unusable without a split-factor table",
@@ -2057,15 +2057,15 @@
    "type": "warning",
    "concept": "diluted_shares",
    "period": "2016 la 2025",
-   "description": "numarul de actiuni diluate pentru FY2009 la FY2011 a fost inmultit cu 7: salt de 7.07x intre FY2011 si FY2012, consistent cu un split 7:1; de verificat in 10-K",
-   "effect": "CAGR actiuni si OE pe actiune ajustate; de verificat"
+   "description": "numărul de acțiuni diluate pentru FY2009 la FY2011 a fost înmulțit cu 7: salt de 7,07x între FY2011 și FY2012, consistent cu un split 7:1; de verificat în 10-K",
+   "effect": "CAGR acțiuni și OE pe acțiune ajustate; de verificat"
   },
   {
    "type": "warning",
    "concept": "diluted_shares",
    "period": "2016 la 2025",
-   "description": "numarul de actiuni diluate pentru FY2009 la FY2017 a fost inmultit cu 4: salt de 3.81x intre FY2017 si FY2018, consistent cu un split 4:1; de verificat in 10-K",
-   "effect": "CAGR actiuni si OE pe actiune ajustate; de verificat"
+   "description": "numărul de acțiuni diluate pentru FY2009 la FY2017 a fost înmulțit cu 4: salt de 3,81x între FY2017 și FY2018, consistent cu un split 4:1; de verificat în 10-K",
+   "effect": "CAGR acțiuni și OE pe acțiune ajustate; de verificat"
   },
   {
    "type": "info",

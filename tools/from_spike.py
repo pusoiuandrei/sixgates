@@ -150,6 +150,14 @@ def r2(x, nd=2):
     return None if x is None else round(x, nd)
 
 
+def ro(x, nd=2, sign=False):
+    """Format a number with a Romanian decimal comma (strings only; JSON numbers stay numbers)."""
+    if x is None:
+        return "lipsă"
+    t = f"{x:+.{nd}f}" if sign else f"{x:.{nd}f}"
+    return t.replace(".", ",")
+
+
 def sig2(x):
     """Two significant digits (framework precision rule)."""
     if x is None or x == 0:
@@ -171,8 +179,8 @@ def build(entity, annual, facts, issues):
                 for y in ys:
                     if y <= a_:
                         v, st, src, fids, note = sh[y]
-                        sh[y] = (v * f, st, src, fids, (note + "; " if note else "") + f"ajustat x{f} pentru split detectat intre FY{a_} si FY{b_}")
-                split_notes.append(f"numarul de actiuni diluate pentru FY{ys[0]} la FY{a_} a fost inmultit cu {f}: salt de {ratio:.2f}x intre FY{a_} si FY{b_}, consistent cu un split {f}:1; de verificat in 10-K")
+                        sh[y] = (v * f, st, src, fids, (note + "; " if note else "") + f"ajustat x{f} pentru split detectat între FY{a_} și FY{b_}")
+                split_notes.append(f"numărul de acțiuni diluate pentru FY{ys[0]} la FY{a_} a fost înmulțit cu {f}: salt de {ro(ratio, 2)}x între FY{a_} și FY{b_}, consistent cu un split {f}:1; de verificat în 10-K")
                 break
     window = years_all[-P["window_years"]:]
     name, market, fy_end = NAMES[entity]
@@ -190,9 +198,12 @@ def build(entity, annual, facts, issues):
                 statuses[str(y)] = "lipsa"
                 continue
             v, status, src, fids, note = t
-            if status in ("missing", "ambiguous") or v is None:
+            if status == "missing" or v is None:
                 values[str(y)] = None
-                statuses[str(y)] = "lipsa" if status == "missing" else "necesita_verificare"
+                statuses[str(y)] = "lipsa"
+            elif status == "ambiguous":
+                values[str(y)] = v
+                statuses[str(y)] = "necesita_verificare"
             else:
                 values[str(y)] = v
                 statuses[str(y)] = "ok" if status == "ok" else "suma_partiala"
@@ -242,7 +253,7 @@ def build(entity, annual, facts, issues):
                 put("greenwald_maintenance_capex", y, maint)
             else:
                 oe_high = None
-                put("greenwald_maintenance_capex", y, None, "lipsa: fara istoric pentru estimarea Greenwald")
+                put("greenwald_maintenance_capex", y, None, "lipsă: fără istoric pentru estimarea Greenwald")
             put("oe_low", y, oe_low)
             put("oe_high", y, oe_high)
             put("fcf_simple", y, (cfo - capex) if cfo is not None else None)
@@ -251,15 +262,15 @@ def build(entity, annual, facts, issues):
             put("oe_low_per_share", y, safe_div(oe_low, sh))
         else:
             for m in ("oe_low", "oe_high", "fcf_simple", "oe_conversion", "oe_low_per_share"):
-                put(m, y, None, "lipsa: profit net, D&A sau capex")
+                put(m, y, None, "lipsă: profit net, D&A sau capex")
         # NOPAT and tangible capital
         tax, pretax = g("income_tax", y), g("pretax_income", y)
         rate = safe_div(tax, pretax)
         rate_flag = None
         if rate is None:
-            rate_flag = "lipsa: impozit sau profit inainte de impozit"
+            rate_flag = "lipsă: impozit sau profit înainte de impozit"
         elif not (P["tax_rate_min"] <= rate <= P["tax_rate_max"]):
-            rate_flag = f"rata efectiva {rate:.2f} in afara intervalului 0 la 0,5; plafonata la limita, necesita verificare"
+            rate_flag = f"rata efectivă {rate:.2f} în afara intervalului 0 la 0,5; plafonată la limită, necesită verificare"
             rate = min(max(rate, P["tax_rate_min"]), P["tax_rate_max"])
         put("effective_tax_rate", y, rate, rate_flag)
         nopat = opi * (1 - rate) if (opi is not None and rate is not None) else None
@@ -276,36 +287,36 @@ def build(entity, annual, facts, issues):
             put("tangible_capital", y, tangible)
             put("capital_with_goodwill", y, tangible + (gw or 0.0) + (intang or 0.0))
             if tangible <= P["negligible_capital_pct_of_revenue"] * rev:
-                put("roic_tangible", y, None, "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forteaza")
+                put("roic_tangible", y, None, "capital necesar neglijabil (capital tangibil sub 5% din venituri sau negativ): semnal pozitiv, procentul nu se forțează")
                 put("oe_over_capex_plus_nwc", y, safe_div(calc["oe_low"].get(str(y)), (capex or 0.0) + max(nwc, 0.0)))
             else:
                 put("roic_tangible", y, safe_div(nopat, tangible))
             cwg = tangible + (gw or 0.0) + (intang or 0.0)
             if cwg <= P["negligible_capital_pct_of_revenue"] * rev:
-                put("roic_with_goodwill", y, None, "capital (inclusiv fond comercial) neglijabil fata de venituri")
+                put("roic_with_goodwill", y, None, "capital (inclusiv fond comercial) neglijabil față de venituri")
             else:
                 put("roic_with_goodwill", y, safe_div(nopat, cwg))
         else:
-            put("tangible_capital", y, None, "lipsa: active curente, datorii curente, numerar sau imobilizari")
-            put("roic_tangible", y, None, "lipsa")
+            put("tangible_capital", y, None, "lipsă: active curente, datorii curente, numerar sau imobilizări")
+            put("roic_tangible", y, None, "lipsă")
         eq_begin = g("equity", y - 1) if (y - 1) in years_all else None
         if eq_begin is not None and eq_begin > 0 and ni is not None:
             put("roe_begin_equity", y, ni / eq_begin)
         else:
-            put("roe_begin_equity", y, None, "capital propriu de inceput lipsa sau nepozitiv")
+            put("roe_begin_equity", y, None, "capital propriu de început lipsă sau nepozitiv")
         put("capex_to_revenue", y, safe_div(capex, rev))
         put("da_to_capex", y, safe_div(da, capex))
         put("operating_margin", y, safe_div(opi, rev))
         # survival
         debt = (g("debt_long", y) or 0.0) + ltdc0 + stb0
         if g("debt_long", y) is None and stb is None and ltdc is None:
-            put("net_debt", y, None, "lipsa: datorie")
+            put("net_debt", y, None, "lipsă: datorie")
         else:
             net_debt = debt - ((cash or 0.0) + sti0)
             put("net_debt", y, net_debt)
             put("net_debt_to_oe_low", y, safe_div(net_debt, calc["oe_low"].get(str(y))) if (calc["oe_low"].get(str(y)) or 0) > 0 else None)
         ie = g("interest_expense", y)
-        put("interest_cover", y, safe_div(opi, ie) if ie else None, None if ie else "lipsa: cheltuieli cu dobanzile neraportate separat")
+        put("interest_cover", y, safe_div(opi, ie) if ie else None, None if ie else "lipsă: cheltuieli cu dobânzile neraportate separat")
 
     # ---- aggregates ---------------------------------------------------------------
     y0, y1 = window[0], window[-1]
@@ -340,21 +351,21 @@ def build(entity, annual, facts, issues):
         yb = window[-1]
         candidates = [y for y in window if y <= yb - span and calc["nopat"].get(str(y)) is not None and calc["tangible_capital"].get(str(y)) is not None]
         if not candidates:
-            return {"value": None, "state": "lipsa: nu exista an de start cu NOPAT si capital tangibil", "years": None}
+            return {"value": None, "state": "lipsă: nu există an de start cu NOPAT și capital tangibil", "years": None}
         ya = max(candidates)
         na, nb = calc["nopat"].get(str(ya)), calc["nopat"].get(str(yb))
         ca_, cb_ = calc["tangible_capital"].get(str(ya)), calc["tangible_capital"].get(str(yb))
         if None in (na, nb, ca_, cb_):
-            return {"value": None, "state": "lipsa", "years": f"{ya} la {yb}"}
+            return {"value": None, "state": "lipsă", "years": f"{ya} la {yb}"}
         dn, dc = nb - na, cb_ - ca_
         rev_b = g("revenue", yb) or 0.0
         base = {"delta_nopat": dn, "delta_capital": dc, "years": f"{ya} la {yb}"}
         if dc <= 0 and dn > 0:
-            return {"value": None, "state": "profit in crestere fara capital suplimentar (cel mai bun caz)", **base}
+            return {"value": None, "state": "profit în creștere fără capital suplimentar (cel mai bun caz)", **base}
         if dc <= 0:
-            return {"value": None, "state": "capital in scadere, profit in scadere: necesita judecata", **base}
+            return {"value": None, "state": "capital în scădere, profit în scădere: necesită judecată", **base}
         if dc < P["negligible_capital_pct_of_revenue"] * rev_b and dn > 0:
-            return {"value": None, "state": "capital aproape neschimbat (sub 5% din venituri), profit in crestere: randament incremental foarte mare, procentul nu se forteaza", **base}
+            return {"value": None, "state": "capital aproape neschimbat (sub 5% din venituri), profit în creștere: randament incremental foarte mare, procentul nu se forțează", **base}
         return {"value": dn / dc, "state": "calculat", **base}
 
     sh0, sh1 = g("diluted_shares", y0), g("diluted_shares", y1)
@@ -374,35 +385,35 @@ def build(entity, annual, facts, issues):
     opi_last = g("operating_income", y1)
     ie_last = g("interest_expense", y1)
     stress = {
-        "assumption": f"OE scade cu {int(P['stress_oe_drop']*100)}% doi ani la rand (parametru propus)",
+        "assumption": f"OE scade cu {int(P['stress_oe_drop']*100)}% doi ani la rând (parametru propus)",
         "interest_cover_after_shock": (opi_last * (1 - P["stress_oe_drop"]) / ie_last) if (opi_last and ie_last) else None,
         "years_to_repay_net_debt": (nd_last / (oe_last * (1 - P["stress_oe_drop"]))) if (nd_last is not None and oe_last and nd_last > 0) else (0.0 if nd_last is not None and nd_last <= 0 else None),
         "maturities_5y": None,
-        "maturities_note": "lipsa: scadentele pe cinci ani nu sunt in companyfacts; se completeaza din notele 10-K cu pagina",
+        "maturities_note": "lipsă: scadențele pe cinci ani nu sunt în companyfacts; se completează din notele 10-K cu pagina",
     }
     nd_to_oe = safe_div(nd_last, oe_last) if (oe_last or 0) > 0 else None
     nd_to_oe_min = safe_div(nd_last, oe_min) if (oe_min or 0) > 0 else None
 
     def surv_verdict():
         if len(oe_clean) < P["short_history_min"]:
-            return "date_insuficiente", "sub 7 exercitii cu OE"
+            return "date_insuficiente", "sub 7 exerciții cu OE"
         if nd_last is None:
-            return "date_insuficiente", "datoria lipseste"
+            return "date_insuficiente", "datoria lipsește"
         if nd_last <= 0:
             base_ok = True
-            base_txt = "datorie neta negativa (numerar peste datorii)"
+            base_txt = "datorie netă negativă (numerar peste datorii)"
         else:
             if (cover_last is not None and cover_last < P["surv_fail_cover"]) or (nd_to_oe is not None and nd_to_oe > P["surv_fail_net_debt_to_oe"]):
-                return "pica", f"acoperirea dobanzilor {cover_last} sau datorie neta pe OE_jos {nd_to_oe}"
+                return "pica", f"acoperirea dobânzilor {ro(cover_last, 1)}x sau datorie netă pe OE_jos {ro(nd_to_oe, 2)}x peste pragul de picare"
             base_ok = (nd_to_oe is not None and nd_to_oe <= P["surv_pass_net_debt_to_oe"]) and (cover_last is not None and cover_last >= P["surv_pass_cover"])
-            base_txt = f"datorie neta pe OE_jos {nd_to_oe:.2f}x; acoperirea dobanzilor {'lipsa (cheltuiala cu dobanzile neraportata separat in companyfacts)' if cover_last is None else f'{cover_last:.1f}x'}"
+            base_txt = f"datorie netă pe OE_jos {ro(nd_to_oe, 2)}x; acoperirea dobânzilor {'lipsă (cheltuiala cu dobânzile neraportată separat în companyfacts)' if cover_last is None else ro(cover_last, 1) + 'x'}"
         s_ok = ((stress["interest_cover_after_shock"] is None) or stress["interest_cover_after_shock"] >= P["stress_cover_min"]) and \
                ((stress["years_to_repay_net_debt"] is None) or stress["years_to_repay_net_debt"] <= P["stress_years_to_repay_max"])
         if base_ok and s_ok:
-            return "trece", base_txt + "; stresul trece; scadentele lipsa, de completat"
+            return "trece", base_txt + "; stresul trece; scadențele lipsă, de completat"
         if base_ok and not s_ok:
             return "necesita_judecata", base_txt + "; stresul nu trece"
-        return "necesita_judecata", base_txt + " (intre pragurile de trecere si de picare)"
+        return "necesita_judecata", base_txt + " (între pragurile de trecere și de picare)"
 
     surv_v, surv_reason = surv_verdict()
 
@@ -416,31 +427,31 @@ def build(entity, annual, facts, issues):
     filters = [
         {"id": "K1", "name": "Record scurt sau inconsistent",
          "state": "respinge" if (public_years < P["short_history_min"] or loss_years > 2) else "trece",
-         "fact": f"{public_years} exercitii in companyfacts ({years_all[0]} la {years_all[-1]}); {loss_years} ani cu pierdere in fereastra {y0} la {y1}",
-         "source": "SEC EDGAR companyfacts; criteriile de achizitie Berkshire: demonstrated consistent earning power"},
-        {"id": "K2", "name": "Industrie in schimbare rapida",
+         "fact": f"{public_years} exerciții în companyfacts ({years_all[0]} la {years_all[-1]}); {loss_years} ani cu pierdere în fereastra {y0} la {y1}",
+         "source": "SEC EDGAR companyfacts; criteriile de achiziție Berkshire: demonstrated consistent earning power"},
+        {"id": "K2", "name": "Industrie în schimbare rapidă",
          "state": "neclar",
-         "fact": "necesita citirea sectiunilor Business si Risk Factors din ultimul 10-K; indiciile (cicluri de produs, R&D pe vanzari, concentrarea clientilor) nu sunt in companyfacts",
+         "fact": "necesită citirea secțiunilor Business și Risk Factors din ultimul 10-K; indiciile (cicluri de produs, R&D pe vânzări, concentrarea clienților) nu sunt în companyfacts",
          "source": "1992, 1996, 2007; judecata utilizatorului"},
         {"id": "K3", "name": "Randamente slabe pe capital",
          "state": ("neclar" if roe_median is None else ("respinge" if roe_median < P["k3_roe_median_min"] else "trece")),
-         "fact": ("ROE median pe capitalul de inceput de an: " + (f"{roe_median*100:.1f}%" if roe_median is not None else "lipsa (capital propriu nepozitiv sau lipsa)")) + f"; ani cu ROIC tangibil peste prag sau capital neglijabil: {roic_above_hurdle_years} din {len(window)}",
-         "source": "1977, 1979; banda descriptiva 12 la 20% (2010 pana la 2016)"},
+         "fact": ("ROE median pe capitalul de început de an: " + (f"{ro(roe_median*100, 1)}%" if roe_median is not None else "lipsă (capital propriu nepozitiv sau lipsă)")) + f"; ani cu ROIC tangibil peste prag sau capital neglijabil: {roic_above_hurdle_years} din {len(window)}",
+         "source": "1977, 1979; banda descriptivă 12 la 20% (2010 până la 2016)"},
         {"id": "K4", "name": "Datorie",
          "state": ("neclar" if (nd_last is None) else ("trece" if nd_last <= 0 else ("respinge" if ((k4_ratio is not None and k4_ratio > P["k4_net_debt_to_fcf_max"]) or (cover_last is not None and cover_last < P["k4_interest_cover_min"])) else "trece"))),
-         "fact": f"datorie neta {('lipsa' if nd_last is None else f'{nd_last/1e9:.1f} mld USD')}; datorie neta pe (CFO minus capex) {('lipsa' if k4_ratio is None else f'{k4_ratio:.1f}x')}; acoperirea dobanzilor {('lipsa' if cover_last is None else f'{cover_last:.1f}x')} (FY{y1})",
-         "source": "criteriile de achizitie: little or no debt; praguri propuse"},
+         "fact": f"datorie netă {('lipsă' if nd_last is None else ro(nd_last/1e9, 1) + ' mld USD')}; datorie netă pe (CFO minus capex) {('lipsă' if k4_ratio is None else ro(k4_ratio, 1) + 'x')}; acoperirea dobânzilor {('lipsă' if cover_last is None else ro(cover_last, 1) + 'x')} (FY{y1})",
+         "source": "criteriile de achiziție: little or no debt; praguri propuse"},
         {"id": "K5", "name": "Diluare",
          "state": ("neclar" if share_cagr is None else ("respinge" if share_cagr > P["k5_share_cagr_max"] else "trece")),
-         "fact": f"CAGR actiuni diluate {y0} la {y1}: {('lipsa' if share_cagr is None else f'{share_cagr*100:+.1f}% pe an')}; compensatia in actiuni: lipsa in extractie",
+         "fact": f"CAGR acțiuni diluate {y0} la {y1}: {('lipsă' if share_cagr is None else ro(share_cagr*100, 1, sign=True) + '% pe an')}; compensația în acțiuni: lipsă în extracție",
          "source": "Owner's Manual 10; 2014; 1992, 1998"},
         {"id": "K6", "name": "Candoare",
          "state": "neclar",
-         "fact": "necesita citirea ultimului comunicat de rezultate si a scrisorii catre actionari (profit ajustat, restatari, promisiuni)",
+         "fact": "necesită citirea ultimului comunicat de rezultate și a scrisorii către acționari (profit ajustat, restatări, promisiuni)",
          "source": "1983 principiul 12; 2002"},
-        {"id": "K7", "name": "In afara cadrului",
+        {"id": "K7", "name": "În afara cadrului",
          "state": "trece",
-         "fact": "companie nefinanciara cu situatii auditate in EDGAR; filtrul reputational (2025) ramane judecata",
+         "fact": "companie nefinanciară cu situații auditate în EDGAR; filtrul reputațional (2025) rămâne judecată",
          "source": "2002; 2025"},
     ]
 
@@ -449,12 +460,12 @@ def build(entity, annual, facts, issues):
     short = P["short_history_min"] <= len(oe_clean) < P["window_years"]
     g3_reason = []
     if negligible_years:
-        g3_reason.append(f"capital tangibil neglijabil in {negligible_years} din {len(window)} ani (semnal pozitiv)")
+        g3_reason.append(f"capital tangibil neglijabil în {negligible_years} din {len(window)} ani (semnal pozitiv)")
     if roic_clean:
-        g3_reason.append(f"ROIC tangibil median {statistics.median(roic_clean)*100:.0f}% in anii cu capital masurabil")
+        g3_reason.append(f"ROIC tangibil median {statistics.median(roic_clean)*100:.0f}% în anii cu capital măsurabil")
     inc5, inc10 = incremental(5), incremental(min(10, n))
-    g3_reason.append(f"ROIC incremental 5 ani: {inc5['state'] if inc5['value'] is None else f'{inc5['value']*100:.0f}%'}")
-    g3_reason.append("categoria 2007 este judecata (de completat)")
+    g3_reason.append(f"ROIC incremental 5 ani: {inc5['state'] if inc5['value'] is None else ('peste 200%' if inc5['value'] > 2 else f'{inc5['value']*100:.0f}%')}")
+    g3_reason.append("categoria 2007 este judecată (de completat)")
     gates = [
         {"id": "G2", "name": "Poarta 2: înțelegi afacerea", "verdict": "necesita_judecata",
          "reason": "textele porții 2 nu sunt scrise (paragraful la zece ani, cele trei moduri de a muri, clasificarea)" + ("; indiciu de instabilitate prezent" if indicators["instability_flag"] else "; fără indiciu de instabilitate"),
@@ -469,7 +480,7 @@ def build(entity, annual, facts, issues):
          "reason": f"dovezi: ROIC peste prag sau capital neglijabil în {roic_above_hurdle_years} din {len(window)} ani; marja operațională între {indicators['operating_margin_min']*100:.0f}% și {indicators['operating_margin_max']*100:.0f}%; formularul omului nu este completat" if margins else "formularul omului nu este completat",
          "pending_judgments": ["sursele șanțului cu dovezi", "testul francizei 1991", "testul capitalului 1998", "direcția și durabilitatea"]},
         {"id": "MGMT", "name": "Management", "verdict": "necesita_judecata",
-         "reason": f"fapte disponibile: răscumpărări și dividende pe zece ani, CAGR acțiuni {('lipsa' if share_cagr is None else f'{share_cagr*100:+.1f}%')}; candoarea, stimulentele și testul dolarului (forma Owner's Manual, cere valoarea contabilă pe acțiune și indexul) nu sunt evaluate",
+         "reason": f"fapte disponibile: răscumpărări și dividende pe zece ani, CAGR acțiuni {('lipsă' if share_cagr is None else ro(share_cagr*100, 1, sign=True) + '%')}; candoarea, stimulentele și testul dolarului (forma Owner's Manual, cere valoarea contabilă pe acțiune și indexul) nu sunt evaluate",
          "pending_judgments": ["candoare", "stimulente din proxy", "judecata sincer și competent"]},
         {"id": "G5", "name": "Poarta 5: preț sub valoare", "verdict": "inchisa",
          "reason": "închisă până la textele porții 2; în plus lipsesc prețul și randamentul obligațiunii cu dată (fără vendor de prețuri în acest export)",
@@ -485,9 +496,10 @@ def build(entity, annual, facts, issues):
         yr = per[:4]
         if yr.isdigit() and int(yr) < y0 - 1:
             continue
-        issue_rows.append({"type": r["severity"], "concept": r["concept"], "period": per, "description": r["description"], "effect": ""})
+        sev = {"low": "info", "info": "info", "medium": "warning", "warning": "warning", "high": "blocking", "blocking": "blocking"}.get(r["severity"], "info")
+        issue_rows.append({"type": sev, "concept": r["concept"], "period": per, "description": r["description"], "effect": ""})
     for note in split_notes:
-        issue_rows.append({"type": "warning", "concept": "diluted_shares", "period": f"{y0} la {y1}", "description": note, "effect": "CAGR actiuni si OE pe actiune ajustate; de verificat"})
+        issue_rows.append({"type": "warning", "concept": "diluted_shares", "period": f"{y0} la {y1}", "description": note, "effect": "CAGR acțiuni și OE pe acțiune ajustate; de verificat"})
     issue_rows.append({"type": "info", "concept": "sbc", "period": f"{y0} la {y1}", "description": "compensația în acțiuni nu a fost extrasă în spike; OE nu o adaugă înapoi (nu afectează OE), dar filtrul K5 rămâne incomplet", "effect": "K5 parțial"})
     issue_rows.append({"type": "info", "concept": "price", "period": TODAY, "description": "fără sursă de preț și fără randamentul obligațiunii la data analizei; poarta 5 închisă", "effect": "G5 închisă"})
     issue_rows.append({"type": "info", "concept": "other_operating_assets", "period": f"{y0} la {y1}", "description": "capitalul investit tangibil folosește capital de lucru net plus imobilizări corporale; alte active operaționale nu sunt separate în companyfacts", "effect": "ROIC tangibil posibil ușor supraestimat"})
