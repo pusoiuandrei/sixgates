@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 import sqlite3
 import statistics
 import sys
@@ -23,8 +24,8 @@ from collections import defaultdict
 from datetime import date, timedelta
 from pathlib import Path
 
-HERE = Path(__file__).resolve().parent
-TODAY = date(2026, 11, 5)
+HERE = Path(os.environ.get("SIXGATES_SCREEN_DIR", Path(__file__).resolve().parent))
+TODAY = date.today()
 WINDOW = 10
 
 REV_TAGS = ["RevenueFromContractWithCustomerExcludingAssessedTax", "Revenues", "SalesRevenueNet",

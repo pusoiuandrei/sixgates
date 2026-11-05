@@ -13,6 +13,7 @@ Rate: ~5 requests/second in total (SEC allows 10). User-Agent: SixGates research
 from __future__ import annotations
 
 import json
+import os
 import sqlite3
 import sys
 import threading
@@ -22,7 +23,7 @@ from pathlib import Path
 
 import requests
 
-OUT = Path(__file__).resolve().parent
+OUT = Path(os.environ.get("SIXGATES_SCREEN_DIR", Path(__file__).resolve().parent))
 DB = OUT / "frames.db"
 LOG = OUT / "fetch_frames.log"
 UA = {"User-Agent": "SixGates research spike contact@sixgates.local", "Accept-Encoding": "gzip, deflate"}

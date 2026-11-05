@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 import statistics
 import sys
 import time
@@ -14,7 +15,7 @@ from pathlib import Path
 
 import requests
 
-HERE = Path(__file__).resolve().parent
+HERE = Path(os.environ.get("SIXGATES_SCREEN_DIR", Path(__file__).resolve().parent))
 
 # Circle by SIC (Nasdaq names) and by GICS sub-industry (S&P 500 names).
 SIC_IN = {
@@ -93,6 +94,8 @@ def main() -> int:
         q = {
             "ticker": tickers[0], "name": r["name"], "cik": r["cik"], "sp500": r["sp500"], "exchanges": r["exchanges"],
             "sic": s, "sic_desc": meta.get("sicDescription"), "gics_sub": g, "category": cat,
+            "business_country": meta.get("business_country"), "state_inc": meta.get("stateOfIncorporation"),
+            "last_annual_filing": meta.get("last_annual_filing"), "accn_last": r.get("ni_accn_last", ""),
             "forms": "|".join(forms), "fy_end": r["fy_last"], "years": r["years_available"],
             "loss_years": int(r["loss_years"] or 0), "roe_median": f(r["roe_median"]), "neg_equity_years": int(r["neg_equity_years"] or 0),
             "rev_last": f(r["rev_last"]), "rev_cagr": f(r["rev_cagr"]), "rev_max_dev": f(r["rev_max_dev"]),
@@ -123,7 +126,8 @@ def main() -> int:
         out.append(q)
     out.sort(key=lambda q: (-q["quality_pts"], -(q["fcf_margin_median"] or 0)))
     # rough price indicator for the top names
-    for q in out[:40]:
+    n_price = len(out) if os.environ.get("DAILY") else 40
+    for q in out[:n_price]:
         price, pdate, cur = yahoo_quote(q["ticker"])
         q["price"], q["price_date"], q["price_currency"] = price, pdate, cur
         time.sleep(0.3)
