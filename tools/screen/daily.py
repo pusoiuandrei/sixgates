@@ -253,12 +253,19 @@ def choose(items: list[dict], state: dict, today: date) -> tuple[list[dict], lis
         it["eligible"], it["ineligible_reason"] = ok, why
         if ok:
             pool.append(it)
-    pool.sort(key=lambda it: (it["p_to_vi"], -it["quality_pts"]))
+    if not pool:  # vendor prices unavailable: fall back to quality order, flagged in the brief
+        pool = [it for it in items if it.get("ineligible_reason") in ("fără preț de la vendor",)
+                and (it.get("quality_pts", 0) >= MIN_QUALITY) and it.get("business_country") not in EXCLUDE_COUNTRIES]
+        for it in pool:
+            it["eligible"], it["ineligible_reason"], it["band"] = True, "", "preț indisponibil azi de la vendor; ordonare doar după calitate"
+        pool.sort(key=lambda it: (-it["quality_pts"], -(it.get("fcf_margin_median") or 0)))
+    else:
+        pool.sort(key=lambda it: (it["p_to_vi"], -it["quality_pts"]))
     fresh = [it for it in pool if it["ticker"] not in recent]
     picks = fresh[:3]
     if len(picks) < 3:  # rotation exhausted: allow repeats, oldest first
         last_seen = {t: max(d) for t, d in state.get("presented", {}).items()}
-        rest = sorted([it for it in pool if it not in picks], key=lambda it: (last_seen.get(it["ticker"], ""), it["p_to_vi"]))
+        rest = sorted([it for it in pool if it not in picks], key=lambda it: (last_seen.get(it["ticker"], ""), it.get("p_to_vi") or 9e9))
         picks += rest[:3 - len(picks)]
     return picks, pool
 

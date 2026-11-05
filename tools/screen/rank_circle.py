@@ -26,8 +26,9 @@ SIC_IN = {
     "3678", "3679", "3825",
     # distribution / channel, e-commerce
     "5045", "5961",
-    # fintech, market infrastructure, data
-    "6141", "6153", "6159", "6162", "6163", "6172", "6199", "6200", "6211", "6282", "6289", "7320",
+    # fintech as platforms: payments, exchanges, market data, credit scoring and reporting; banks, insurers,
+    # consumer lenders, brokers with balance sheets and asset managers stay out (K7 or outside the circle)
+    "6199", "6200", "7320",
     # business services NEC (payments, consulting), research and consulting
     "7389", "8700", "8742",
 }
@@ -37,15 +38,19 @@ GICS_IN = {
     "Semiconductor Materials & Equipment", "Technology Hardware, Storage & Peripherals", "Communications Equipment",
     "Electronic Components", "Electronic Equipment & Instruments", "Electronic Manufacturing Services",
     "Technology Distributors", "Transaction & Payment Processing Services", "Financial Exchanges & Data",
-    "Consumer Finance", "Investment Banking & Brokerage", "Research & Consulting Services", "Broadline Retail",
+    "Research & Consulting Services", "Broadline Retail",
     "Internet Retail", "Interactive Home Entertainment",
 }
 # explicit platform names the user understands even when GICS/SIC puts them elsewhere
-NAME_IN = {"BKNG", "ABNB", "UBER", "DASH", "EXPE", "SPOT", "NFLX"}
+NAME_IN = {"BKNG", "ABNB", "UBER", "DASH", "EXPE", "SPOT", "NFLX",
+           # electronic market and data platforms the user follows, despite broker or adviser SIC codes
+           "MKTX", "SEIC", "MORN", "IBKR", "HOOD", "COIN"}
+NAME_OUT = {"AXP", "SYF", "COF", "DFS", "ALLY", "SOFI", "RJF", "SCHW", "GS", "MS", "LPLA", "HLNE", "CG", "KKR", "BX", "APO",
+            "ARES", "FRHC", "SIEB", "VCTR", "TROW", "BEN", "IVZ", "AMP", "SF", "WETH", "LX", "SAMG", "CASS"}
 K7_SIC_PREFIX = ("602", "603", "609", "611", "631", "632", "633", "635", "636", "641", "679")  # banks, insurers, REITs, blank checks
 
 CATEGORY = [
-    ("fintech / infrastructură de piață", lambda sic, g: sic in {"6141", "6153", "6159", "6162", "6163", "6172", "6199", "6200", "6211", "6282", "6289", "7320"} or g in {"Transaction & Payment Processing Services", "Financial Exchanges & Data", "Consumer Finance", "Investment Banking & Brokerage"}),
+    ("fintech / infrastructură de piață", lambda sic, g: sic in {"6199", "6200", "6211", "6282", "7320"} or g in {"Transaction & Payment Processing Services", "Financial Exchanges & Data"}),
     ("semiconductori / hardware / rețele", lambda sic, g: sic.startswith(("357", "366", "367", "3825")) or g in {"Semiconductors", "Semiconductor Materials & Equipment", "Technology Hardware, Storage & Peripherals", "Communications Equipment", "Electronic Components", "Electronic Equipment & Instruments", "Electronic Manufacturing Services"}),
     ("servicii IT / consultanță / distribuție", lambda sic, g: sic in {"7371", "7373", "8700", "8742", "5045"} or g in {"IT Consulting & Other Services", "Research & Consulting Services", "Technology Distributors"}),
     ("software / internet", lambda sic, g: sic.startswith("737") or g in {"Application Software", "Systems Software", "Interactive Media & Services", "Internet Services & Infrastructure", "Data Processing & Outsourced Services", "Interactive Home Entertainment"}),
@@ -86,7 +91,9 @@ def main() -> int:
         k7 = s.startswith(K7_SIC_PREFIX) or g in {"Diversified Banks", "Regional Banks", "Insurance Brokers", "Life & Health Insurance",
                                                   "Property & Casualty Insurance", "Multi-line Insurance", "Reinsurance",
                                                   "Asset Management & Custody Banks"} or "REIT" in g
-        in_circle = (s in SIC_IN or g in GICS_IN or any(t in NAME_IN for t in tickers)) and not k7
+        in_circle = (s in SIC_IN or g in GICS_IN or any(t in NAME_IN for t in tickers)) and not k7 \
+            and not any(t in NAME_OUT for t in tickers) and g not in {"Consumer Finance", "Investment Banking & Brokerage",
+                                                                       "Asset Management & Custody Banks", "Diversified Financial Services"}
         if not in_circle:
             continue
         cat = next((name for name, test in CATEGORY if test(s, g)), "altele")
