@@ -1,0 +1,2258 @@
+{
+ "schema_version": "sixgates-analysis-1.0",
+ "company": {
+  "name": "Fair Isaac Corporation",
+  "ticker": "FICO",
+  "market": "NYSE (SUA)",
+  "cik": "814547",
+  "lei": null,
+  "currency": "USD",
+  "fiscal_year_end": "septembrie",
+  "standard": "US GAAP"
+ },
+ "analysis": {
+  "date": "2026-11-05",
+  "version": 1,
+  "framework_version": "2.3",
+  "author": "export din spike-ul fazei 1 (date reale, judecăți necompletate)",
+  "status": "draft",
+  "notice": "Aritmetică cu surse și judecăți atribuite, nu sfat de investiții.",
+  "window": {
+   "from": 2015,
+   "to": 2025,
+   "years_available": 15,
+   "years_in_window": 10
+  }
+ },
+ "preanalysis": {
+  "decision": "nedecis",
+  "decided_at": null,
+  "filters": [
+   {
+    "id": "K1",
+    "name": "Record scurt sau inconsistent",
+    "state": "trece",
+    "fact": "15 exerciții în companyfacts (2010 la 2025); 0 ani cu pierdere în fereastra 2015 la 2025",
+    "source": "SEC EDGAR companyfacts; criteriile de achiziție Berkshire: demonstrated consistent earning power"
+   },
+   {
+    "id": "K2",
+    "name": "Industrie în schimbare rapidă",
+    "state": "neclar",
+    "fact": "necesită citirea secțiunilor Business și Risk Factors din ultimul 10-K; indiciile (cicluri de produs, R&D pe vânzări, concentrarea clienților) nu sunt în companyfacts",
+    "source": "1992, 1996, 2007; judecata utilizatorului"
+   },
+   {
+    "id": "K3",
+    "name": "Randamente slabe pe capital",
+    "state": "trece",
+    "fact": "ROE median pe capitalul de început de an: 27,1%; ani cu ROIC tangibil peste prag sau capital neglijabil: 10 din 10",
+    "source": "1977, 1979; banda descriptivă 12 la 20% (2010 până la 2016)"
+   },
+   {
+    "id": "K4",
+    "name": "Datorie",
+    "state": "trece",
+    "fact": "datorie netă 2,9 mld USD; datorie netă pe (CFO minus capex) 3,8x; acoperirea dobânzilor 6,9x (FY2025)",
+    "source": "criteriile de achiziție: little or no debt; praguri propuse"
+   },
+   {
+    "id": "K5",
+    "name": "Diluare",
+    "state": "trece",
+    "fact": "CAGR acțiuni diluate 2015 la 2025: -3,1% pe an; compensația în acțiuni: lipsă în extracție",
+    "source": "Owner's Manual 10; 2014; 1992, 1998"
+   },
+   {
+    "id": "K6",
+    "name": "Candoare",
+    "state": "neclar",
+    "fact": "necesită citirea ultimului comunicat de rezultate și a scrisorii către acționari (profit ajustat, restatări, promisiuni)",
+    "source": "1983 principiul 12; 2002"
+   },
+   {
+    "id": "K7",
+    "name": "În afara cadrului",
+    "state": "trece",
+    "fact": "companie nefinanciară cu situații auditate în EDGAR; filtrul reputațional (2025) rămâne judecată",
+    "source": "2002; 2025"
+   }
+  ]
+ },
+ "gates": [
+  {
+   "id": "G2",
+   "name": "Poarta 2: înțelegi afacerea",
+   "verdict": "necesita_judecata",
+   "reason": "textele porții 2 nu sunt scrise (paragraful la zece ani, cele trei moduri de a muri, clasificarea); indiciu de instabilitate prezent",
+   "pending_judgments": [
+    "paragraful la zece ani",
+    "cele trei moduri de a muri",
+    "clasificarea în cerc / prea greu / în afară"
+   ]
+  },
+  {
+   "id": "G3",
+   "name": "Poarta 3: randamente pe capital",
+   "verdict": "necesita_judecata",
+   "reason": "ROIC tangibil median 260% în anii cu capital măsurabil; ROIC incremental 5 ani: capital aproape neschimbat (sub 5% din venituri), profit în creștere: randament incremental foarte mare, procentul nu se forțează; categoria 2007 este judecată (de completat)",
+   "pending_judgments": [
+    "categoria 2007 (excelentă, bună, groaznică)",
+    "alegerea lui (c), capexul de menținere, dacă diferă de interval"
+   ]
+  },
+  {
+   "id": "SURV",
+   "name": "Supraviețuire",
+   "verdict": "necesita_judecata",
+   "reason": "datorie netă pe OE_jos 4,44x; acoperirea dobânzilor 6,9x (între pragurile de trecere și de picare)",
+   "pending_judgments": [
+    "scadențele pe cinci ani din notele 10-K"
+   ]
+  },
+  {
+   "id": "G4",
+   "name": "Poarta 4: moat",
+   "verdict": "necesita_judecata",
+   "reason": "dovezi: ROIC peste prag sau capital neglijabil în 10 din 10 ani; marja operațională între 16% și 46%; formularul omului nu este completat",
+   "pending_judgments": [
+    "sursele șanțului cu dovezi",
+    "testul francizei 1991",
+    "testul capitalului 1998",
+    "direcția și durabilitatea"
+   ]
+  },
+  {
+   "id": "MGMT",
+   "name": "Management",
+   "verdict": "necesita_judecata",
+   "reason": "fapte disponibile: răscumpărări și dividende pe zece ani, CAGR acțiuni -3,1%; candoarea, stimulentele și testul dolarului (forma Owner's Manual, cere valoarea contabilă pe acțiune și indexul) nu sunt evaluate",
+   "pending_judgments": [
+    "candoare",
+    "stimulente din proxy",
+    "judecata sincer și competent"
+   ]
+  },
+  {
+   "id": "G5",
+   "name": "Poarta 5: preț sub valoare",
+   "verdict": "inchisa",
+   "reason": "închisă până la textele porții 2; în plus lipsesc prețul și randamentul obligațiunii cu dată (fără vendor de prețuri în acest export)",
+   "pending_judgments": [
+    "prețul pe care l-aș plăti"
+   ]
+  }
+ ],
+ "facts": {
+  "unit": "USD",
+  "display_scale": 1000000.0,
+  "display_scale_label": "milioane",
+  "years": [
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025
+  ],
+  "rows": [
+   {
+    "concept": "revenue",
+    "label": "Venituri",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 838781000.0,
+     "2016": 881356000.0,
+     "2017": 934983000.0,
+     "2018": 1000146000.0,
+     "2019": 1294562000.0,
+     "2021": 1316536000.0,
+     "2022": 1377270000.0,
+     "2023": 1513557000.0,
+     "2024": 1717526000.0,
+     "2025": 1990869000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "necesita_verificare",
+     "2018": "necesita_verificare",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+     "us-gaap:Revenues",
+     "us-gaap:SalesRevenueNet"
+    ]
+   },
+   {
+    "concept": "operating_income",
+    "label": "Profit operațional",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 137505000.0,
+     "2016": 169592000.0,
+     "2017": 182159000.0,
+     "2018": 175359000.0,
+     "2019": 295969000.0,
+     "2021": 505489000.0,
+     "2022": 542414000.0,
+     "2023": 642830000.0,
+     "2024": 733629000.0,
+     "2025": 924850000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:OperatingIncomeLoss"
+    ]
+   },
+   {
+    "concept": "pretax_income",
+    "label": "Profit înainte de impozit",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 109238000.0,
+     "2016": 144569000.0,
+     "2017": 156283000.0,
+     "2018": 156932000.0,
+     "2019": 257000000.0,
+     "2021": 473142000.0,
+     "2022": 471309000.0,
+     "2023": 553624000.0,
+     "2024": 642025000.0,
+     "2025": 802595000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+     "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments"
+    ]
+   },
+   {
+    "concept": "income_tax",
+    "label": "Impozit pe profit",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 22736000.0,
+     "2016": 35121000.0,
+     "2017": 22869000.0,
+     "2018": 30450000.0,
+     "2019": 20589000.0,
+     "2021": 81058000.0,
+     "2022": 97768000.0,
+     "2023": 124249000.0,
+     "2024": 129214000.0,
+     "2025": 150649000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:IncomeTaxExpenseBenefit"
+    ]
+   },
+   {
+    "concept": "net_income",
+    "label": "Profit net",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 86502000.0,
+     "2016": 109448000.0,
+     "2017": 133414000.0,
+     "2018": 126482000.0,
+     "2019": 236411000.0,
+     "2021": 392084000.0,
+     "2022": 373541000.0,
+     "2023": 429375000.0,
+     "2024": 512811000.0,
+     "2025": 651946000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:NetIncomeLoss"
+    ]
+   },
+   {
+    "concept": "d_and_a",
+    "label": "Deprecieri și amortizări (D&A)",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 33889000.0,
+     "2016": 31633000.0,
+     "2017": 36214000.0,
+     "2018": 30182000.0,
+     "2019": 30367000.0,
+     "2021": 25592000.0,
+     "2022": 20465000.0,
+     "2023": 14638000.0,
+     "2024": 13827000.0,
+     "2025": 14952000.0
+    },
+    "status": {
+     "2015": "necesita_verificare",
+     "2016": "necesita_verificare",
+     "2017": "necesita_verificare",
+     "2018": "necesita_verificare",
+     "2019": "necesita_verificare",
+     "2021": "necesita_verificare",
+     "2022": "necesita_verificare",
+     "2023": "necesita_verificare",
+     "2024": "necesita_verificare",
+     "2025": "necesita_verificare"
+    },
+    "source_tags": [
+     "us-gaap:DepreciationDepletionAndAmortization"
+    ]
+   },
+   {
+    "concept": "capex",
+    "label": "Capex (plăți pentru imobilizări)",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 24999000.0,
+     "2016": 21969000.0,
+     "2017": 19828000.0,
+     "2018": 31299000.0,
+     "2019": 21989000.0,
+     "2021": 7569000.0,
+     "2022": 6029000.0,
+     "2023": 4237000.0,
+     "2024": 8884000.0,
+     "2025": 8922000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    ]
+   },
+   {
+    "concept": "cfo",
+    "label": "Flux de numerar din exploatare (CFO)",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 146772000.0,
+     "2016": 210268000.0,
+     "2017": 225644000.0,
+     "2018": 223052000.0,
+     "2019": 364916000.0,
+     "2021": 423817000.0,
+     "2022": 509450000.0,
+     "2023": 468915000.0,
+     "2024": 632964000.0,
+     "2025": 778807000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+     "us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"
+    ]
+   },
+   {
+    "concept": "cash",
+    "label": "Numerar",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 86120000.0,
+     "2016": 75926000.0,
+     "2017": 105618000.0,
+     "2018": 90023000.0,
+     "2019": 157394000.0,
+     "2021": 195354000.0,
+     "2022": 133202000.0,
+     "2023": 136778000.0,
+     "2024": 150667000.0,
+     "2025": 134136000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:CashAndCashEquivalentsAtCarryingValue"
+    ]
+   },
+   {
+    "concept": "st_investments",
+    "label": "Investiții pe termen scurt",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": null,
+     "2016": null,
+     "2017": null,
+     "2018": null,
+     "2019": null,
+     "2021": null,
+     "2022": null,
+     "2023": null,
+     "2024": null,
+     "2025": null
+    },
+    "status": {
+     "2015": "lipsa",
+     "2016": "lipsa",
+     "2017": "lipsa",
+     "2018": "lipsa",
+     "2019": "lipsa",
+     "2021": "lipsa",
+     "2022": "lipsa",
+     "2023": "lipsa",
+     "2024": "lipsa",
+     "2025": "lipsa"
+    },
+    "source_tags": []
+   },
+   {
+    "concept": "st_borrowings",
+    "label": "Împrumuturi pe termen scurt",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 92000000.0,
+     "2016": 77000000.0,
+     "2017": 142000000.0,
+     "2018": 235000000.0,
+     "2019": 95000000.0,
+     "2021": 250000000.0,
+     "2022": 30000000.0,
+     "2023": 50000000.0,
+     "2024": 15000000.0,
+     "2025": null
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "lipsa"
+    },
+    "source_tags": [
+     "us-gaap:DebtCurrent"
+    ]
+   },
+   {
+    "concept": "ltd_current",
+    "label": "Datorie pe termen lung, partea curentă",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": null,
+     "2016": null,
+     "2017": null,
+     "2018": null,
+     "2019": null,
+     "2021": null,
+     "2022": null,
+     "2023": null,
+     "2024": 15000000.0,
+     "2025": 399541000.0
+    },
+    "status": {
+     "2015": "lipsa",
+     "2016": "lipsa",
+     "2017": "lipsa",
+     "2018": "lipsa",
+     "2019": "lipsa",
+     "2021": "lipsa",
+     "2022": "lipsa",
+     "2023": "lipsa",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:LongTermDebtCurrent"
+    ]
+   },
+   {
+    "concept": "debt_long",
+    "label": "Datorie pe termen lung",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 516000000.0,
+     "2016": 493624000.0,
+     "2017": 462801000.0,
+     "2018": 528944000.0,
+     "2019": 739435000.0,
+     "2021": 1009018000.0,
+     "2022": 1823669000.0,
+     "2023": 1811658000.0,
+     "2024": 2194021000.0,
+     "2025": 2656150000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:LongTermDebtNoncurrent"
+    ]
+   },
+   {
+    "concept": "interest_expense",
+    "label": "Cheltuieli cu dobânzile",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 29150000.0,
+     "2016": 26633000.0,
+     "2017": 25790000.0,
+     "2018": 31311000.0,
+     "2019": 42177000.0,
+     "2021": 40092000.0,
+     "2022": 68967000.0,
+     "2023": 95546000.0,
+     "2024": 105638000.0,
+     "2025": 133647000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:InterestExpense",
+     "us-gaap:InterestExpenseNonoperating"
+    ]
+   },
+   {
+    "concept": "equity",
+    "label": "Capital propriu",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 436998000.0,
+     "2016": 481316000.0,
+     "2017": 466183000.0,
+     "2018": 287437000.0,
+     "2019": 331082000.0,
+     "2021": -110942000.0,
+     "2022": -801947000.0,
+     "2023": -687990000.0,
+     "2024": -962679000.0,
+     "2025": -1745784000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:StockholdersEquity"
+    ]
+   },
+   {
+    "concept": "goodwill",
+    "label": "Fond comercial",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 814750000.0,
+     "2016": 798415000.0,
+     "2017": 804414000.0,
+     "2018": 800890000.0,
+     "2019": 812364000.0,
+     "2021": 788185000.0,
+     "2022": 761067000.0,
+     "2023": 773327000.0,
+     "2024": 782752000.0,
+     "2025": 783340000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:Goodwill"
+    ]
+   },
+   {
+    "concept": "intangibles",
+    "label": "Alte imobilizări necorporale",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 47321000.0,
+     "2016": 33619000.0,
+     "2017": 21185000.0,
+     "2018": 14536000.0,
+     "2019": 9236000.0,
+     "2021": 4099000.0,
+     "2022": 2017000.0,
+     "2023": 917000.0,
+     "2024": 0.0,
+     "2025": null
+    },
+    "status": {
+     "2015": "suma_partiala",
+     "2016": "suma_partiala",
+     "2017": "suma_partiala",
+     "2018": "suma_partiala",
+     "2019": "suma_partiala",
+     "2021": "suma_partiala",
+     "2022": "suma_partiala",
+     "2023": "suma_partiala",
+     "2024": "suma_partiala",
+     "2025": "lipsa"
+    },
+    "source_tags": [
+     "us-gaap:FiniteLivedIntangibleAssetsNet"
+    ]
+   },
+   {
+    "concept": "current_assets",
+    "label": "Active curente",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 286602000.0,
+     "2016": 267638000.0,
+     "2017": 310931000.0,
+     "2018": 396389000.0,
+     "2019": 534078000.0,
+     "2021": 550974000.0,
+     "2022": 484715000.0,
+     "2023": 556448000.0,
+     "2024": 617413000.0,
+     "2025": 705165000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:AssetsCurrent"
+    ]
+   },
+   {
+    "concept": "current_liabilities",
+    "label": "Datorii curente",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 243875000.0,
+     "2016": 246077000.0,
+     "2017": 326655000.0,
+     "2018": 473903000.0,
+     "2019": 414511000.0,
+     "2021": 559207000.0,
+     "2022": 331459000.0,
+     "2023": 367688000.0,
+     "2024": 380285000.0,
+     "2025": 849215000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:LiabilitiesCurrent"
+    ]
+   },
+   {
+    "concept": "ppe_net",
+    "label": "Imobilizări corporale nete",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 38208000.0,
+     "2016": 45122000.0,
+     "2017": 40703000.0,
+     "2018": 48837000.0,
+     "2019": 46419000.0,
+     "2021": 27913000.0,
+     "2022": 17580000.0,
+     "2023": 10966000.0,
+     "2024": 38465000.0,
+     "2025": 67713000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:PropertyPlantAndEquipmentNet"
+    ]
+   },
+   {
+    "concept": "diluted_shares",
+    "label": "Acțiuni diluate (medie ponderată)",
+    "register": "F",
+    "unit": "acțiuni",
+    "values": {
+     "2015": 32609000.0,
+     "2016": 32308000.0,
+     "2017": 32245000.0,
+     "2018": 31180000.0,
+     "2019": 29932000.0,
+     "2021": 29260000.0,
+     "2022": 26347000.0,
+     "2023": 25367000.0,
+     "2024": 25079000.0,
+     "2025": 24561000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    ]
+   },
+   {
+    "concept": "dividends_paid",
+    "label": "Dividende plătite",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 2508000.0,
+     "2016": 2489000.0,
+     "2017": 1238000.0,
+     "2018": 0.0,
+     "2019": null,
+     "2021": null,
+     "2022": null,
+     "2023": null,
+     "2024": null,
+     "2025": null
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "lipsa",
+     "2021": "lipsa",
+     "2022": "lipsa",
+     "2023": "lipsa",
+     "2024": "lipsa",
+     "2025": "lipsa"
+    },
+    "source_tags": [
+     "us-gaap:PaymentsOfDividendsCommonStock"
+    ]
+   },
+   {
+    "concept": "share_repurchases",
+    "label": "Răscumpărări de acțiuni",
+    "register": "F",
+    "unit": "USD",
+    "values": {
+     "2015": 130719000.0,
+     "2016": 138399000.0,
+     "2017": 187629000.0,
+     "2018": 342596000.0,
+     "2019": 235223000.0,
+     "2021": 874179000.0,
+     "2022": 1104180000.0,
+     "2023": 405526000.0,
+     "2024": 821702000.0,
+     "2025": 1414502000.0
+    },
+    "status": {
+     "2015": "ok",
+     "2016": "ok",
+     "2017": "ok",
+     "2018": "ok",
+     "2019": "ok",
+     "2021": "ok",
+     "2022": "ok",
+     "2023": "ok",
+     "2024": "ok",
+     "2025": "ok"
+    },
+    "source_tags": [
+     "us-gaap:PaymentsForRepurchaseOfCommonStock"
+    ]
+   }
+  ],
+  "note": "valorile din cea mai recentă depunere pentru fiecare perioadă; etichetele XBRL ca în depunere; sursa fiecărei linii în source_tags și în lista de surse"
+ },
+ "gate2": {
+  "indicators": {
+   "revenue_cagr_10y": 0.10080515722097072,
+   "revenue_max_deviation_from_trend": 0.1251714528150213,
+   "operating_margin_min": 0.16393432850767958,
+   "operating_margin_max": 0.46454588423447246,
+   "oe_low_cv": 0.5887064163338449,
+   "loss_years": 0,
+   "instability_flag": true
+  },
+  "parameters": {
+   "instab_loss_years": 2,
+   "instab_cv_oe": 0.5,
+   "instab_revenue_deviation": 0.2
+  }
+ },
+ "gate3": {
+  "years": [
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025
+  ],
+  "rows": [
+   {
+    "metric": "oe_low",
+    "label": "OE_jos",
+    "formula": "profit net + D&A − capex total",
+    "unit": "USD",
+    "register": "C",
+    "values": {
+     "2015": 95392000.0,
+     "2016": 119112000.0,
+     "2017": 149800000.0,
+     "2018": 125365000.0,
+     "2019": 244789000.0,
+     "2021": 410107000.0,
+     "2022": 387977000.0,
+     "2023": 439776000.0,
+     "2024": 517754000.0,
+     "2025": 657976000.0
+    },
+    "flags": {}
+   },
+   {
+    "metric": "oe_high",
+    "label": "OE_sus",
+    "formula": "profit net + D&A − max(D&A, capex de menținere Greenwald)",
+    "unit": "USD",
+    "register": "C",
+    "values": {
+     "2015": 86502000.0,
+     "2016": 109448000.0,
+     "2017": 133414000.0,
+     "2018": 126482000.0,
+     "2019": 236411000.0,
+     "2021": null,
+     "2022": 373541000.0,
+     "2023": 429375000.0,
+     "2024": 512811000.0,
+     "2025": 651946000.0
+    },
+    "flags": {}
+   },
+   {
+    "metric": "greenwald_maintenance_capex",
+    "label": "Capex de menținere (Greenwald)",
+    "formula": "capex − max(0, Δvenituri × media(imobilizări/venituri, 3 ani anteriori))",
+    "unit": "USD",
+    "register": "C",
+    "values": {
+     "2015": 22211168.758710947,
+     "2016": 19800857.889502224,
+     "2017": 17267592.498110734,
+     "2018": 28251948.971829835,
+     "2019": 7900272.473319305,
+     "2021": null,
+     "2022": 3885319.838758189,
+     "2023": 1065004.2121698125,
+     "2024": 6082049.473758208,
+     "2025": 5058282.875051058
+    },
+    "flags": {
+     "2021": "lipsă: fără istoric pentru estimarea Greenwald"
+    }
+   },
+   {
+    "metric": "fcf_simple",
+    "label": "CFO − capex (verificare)",
+    "formula": "flux din exploatare − capex",
+    "unit": "USD",
+    "register": "C",
+    "values": {
+     "2015": 121773000.0,
+     "2016": 188299000.0,
+     "2017": 205816000.0,
+     "2018": 191753000.0,
+     "2019": 342927000.0,
+     "2021": 416248000.0,
+     "2022": 503421000.0,
+     "2023": 464678000.0,
+     "2024": 624080000.0,
+     "2025": 769885000.0
+    },
+    "flags": {}
+   },
+   {
+    "metric": "oe_conversion",
+    "label": "Conversie OE_jos / profit net",
+    "formula": "OE_jos ÷ profit net",
+    "unit": "x",
+    "register": "C",
+    "values": {
+     "2015": 1.102772190238376,
+     "2016": 1.088297639061472,
+     "2017": 1.1228206934804443,
+     "2018": 0.9911687038471877,
+     "2019": 1.03543828332861,
+     "2021": 1.0459671907040329,
+     "2022": 1.0386463601050486,
+     "2023": 1.0242235807860263,
+     "2024": 1.0096390288039843,
+     "2025": 1.0092492322983806
+    },
+    "flags": {}
+   },
+   {
+    "metric": "oe_low_per_share",
+    "label": "OE_jos pe acțiune diluată",
+    "formula": "OE_jos ÷ acțiuni diluate",
+    "unit": "USD/acțiune",
+    "register": "C",
+    "values": {
+     "2015": 2.925327363611273,
+     "2016": 3.6867648879534483,
+     "2017": 4.645681501007908,
+     "2018": 4.020686337395767,
+     "2019": 8.178170519844983,
+     "2021": 14.01596035543404,
+     "2022": 14.725661365620374,
+     "2023": 17.336539598691214,
+     "2024": 20.644922046333587,
+     "2025": 26.78946296974879
+    },
+    "flags": {}
+   },
+   {
+    "metric": "effective_tax_rate",
+    "label": "Rata efectivă de impozit",
+    "formula": "impozit ÷ profit înainte de impozit, limitată la 0 la 50%",
+    "unit": "%",
+    "register": "C",
+    "values": {
+     "2015": 0.2081327010747176,
+     "2016": 0.24293589912083505,
+     "2017": 0.14633069495722503,
+     "2018": 0.19403308439324038,
+     "2019": 0.08011284046692607,
+     "2021": 0.17131854707466257,
+     "2022": 0.20743928081152704,
+     "2023": 0.2244284929844082,
+     "2024": 0.20126007554222966,
+     "2025": 0.18770239037123332
+    },
+    "flags": {}
+   },
+   {
+    "metric": "nopat",
+    "label": "NOPAT",
+    "formula": "profit operațional × (1 − rata efectivă)",
+    "unit": "USD",
+    "register": "C",
+    "values": {
+     "2015": 108885712.93872096,
+     "2016": 128392014.99629934,
+     "2017": 155503546.93728685,
+     "2018": 141333552.35388577,
+     "2019": 272258082.7198444,
+     "2021": 418889358.9577759,
+     "2022": 429896029.9378964,
+     "2023": 498560631.8548328,
+     "2024": 585978772.0400295,
+     "2025": 751253444.2651649
+    },
+    "flags": {}
+   },
+   {
+    "metric": "tangible_capital",
+    "label": "Capital investit tangibil",
+    "formula": "(active curente − numerar excedentar) − (datorii curente − datorie purtătoare de dobândă curentă) + imobilizări corporale nete; numerar excedentar = numerar + investiții pe termen scurt − 2% din venituri",
+    "unit": "USD",
+    "register": "C",
+    "values": {
+     "2015": 103590620.0,
+     "2016": 85384120.0,
+     "2017": 80060660.0,
+     "2018": 136302920.0,
+     "2019": 129483240.0,
+     "2021": 100656720.0,
+     "2022": 95179400.0,
+     "2023": 143219140.0,
+     "2024": 189276520.0,
+     "2025": 228885380.0
+    },
+    "flags": {}
+   },
+   {
+    "metric": "roic_tangible",
+    "label": "ROIC tangibil",
+    "formula": "NOPAT ÷ capital investit tangibil (sfârșit de an); „capital necesar neglijabil” când capitalul este sub 5% din venituri sau negativ",
+    "unit": "%",
+    "register": "C",
+    "values": {
+     "2015": 1.05111556373271,
+     "2016": 1.5036989898859336,
+     "2017": 1.9423215713845834,
+     "2018": 1.0369077372215194,
+     "2019": 2.1026511440387528,
+     "2021": 4.161563768000546,
+     "2022": 4.516691951597681,
+     "2023": 3.4811033766494677,
+     "2024": 3.095887287234727,
+     "2025": 3.282225558771665
+    },
+    "flags": {}
+   },
+   {
+    "metric": "roic_with_goodwill",
+    "label": "ROIC cu fond comercial (pe prețul plătit)",
+    "formula": "NOPAT ÷ (capital tangibil + fond comercial + necorporale)",
+    "unit": "%",
+    "register": "C",
+    "values": {
+     "2015": 0.11275762718903642,
+     "2016": 0.13994929051139662,
+     "2017": 0.17170196907885557,
+     "2018": 0.14850189942098824,
+     "2019": 0.2862610455840273,
+     "2021": 0.4691121701312668,
+     "2022": 0.5008905540395832,
+     "2023": 0.5434121656972866,
+     "2024": 0.6028411306697354,
+     "2025": 0.7421800115950115
+    },
+    "flags": {}
+   },
+   {
+    "metric": "oe_over_capex_plus_nwc",
+    "label": "OE_jos ÷ (capex + capital de lucru), când capitalul e neglijabil",
+    "formula": "OE_jos ÷ (capex + max(capital de lucru net, 0))",
+    "unit": "x",
+    "register": "C",
+    "values": {
+     "2015": null,
+     "2016": null,
+     "2017": null,
+     "2018": null,
+     "2019": null,
+     "2021": null,
+     "2022": null,
+     "2023": null,
+     "2024": null,
+     "2025": null
+    },
+    "flags": {}
+   },
+   {
+    "metric": "roe_begin_equity",
+    "label": "ROE pe capitalul de început de an",
+    "formula": "profit net ÷ capital propriu la începutul anului",
+    "unit": "%",
+    "register": "C",
+    "values": {
+     "2015": 0.19027570642347133,
+     "2016": 0.25045423548849194,
+     "2017": 0.27718588204007344,
+     "2018": 0.27131405478106235,
+     "2019": 0.8224793606946914,
+     "2021": null,
+     "2022": null,
+     "2023": null,
+     "2024": null,
+     "2025": null
+    },
+    "flags": {
+     "2021": "capital propriu de început lipsă sau nepozitiv",
+     "2022": "capital propriu de început lipsă sau nepozitiv",
+     "2023": "capital propriu de început lipsă sau nepozitiv",
+     "2024": "capital propriu de început lipsă sau nepozitiv",
+     "2025": "capital propriu de început lipsă sau nepozitiv"
+    }
+   },
+   {
+    "metric": "capex_to_revenue",
+    "label": "Capex / venituri",
+    "formula": "capex ÷ venituri",
+    "unit": "%",
+    "register": "C",
+    "values": {
+     "2015": 0.02980396551662472,
+     "2016": 0.02492636346720281,
+     "2017": 0.021206802690530203,
+     "2018": 0.03129443101307209,
+     "2019": 0.01698566773935895,
+     "2021": 0.005749178146286922,
+     "2022": 0.0043775004174925755,
+     "2023": 0.0027993659967876995,
+     "2024": 0.005172556339758466,
+     "2025": 0.004481460106114466
+    },
+    "flags": {}
+   },
+   {
+    "metric": "da_to_capex",
+    "label": "D&A / capex",
+    "formula": "D&A ÷ capex",
+    "unit": "x",
+    "register": "C",
+    "values": {
+     "2015": 1.3556142245689828,
+     "2016": 1.439892575902408,
+     "2017": 1.8264071010691951,
+     "2018": 0.9643119588485255,
+     "2019": 1.3810086861612625,
+     "2021": 3.381159994715286,
+     "2022": 3.3944269364737103,
+     "2023": 3.4548029265990086,
+     "2024": 1.5563935164340388,
+     "2025": 1.6758574310692669
+    },
+    "flags": {}
+   },
+   {
+    "metric": "operating_margin",
+    "label": "Marja operațională",
+    "formula": "profit operațional ÷ venituri",
+    "unit": "%",
+    "register": "C",
+    "values": {
+     "2015": 0.16393432850767958,
+     "2016": 0.19242167750602482,
+     "2017": 0.19482600218399693,
+     "2018": 0.17533340132340677,
+     "2019": 0.22862481673338164,
+     "2021": 0.38395379997204787,
+     "2022": 0.39383272706150574,
+     "2023": 0.4247147613205185,
+     "2024": 0.4271428787686475,
+     "2025": 0.46454588423447246
+    },
+    "flags": {}
+   }
+  ],
+  "incremental": {
+   "5y": {
+    "value": null,
+    "state": "capital aproape neschimbat (sub 5% din venituri), profit în creștere: randament incremental foarte mare, procentul nu se forțează",
+    "delta_nopat": 478995361.54532045,
+    "delta_capital": 99402140.0,
+    "years": "2019 la 2025"
+   },
+   "10y": {
+    "value": 4.340459653586773,
+    "state": "calculat",
+    "delta_nopat": 622861429.2688655,
+    "delta_capital": 143501260.0,
+    "years": "2016 la 2025"
+   }
+  },
+  "oe_low_cagr": 0.23933489397446084,
+  "share_cagr": -0.03100134594073556,
+  "roic_above_hurdle_years": 10,
+  "negligible_capital_years": 0,
+  "category": {
+   "value": null,
+   "register": "J",
+   "author": null,
+   "date": null,
+   "reason": "de completat de om, cu cifrele de mai sus"
+  }
+ },
+ "survival": {
+  "rows": [
+   {
+    "metric": "net_debt",
+    "label": "Datorie netă",
+    "formula": "datorie pe termen lung + partea curentă + împrumuturi pe termen scurt − numerar − investiții pe termen scurt",
+    "unit": "USD",
+    "register": "C",
+    "values": {
+     "2015": 521880000.0,
+     "2016": 494698000.0,
+     "2017": 499183000.0,
+     "2018": 673921000.0,
+     "2019": 677041000.0,
+     "2021": 1063664000.0,
+     "2022": 1720467000.0,
+     "2023": 1724880000.0,
+     "2024": 2073354000.0,
+     "2025": 2921555000.0
+    },
+    "flags": {}
+   },
+   {
+    "metric": "net_debt_to_oe_low",
+    "label": "Datorie netă / OE_jos",
+    "formula": "datorie netă ÷ OE_jos",
+    "unit": "x",
+    "register": "C",
+    "values": {
+     "2015": 5.47089902717209,
+     "2016": 4.153217140170596,
+     "2017": 3.3323297730307075,
+     "2018": 5.37567104056156,
+     "2019": 2.765814640363742,
+     "2021": 2.5936255660108216,
+     "2022": 4.434456166216038,
+     "2023": 3.9221785636323947,
+     "2024": 4.004515658015197,
+     "2025": 4.440215144625336
+    },
+    "flags": {}
+   },
+   {
+    "metric": "interest_cover",
+    "label": "Acoperirea dobânzilor",
+    "formula": "profit operațional ÷ cheltuieli cu dobânzile",
+    "unit": "x",
+    "register": "C",
+    "values": {
+     "2015": 4.717152658662092,
+     "2016": 6.367739270829422,
+     "2017": 7.063164017060877,
+     "2018": 5.600555715243844,
+     "2019": 7.017308011475449,
+     "2021": 12.608226080015964,
+     "2022": 7.864833906071019,
+     "2023": 6.727963494023821,
+     "2024": 6.944745262121585,
+     "2025": 6.9200954753941355
+    },
+    "flags": {}
+   }
+  ],
+  "latest": {
+   "year": 2025,
+   "net_debt": 2921555000.0,
+   "net_debt_to_oe_low": 4.440215144625336,
+   "net_debt_to_min_oe_low": 30.62683453539081,
+   "interest_cover": 6.9200954753941355
+  },
+  "stress": {
+   "assumption": "OE scade cu 50% doi ani la rând (parametru propus)",
+   "interest_cover_after_shock": 3.4600477376970677,
+   "years_to_repay_net_debt": 8.880430289250672,
+   "maturities_5y": null,
+   "maturities_note": "lipsă: scadențele pe cinci ani nu sunt în companyfacts; se completează din notele 10-K cu pagina"
+  },
+  "thresholds": {
+   "surv_pass_net_debt_to_oe": 2.0,
+   "surv_fail_net_debt_to_oe": 5.0,
+   "surv_pass_cover": 8.0,
+   "surv_fail_cover": 1.0,
+   "stress_cover_min": 3.0,
+   "stress_years_to_repay_max": 6.0
+  }
+ },
+ "judgments": {
+  "gate2": {
+   "ten_year_paragraph": "",
+   "three_ways_to_die": [
+    "",
+    "",
+    ""
+   ],
+   "classification": "",
+   "author": "",
+   "date": "",
+   "register": "J"
+  },
+  "gate4": {
+   "moat_sources": [],
+   "franchise_test_1991": {
+    "needed_or_desired": "",
+    "no_close_substitute": "",
+    "price_unregulated": ""
+   },
+   "capital_test_1998": "",
+   "star_manager_2007": "",
+   "direction": "",
+   "durability_years": "",
+   "author": "",
+   "date": "",
+   "register": "J"
+  },
+  "management": {
+   "candour": "",
+   "incentives": "",
+   "verdict": "",
+   "author": "",
+   "date": "",
+   "register": "J"
+  },
+  "decision_paragraph": {
+   "ten_years": "",
+   "why_moat_holds": "",
+   "price_vs_value": "",
+   "what_would_prove_me_wrong": [],
+   "closed_market_5y": "",
+   "author": "",
+   "date": "",
+   "register": "J"
+  }
+ },
+ "management_facts": {
+  "buybacks": {
+   "2015": 130719000.0,
+   "2016": 138399000.0,
+   "2017": 187629000.0,
+   "2018": 342596000.0,
+   "2019": 235223000.0,
+   "2021": 874179000.0,
+   "2022": 1104180000.0,
+   "2023": 405526000.0,
+   "2024": 821702000.0,
+   "2025": 1414502000.0
+  },
+  "dividends": {
+   "2015": 2508000.0,
+   "2016": 2489000.0,
+   "2017": 1238000.0,
+   "2018": 0.0,
+   "2019": null,
+   "2021": null,
+   "2022": null,
+   "2023": null,
+   "2024": null,
+   "2025": null
+  },
+  "diluted_shares": {
+   "2015": 32609000.0,
+   "2016": 32308000.0,
+   "2017": 32245000.0,
+   "2018": 31180000.0,
+   "2019": 29932000.0,
+   "2021": 29260000.0,
+   "2022": 26347000.0,
+   "2023": 25367000.0,
+   "2024": 25079000.0,
+   "2025": 24561000.0
+  },
+  "share_cagr": -0.03100134594073556,
+  "dollar_test_owner_manual": {
+   "value": null,
+   "note": "cere valoarea contabilă pe acțiune și S&P 500 cu dividende pe cinci ani: nu sunt în acest export"
+  }
+ },
+ "gate5": {
+  "locked": true,
+  "lock_reason": "textele porții 2 lipsesc; fără preț și fără randament cu dată",
+  "inputs": {
+   "oe_low_last": 657976000.0,
+   "oe_high_last": 651946000.0,
+   "oe_low_cagr_10y": 0.23933489397446084,
+   "bond_yield": null,
+   "bond_yield_date": null,
+   "price": null,
+   "price_date": null,
+   "shares_outstanding": null
+  },
+  "grid": null,
+  "perpetuity_check": null,
+  "reverse_dcf": null,
+  "oe_yield": null,
+  "margin": {
+   "band": "afacere 30 la 50% (franciză 15 la 25% doar cu poarta 4 trecută)",
+   "register": "parametru propus"
+  },
+  "price_i_would_pay": {
+   "value": null,
+   "register": "J",
+   "author": null,
+   "date": null
+  },
+  "verdict": "inchisa"
+ },
+ "data_issues": [
+  {
+   "type": "info",
+   "concept": "fiscal_year",
+   "period": "2020-09-30",
+   "description": "fy label 2019 differs from period end year 2020 (0000814547-20-000012); label kept, check convention",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "all",
+   "period": "",
+   "description": "companyfacts does not expose decimals or company extension tags; both need the filing instance",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "fiscal_year",
+   "period": "2020-09-30",
+   "description": "FY2019 spans 731 days (52/53-week calendar); ratios use the reported period as is",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "revenue",
+   "period": "2016-09-30",
+   "description": "source tag changed from us-gaap:SalesRevenueNet to us-gaap:Revenues",
+   "effect": ""
+  },
+  {
+   "type": "blocking",
+   "concept": "revenue",
+   "period": "2017-09-30",
+   "description": "synonym tags disagree for FY2017: us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax=934,983,000 (0000814547-19-000016); us-gaap:Revenues=932,169,000 (0000814547-18-000010); us-gaap:SalesRevenueNet=932,169,000 (0000814547-17-000014); latest filed kept, needs an override or a reconciliation",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "revenue",
+   "period": "2017-09-30",
+   "description": "source tag changed from us-gaap:Revenues to us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "effect": ""
+  },
+  {
+   "type": "blocking",
+   "concept": "revenue",
+   "period": "2018-09-30",
+   "description": "synonym tags disagree for FY2018: us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax=1,000,146,000 (0000814547-20-000012); us-gaap:Revenues=1,032,475,000 (0000814547-18-000010); latest filed kept, needs an override or a reconciliation",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "operating_income",
+   "period": "2017-09-30",
+   "description": "restated us-gaap:OperatingIncomeLoss: 177,200,000 (0000814547-17-000014, filed 2017-11-09) to 182,159,000 (0000814547-19-000016, filed 2019-11-08); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "operating_income",
+   "period": "2017-09-30",
+   "description": "restated us-gaap:OperatingIncomeLoss: 177,200,000 (0000814547-18-000010, filed 2018-11-09) to 182,159,000 (0000814547-19-000016, filed 2019-11-08); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "operating_income",
+   "period": "2018-09-30",
+   "description": "restated us-gaap:OperatingIncomeLoss: 206,437,000 (0000814547-18-000010, filed 2018-11-09) to 175,359,000 (0000814547-20-000012, filed 2020-11-12); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "pretax_income",
+   "period": "2017-09-30",
+   "description": "restated us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments: 151,324,000 (0000814547-17-000014, filed 2017-11-09) to 156,283,000 (0000814547-19-000016, filed 2019-11-08); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "pretax_income",
+   "period": "2017-09-30",
+   "description": "restated us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments: 151,324,000 (0000814547-18-000010, filed 2018-11-09) to 156,283,000 (0000814547-19-000016, filed 2019-11-08); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "pretax_income",
+   "period": "2018-09-30",
+   "description": "restated us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments: 188,010,000 (0000814547-18-000010, filed 2018-11-09) to 156,932,000 (0000814547-20-000012, filed 2020-11-12); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "pretax_income",
+   "period": "2020-09-30",
+   "description": "source tag changed from us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesMinorityInterestAndIncomeLossFromEquityMethodInvestments to us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "income_tax",
+   "period": "2017-09-30",
+   "description": "restated us-gaap:IncomeTaxExpenseBenefit: 23,068,000 (0000814547-17-000014, filed 2017-11-09) to 22,869,000 (0000814547-19-000016, filed 2019-11-08); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "income_tax",
+   "period": "2017-09-30",
+   "description": "restated us-gaap:IncomeTaxExpenseBenefit: 23,068,000 (0000814547-18-000010, filed 2018-11-09) to 22,869,000 (0000814547-19-000016, filed 2019-11-08); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "income_tax",
+   "period": "2018-09-30",
+   "description": "restated us-gaap:IncomeTaxExpenseBenefit: 45,595,000 (0000814547-18-000010, filed 2018-11-09) to 30,450,000 (0000814547-20-000012, filed 2020-11-12); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "net_income",
+   "period": "2017-09-30",
+   "description": "restated us-gaap:NetIncomeLoss: 128,256,000 (0000814547-17-000014, filed 2017-11-09) to 133,414,000 (0000814547-19-000016, filed 2019-11-08); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "net_income",
+   "period": "2017-09-30",
+   "description": "restated us-gaap:NetIncomeLoss: 128,256,000 (0000814547-18-000010, filed 2018-11-09) to 133,414,000 (0000814547-19-000016, filed 2019-11-08); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "net_income",
+   "period": "2018-09-30",
+   "description": "restated us-gaap:NetIncomeLoss: 142,415,000 (0000814547-18-000010, filed 2018-11-09) to 126,482,000 (0000814547-20-000012, filed 2020-11-12); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "blocking",
+   "concept": "d_and_a",
+   "period": "2014-09-30",
+   "description": "synonym tags disagree for FY2014: us-gaap:DepreciationDepletionAndAmortization=32,632,000 (0000814547-16-000035); us-gaap:DepreciationAndAmortization=20,700,000 (0000814547-16-000035); latest filed kept, needs an override or a reconciliation",
+   "effect": ""
+  },
+  {
+   "type": "blocking",
+   "concept": "d_and_a",
+   "period": "2015-09-30",
+   "description": "synonym tags disagree for FY2015: us-gaap:DepreciationDepletionAndAmortization=33,889,000 (0000814547-17-000014); us-gaap:DepreciationAndAmortization=20,200,000 (0000814547-17-000014); latest filed kept, needs an override or a reconciliation",
+   "effect": ""
+  },
+  {
+   "type": "blocking",
+   "concept": "d_and_a",
+   "period": "2016-09-30",
+   "description": "synonym tags disagree for FY2016: us-gaap:DepreciationDepletionAndAmortization=31,633,000 (0000814547-18-000010); us-gaap:DepreciationAndAmortization=17,700,000 (0000814547-18-000010); latest filed kept, needs an override or a reconciliation",
+   "effect": ""
+  },
+  {
+   "type": "blocking",
+   "concept": "d_and_a",
+   "period": "2017-09-30",
+   "description": "synonym tags disagree for FY2017: us-gaap:DepreciationDepletionAndAmortization=36,214,000 (0000814547-19-000016); us-gaap:DepreciationAndAmortization=23,000,000 (0000814547-19-000016); latest filed kept, needs an override or a reconciliation",
+   "effect": ""
+  },
+  {
+   "type": "blocking",
+   "concept": "d_and_a",
+   "period": "2018-09-30",
+   "description": "synonym tags disagree for FY2018: us-gaap:DepreciationDepletionAndAmortization=30,182,000 (0000814547-20-000012); us-gaap:DepreciationAndAmortization=22,600,000 (0000814547-20-000012); latest filed kept, needs an override or a reconciliation",
+   "effect": ""
+  },
+  {
+   "type": "blocking",
+   "concept": "d_and_a",
+   "period": "2020-09-30",
+   "description": "synonym tags disagree for FY2019: us-gaap:DepreciationDepletionAndAmortization=30,367,000 (0000814547-22-000016); us-gaap:DepreciationAndAmortization=23,500,000 (0000814547-22-000016); latest filed kept, needs an override or a reconciliation",
+   "effect": ""
+  },
+  {
+   "type": "blocking",
+   "concept": "d_and_a",
+   "period": "2021-09-30",
+   "description": "synonym tags disagree for FY2021: us-gaap:DepreciationDepletionAndAmortization=25,592,000 (0000814547-23-000022); us-gaap:DepreciationAndAmortization=20,300,000 (0000814547-23-000022); latest filed kept, needs an override or a reconciliation",
+   "effect": ""
+  },
+  {
+   "type": "blocking",
+   "concept": "d_and_a",
+   "period": "2022-09-30",
+   "description": "synonym tags disagree for FY2022: us-gaap:DepreciationDepletionAndAmortization=20,465,000 (0001628280-24-045719); us-gaap:DepreciationAndAmortization=15,200,000 (0001628280-24-045719); latest filed kept, needs an override or a reconciliation",
+   "effect": ""
+  },
+  {
+   "type": "blocking",
+   "concept": "d_and_a",
+   "period": "2023-09-30",
+   "description": "synonym tags disagree for FY2023: us-gaap:DepreciationDepletionAndAmortization=14,638,000 (0000814547-25-000030); us-gaap:DepreciationAndAmortization=10,100,000 (0000814547-25-000030); latest filed kept, needs an override or a reconciliation",
+   "effect": ""
+  },
+  {
+   "type": "blocking",
+   "concept": "d_and_a",
+   "period": "2024-09-30",
+   "description": "synonym tags disagree for FY2024: us-gaap:DepreciationDepletionAndAmortization=13,827,000 (0000814547-25-000030); us-gaap:DepreciationAndAmortization=9,400,000 (0000814547-25-000030); latest filed kept, needs an override or a reconciliation",
+   "effect": ""
+  },
+  {
+   "type": "blocking",
+   "concept": "d_and_a",
+   "period": "2025-09-30",
+   "description": "synonym tags disagree for FY2025: us-gaap:DepreciationDepletionAndAmortization=14,952,000 (0000814547-25-000030); us-gaap:DepreciationAndAmortization=10,700,000 (0000814547-25-000030); latest filed kept, needs an override or a reconciliation",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "cfo",
+   "period": "2015-09-30",
+   "description": "restated us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations: 132,977,000 (0000814547-15-000019, filed 2015-11-10) to 146,772,000 (0000814547-17-000014, filed 2017-11-09); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "cfo",
+   "period": "2015-09-30",
+   "description": "restated us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations: 132,977,000 (0000814547-16-000035, filed 2016-11-10) to 146,772,000 (0000814547-17-000014, filed 2017-11-09); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "cfo",
+   "period": "2016-09-30",
+   "description": "restated us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations: 185,231,000 (0000814547-16-000035, filed 2016-11-10) to 210,268,000 (0000814547-18-000010, filed 2018-11-09); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "cfo",
+   "period": "2014-09-30",
+   "description": "fallback tag NetCashProvidedByUsedInOperatingActivitiesContinuingOperations used for FY2014 (no synonym tag filed)",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "cfo",
+   "period": "2015-09-30",
+   "description": "fallback tag NetCashProvidedByUsedInOperatingActivitiesContinuingOperations used for FY2015 (no synonym tag filed)",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "cfo",
+   "period": "2016-09-30",
+   "description": "fallback tag NetCashProvidedByUsedInOperatingActivitiesContinuingOperations used for FY2016 (no synonym tag filed)",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "cfo",
+   "period": "2017-09-30",
+   "description": "source tag changed from us-gaap:NetCashProvidedByUsedInOperatingActivitiesContinuingOperations to us-gaap:NetCashProvidedByUsedInOperatingActivities",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "st_investments",
+   "period": "2014-09-30",
+   "description": "no standard-taxonomy fact for FY2014 (candidates: ); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "st_investments",
+   "period": "2015-09-30",
+   "description": "no standard-taxonomy fact for FY2015 (candidates: ); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "st_investments",
+   "period": "2016-09-30",
+   "description": "no standard-taxonomy fact for FY2016 (candidates: ); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "st_investments",
+   "period": "2017-09-30",
+   "description": "no standard-taxonomy fact for FY2017 (candidates: ); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "st_investments",
+   "period": "2018-09-30",
+   "description": "no standard-taxonomy fact for FY2018 (candidates: ); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "st_investments",
+   "period": "2020-09-30",
+   "description": "no standard-taxonomy fact for FY2019 (candidates: ); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "st_investments",
+   "period": "2021-09-30",
+   "description": "no standard-taxonomy fact for FY2021 (candidates: ); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "st_investments",
+   "period": "2022-09-30",
+   "description": "no standard-taxonomy fact for FY2022 (candidates: ); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "st_investments",
+   "period": "2023-09-30",
+   "description": "no standard-taxonomy fact for FY2023 (candidates: ); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "st_investments",
+   "period": "2024-09-30",
+   "description": "no standard-taxonomy fact for FY2024 (candidates: ); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "st_investments",
+   "period": "2025-09-30",
+   "description": "no standard-taxonomy fact for FY2025 (candidates: ); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "st_borrowings",
+   "period": "2025-09-30",
+   "description": "no standard-taxonomy fact for FY2025 (candidates: NotesAndLoansPayable, NotesAndLoansPayableCurrent, ShortTermBorrowings, DebtCurrent, CommercialPaper); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "ltd_current",
+   "period": "2014-09-30",
+   "description": "no standard-taxonomy fact for FY2014 (candidates: LongTermDebtCurrent, LongTermDebtAndCapitalLeaseObligationsCurrent); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "ltd_current",
+   "period": "2015-09-30",
+   "description": "no standard-taxonomy fact for FY2015 (candidates: LongTermDebtCurrent, LongTermDebtAndCapitalLeaseObligationsCurrent); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "ltd_current",
+   "period": "2016-09-30",
+   "description": "no standard-taxonomy fact for FY2016 (candidates: LongTermDebtCurrent, LongTermDebtAndCapitalLeaseObligationsCurrent); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "ltd_current",
+   "period": "2017-09-30",
+   "description": "no standard-taxonomy fact for FY2017 (candidates: LongTermDebtCurrent, LongTermDebtAndCapitalLeaseObligationsCurrent); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "ltd_current",
+   "period": "2018-09-30",
+   "description": "no standard-taxonomy fact for FY2018 (candidates: LongTermDebtCurrent, LongTermDebtAndCapitalLeaseObligationsCurrent); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "ltd_current",
+   "period": "2020-09-30",
+   "description": "no standard-taxonomy fact for FY2019 (candidates: LongTermDebtCurrent, LongTermDebtAndCapitalLeaseObligationsCurrent); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "ltd_current",
+   "period": "2021-09-30",
+   "description": "no standard-taxonomy fact for FY2021 (candidates: LongTermDebtCurrent, LongTermDebtAndCapitalLeaseObligationsCurrent); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "ltd_current",
+   "period": "2022-09-30",
+   "description": "no standard-taxonomy fact for FY2022 (candidates: LongTermDebtCurrent, LongTermDebtAndCapitalLeaseObligationsCurrent); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "ltd_current",
+   "period": "2023-09-30",
+   "description": "no standard-taxonomy fact for FY2023 (candidates: LongTermDebtCurrent, LongTermDebtAndCapitalLeaseObligationsCurrent); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "debt_long",
+   "period": "2016-09-30",
+   "description": "rounding-only difference on us-gaap:LongTermDebtNoncurrent: 494,000,000 vs 493,624,000; latest kept",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "debt_long",
+   "period": "2014-09-30",
+   "description": "fallback tag LongTermDebt used for FY2014 (no synonym tag filed)",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "debt_long",
+   "period": "2015-09-30",
+   "description": "source tag changed from us-gaap:LongTermDebt to us-gaap:LongTermDebtNoncurrent",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "interest_expense",
+   "period": "2023-09-30",
+   "description": "source tag changed from us-gaap:InterestExpense to us-gaap:InterestExpenseNonoperating",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "equity",
+   "period": "2016-09-30",
+   "description": "restated us-gaap:StockholdersEquity: 446,828,000 (0000814547-16-000035, filed 2016-11-10) to 481,316,000 (0000814547-19-000016, filed 2019-11-08); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "equity",
+   "period": "2016-09-30",
+   "description": "restated us-gaap:StockholdersEquity: 446,828,000 (0000814547-17-000014, filed 2017-11-09) to 481,316,000 (0000814547-19-000016, filed 2019-11-08); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "equity",
+   "period": "2016-09-30",
+   "description": "restated us-gaap:StockholdersEquity: 446,828,000 (0000814547-18-000010, filed 2018-11-09) to 481,316,000 (0000814547-19-000016, filed 2019-11-08); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "equity",
+   "period": "2017-09-30",
+   "description": "restated us-gaap:StockholdersEquity: 426,537,000 (0000814547-17-000014, filed 2017-11-09) to 466,183,000 (0000814547-20-000012, filed 2020-11-12); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "equity",
+   "period": "2017-09-30",
+   "description": "restated us-gaap:StockholdersEquity: 426,537,000 (0000814547-18-000010, filed 2018-11-09) to 466,183,000 (0000814547-20-000012, filed 2020-11-12); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "equity",
+   "period": "2018-09-30",
+   "description": "restated us-gaap:StockholdersEquity: 263,737,000 (0000814547-18-000010, filed 2018-11-09) to 287,437,000 (0000814547-21-000019, filed 2021-11-10); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "intangibles",
+   "period": "2014-09-30",
+   "description": "partial sum for FY2014, components absent: IndefiniteLivedTrademarks, IndefiniteLivedFranchiseRights",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "intangibles",
+   "period": "2015-09-30",
+   "description": "partial sum for FY2015, components absent: IndefiniteLivedTrademarks, IndefiniteLivedFranchiseRights",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "intangibles",
+   "period": "2016-09-30",
+   "description": "partial sum for FY2016, components absent: IndefiniteLivedTrademarks, IndefiniteLivedFranchiseRights",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "intangibles",
+   "period": "2017-09-30",
+   "description": "partial sum for FY2017, components absent: IndefiniteLivedTrademarks, IndefiniteLivedFranchiseRights",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "intangibles",
+   "period": "2018-09-30",
+   "description": "partial sum for FY2018, components absent: IndefiniteLivedTrademarks, IndefiniteLivedFranchiseRights",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "intangibles",
+   "period": "2020-09-30",
+   "description": "partial sum for FY2019, components absent: IndefiniteLivedTrademarks, IndefiniteLivedFranchiseRights",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "intangibles",
+   "period": "2021-09-30",
+   "description": "partial sum for FY2021, components absent: IndefiniteLivedTrademarks, IndefiniteLivedFranchiseRights",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "intangibles",
+   "period": "2022-09-30",
+   "description": "partial sum for FY2022, components absent: IndefiniteLivedTrademarks, IndefiniteLivedFranchiseRights",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "intangibles",
+   "period": "2023-09-30",
+   "description": "partial sum for FY2023, components absent: IndefiniteLivedTrademarks, IndefiniteLivedFranchiseRights",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "intangibles",
+   "period": "2024-09-30",
+   "description": "partial sum for FY2024, components absent: IndefiniteLivedTrademarks, IndefiniteLivedFranchiseRights",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "intangibles",
+   "period": "2025-09-30",
+   "description": "no standard-taxonomy fact for FY2025 (candidates: IntangibleAssetsNetExcludingGoodwill); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "current_assets",
+   "period": "2018-09-30",
+   "description": "restated us-gaap:AssetsCurrent: 338,512,000 (0000814547-18-000010, filed 2018-11-09) to 396,389,000 (0000814547-19-000016, filed 2019-11-08); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "current_liabilities",
+   "period": "2018-09-30",
+   "description": "restated us-gaap:LiabilitiesCurrent: 422,215,000 (0000814547-18-000010, filed 2018-11-09) to 473,903,000 (0000814547-19-000016, filed 2019-11-08); latest kept",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "dividends_paid",
+   "period": "2020-09-30",
+   "description": "no standard-taxonomy fact for FY2019 (candidates: PaymentsOfDividendsCommonStock, PaymentsOfDividends, PaymentsOfDividendsAndDividendEquivalentsOnCommonStockAndRestrictedStockUnits); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "dividends_paid",
+   "period": "2021-09-30",
+   "description": "no standard-taxonomy fact for FY2021 (candidates: PaymentsOfDividendsCommonStock, PaymentsOfDividends, PaymentsOfDividendsAndDividendEquivalentsOnCommonStockAndRestrictedStockUnits); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "dividends_paid",
+   "period": "2022-09-30",
+   "description": "no standard-taxonomy fact for FY2022 (candidates: PaymentsOfDividendsCommonStock, PaymentsOfDividends, PaymentsOfDividendsAndDividendEquivalentsOnCommonStockAndRestrictedStockUnits); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "dividends_paid",
+   "period": "2023-09-30",
+   "description": "no standard-taxonomy fact for FY2023 (candidates: PaymentsOfDividendsCommonStock, PaymentsOfDividends, PaymentsOfDividendsAndDividendEquivalentsOnCommonStockAndRestrictedStockUnits); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "dividends_paid",
+   "period": "2024-09-30",
+   "description": "no standard-taxonomy fact for FY2024 (candidates: PaymentsOfDividendsCommonStock, PaymentsOfDividends, PaymentsOfDividendsAndDividendEquivalentsOnCommonStockAndRestrictedStockUnits); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "warning",
+   "concept": "dividends_paid",
+   "period": "2025-09-30",
+   "description": "no standard-taxonomy fact for FY2025 (candidates: PaymentsOfDividendsCommonStock, PaymentsOfDividends, PaymentsOfDividendsAndDividendEquivalentsOnCommonStockAndRestrictedStockUnits); marked missing",
+   "effect": ""
+  },
+  {
+   "type": "info",
+   "concept": "sbc",
+   "period": "2015 la 2025",
+   "description": "compensația în acțiuni nu a fost extrasă în spike; OE nu o adaugă înapoi (nu afectează OE), dar filtrul K5 rămâne incomplet",
+   "effect": "K5 parțial"
+  },
+  {
+   "type": "info",
+   "concept": "price",
+   "period": "2026-11-05",
+   "description": "fără sursă de preț și fără randamentul obligațiunii la data analizei; poarta 5 închisă",
+   "effect": "G5 închisă"
+  },
+  {
+   "type": "info",
+   "concept": "other_operating_assets",
+   "period": "2015 la 2025",
+   "description": "capitalul investit tangibil folosește capital de lucru net plus imobilizări corporale; alte active operaționale nu sunt separate în companyfacts",
+   "effect": "ROIC tangibil posibil ușor supraestimat"
+  }
+ ],
+ "parameters": [
+  {
+   "name": "Fereastra de istoric",
+   "value": "10 exerciții; 7 la 9 istoric scurt; sub 7 date insuficiente",
+   "inspired_by": "1983, Owner's Manual 9"
+  },
+  {
+   "name": "Capex de menținere (c)",
+   "value": "interval: D&A (podea) la capex total (plafon); Greenwald ca a treia estimare",
+   "inspired_by": "1986, 2015"
+  },
+  {
+   "name": "Numerar excedentar",
+   "value": "numerar + investiții pe termen scurt peste 2% din venituri",
+   "inspired_by": "instrument"
+  },
+  {
+   "name": "Capital neglijabil",
+   "value": "capital tangibil sub 5% din venituri sau negativ",
+   "inspired_by": "instrument"
+  },
+  {
+   "name": "Rata de actualizare (prag pentru persistența ROIC)",
+   "value": "6% USD (podea), fără randamentul obligațiunii la data analizei",
+   "inspired_by": "2000"
+  },
+  {
+   "name": "Supraviețuire",
+   "value": "trece: datorie netă ≤ 2 × OE_jos și acoperire ≥ 8; pică: > 5 × OE_jos sau acoperire < 1; stres OE −50% doi ani, acoperire după șoc ≥ 3, rambursare ≤ 6 ani",
+   "inspired_by": "little or no debt"
+  },
+  {
+   "name": "Instabilitate (poarta 2)",
+   "value": "≥ 2 ani cu pierdere în 10; CV OE > 0,5; abatere venituri > 20%",
+   "inspired_by": "instrument"
+  },
+  {
+   "name": "Pre-analiza",
+   "value": "K1 < 7 ani sau > 2 ani cu pierdere; K3 ROE median < 12%; K4 datorie netă > 5 × (CFO − capex) sau acoperire < 3; K5 acțiuni > +2% pe an",
+   "inspired_by": "criteriile de achiziție; 2010 până la 2016; OM 10"
+  }
+ ],
+ "sources": [
+  {
+   "title": "SEC EDGAR companyfacts (XBRL)",
+   "url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000814547.json",
+   "accessed": "2026-10-31"
+  },
+  {
+   "title": "10-K depus 2025-11-07, 0000814547-25-000030",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454725000030/",
+   "accessed": "2026-10-31"
+  },
+  {
+   "title": "10-K depus 2024-11-06, 0001628280-24-045719",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000162828024045719/",
+   "accessed": "2026-10-31"
+  },
+  {
+   "title": "10-K depus 2023-11-08, 0000814547-23-000022",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454723000022/",
+   "accessed": "2026-10-31"
+  },
+  {
+   "title": "10-K depus 2022-11-09, 0000814547-22-000016",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454722000016/",
+   "accessed": "2026-10-31"
+  },
+  {
+   "title": "10-K depus 2021-11-10, 0000814547-21-000019",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454721000019/",
+   "accessed": "2026-10-31"
+  },
+  {
+   "title": "10-K depus 2020-11-12, 0000814547-20-000012",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454720000012/",
+   "accessed": "2026-10-31"
+  },
+  {
+   "title": "10-K depus 2019-11-08, 0000814547-19-000016",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454719000016/",
+   "accessed": "2026-10-31"
+  },
+  {
+   "title": "10-K depus 2018-11-09, 0000814547-18-000010",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454718000010/",
+   "accessed": "2026-10-31"
+  },
+  {
+   "title": "10-K depus 2017-11-09, 0000814547-17-000014",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454717000014/",
+   "accessed": "2026-10-31"
+  },
+  {
+   "title": "10-K depus 2016-11-10, 0000814547-16-000035",
+   "url": "https://www.sec.gov/Archives/edgar/data/814547/000081454716000035/",
+   "accessed": "2026-10-31"
+  }
+ ]
+}

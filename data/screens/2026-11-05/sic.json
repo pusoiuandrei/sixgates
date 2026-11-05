@@ -1,0 +1,5854 @@
+{
+"1800": {
+"name": "ABBOTT LABORATORIES",
+"sic": "2834",
+"sicDescription": "Pharmaceutical Preparations",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "IL",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ABT"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"2969": {
+"name": "Air Products & Chemicals, Inc.",
+"sic": "2810",
+"sicDescription": "Industrial Inorganic Chemicals",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"APD"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"4127": {
+"name": "SKYWORKS SOLUTIONS, INC.",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "1002",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SWKS"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"4962": {
+"name": "AMERICAN EXPRESS CO",
+"sic": "6199",
+"sicDescription": "Finance Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "NY",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AXP"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"4977": {
+"name": "AFLAC INC",
+"sic": "6321",
+"sicDescription": "Accident & Health Insurance",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "GA",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AFL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"6845": {
+"name": "APOGEE ENTERPRISES, INC.",
+"sic": "3231",
+"sicDescription": "Glass Products, Made of  Purchased Glass",
+"fiscalYearEnd": "0301",
+"stateOfIncorporation": "MN",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"APOG"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"6951": {
+"name": "APPLIED MATERIALS INC /DE",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "1026",
+"stateOfIncorporation": "DC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AMAT"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"8670": {
+"name": "AUTOMATIC DATA PROCESSING INC",
+"sic": "7374",
+"sicDescription": "Services-Computer Processing & Data Preparation",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ADP"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"9326": {
+"name": "BALCHEM CORP",
+"sic": "2800",
+"sicDescription": "Chemicals & Allied Products",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MD",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"BCPC"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"14693": {
+"name": "BROWN FORMAN CORP",
+"sic": "2080",
+"sicDescription": "Beverages",
+"fiscalYearEnd": "0430",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"BF-B",
+"BF-A"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"16160": {
+"name": "CAL-MAINE FOODS INC",
+"sic": "0200",
+"sicDescription": "Agricultural Prod-Livestock & Animal Specialties",
+"fiscalYearEnd": "0529",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CALM"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"18230": {
+"name": "CATERPILLAR INC",
+"sic": "3531",
+"sicDescription": "Construction Machinery & Equip",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CAT"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"19617": {
+"name": "JPMORGAN CHASE & CO",
+"sic": "6021",
+"sicDescription": "National Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"JPM",
+"JPM-PC",
+"AMJB",
+"JPM-PD",
+"JPM-PJ",
+"JPM-PK",
+"JPM-PL",
+"JPM-PM",
+"VYLD"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"20286": {
+"name": "CINCINNATI FINANCIAL CORP",
+"sic": "6331",
+"sicDescription": "Fire, Marine & Casualty Insurance",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "OH",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CINF"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"21665": {
+"name": "COLGATE PALMOLIVE CO",
+"sic": "2844",
+"sicDescription": "Perfumes, Cosmetics & Other Toilet Preparations",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CL"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"26172": {
+"name": "CUMMINS INC",
+"sic": "3510",
+"sicDescription": "Engines & Turbines",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "IN",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CMI"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"27904": {
+"name": "DELTA AIR LINES, INC.",
+"sic": "4512",
+"sicDescription": "Air Transportation, Scheduled",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DAL"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"29534": {
+"name": "DOLLAR GENERAL CORP",
+"sic": "5331",
+"sicDescription": "Retail-Variety Stores",
+"fiscalYearEnd": "0129",
+"stateOfIncorporation": "TN",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DG"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"29905": {
+"name": "DOVER Corp",
+"sic": "3530",
+"sicDescription": "Construction, Mining & Materials Handling Machinery & Equip",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "NY",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DOV"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"31462": {
+"name": "ECOLAB INC.",
+"sic": "2840",
+"sicDescription": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ECL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"31667": {
+"name": "EDUCATIONAL DEVELOPMENT CORP",
+"sic": "5190",
+"sicDescription": "Wholesale-Miscellaneous Nondurable Goods",
+"fiscalYearEnd": "0228",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"EDUC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"33185": {
+"name": "EQUIFAX INC",
+"sic": "7320",
+"sicDescription": "Services-Consumer Credit Reporting, Collection Agencies",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "GA",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"EFX"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"33488": {
+"name": "ESCALADE INC",
+"sic": "3949",
+"sicDescription": "Sporting & Athletic Goods, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "IN",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ESCA"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer<br>Smaller reporting company"
+},
+"34782": {
+"name": "1ST SOURCE CORP",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "IN",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SRCE"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"36029": {
+"name": "FIRST FINANCIAL BANKSHARES INC",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "TX",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FFIN"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"36104": {
+"name": "US BANCORP \\DE\\",
+"sic": "6021",
+"sicDescription": "National Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"USB",
+"USB-PA",
+"USB-PH",
+"USB-PP",
+"USB-PQ",
+"USB-PR",
+"USB-PS"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"38725": {
+"name": "FRANKLIN ELECTRIC CO INC",
+"sic": "3621",
+"sicDescription": "Motors & Generators",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "IN",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FELE"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"39311": {
+"name": "INDEPENDENT BANK CORP /MI/",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MI",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"IBCP"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer"
+},
+"40533": {
+"name": "GENERAL DYNAMICS CORP",
+"sic": "3730",
+"sicDescription": "Ship & Boat Building & Repairing",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GD"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"46250": {
+"name": "HAWKINS INC",
+"sic": "5160",
+"sicDescription": "Wholesale-Chemicals & Allied Products",
+"fiscalYearEnd": "0328",
+"stateOfIncorporation": "MN",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"HWKN"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"47111": {
+"name": "HERSHEY CO",
+"sic": "2060",
+"sicDescription": "Sugar & Confectionery Products",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HSY"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"48465": {
+"name": "HORMEL FOODS CORP /DE/",
+"sic": "2011",
+"sicDescription": "Meat Packing Plants",
+"fiscalYearEnd": "1025",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HRL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"49071": {
+"name": "HUMANA INC",
+"sic": "6324",
+"sicDescription": "Hospital & Medical Service Plans",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HUM"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"49826": {
+"name": "ILLINOIS TOOL WORKS INC",
+"sic": "3560",
+"sicDescription": "General Industrial Machinery & Equipment",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ITW"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"55785": {
+"name": "KIMBERLY CLARK CORP",
+"sic": "2670",
+"sicDescription": "Converted Paper & Paperboard Prods (No Contaners/Boxes)",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"KMB"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"56868": {
+"name": "PRIMEENERGY RESOURCES CORP",
+"sic": "1311",
+"sicDescription": "Crude Petroleum & Natural Gas",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PNRG"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"57515": {
+"name": "MARZETTI CO",
+"sic": "2030",
+"sicDescription": "Canned, Frozen & Preservd Fruit, Veg & Food Specialties",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "OH",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MZTI"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"59527": {
+"name": "LINCOLN ELECTRIC HOLDINGS INC",
+"sic": "3540",
+"sicDescription": "Metalworkg Machinery & Equipment",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "OH",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LECO"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"62709": {
+"name": "MARSH & MCLENNAN COMPANIES, INC.",
+"sic": "6411",
+"sicDescription": "Insurance Agents, Brokers & Service",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MRSH"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"62996": {
+"name": "MASCO CORP /DE/",
+"sic": "3430",
+"sicDescription": "Heating Equip, Except Elec & Warm Air; & Plumbing Fixtures",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MAS"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"65596": {
+"name": "SIEBERT FINANCIAL CORP",
+"sic": "6211",
+"sicDescription": "Security Brokers, Dealers & Flotation Companies",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "NY",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SIEB"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"68505": {
+"name": "Motorola Solutions, Inc.",
+"sic": "3663",
+"sicDescription": "Radio & Tv Broadcasting & Communications Equipment",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MSI"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"69633": {
+"name": "NAPCO SECURITY TECHNOLOGIES, INC",
+"sic": "3669",
+"sicDescription": "Communications Equipment, NEC",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NSSC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"69891": {
+"name": "NATIONAL BEVERAGE CORP",
+"sic": "2086",
+"sicDescription": "Bottled & Canned Soft Drinks & Carbonated Waters",
+"fiscalYearEnd": "0502",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FIZZ"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"70487": {
+"name": "NRC HEALTH",
+"sic": "8731",
+"sicDescription": "Services-Commercial Physical & Biological Research",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NRC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer"
+},
+"72331": {
+"name": "NORDSON CORP",
+"sic": "3569",
+"sicDescription": "General Industrial Machinery & Equipment, NEC",
+"fiscalYearEnd": "1031",
+"stateOfIncorporation": "OH",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NDSN"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"73124": {
+"name": "NORTHERN TRUST CORP",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"NTRS",
+"NTRSO"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"75677": {
+"name": "PACKAGING CORP OF AMERICA",
+"sic": "2650",
+"sicDescription": "Paperboard Containers & Boxes",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PKG"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"76334": {
+"name": "Parker-Hannifin Corp",
+"sic": "3490",
+"sicDescription": "Miscellaneous Fabricated Metal Products",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "OH",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PH"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"77360": {
+"name": "PENTAIR plc",
+"sic": "3550",
+"sicDescription": "Special Industry Machinery (No Metalworking Machinery)",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "L2",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PNR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"80424": {
+"name": "PROCTER & GAMBLE Co",
+"sic": "2840",
+"sicDescription": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "OH",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PG"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"80661": {
+"name": "PROGRESSIVE CORP/OH/",
+"sic": "6331",
+"sicDescription": "Fire, Marine & Casualty Insurance",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "OH",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PGR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"82020": {
+"name": "UNITED STATES LIME & MINERALS INC",
+"sic": "1400",
+"sicDescription": "Mining & Quarrying of  Nonmetallic Minerals (No Fuels)",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "TX",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"USLM"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"84839": {
+"name": "ROLLINS INC",
+"sic": "7340",
+"sicDescription": "Services-To Dwellings & Other Buildings",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ROL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"91142": {
+"name": "SMITH A O CORP",
+"sic": "3630",
+"sicDescription": "Household Appliances",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AOS"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"91440": {
+"name": "Snap-on Inc",
+"sic": "3420",
+"sicDescription": "Cutlery, Handtools & General Hardware",
+"fiscalYearEnd": "0102",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"SNA"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"97210": {
+"name": "TERADYNE, INC",
+"sic": "3825",
+"sicDescription": "Instruments For Meas & Testing of  Electricity & Elec Signals",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"TER"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"97476": {
+"name": "TEXAS INSTRUMENTS INC",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"TXN"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"101382": {
+"name": "UMB FINANCIAL CORP",
+"sic": "6021",
+"sicDescription": "National Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MO",
+"exchanges": [
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"UMBF",
+"UMBFO"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"104169": {
+"name": "Walmart Inc.",
+"sic": "5331",
+"sicDescription": "Retail-Variety Stores",
+"fiscalYearEnd": "0131",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"WMT"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"105132": {
+"name": "WD 40 CO",
+"sic": "2890",
+"sicDescription": "Miscellaneous Chemical Products",
+"fiscalYearEnd": "0831",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"WDFC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"105634": {
+"name": "EMCOR Group, Inc.",
+"sic": "1731",
+"sicDescription": "Electrical Work",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"EME"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"105770": {
+"name": "WEST PHARMACEUTICAL SERVICES INC",
+"sic": "3841",
+"sicDescription": "Surgical & Medical Instruments & Apparatus",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "PA",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"WST"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"109198": {
+"name": "TJX COMPANIES INC /DE/",
+"sic": "5651",
+"sicDescription": "Retail-Family Clothing Stores",
+"fiscalYearEnd": "0201",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TJX"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"217346": {
+"name": "TEXTRON INC",
+"sic": "3720",
+"sicDescription": "Aircraft & Parts",
+"fiscalYearEnd": "0102",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TXT"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"277135": {
+"name": "W.W. GRAINGER, INC.",
+"sic": "5000",
+"sicDescription": "Wholesale-Durable Goods",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "IL",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GWW"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"278166": {
+"name": "CAVCO INDUSTRIES, INC.",
+"sic": "2451",
+"sicDescription": "Mobile Homes",
+"fiscalYearEnd": "0403",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CVCO"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"310764": {
+"name": "STRYKER CORP",
+"sic": "3841",
+"sicDescription": "Surgical & Medical Instruments & Apparatus",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MI",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"SYK"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"313927": {
+"name": "CHURCH & DWIGHT CO INC /DE/",
+"sic": "2840",
+"sicDescription": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CHD"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"315189": {
+"name": "DEERE & CO",
+"sic": "3523",
+"sicDescription": "Farm Machinery & Equipment",
+"fiscalYearEnd": "1101",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DE"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"315293": {
+"name": "Aon plc",
+"sic": "6411",
+"sicDescription": "Insurance Agents, Brokers & Service",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "L2",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AON"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"320187": {
+"name": "NIKE, Inc.",
+"sic": "3021",
+"sicDescription": "Rubber & Plastics Footwear",
+"fiscalYearEnd": "0531",
+"stateOfIncorporation": "OR",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"NKE"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"320193": {
+"name": "Apple Inc.",
+"sic": "3571",
+"sicDescription": "Electronic Computers",
+"fiscalYearEnd": "0926",
+"stateOfIncorporation": "CA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AAPL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"350894": {
+"name": "SEI INVESTMENTS CO",
+"sic": "6211",
+"sicDescription": "Security Brokers, Dealers & Flotation Companies",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "PA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SEIC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"354950": {
+"name": "HOME DEPOT, INC.",
+"sic": "5211",
+"sicDescription": "Retail-Lumber & Other Building Materials Dealers",
+"fiscalYearEnd": "0131",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HD"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"355811": {
+"name": "GENTEX CORP",
+"sic": "3714",
+"sicDescription": "Motor Vehicle Parts & Accessories",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MI",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"GNTX"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"700841": {
+"name": "RCM TECHNOLOGIES, INC.",
+"sic": "7363",
+"sicDescription": "Services-Help Supply Services",
+"fiscalYearEnd": "0102",
+"stateOfIncorporation": "NV",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"RCMT"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer<br>Smaller reporting company"
+},
+"700923": {
+"name": "MYR GROUP INC.",
+"sic": "1623",
+"sicDescription": "Water, Sewer, Pipeline, Comm & Power Line Construction",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MYRG"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"706698": {
+"name": "UTAH MEDICAL PRODUCTS INC",
+"sic": "3841",
+"sicDescription": "Surgical & Medical Instruments & Apparatus",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "UT",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"UTMD"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"707549": {
+"name": "LAM RESEARCH CORP",
+"sic": "3559",
+"sicDescription": "Special Industry Machinery, NEC",
+"fiscalYearEnd": "0627",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LRCX"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"708781": {
+"name": "CASS INFORMATION SYSTEMS INC",
+"sic": "7389",
+"sicDescription": "Services-Business Services, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MO",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CASS"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer"
+},
+"715787": {
+"name": "INTERFACE INC",
+"sic": "2273",
+"sicDescription": "Carpets & Rugs",
+"fiscalYearEnd": "0103",
+"stateOfIncorporation": "GA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"TILE"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"717538": {
+"name": "ARROW FINANCIAL CORP",
+"sic": "6021",
+"sicDescription": "National Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "NY",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AROW"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer"
+},
+"719955": {
+"name": "WILLIAMS SONOMA INC",
+"sic": "5700",
+"sicDescription": "Retail-Home Furniture, Furnishings & Equipment Stores",
+"fiscalYearEnd": "0131",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"WSM"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"720005": {
+"name": "RAYMOND JAMES FINANCIAL INC",
+"sic": "6211",
+"sicDescription": "Security Brokers, Dealers & Flotation Companies",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "FL",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"RJF"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"720858": {
+"name": "INVESTORS TITLE CO",
+"sic": "6361",
+"sicDescription": "Title Insurance",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "NC",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ITIC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer"
+},
+"721994": {
+"name": "LAKELAND FINANCIAL CORP",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "IN",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LKFN"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"723125": {
+"name": "MICRON TECHNOLOGY INC",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "0902",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MU"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"723254": {
+"name": "CINTAS CORP",
+"sic": "2320",
+"sicDescription": "Men's & Boys' Furnishgs, Work Clothg, & Allied Garments",
+"fiscalYearEnd": "0531",
+"stateOfIncorporation": "WA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CTAS"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"724910": {
+"name": "NVE CORP /NEW/",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "0331",
+"stateOfIncorporation": "MN",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NVEC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"726854": {
+"name": "CITY HOLDING CO",
+"sic": "6021",
+"sicDescription": "National Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "WV",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CHCO"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"728535": {
+"name": "HUNT J B TRANSPORT SERVICES INC",
+"sic": "4213",
+"sicDescription": "Trucking (No Local)",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "AR",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"JBHT"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"731012": {
+"name": "HEALTHCARE SERVICES GROUP INC",
+"sic": "8050",
+"sicDescription": "Services-Nursing & Personal Care Facilities",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "PA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"HCSG"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"731653": {
+"name": "UNITED BANCORP INC /OH/",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "OH",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"UBCP"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"731766": {
+"name": "UNITEDHEALTH GROUP INC",
+"sic": "6324",
+"sicDescription": "Hospital & Medical Service Plans",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"UNH"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"732712": {
+"name": "VERIZON COMMUNICATIONS INC",
+"sic": "4813",
+"sicDescription": "Telephone Communications (No Radiotelephone)",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"VZ"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"745732": {
+"name": "ROSS STORES, INC.",
+"sic": "5651",
+"sicDescription": "Retail-Family Clothing Stores",
+"fiscalYearEnd": "0201",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ROST"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"746515": {
+"name": "EXPEDITORS INTERNATIONAL OF WASHINGTON INC",
+"sic": "4731",
+"sicDescription": "Arrangement of  Transportation of  Freight & Cargo",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "WA",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"EXPD"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"749251": {
+"name": "GARTNER INC",
+"sic": "8741",
+"sicDescription": "Services-Management Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"IT"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"752714": {
+"name": "MCGRATH RENTCORP",
+"sic": "7359",
+"sicDescription": "Services-Equipment Rental & Leasing, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "CA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MGRC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"763901": {
+"name": "POPULAR, INC.",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq",
+"OTC",
+"Nasdaq"
+],
+"tickers": [
+"BPOP",
+"BPOPO",
+"BPOPM"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"764180": {
+"name": "ALTRIA GROUP, INC.",
+"sic": "2111",
+"sicDescription": "Cigarettes",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "VA",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MO"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"764478": {
+"name": "BEST BUY CO INC",
+"sic": "5731",
+"sicDescription": "Retail-Radio, Tv & Consumer Electronics Stores",
+"fiscalYearEnd": "0130",
+"stateOfIncorporation": "MN",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BBY"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"769520": {
+"name": "MIDDLEBY Corp",
+"sic": "3580",
+"sicDescription": "Refrigeration & Service Industry Machinery",
+"fiscalYearEnd": "0102",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MIDD"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"772406": {
+"name": "CIRRUS LOGIC, INC.",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "0327",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CRUS"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"773840": {
+"name": "HONEYWELL INTERNATIONAL INC",
+"sic": "3724",
+"sicDescription": "Aircraft Engines & Engine Parts",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"HON"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"779152": {
+"name": "JACK HENRY & ASSOCIATES INC",
+"sic": "7373",
+"sicDescription": "Services-Computer Integrated Systems Design",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"JKHY"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"785786": {
+"name": "PLEXUS CORP",
+"sic": "3672",
+"sicDescription": "Printed Circuit Boards",
+"fiscalYearEnd": "1003",
+"stateOfIncorporation": "WI",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PLXS"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"788329": {
+"name": "JOHNSON OUTDOORS INC",
+"sic": "3949",
+"sicDescription": "Sporting & Athletic Goods, NEC",
+"fiscalYearEnd": "1002",
+"stateOfIncorporation": "WI",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"JOUT"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer<br>Smaller reporting company"
+},
+"788920": {
+"name": "PRO DEX INC",
+"sic": "3841",
+"sicDescription": "Surgical & Medical Instruments & Apparatus",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PDEX"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"789019": {
+"name": "MICROSOFT CORP",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "WA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MSFT"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"796343": {
+"name": "ADOBE INC.",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "1127",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ADBE"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"802481": {
+"name": "PILGRIMS PRIDE CORP",
+"sic": "2015",
+"sicDescription": "Poultry Slaughtering and Processing",
+"fiscalYearEnd": "1227",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PPC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"804328": {
+"name": "QUALCOMM INC/DE",
+"sic": "3663",
+"sicDescription": "Radio & Tv Broadcasting & Communications Equipment",
+"fiscalYearEnd": "0927",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"QCOM"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"813672": {
+"name": "CADENCE DESIGN SYSTEMS INC",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CDNS"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"814547": {
+"name": "FAIR ISAAC CORP",
+"sic": "7389",
+"sicDescription": "Services-Business Services, NEC",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"FICO"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"815556": {
+"name": "FASTENAL CO",
+"sic": "5200",
+"sicDescription": "Retail-Building Materials, Hardware, Garden Supply",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MN",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FAST"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"820027": {
+"name": "AMERIPRISE FINANCIAL INC",
+"sic": "6282",
+"sicDescription": "Investment Advice",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AMP"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"820313": {
+"name": "AMPHENOL CORP /DE/",
+"sic": "3678",
+"sicDescription": "Electronic Connectors",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"APH"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"821189": {
+"name": "EOG RESOURCES INC",
+"sic": "1311",
+"sicDescription": "Crude Petroleum & Natural Gas",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"EOG"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"822416": {
+"name": "PULTEGROUP INC/MI/",
+"sic": "1531",
+"sicDescription": "Operative Builders",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MI",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"PHM"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"824142": {
+"name": "AAON, INC.",
+"sic": "3585",
+"sicDescription": "Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "NV",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AAON"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"831259": {
+"name": "FREEPORT-MCMORAN INC",
+"sic": "1000",
+"sicDescription": "Metal Mining",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"FCX"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"831641": {
+"name": "TETRA TECH INC",
+"sic": "8711",
+"sicDescription": "Services-Engineering Services",
+"fiscalYearEnd": "0927",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"TTEK"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"832101": {
+"name": "IDEX CORP /DE/",
+"sic": "3561",
+"sicDescription": "Pumps & Pumping Equipment",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"IEX"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"836690": {
+"name": "INNOVATIVE SOLUTIONS & SUPPORT INC",
+"sic": "7371",
+"sicDescription": "Services-Computer Programming Services",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "PA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"IA"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"849145": {
+"name": "Heritage Global Inc.",
+"sic": "7389",
+"sicDescription": "Services-Business Services, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "FL",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"HGBL"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"849146": {
+"name": "Lifevantage Corp",
+"sic": "2834",
+"sicDescription": "Pharmaceutical Preparations",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LFVN"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer<br>Smaller reporting company"
+},
+"851205": {
+"name": "COGNEX CORP",
+"sic": "3823",
+"sicDescription": "Industrial Instruments For Measurement, Display, and Control",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CGNX"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"851520": {
+"name": "EXPONENT INC",
+"sic": "8742",
+"sicDescription": "Services-Management Consulting Services",
+"fiscalYearEnd": "0101",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"EXPO"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"853816": {
+"name": "LANDSTAR SYSTEM INC",
+"sic": "4213",
+"sicDescription": "Trucking (No Local)",
+"fiscalYearEnd": "1230",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LSTR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"858877": {
+"name": "CISCO SYSTEMS, INC.",
+"sic": "3576",
+"sicDescription": "Computer Communications Equipment",
+"fiscalYearEnd": "0731",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CSCO"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"865752": {
+"name": "Monster Beverage Corp",
+"sic": "2086",
+"sicDescription": "Bottled & Canned Soft Drinks & Carbonated Waters",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MNST"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"866374": {
+"name": "FLEX LTD.",
+"sic": "3672",
+"sicDescription": "Printed Circuit Boards",
+"fiscalYearEnd": "0331",
+"stateOfIncorporation": "U0",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FLEX"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"872589": {
+"name": "REGENERON PHARMACEUTICALS, INC.",
+"sic": "2834",
+"sicDescription": "Pharmaceutical Preparations",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "NY",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"REGN"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"874238": {
+"name": "STERLING INFRASTRUCTURE, INC.",
+"sic": "1600",
+"sicDescription": "Heavy Construction Other Than Bldg Const - Contractors",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"STRL"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"874716": {
+"name": "IDEXX LABORATORIES INC /DE",
+"sic": "2835",
+"sicDescription": "In Vitro & In Vivo Diagnostic Substances",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"IDXX"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"874766": {
+"name": "HARTFORD INSURANCE GROUP, INC.",
+"sic": "6331",
+"sicDescription": "Fire, Marine & Casualty Insurance",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"HIG",
+"HIG-PG"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"874866": {
+"name": "CORVEL CORP",
+"sic": "6411",
+"sicDescription": "Insurance Agents, Brokers & Service",
+"fiscalYearEnd": "0331",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CRVL"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"875320": {
+"name": "VERTEX PHARMACEUTICALS INC / MA",
+"sic": "2834",
+"sicDescription": "Pharmaceutical Preparations",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"VRTX"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"877212": {
+"name": "ZEBRA TECHNOLOGIES CORP",
+"sic": "3560",
+"sicDescription": "General Industrial Machinery & Equipment",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ZBRA"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"878927": {
+"name": "OLD DOMINION FREIGHT LINE, INC.",
+"sic": "4213",
+"sicDescription": "Trucking (No Local)",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "VA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ODFL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"880117": {
+"name": "SANFILIPPO JOHN B & SON INC",
+"sic": "2060",
+"sicDescription": "Sugar & Confectionery Products",
+"fiscalYearEnd": "0628",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"JBSS"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"882095": {
+"name": "GILEAD SCIENCES, INC.",
+"sic": "2836",
+"sicDescription": "Biological Products, (No Diagnostic Substances)",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"GILD"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"882184": {
+"name": "HORTON D R INC /DE/",
+"sic": "1531",
+"sicDescription": "Operative Builders",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DHI"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"891103": {
+"name": "Match Group, Inc.",
+"sic": "7370",
+"sicDescription": "Services-Computer Programming, Data Processing, Etc.",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MTCH"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"893847": {
+"name": "HAWTHORN BANCSHARES, INC.",
+"sic": "6021",
+"sicDescription": "National Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MO",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"HWBK"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer<br>Smaller reporting company"
+},
+"895447": {
+"name": "SHOE STATION GROUP INC",
+"sic": "5661",
+"sicDescription": "Retail-Shoe Stores",
+"fiscalYearEnd": "0130",
+"stateOfIncorporation": "IN",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SHOE"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer"
+},
+"896878": {
+"name": "INTUIT INC.",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "0731",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"INTU"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"898293": {
+"name": "JABIL INC",
+"sic": "3672",
+"sicDescription": "Printed Circuit Boards",
+"fiscalYearEnd": "0831",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"JBL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"899051": {
+"name": "ALLSTATE CORP",
+"sic": "6331",
+"sicDescription": "Fire, Marine & Casualty Insurance",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"ALL",
+"ALL-PH",
+"ALL-PB",
+"ALL-PI",
+"ALL-PJ"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"900075": {
+"name": "COPART INC",
+"sic": "5500",
+"sicDescription": "Retail-Auto Dealers & Gasoline Stations",
+"fiscalYearEnd": "0731",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CPRT"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"902791": {
+"name": "BARRETT BUSINESS SERVICES INC",
+"sic": "7363",
+"sicDescription": "Services-Help Supply Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MD",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"BBSI"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"906163": {
+"name": "NVR INC",
+"sic": "1531",
+"sicDescription": "Operative Builders",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "VA",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"NVR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"907242": {
+"name": "MONARCH CASINO & RESORT INC",
+"sic": "7011",
+"sicDescription": "Hotels & Motels",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "NV",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MCRI"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"907471": {
+"name": "PATHWARD FINANCIAL, INC.",
+"sic": "6021",
+"sicDescription": "National Commercial Banks",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CASH"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"908315": {
+"name": "WINMARK CORP",
+"sic": "5900",
+"sicDescription": "Retail-Miscellaneous Retail",
+"fiscalYearEnd": "1226",
+"stateOfIncorporation": "MN",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"WINA"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"909832": {
+"name": "COSTCO WHOLESALE CORP /NEW",
+"sic": "5331",
+"sicDescription": "Retail-Variety Stores",
+"fiscalYearEnd": "0830",
+"stateOfIncorporation": "WA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"COST"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"912615": {
+"name": "URBAN OUTFITTERS INC",
+"sic": "5651",
+"sicDescription": "Retail-Family Clothing Stores",
+"fiscalYearEnd": "0131",
+"stateOfIncorporation": "PA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"URBN"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"912766": {
+"name": "LAUREATE EDUCATION, INC.",
+"sic": "8200",
+"sicDescription": "Services-Educational Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LAUR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"912767": {
+"name": "UFP INDUSTRIES INC",
+"sic": "2421",
+"sicDescription": "Sawmills & Planting Mills, General",
+"fiscalYearEnd": "1226",
+"stateOfIncorporation": "MI",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"UFPI"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"913241": {
+"name": "STEVEN MADDEN, LTD.",
+"sic": "3140",
+"sicDescription": "Footwear, (No Rubber)",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SHOO"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"913341": {
+"name": "C & F FINANCIAL CORP",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "VA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CFFI"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer<br>Smaller reporting company"
+},
+"914156": {
+"name": "UFP TECHNOLOGIES INC",
+"sic": "3841",
+"sicDescription": "Surgical & Medical Instruments & Apparatus",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"UFPT"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"916365": {
+"name": "TRACTOR SUPPLY CO /DE/",
+"sic": "5200",
+"sicDescription": "Retail-Building Materials, Hardware, Garden Supply",
+"fiscalYearEnd": "1228",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"TSCO"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"920148": {
+"name": "LABCORP HOLDINGS INC.",
+"sic": "8071",
+"sicDescription": "Services-Medical Laboratories",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LH"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"924719": {
+"name": "SMITH MIDLAND CORP",
+"sic": "3272",
+"sicDescription": "Concrete Products, Except Block & Brick",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SMID"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"924805": {
+"name": "Freedom Holding Corp.",
+"sic": "6211",
+"sicDescription": "Security Brokers, Dealers & Flotation Companies",
+"fiscalYearEnd": "0331",
+"stateOfIncorporation": "NV",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FRHC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"927003": {
+"name": "ADVANCED ENERGY INDUSTRIES INC",
+"sic": "3679",
+"sicDescription": "Electronic Components, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AEIS"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"932696": {
+"name": "INSIGHT ENTERPRISES INC",
+"sic": "5961",
+"sicDescription": "Retail-Catalog & Mail-Order Houses",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NSIT"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"936468": {
+"name": "LOCKHEED MARTIN CORP",
+"sic": "3760",
+"sicDescription": "Guided Missiles & Space Vehicles & Parts",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MD",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LMT"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"939767": {
+"name": "EXELIXIS, INC.",
+"sic": "2836",
+"sicDescription": "Biological Products, (No Diagnostic Substances)",
+"fiscalYearEnd": "0101",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"EXEL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"940944": {
+"name": "DARDEN RESTAURANTS INC",
+"sic": "5812",
+"sicDescription": "Retail-Eating  Places",
+"fiscalYearEnd": "0530",
+"stateOfIncorporation": "FL",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DRI"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"943819": {
+"name": "RESMED INC",
+"sic": "3841",
+"sicDescription": "Surgical & Medical Instruments & Apparatus",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE",
+"OTC"
+],
+"tickers": [
+"RMD",
+"RSMDF"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"945841": {
+"name": "POOL CORP",
+"sic": "5090",
+"sicDescription": "Wholesale-Misc Durable Goods",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"POOL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"945983": {
+"name": "Climb Global Solutions, Inc.",
+"sic": "5045",
+"sicDescription": "Wholesale-Computers & Peripheral Equipment & Software",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CLMB"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer"
+},
+"947484": {
+"name": "ARCH CAPITAL GROUP LTD.",
+"sic": "6331",
+"sicDescription": "Fire, Marine & Casualty Insurance",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq",
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"ACGL",
+"ACGLN",
+"ACGLO"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1000697": {
+"name": "WATERS CORP /DE/",
+"sic": "3826",
+"sicDescription": "Laboratory Analytical Instruments",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"WAT"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1002047": {
+"name": "NetApp, Inc.",
+"sic": "3572",
+"sicDescription": "Computer Storage Devices",
+"fiscalYearEnd": "0424",
+"stateOfIncorporation": "CA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NTAP"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1005284": {
+"name": "UNIVERSAL DISPLAY CORP \\PA\\",
+"sic": "3670",
+"sicDescription": "Electronic Components & Accessories",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "PA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"OLED"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1012019": {
+"name": "RUSH ENTERPRISES INC \\TX\\",
+"sic": "5500",
+"sicDescription": "Retail-Auto Dealers & Gasoline Stations",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "TX",
+"exchanges": [
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"RUSHA",
+"RUSHB"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1013237": {
+"name": "FACTSET RESEARCH SYSTEMS INC",
+"sic": "7370",
+"sicDescription": "Services-Computer Programming, Data Processing, Etc.",
+"fiscalYearEnd": "0831",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"FDS"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1015922": {
+"name": "CHECK POINT SOFTWARE TECHNOLOGIES LTD",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CHKP"
+],
+"annual_forms": [
+"20-F",
+"20-F/A"
+],
+"category": "Large accelerated filer"
+},
+"1018724": {
+"name": "AMAZON COM INC",
+"sic": "5961",
+"sicDescription": "Retail-Catalog & Mail-Order Houses",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AMZN"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1018979": {
+"name": "AMERISAFE INC",
+"sic": "6331",
+"sicDescription": "Fire, Marine & Casualty Insurance",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "TX",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AMSF"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1022079": {
+"name": "QUEST DIAGNOSTICS INC",
+"sic": "8071",
+"sicDescription": "Services-Medical Laboratories",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DGX"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1022408": {
+"name": "EPLUS INC",
+"sic": "5045",
+"sicDescription": "Wholesale-Computers & Peripheral Equipment & Software",
+"fiscalYearEnd": "0331",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PLUS"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1024478": {
+"name": "ROCKWELL AUTOMATION, INC",
+"sic": "3829",
+"sicDescription": "Measuring & Controlling Devices, NEC",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ROK"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1027664": {
+"name": "ELBIT SYSTEMS LTD",
+"sic": "3728",
+"sicDescription": "Aircraft Parts & Auxiliary Equipment, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "L3",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ESLT"
+],
+"annual_forms": [
+"20-F",
+"20-F/A"
+],
+"category": "Large accelerated filer"
+},
+"1032975": {
+"name": "LOGITECH INTERNATIONAL S.A.",
+"sic": "3577",
+"sicDescription": "Computer Peripheral Equipment, NEC",
+"fiscalYearEnd": "0331",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LOGI"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1035267": {
+"name": "INTUITIVE SURGICAL INC",
+"sic": "3842",
+"sicDescription": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ISRG"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1035983": {
+"name": "COMFORT SYSTEMS USA INC",
+"sic": "1731",
+"sicDescription": "Electrical Work",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"FIX"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1037038": {
+"name": "RALPH LAUREN CORP",
+"sic": "2320",
+"sicDescription": "Men's & Boys' Furnishgs, Work Clothg, & Allied Garments",
+"fiscalYearEnd": "0328",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"RL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1037868": {
+"name": "AMETEK INC/",
+"sic": "3823",
+"sicDescription": "Industrial Instruments For Measurement, Display, and Control",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"AME"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1039065": {
+"name": "OSI SYSTEMS INC",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"OSIS"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1043277": {
+"name": "C. H. ROBINSON WORLDWIDE, INC.",
+"sic": "4731",
+"sicDescription": "Arrangement of  Transportation of  Freight & Cargo",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CHRW"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1045810": {
+"name": "NVIDIA CORP",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "0131",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NVDA"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1046050": {
+"name": "TIMBERLAND BANCORP INC",
+"sic": "6036",
+"sicDescription": "Savings Institutions, Not Federally Chartered",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "WA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"TSBK"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer<br>Smaller reporting company"
+},
+"1046568": {
+"name": "PERDOCEO EDUCATION Corp",
+"sic": "8200",
+"sicDescription": "Services-Educational Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PRDO"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1047127": {
+"name": "AMKOR TECHNOLOGY, INC.",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AMKR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1048268": {
+"name": "IES Holdings, Inc.",
+"sic": "1731",
+"sicDescription": "Electrical Work",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"IESC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1048286": {
+"name": "MARRIOTT INTERNATIONAL INC /MD/",
+"sic": "7011",
+"sicDescription": "Hotels & Motels",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MAR"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1048695": {
+"name": "F5, INC.",
+"sic": "3576",
+"sicDescription": "Computer Communications Equipment",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "WA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FFIV"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1050797": {
+"name": "COLUMBIA SPORTSWEAR CO",
+"sic": "2300",
+"sicDescription": "Apparel & Other Finishd Prods of  Fabrics & Similar Matl",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "OR",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"COLM"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1053706": {
+"name": "CRA INTERNATIONAL, INC.",
+"sic": "8111",
+"sicDescription": "Services-Legal Services",
+"fiscalYearEnd": "0102",
+"stateOfIncorporation": "MA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CRAI"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1057379": {
+"name": "HACKETT GROUP, INC.",
+"sic": "8742",
+"sicDescription": "Services-Management Consulting Services",
+"fiscalYearEnd": "1226",
+"stateOfIncorporation": "FL",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"HCKT"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer"
+},
+"1058290": {
+"name": "COGNIZANT TECHNOLOGY SOLUTIONS CORP",
+"sic": "7371",
+"sicDescription": "Services-Computer Programming Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CTSH"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1059556": {
+"name": "MOODYS CORP /DE/",
+"sic": "7320",
+"sicDescription": "Services-Consumer Credit Reporting, Collection Agencies",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MCO"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1062579": {
+"name": "AMDOCS LTD",
+"sic": "7371",
+"sicDescription": "Services-Computer Programming Services",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "X0",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"DOX"
+],
+"annual_forms": [
+"20-F",
+"20-F/A"
+],
+"category": "Large accelerated filer"
+},
+"1065088": {
+"name": "EBAY INC",
+"sic": "7389",
+"sicDescription": "Services-Business Services, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"EBAY"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1065280": {
+"name": "NETFLIX INC",
+"sic": "7841",
+"sicDescription": "Services-Video Tape Rental",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NFLX"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1065696": {
+"name": "LKQ CORP",
+"sic": "5010",
+"sicDescription": "Wholesale-Motor Vehicles & Motor Vehicle Parts & Supplies",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LKQ"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1067701": {
+"name": "UNITED RENTALS, INC.",
+"sic": "7359",
+"sicDescription": "Services-Equipment Rental & Leasing, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"URI"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1069157": {
+"name": "EAST WEST BANCORP INC",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"EWBC"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1069202": {
+"name": "LENNOX INTERNATIONAL INC",
+"sic": "3585",
+"sicDescription": "Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LII"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1070524": {
+"name": "GREENE COUNTY BANCORP INC",
+"sic": "6036",
+"sicDescription": "Savings Institutions, Not Federally Chartered",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"GCBC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer<br>Smaller reporting company"
+},
+"1071236": {
+"name": "RED RIVER BANCSHARES INC",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "LA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"RRBI"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer"
+},
+"1071739": {
+"name": "CENTENE CORP",
+"sic": "6324",
+"sicDescription": "Hospital & Medical Service Plans",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CNC"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1075531": {
+"name": "Booking Holdings Inc.",
+"sic": "4700",
+"sicDescription": "Transportation Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"BKNG"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1080014": {
+"name": "Innoviva, Inc.",
+"sic": "2834",
+"sicDescription": "Pharmaceutical Preparations",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"INVA"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1082554": {
+"name": "UNITED THERAPEUTICS Corp",
+"sic": "2834",
+"sicDescription": "Pharmaceutical Preparations",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"UTHR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1084048": {
+"name": "ZIFF DAVIS, INC.",
+"sic": "4822",
+"sicDescription": "Telegraph & Other Message Communications",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ZD"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1090425": {
+"name": "LAMAR ADVERTISING CO/NEW",
+"sic": "6798",
+"sicDescription": "Real Estate Investment Trusts",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LAMR"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1090727": {
+"name": "UNITED PARCEL SERVICE INC",
+"sic": "4210",
+"sicDescription": "Trucking & Courier Services (No Air)",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"UPS"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1090872": {
+"name": "AGILENT TECHNOLOGIES, INC.",
+"sic": "3826",
+"sicDescription": "Laboratory Analytical Instruments",
+"fiscalYearEnd": "1031",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"A"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1097149": {
+"name": "ALIGN TECHNOLOGY INC",
+"sic": "3842",
+"sicDescription": "Orthopedic, Prosthetic & Surgical Appliances & Supplies",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ALGN"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1109345": {
+"name": "NOVA LTD.",
+"sic": "3827",
+"sicDescription": "Optical Instruments & Lenses",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NVMI"
+],
+"annual_forms": [
+"20-F",
+"20-F/A"
+],
+"category": "Large accelerated filer"
+},
+"1110646": {
+"name": "NetEase, Inc.",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": null,
+"stateOfIncorporation": "E9",
+"exchanges": [
+"Nasdaq",
+"OTC"
+],
+"tickers": [
+"NTES",
+"NETTF"
+],
+"annual_forms": [
+"20-F",
+"20-F/A"
+],
+"category": "Large accelerated filer"
+},
+"1113169": {
+"name": "PRICE T ROWE GROUP INC",
+"sic": "6282",
+"sicDescription": "Investment Advice",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MD",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"TROW"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1113232": {
+"name": "AXCELIS TECHNOLOGIES INC",
+"sic": "3559",
+"sicDescription": "Special Industry Machinery, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ACLS"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1116132": {
+"name": "TAPESTRY, INC.",
+"sic": "3100",
+"sicDescription": "Leather & Leather Products",
+"fiscalYearEnd": "0627",
+"stateOfIncorporation": "MD",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TPR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1119083": {
+"name": "MIND CTI LTD",
+"sic": "7371",
+"sicDescription": "Services-Computer Programming Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MNDO"
+],
+"annual_forms": [
+"20-F",
+"20-F/A"
+],
+"category": "Non-accelerated filer"
+},
+"1125376": {
+"name": "ENSIGN GROUP, INC",
+"sic": "8051",
+"sicDescription": "Services-Skilled Nursing Care Facilities",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ENSG"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1126328": {
+"name": "PRINCIPAL FINANCIAL GROUP INC",
+"sic": "6321",
+"sicDescription": "Accident & Health Insurance",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PFG"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1133311": {
+"name": "TRAVELZOO",
+"sic": "7310",
+"sicDescription": "Services-Advertising",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"TZOO"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"1137789": {
+"name": "Seagate Technology Holdings plc",
+"sic": "3572",
+"sicDescription": "Computer Storage Devices",
+"fiscalYearEnd": "0627",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"STX"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1138118": {
+"name": "CBRE GROUP, INC.",
+"sic": "6500",
+"sicDescription": "Real Estate",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CBRE"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1140859": {
+"name": "Cencora, Inc.",
+"sic": "5122",
+"sicDescription": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"COR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1141391": {
+"name": "Mastercard Inc",
+"sic": "7389",
+"sicDescription": "Services-Business Services, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MA"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1156039": {
+"name": "Elevance Health, Inc.",
+"sic": "6324",
+"sicDescription": "Hospital & Medical Service Plans",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "IN",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ELV"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1163370": {
+"name": "NORTHRIM BANCORP INC",
+"sic": "6035",
+"sicDescription": "Savings Institution, Federally Chartered",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "AK",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NRIM"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer"
+},
+"1163668": {
+"name": "SOUTH PLAINS FINANCIAL, INC.",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "TX",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SPFI"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer"
+},
+"1166691": {
+"name": "COMCAST CORP",
+"sic": "4841",
+"sicDescription": "Cable & Other Pay Television Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "PA",
+"exchanges": [
+"Nasdaq",
+"NYSE"
+],
+"tickers": [
+"CMCSA",
+"CCZ"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1166928": {
+"name": "WEST BANCORPORATION INC",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "IA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"WTBA"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer"
+},
+"1177609": {
+"name": "FIVE BELOW, INC",
+"sic": "5331",
+"sicDescription": "Retail-Variety Stores",
+"fiscalYearEnd": "0130",
+"stateOfIncorporation": "PA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FIVE"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1262039": {
+"name": "Fortinet, Inc.",
+"sic": "3577",
+"sicDescription": "Computer Peripheral Equipment, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FTNT"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1267238": {
+"name": "ASSURANT, INC.",
+"sic": "6399",
+"sicDescription": "Insurance Carriers, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"AIZ",
+"AIZN"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1278021": {
+"name": "MARKETAXESS HOLDINGS INC",
+"sic": "6211",
+"sicDescription": "Security Brokers, Dealers & Flotation Companies",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MKTX"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1280452": {
+"name": "MONOLITHIC POWER SYSTEMS, INC.",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MPWR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1283699": {
+"name": "T-Mobile US, Inc.",
+"sic": "4812",
+"sicDescription": "Radiotelephone Communications",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq",
+"Nasdaq",
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"TMUS",
+"TMUSI",
+"TMUSL",
+"TMUSZ"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1289419": {
+"name": "Morningstar, Inc.",
+"sic": "6282",
+"sicDescription": "Investment Advice",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "IL",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MORN"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1289460": {
+"name": "Texas Roadhouse, Inc.",
+"sic": "5812",
+"sicDescription": "Retail-Eating  Places",
+"fiscalYearEnd": "1229",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"TXRH"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1297184": {
+"name": "Amphastar Pharmaceuticals, Inc.",
+"sic": "2834",
+"sicDescription": "Pharmaceutical Preparations",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AMPH"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1297989": {
+"name": "ExlService Holdings, Inc.",
+"sic": "7389",
+"sicDescription": "Services-Business Services, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"EXLS"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1315399": {
+"name": "PARKE BANCORP, INC.",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "NJ",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PKBK"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer<br>Smaller reporting company"
+},
+"1317945": {
+"name": "Omega Flex, Inc.",
+"sic": "3430",
+"sicDescription": "Heating Equip, Except Elec & Warm Air; & Plumbing Fixtures",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "PA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"OFLX"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"1324404": {
+"name": "CF Industries Holdings, Inc.",
+"sic": "2870",
+"sicDescription": "Agricultural Chemicals",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CF"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1325618": {
+"name": "IRADIMED CORP",
+"sic": "3841",
+"sicDescription": "Surgical & Medical Instruments & Apparatus",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"IRMD"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"1329394": {
+"name": "Silicon Motion Technology CORP",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "E9",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SIMO"
+],
+"annual_forms": [
+"20-F",
+"20-F/A"
+],
+"category": "Large accelerated filer"
+},
+"1336920": {
+"name": "Leidos Holdings, Inc.",
+"sic": "7373",
+"sicDescription": "Services-Computer Integrated Systems Design",
+"fiscalYearEnd": "0101",
+"stateOfIncorporation": "",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"LDOS"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1337117": {
+"name": "Ituran Location & Control Ltd.",
+"sic": "5065",
+"sicDescription": "Wholesale-Electronic Parts & Equipment, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "L3",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ITRN"
+],
+"annual_forms": [
+"20-F",
+"20-F/A"
+],
+"category": "Accelerated filer"
+},
+"1341317": {
+"name": "Bridgewater Bancshares Inc",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MN",
+"exchanges": [
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"BWB",
+"BWBBP"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer"
+},
+"1341439": {
+"name": "ORACLE CORP",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "0531",
+"stateOfIncorporation": "",
+"exchanges": [
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"ORCL",
+"ORCL-PD"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1360565": {
+"name": "Where Food Comes From, Inc.",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"WFCF"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"1374310": {
+"name": "Cboe Global Markets, Inc.",
+"sic": "6200",
+"sicDescription": "Security & Commodity Brokers, Dealers, Exchanges & Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"CBOE"
+],
+"tickers": [
+"CBOE"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1383312": {
+"name": "BROADRIDGE FINANCIAL SOLUTIONS, INC.",
+"sic": "7389",
+"sicDescription": "Services-Business Services, NEC",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1385157": {
+"name": "TE Connectivity plc",
+"sic": "5065",
+"sicDescription": "Wholesale-Electronic Parts & Equipment, NEC",
+"fiscalYearEnd": "0925",
+"stateOfIncorporation": "",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TEL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1397016": {
+"name": "Optex Systems Holdings Inc",
+"sic": "3827",
+"sicDescription": "Optical Instruments & Lenses",
+"fiscalYearEnd": "0928",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"OPXS"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"1397187": {
+"name": "lululemon athletica inc.",
+"sic": "2300",
+"sicDescription": "Apparel & Other Finishd Prods of  Fabrics & Similar Matl",
+"fiscalYearEnd": "0131",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LULU"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1402057": {
+"name": "CDW Corp",
+"sic": "5961",
+"sicDescription": "Retail-Catalog & Mail-Order Houses",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CDW"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1403161": {
+"name": "VISA INC.",
+"sic": "7389",
+"sicDescription": "Services-Business Services, NEC",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"V"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1403568": {
+"name": "Ulta Beauty, Inc.",
+"sic": "5990",
+"sicDescription": "Retail-Retail Stores, NEC",
+"fiscalYearEnd": "0130",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ULTA"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1404912": {
+"name": "KKR & Co. Inc.",
+"sic": "6282",
+"sicDescription": "Investment Advice",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"KKR",
+"KKR-PD",
+"KKRS",
+"KKRT"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1408198": {
+"name": "MSCI Inc.",
+"sic": "7389",
+"sicDescription": "Services-Business Services, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MSCI"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1413447": {
+"name": "NXP Semiconductors N.V.",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NXPI"
+],
+"annual_forms": [
+"10-K",
+"20-F",
+"20-F/A"
+],
+"category": "Large accelerated filer"
+},
+"1431567": {
+"name": "Oak Valley Bancorp",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "CA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"OVLY"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"1433195": {
+"name": "APPFOLIO INC",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"APPF"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1433642": {
+"name": "Hamilton Lane INC",
+"sic": "6282",
+"sicDescription": "Investment Advice",
+"fiscalYearEnd": "0331",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"HLNE"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1436208": {
+"name": "Legacy Housing Corp",
+"sic": "2451",
+"sicDescription": "Mobile Homes",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "TX",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LEGH"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer<br>Smaller reporting company"
+},
+"1442145": {
+"name": "Verisk Analytics, Inc.",
+"sic": "7374",
+"sicDescription": "Services-Computer Processing & Data Preparation",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"VRSK"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1466258": {
+"name": "Trane Technologies plc",
+"sic": "3822",
+"sicDescription": "Auto Controls For Regulating Residential & Comml Environments",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "L2",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TT"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1467373": {
+"name": "Accenture plc",
+"sic": "7389",
+"sicDescription": "Services-Business Services, NEC",
+"fiscalYearEnd": "0831",
+"stateOfIncorporation": "L2",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ACN"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1474735": {
+"name": "GENERAC HOLDINGS INC.",
+"sic": "3621",
+"sicDescription": "Motors & Generators",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GNRC"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1482981": {
+"name": "Vita Coco Company, Inc.",
+"sic": "2080",
+"sicDescription": "Beverages",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"COCO"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1494259": {
+"name": "CarGurus, Inc.",
+"sic": "7374",
+"sicDescription": "Services-Computer Processing & Data Preparation",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CARG"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1501585": {
+"name": "HUNTINGTON INGALLS INDUSTRIES, INC.",
+"sic": "3730",
+"sicDescription": "Ship & Boat Building & Repairing",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HII"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1521332": {
+"name": "Aptiv PLC",
+"sic": "3714",
+"sicDescription": "Motor Vehicle Parts & Accessories",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "Y9",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"APTV"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1521951": {
+"name": "FIRST BUSINESS FINANCIAL SERVICES, INC.",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "WI",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FBIZ"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer"
+},
+"1527166": {
+"name": "Carlyle Group Inc.",
+"sic": "6282",
+"sicDescription": "Investment Advice",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"CG",
+"CGABL"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1530238": {
+"name": "JOYY Inc.",
+"sic": "7374",
+"sicDescription": "Services-Computer Processing & Data Preparation",
+"fiscalYearEnd": null,
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"JOYY"
+],
+"annual_forms": [
+"20-F",
+"20-F/A"
+],
+"category": "Large accelerated filer"
+},
+"1547903": {
+"name": "NMI Holdings, Inc.",
+"sic": "6351",
+"sicDescription": "Surety Insurance",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "CA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NMIH"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1549966": {
+"name": "Silvercrest Asset Management Group Inc.",
+"sic": "6282",
+"sicDescription": "Investment Advice",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SAMG"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer<br>Smaller reporting company"
+},
+"1551152": {
+"name": "AbbVie Inc.",
+"sic": "2834",
+"sicDescription": "Pharmaceutical Preparations",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ABBV"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1570827": {
+"name": "Victory Capital Holdings, Inc.",
+"sic": "6282",
+"sicDescription": "Investment Advice",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"VCTR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1571123": {
+"name": "Science Applications International Corp",
+"sic": "7373",
+"sicDescription": "Services-Computer Integrated Systems Design",
+"fiscalYearEnd": "0129",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SAIC"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1575515": {
+"name": "Sprouts Farmers Market, Inc.",
+"sic": "5411",
+"sicDescription": "Retail-Grocery Stores",
+"fiscalYearEnd": "1228",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SFM"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1579241": {
+"name": "Allegion plc",
+"sic": "7381",
+"sicDescription": "Services-Detective, Guard & Armored Car Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "L2",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ALLE"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1591698": {
+"name": "Paylocity Holding Corp",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PCTY"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1601046": {
+"name": "Keysight Technologies, Inc.",
+"sic": "3823",
+"sicDescription": "Industrial Instruments For Measurement, Display, and Control",
+"fiscalYearEnd": "1031",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"KEYS"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1601712": {
+"name": "Synchrony Financial",
+"sic": "6199",
+"sicDescription": "Finance Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "NY",
+"exchanges": [
+"NYSE",
+"NYSE",
+"NYSE"
+],
+"tickers": [
+"SYF",
+"SYF-PA",
+"SYF-PB"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1609711": {
+"name": "GoDaddy Inc.",
+"sic": "7373",
+"sicDescription": "Services-Computer Integrated Systems Design",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"GDDY"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1610601": {
+"name": "Hello Group Inc.",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": null,
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MOMO"
+],
+"annual_forms": [
+"20-F",
+"20-F/A"
+],
+"category": "Large accelerated filer"
+},
+"1633917": {
+"name": "PayPal Holdings, Inc.",
+"sic": "7389",
+"sicDescription": "Services-Business Services, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PYPL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1638290": {
+"name": "MasterCraft Boat Holdings, Inc.",
+"sic": "3730",
+"sicDescription": "Ship & Boat Building & Repairing",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MCFT"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer"
+},
+"1639300": {
+"name": "Ollie's Bargain Outlet Holdings, Inc.",
+"sic": "5331",
+"sicDescription": "Retail-Variety Stores",
+"fiscalYearEnd": "0130",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"OLLI"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1644378": {
+"name": "RMR GROUP INC.",
+"sic": "8742",
+"sicDescription": "Services-Management Consulting Services",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "MD",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"RMR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer"
+},
+"1652044": {
+"name": "Alphabet Inc.",
+"sic": "7370",
+"sicDescription": "Services-Computer Programming, Data Processing, Etc.",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq",
+"Nasdaq",
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"GOOGL",
+"GOOG",
+"GOOGM",
+"GOOGN"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1668397": {
+"name": "Medpace Holdings, Inc.",
+"sic": "8731",
+"sicDescription": "Services-Commercial Physical & Biological Research",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MEDP"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1680062": {
+"name": "ACM Research, Inc.",
+"sic": "3559",
+"sicDescription": "Special Industry Machinery, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "CA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ACMR"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1708259": {
+"name": "LexinFintech Holdings Ltd.",
+"sic": "6199",
+"sicDescription": "Finance Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "E9",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LX"
+],
+"annual_forms": [
+"20-F"
+],
+"category": "Accelerated filer"
+},
+"1726978": {
+"name": "Goosehead Insurance, Inc.",
+"sic": "6411",
+"sicDescription": "Insurance Agents, Brokers & Service",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"GSHD"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1735041": {
+"name": "Greenland Technologies Holding Corp.",
+"sic": "3560",
+"sicDescription": "General Industrial Machinery & Equipment",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "D8",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"GTEC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"1738758": {
+"name": "Cheer Holding, Inc.",
+"sic": "7374",
+"sicDescription": "Services-Computer Processing & Data Preparation",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "E9",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CHR"
+],
+"annual_forms": [
+"10-K",
+"20-F",
+"20-F/A"
+],
+"category": "Non-accelerated filer"
+},
+"1739940": {
+"name": "Cigna Group",
+"sic": "6324",
+"sicDescription": "Hospital & Medical Service Plans",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CI"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1741530": {
+"name": "Qfin Holdings, Inc.",
+"sic": "6199",
+"sicDescription": "Finance Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "E9",
+"exchanges": [
+"Nasdaq",
+"OTC"
+],
+"tickers": [
+"QFIN",
+"QFNHF"
+],
+"annual_forms": [
+"20-F"
+],
+"category": "Large accelerated filer"
+},
+"1742692": {
+"name": "InMode Ltd.",
+"sic": "3845",
+"sicDescription": "Electromedical & Electrotherapeutic Apparatus",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "L3",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"INMD"
+],
+"annual_forms": [
+"20-F"
+],
+"category": "Large accelerated filer"
+},
+"1743102": {
+"name": "Jiayin Group Inc.",
+"sic": "6199",
+"sicDescription": "Finance Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "E9",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"JFIN"
+],
+"annual_forms": [
+"20-F"
+],
+"category": "Accelerated filer"
+},
+"1746129": {
+"name": "Bank7 Corp.",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"BSVN"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer<br>Smaller reporting company"
+},
+"1747068": {
+"name": "MetroCity Bankshares, Inc.",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "GA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MCBS"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer"
+},
+"1751008": {
+"name": "AppLovin Corp",
+"sic": "7370",
+"sicDescription": "Services-Computer Programming, Data Processing, Etc.",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"APP"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1754581": {
+"name": "Futu Holdings Ltd",
+"sic": "6211",
+"sicDescription": "Security Brokers, Dealers & Flotation Companies",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "E9",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FUTU"
+],
+"annual_forms": [
+"20-F"
+],
+"category": "Large accelerated filer"
+},
+"1761312": {
+"name": "Palomar Holdings, Inc.",
+"sic": "6331",
+"sicDescription": "Fire, Marine & Casualty Insurance",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PLMR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1767258": {
+"name": "XPEL, Inc.",
+"sic": "3470",
+"sicDescription": "Coating, Engraving & Allied Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "NV",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"XPEL"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1781335": {
+"name": "Otis Worldwide Corp",
+"sic": "3600",
+"sicDescription": "Electronic & Other Electrical Equipment (No Computer Equip)",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"OTIS"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1783180": {
+"name": "CARRIER GLOBAL Corp",
+"sic": "3585",
+"sicDescription": "Air-Cond & Warm Air Heatg Equip & Comm & Indl Refrig Equip",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CARR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1811074": {
+"name": "Texas Pacific Land Corp",
+"sic": "6792",
+"sicDescription": "Oil Royalty Traders",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TPL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1817358": {
+"name": "Academy Sports & Outdoors, Inc.",
+"sic": "5940",
+"sicDescription": "Retail-Miscellaneous Shopping Goods Stores",
+"fiscalYearEnd": "0131",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ASO"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1823608": {
+"name": "Amalgamated Financial Corp.",
+"sic": "6022",
+"sicDescription": "State Commercial Banks",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AMAL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer"
+},
+"1826660": {
+"name": "Wetouch Technology Inc.",
+"sic": "3577",
+"sicDescription": "Computer Peripheral Equipment, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "NV",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"WETH"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "<br>Emerging growth company"
+},
+"1828962": {
+"name": "Cricut, Inc.",
+"sic": "3559",
+"sicDescription": "Special Industry Machinery, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CRCT"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer"
+},
+"1841666": {
+"name": "APA Corp",
+"sic": "1311",
+"sicDescription": "Crude Petroleum & Natural Gas",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"APA"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1866633": {
+"name": "Consensus Cloud Solutions, Inc.",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CCSI"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer"
+}
+}

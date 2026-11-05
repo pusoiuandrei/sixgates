@@ -32,6 +32,12 @@ NAMES = {
     "AAPL": ("Apple Inc.", "NASDAQ (SUA)", "septembrie"),
     "KO": ("The Coca-Cola Company", "NYSE (SUA)", "decembrie"),
     "MCO": ("Moody's Corporation", "NYSE (SUA)", "decembrie"),
+    "CHKP": ("Check Point Software Technologies Ltd.", "NASDAQ (SUA), emitent străin, 20-F în US GAAP", "decembrie"),
+    "ADBE": ("Adobe Inc.", "NASDAQ (SUA)", "noiembrie"),
+    "ACN": ("Accenture plc", "NYSE (SUA)", "august"),
+    "FDS": ("FactSet Research Systems Inc.", "NYSE (SUA)", "august"),
+    "FICO": ("Fair Isaac Corporation", "NYSE (SUA)", "septembrie"),
+    "INTU": ("Intuit Inc.", "NASDAQ (SUA)", "iulie"),
 }
 
 LABELS = {

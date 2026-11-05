@@ -26,8 +26,9 @@ from datetime import date
 import common
 from concept_map import REQUIRED_FOR_TEN_YEAR_RULE, US_GAAP, ConceptSpec
 
-COMPANIES: dict[int, str] = {320193: "AAPL", 21344: "KO", 1059556: "MCO"}
-ANNUAL_FORMS = {"10-K", "10-K/A"}
+COMPANIES: dict[int, str] = {320193: "AAPL", 21344: "KO", 1059556: "MCO",
+                             1015922: "CHKP", 796343: "ADBE", 1467373: "ACN", 1013237: "FDS", 814547: "FICO", 896878: "INTU"}
+ANNUAL_FORMS = {"10-K", "10-K/A", "20-F", "20-F/A"}
 MIN_DAYS, MAX_DAYS = 340, 380
 
 FACT_FIELDS = [
