@@ -6,68 +6,68 @@ Aritmetică cu surse și judecăți atribuite, nu sfat de investiții. Pragurile
 - Univers: 3798 companii (S&P 500: 500 CIK-uri, inclusiv Dow 30; listate pe Nasdaq: 3453); cu fapte XBRL anuale: 3230
 - K1 trece: 1016; și K3: 565; și K4: 401; și K5: 332
 - În cercul tău după K7: 91; eligibile pentru brief (cel puțin 10 puncte de calitate din 15, exercițiu recent, preț disponibil, capitalizare peste 2 mld USD, venituri peste 500 mil USD, sediu în afara Chinei și Hong Kong): 42; cu preț sub VI_jos: 34
-- Schimbări față de rularea anterioară (2026-11-05): intrate în lista cercului: niciuna; ieșite: niciuna; intrate sub VI_jos: niciuna; ieșite de sub VI_jos: niciuna
-- Rotație: companiile arătate în ultimele 30 de zile nu se repetă (3 excluse azi)
+- Schimbări față de rularea anterioară (2026-11-06): intrate în lista cercului: niciuna; ieșite: niciuna; intrate sub VI_jos: niciuna; ieșite de sub VI_jos: niciuna
+- Rotație: companiile arătate în ultimele 30 de zile nu se repetă (6 excluse azi)
 
-## Cele trei companii de azi: CRUS (CIRRUS LOGIC, INC.), CDW (CDW Corp), CTSH (COGNIZANT TECHNOLOGY SOLUTIONS CORP)
+## Cele trei companii de azi: BR (BROADRIDGE FINANCIAL SOLUTIONS, INC.), SEIC (SEI INVESTMENTS CO), MKTX (MARKETAXESS HOLDINGS INC)
 
-### 1. CIRRUS LOGIC, INC. (CRUS)
-Nasdaq (în afara S&P 500); semiconductori / hardware / rețele; SIC 3674 (Semiconductors & Related Devices); exercițiul încheiat 2026-03-28; formular 10-K|10-K/A; ultimul raport anual depus 2026-05-21; depunerea sursă a profitului net: https://www.sec.gov/Archives/edgar/data/772406/000077240626000024/
-
-Zece ani de fapte [F] și calcule [C] (etichete XBRL standard, ultima depunere pentru fiecare an):
-- Venituri 2,00 mld USD în ultimul exercițiu, CAGR 2,9% pe fereastră; marja operațională mediană 18,3%, minimă 8,5%
-- Ani cu pierdere: 0 din 12 disponibili; ROE median pe capitalul de început de an 17,1%
-- OE_jos (profit net + D&A minus capex total) 453 mil USD, CAGR 5,4%; marja FCF mediană 21,4%; capex pe CFO median 9,6%
-- Datorie netă -801 mil USD = -1,3x FCF; acoperirea dobânzilor 513x; etichete: LineOfCredit
-- Acțiuni diluate CAGR 10 ani -2,5%, 5 ani -2,5%; compensație în acțiuni 4,1% din venituri; R&D 21,7% din venituri; răscumpărări în ultimul exercițiu 280 mil USD
-
-Filtre: K1 trece | K3 trece | K4 trece (numerar net) | K5 trece | K7 trece (nu e bancă, asigurător sau REIT; situații auditate în EDGAR) | indicii K2: R&D 22% din venituri; abatere venituri 30% într-un an
-
-Prețul, ultimul (poarta 5, instrument, nu regulă): 110,23 USD la 2026-11-05 (Yahoo Finance); capitalizare 5,82 mld USD pe 52,8 mil acțiuni diluate
-- Randament OE_jos pe capitalizare 7,8% față de DGS10 4,90% (2026-11-04, FRED)
-- Creșterea OE pe zece ani presupusă de preț: -7,3% pe an la r = 6%, -2,3% la r = 8%; istoricul OE: 5,4%
-- VI_jos pe acțiune la g = 5% (istoric plafonat la 8%), r = 6%, creștere terminală 2,5%: 320 USD; prețul este sub VI_jos cu 65%: peste marja maximă propusă (50%)
-- Grila VI_jos pe acțiune: r=6%: g=0% 200, g=4% 280, g=8% 400; r=8%: g=0% 130, g=4% 180, g=8% 250; r=10%: g=0% 98, g=4% 130, g=8% 180
-
-Ce decizi tu (porțile 2 și 4, nu se calculează): poți descrie această afacere peste zece ani și ce o poate omorî? Dacă nu, răspunsul este „prea greu”, oricât de bune ar fi cifrele.
-
-### 2. CDW Corp (CDW)
-S&P 500; servicii IT / consultanță / distribuție; SIC 5961 (Retail-Catalog & Mail-Order Houses); exercițiul încheiat 2025-12-31; formular 10-K; ultimul raport anual depus 2026-02-20; depunerea sursă a profitului net: https://www.sec.gov/Archives/edgar/data/1402057/000130817926000251/
+### 1. BROADRIDGE FINANCIAL SOLUTIONS, INC. (BR)
+S&P 500; software / internet; SIC 7389 (Services-Business Services, NEC); exercițiul încheiat 2026-06-30; formular 10-K; ultimul raport anual depus 2026-08-04; depunerea sursă a profitului net: https://www.sec.gov/Archives/edgar/data/1383312/000114036126037937/
 
 Zece ani de fapte [F] și calcule [C] (etichete XBRL standard, ultima depunere pentru fiecare an):
-- Venituri 22,42 mld USD în ultimul exercițiu, CAGR 5,7% pe fereastră; marja operațională mediană 6,6%, minimă 5,8%
-- Ani cu pierdere: 0 din 12 disponibili; ROE median pe capitalul de început de an 67,1%
-- OE_jos (profit net + D&A minus capex total) 1,25 mld USD, CAGR 8,1%; marja FCF mediană 5,0%; capex pe CFO median 10,1%
-- Datorie netă 5,01 mld USD = 4,6x FCF; acoperirea dobânzilor 7x; etichete: LongTermDebtCurrent+LongTermDebtNoncurrent
-- Acțiuni diluate CAGR 10 ani -2,5%, 5 ani -1,8%; compensație în acțiuni 0,4% din venituri; R&D lipsă din venituri; răscumpărări în ultimul exercițiu 653 mil USD
+- Venituri 7,48 mld USD în ultimul exercițiu, CAGR 6,8% pe fereastră; marja operațională mediană 14,4%, minimă 12,8%
+- Ani cu pierdere: 0 din 13 disponibili; ROE median pe capitalul de început de an 39,7%
+- OE_jos (profit net + D&A minus capex total) 1,19 mld USD, CAGR 16,2%; marja FCF mediană 13,0%; capex pe CFO median 7,3%
+- Datorie netă 2,85 mld USD = 2,2x FCF; acoperirea dobânzilor 12x; etichete: LongTermDebtCurrent+LongTermDebtNoncurrent
+- Acțiuni diluate CAGR 10 ani -0,3%, 5 ani -0,1%; compensație în acțiuni 1,3% din venituri; R&D lipsă din venituri; răscumpărări în ultimul exercițiu 604 mil USD
 
 Filtre: K1 trece | K3 trece | K4 trece | K5 trece | K7 trece (nu e bancă, asigurător sau REIT; situații auditate în EDGAR) | indicii K2 din cifre: niciunul
 
-Prețul, ultimul (poarta 5, instrument, nu regulă): 158,39 USD la 2026-11-05 (Yahoo Finance); capitalizare 20,92 mld USD pe 132,1 mil acțiuni diluate
-- Randament OE_jos pe capitalizare 6,0% față de DGS10 4,90% (2026-11-04, FRED)
-- Creșterea OE pe zece ani presupusă de preț: -4,1% pe an la r = 6%, 1,2% la r = 8%; istoricul OE: 8,1%
-- VI_jos pe acțiune la g = 8% (istoric plafonat la 8%), r = 6%, creștere terminală 2,5%: 440 USD; prețul este sub VI_jos cu 64%: peste marja maximă propusă (50%)
-- Grila VI_jos pe acțiune: r=6%: g=0% 220, g=4% 310, g=8% 440; r=8%: g=0% 140, g=4% 200, g=8% 270; r=10%: g=0% 110, g=4% 140, g=8% 190
+Prețul, ultimul (poarta 5, instrument, nu regulă): 193,92 USD la 2026-11-05 (Yahoo Finance); capitalizare 22,71 mld USD pe 117,1 mil acțiuni diluate
+- Randament OE_jos pe capitalizare 5,3% față de DGS10 4,90% (2026-11-04, FRED)
+- Creșterea OE pe zece ani presupusă de preț: -2,6% pe an la r = 6%, 2,8% la r = 8%; istoricul OE: 16,2%
+- VI_jos pe acțiune la g = 8% (istoric plafonat la 8%), r = 6%, creștere terminală 2,5%: 470 USD; prețul este sub VI_jos cu 59%: peste marja maximă propusă (50%)
+- Grila VI_jos pe acțiune: r=6%: g=0% 240, g=4% 340, g=8% 470; r=8%: g=0% 160, g=4% 210, g=8% 290; r=10%: g=0% 120, g=4% 160, g=8% 210
 
 Ce decizi tu (porțile 2 și 4, nu se calculează): poți descrie această afacere peste zece ani și ce o poate omorî? Dacă nu, răspunsul este „prea greu”, oricât de bune ar fi cifrele.
 
-### 3. COGNIZANT TECHNOLOGY SOLUTIONS CORP (CTSH)
-S&P 500; servicii IT / consultanță / distribuție; SIC 7371 (Services-Computer Programming Services); exercițiul încheiat 2025-12-31; formular 10-K; ultimul raport anual depus 2026-02-12; depunerea sursă a profitului net: https://www.sec.gov/Archives/edgar/data/1058290/000130817926000290/
+### 2. SEI INVESTMENTS CO (SEIC)
+Nasdaq (în afara S&P 500); fintech / infrastructură de piață; SIC 6211 (Security Brokers, Dealers & Flotation Companies); exercițiul încheiat 2025-12-31; formular 10-K|10-K/A; ultimul raport anual depus 2026-02-23; depunerea sursă a profitului net: https://www.sec.gov/Archives/edgar/data/350894/000035089426000013/
 
 Zece ani de fapte [F] și calcule [C] (etichete XBRL standard, ultima depunere pentru fiecare an):
-- Venituri 21,11 mld USD în ultimul exercițiu, CAGR 5,1% pe fereastră; marja operațională mediană 15,3%, minimă 12,7%
-- Ani cu pierdere: 0 din 12 disponibili; ROE median pe capitalul de început de an 16,8%
-- OE_jos (profit net + D&A minus capex total) 2,49 mld USD, CAGR 4,8%; marja FCF mediană 12,1%; capex pe CFO median 13,3%
-- Datorie netă -1,34 mld USD = -0,5x FCF; acoperirea dobânzilor 94x; etichete: ShortTermBorrowings+LongTermDebtNoncurrent
-- Acțiuni diluate CAGR 10 ani -2,4%, 5 ani -2,0%; compensație în acțiuni 0,9% din venituri; R&D lipsă din venituri; răscumpărări în ultimul exercițiu 1,38 mld USD
+- Venituri 2,30 mld USD în ultimul exercițiu, CAGR 5,6% pe fereastră; marja operațională mediană 26,6%, minimă 22,1%
+- Ani cu pierdere: 0 din 12 disponibili; ROE median pe capitalul de început de an 29,1%
+- OE_jos (profit net + D&A minus capex total) 693 mil USD, CAGR 9,6%; marja FCF mediană 28,1%; capex pe CFO median 5,6%
+- Datorie netă -400 mil USD = -0,7x FCF; acoperirea dobânzilor 1 085x; etichete: LongTermDebtCurrent+LongTermDebtNoncurrent
+- Acțiuni diluate CAGR 10 ani -2,8%, 5 ani -3,1%; compensație în acțiuni 2,3% din venituri; R&D lipsă din venituri; răscumpărări în ultimul exercițiu 628 mil USD
 
 Filtre: K1 trece | K3 trece | K4 trece (numerar net) | K5 trece | K7 trece (nu e bancă, asigurător sau REIT; situații auditate în EDGAR) | indicii K2 din cifre: niciunul
 
-Prețul, ultimul (poarta 5, instrument, nu regulă): 66,54 USD la 2026-11-05 (Yahoo Finance); capitalizare 32,54 mld USD pe 489,0 mil acțiuni diluate
-- Randament OE_jos pe capitalizare 7,7% față de DGS10 4,90% (2026-11-04, FRED)
-- Creșterea OE pe zece ani presupusă de preț: -7,1% pe an la r = 6%, -2,1% la r = 8%; istoricul OE: 4,8%
-- VI_jos pe acțiune la g = 5% (istoric plafonat la 8%), r = 6%, creștere terminală 2,5%: 180 USD; prețul este sub VI_jos cu 63%: peste marja maximă propusă (50%)
-- Grila VI_jos pe acțiune: r=6%: g=0% 120, g=4% 170, g=8% 240; r=8%: g=0% 78, g=4% 110, g=8% 150; r=10%: g=0% 58, g=4% 78, g=8% 100
+Prețul, ultimul (poarta 5, instrument, nu regulă): 105,18 USD la 2026-11-05 (Yahoo Finance); capitalizare 13,37 mld USD pe 127,1 mil acțiuni diluate
+- Randament OE_jos pe capitalizare 5,2% față de DGS10 4,90% (2026-11-04, FRED)
+- Creșterea OE pe zece ani presupusă de preț: -2,4% pe an la r = 6%, 2,9% la r = 8%; istoricul OE: 9,6%
+- VI_jos pe acțiune la g = 8% (istoric plafonat la 8%), r = 6%, creștere terminală 2,5%: 250 USD; prețul este sub VI_jos cu 58%: peste marja maximă propusă (50%)
+- Grila VI_jos pe acțiune: r=6%: g=0% 130, g=4% 180, g=8% 250; r=8%: g=0% 84, g=4% 110, g=8% 160; r=10%: g=0% 62, g=4% 83, g=8% 110
+
+Ce decizi tu (porțile 2 și 4, nu se calculează): poți descrie această afacere peste zece ani și ce o poate omorî? Dacă nu, răspunsul este „prea greu”, oricât de bune ar fi cifrele.
+
+### 3. MARKETAXESS HOLDINGS INC (MKTX)
+Nasdaq (în afara S&P 500); fintech / infrastructură de piață; SIC 6211 (Security Brokers, Dealers & Flotation Companies); exercițiul încheiat 2025-12-31; formular 10-K|10-K/A; ultimul raport anual depus 2026-02-24; depunerea sursă a profitului net: https://www.sec.gov/Archives/edgar/data/1278021/000119312526191601/
+
+Zece ani de fapte [F] și calcule [C] (etichete XBRL standard, ultima depunere pentru fiecare an):
+- Venituri 846 mil USD în ultimul exercițiu, CAGR 9,7% pe fereastră; marja operațională mediană 48,5%, minimă 40,4%
+- Ani cu pierdere: 0 din 12 disponibili; ROE median pe capitalul de început de an 29,3%
+- OE_jos (profit net + D&A minus capex total) 315 mil USD, CAGR 9,7%; marja FCF mediană 43,1%; capex pe CFO median 4,6%
+- Datorie netă -300 mil USD = -0,8x FCF; acoperirea dobânzilor 474x; etichete: ShortTermBorrowings
+- Acțiuni diluate CAGR 10 ani -0,2%, 5 ani -0,5%; compensație în acțiuni 3,7% din venituri; R&D lipsă din venituri; răscumpărări în ultimul exercițiu 420 mil USD
+
+Filtre: K1 trece | K3 trece | K4 trece (numerar net) | K5 trece | K7 trece (nu e bancă, asigurător sau REIT; situații auditate în EDGAR) | indicii K2: abatere venituri 35% într-un an
+
+Prețul, ultimul (poarta 5, instrument, nu regulă): 165,54 USD la 2026-11-05 (Yahoo Finance); capitalizare 6,15 mld USD pe 37,1 mil acțiuni diluate
+- Randament OE_jos pe capitalizare 5,1% față de DGS10 4,90% (2026-11-04, FRED)
+- Creșterea OE pe zece ani presupusă de preț: -2,3% pe an la r = 6%, 3,1% la r = 8%; istoricul OE: 9,7%
+- VI_jos pe acțiune la g = 8% (istoric plafonat la 8%), r = 6%, creștere terminală 2,5%: 390 USD; prețul este sub VI_jos cu 58%: peste marja maximă propusă (50%)
+- Grila VI_jos pe acțiune: r=6%: g=0% 200, g=4% 280, g=8% 390; r=8%: g=0% 130, g=4% 180, g=8% 240; r=10%: g=0% 97, g=4% 130, g=8% 170
 
 Ce decizi tu (porțile 2 și 4, nu se calculează): poți descrie această afacere peste zece ani și ce o poate omorî? Dacă nu, răspunsul este „prea greu”, oricât de bune ar fi cifrele.
 
@@ -75,9 +75,9 @@ Ce decizi tu (porțile 2 și 4, nu se calculează): poți descrie această aface
 - PYPL (PayPal Holdings, Inc.): preț 58,96, VI_jos 260 la g 8%, sub VI_jos cu 77%: peste marja maximă propusă (50%); randament OE 9,4%; recent arătată
 - ADBE (ADOBE INC.): preț 246,44, VI_jos 840 la g 8%, sub VI_jos cu 71%: peste marja maximă propusă (50%); randament OE 7,4%; recent arătată
 - PLUS (EPLUS INC): preț 82,43, VI_jos 270 la g 8%, sub VI_jos cu 70%: peste marja maximă propusă (50%); randament OE 7,2%; recent arătată
-- BR (BROADRIDGE FINANCIAL SOLUTIONS, INC.): preț 193,92, VI_jos 470 la g 8%, sub VI_jos cu 59%: peste marja maximă propusă (50%); randament OE 5,3%
-- SEIC (SEI INVESTMENTS CO): preț 105,18, VI_jos 250 la g 8%, sub VI_jos cu 58%: peste marja maximă propusă (50%); randament OE 5,2%
-- MKTX (MARKETAXESS HOLDINGS INC): preț 165,54, VI_jos 390 la g 8%, sub VI_jos cu 58%: peste marja maximă propusă (50%); randament OE 5,1%
+- CRUS (CIRRUS LOGIC, INC.): preț 110,23, VI_jos 320 la g 5%, sub VI_jos cu 65%: peste marja maximă propusă (50%); randament OE 7,8%; recent arătată
+- CDW (CDW Corp): preț 158,39, VI_jos 440 la g 8%, sub VI_jos cu 64%: peste marja maximă propusă (50%); randament OE 6,0%; recent arătată
+- CTSH (COGNIZANT TECHNOLOGY SOLUTIONS CORP): preț 66,54, VI_jos 180 la g 5%, sub VI_jos cu 63%: peste marja maximă propusă (50%); randament OE 7,7%; recent arătată
 - CARG (CarGurus, Inc.): preț 36,15, VI_jos 82 la g 8%, sub VI_jos cu 56%: peste marja maximă propusă (50%); randament OE 4,9%
 - CHKP (CHECK POINT SOFTWARE TECHNOLOGIES LTD): preț 148,18, VI_jos 330 la g 4%, sub VI_jos cu 55%: peste marja maximă propusă (50%); randament OE 6,5%
 - FDS (FACTSET RESEARCH SYSTEMS INC): preț 340,47, VI_jos 760 la g 8%, sub VI_jos cu 55%: peste marja maximă propusă (50%); randament OE 4,8%
