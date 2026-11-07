@@ -26,10 +26,19 @@
   ],
   "MKTX": [
    "2026-11-06"
+  ],
+  "CARG": [
+   "2026-11-07"
+  ],
+  "FICO": [
+   "2026-11-07"
+  ],
+  "FDS": [
+   "2026-11-07"
   ]
  },
  "last_run": {
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "in_circle_pass": [
    "AAPL",
    "ACN",
@@ -135,6 +144,7 @@
    "CDW",
    "CHKP",
    "CRUS",
+   "CSCO",
    "CTSH",
    "EXPO",
    "FDS",
@@ -160,9 +170,9 @@
    "VRSK"
   ],
   "picks": [
-   "BR",
-   "SEIC",
-   "MKTX"
+   "CARG",
+   "FICO",
+   "FDS"
   ]
  }
 }
