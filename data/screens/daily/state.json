@@ -53,10 +53,19 @@
   ],
   "FFIV": [
    "2026-11-09"
+  ],
+  "MORN": [
+   "2026-11-10"
+  ],
+  "NFLX": [
+   "2026-11-10"
+  ],
+  "NTAP": [
+   "2026-11-10"
   ]
  },
  "last_run": {
-  "date": "2026-11-09",
+  "date": "2026-11-10",
   "in_circle_pass": [
    "AAPL",
    "ACN",
@@ -154,7 +163,6 @@
    "AAPL",
    "ACN",
    "ADBE",
-   "APH",
    "BKNG",
    "BR",
    "CARG",
@@ -162,7 +170,6 @@
    "CDW",
    "CHKP",
    "CRUS",
-   "CSCO",
    "CTSH",
    "EXPO",
    "FDS",
@@ -188,9 +195,9 @@
    "VRSK"
   ],
   "picks": [
-   "OLED",
-   "BKNG",
-   "FFIV"
+   "MORN",
+   "NFLX",
+   "NTAP"
   ]
  }
 }
