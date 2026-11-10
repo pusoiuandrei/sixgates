@@ -39,7 +39,7 @@ TOOLS = Path(__file__).resolve().parent
 UA_SEC = {"User-Agent": "SixGates research spike contact@sixgates.local", "Accept-Encoding": "gzip, deflate"}
 UA_WEB = {"User-Agent": "Mozilla/5.0"}
 ROTATION_DAYS = 30
-MIN_QUALITY = 10          # of 15 quality points in rank_circle.py (ranking aid, never shown as a score)
+MIN_QUALITY = 10          # of 16 quality points in rank_circle.py (ranking aid, never shown as a score)
 MAX_FILING_AGE_DAYS = 460 # latest fiscal year must end within ~15 months
 EXCLUDE_COUNTRIES = {"F4", "K3"}  # business address in China or Hong Kong: outside the user's circle
 MIN_MCAP_USD = 2e9        # parametru propus: capitalizare minimă pentru brief
@@ -182,12 +182,27 @@ def price_gate(work: Path, ranked: list[dict], bond: float) -> list[dict]:
             if sdate > fy:
                 adj *= ratio
         oe = q.get("oe_low_last")
+        oe_hi = q.get("oe_high_last")
         g_hist = q.get("oe_low_cagr")
         g_used = None if g_hist is None else max(0.0, min(g_hist, G_CAP))
         item = dict(q)
         item.update(price=price, price_date=pdate, price_currency=cur, shares_basis=sh, split_adj=adj,
                     r_used=r0, g_used=g_used, oe_per_share=None, oe_yield=None, implied_g_r0=None, implied_g_r2=None,
-                    vi_low=None, p_to_vi=None, discount_to_vi=None, grid=None, mcap=None, band=None)
+                    vi_low=None, p_to_vi=None, discount_to_vi=None, grid=None, mcap=None, band=None,
+                    oe_high_per_share=None, oe_high_yield=None, vi_high=None, grid_high=None, p_to_vi_high=None)
+        if sh and price and cur == "USD":
+            sh_adj = sh * adj
+            item["mcap"] = price * sh_adj
+            if oe_hi and oe_hi > 0:
+                oe_hps = oe_hi / sh_adj
+                g_hi = q.get("oe_high_cagr")
+                g_hi_used = g_used if g_hi is None else max(0.0, min(g_hi, G_CAP))
+                item.update(oe_high_per_share=oe_hps, oe_high_yield=oe_hps / price,
+                            grid_high={f"r={r:.0%}": {f"g={g:.0%}": sig2(vi_per_share(oe_hps, g, r)) for g in (0.0, 0.04, 0.08)}
+                                       for r in (r0, r0 + 0.02, r0 + 0.04)})
+                if g_hi_used is not None:
+                    item.update(vi_high=vi_per_share(oe_hps, g_hi_used, r0), g_high_used=g_hi_used)
+                    item["p_to_vi_high"] = price / item["vi_high"]
         if oe and sh and price and cur == "USD" and oe > 0:
             sh_adj = sh * adj
             oe_ps = oe / sh_adj
@@ -277,6 +292,31 @@ def filing_link(cik: str, accn: str | None) -> str:
     return f"https://www.sec.gov/Archives/edgar/data/{int(cik)}/{accn.replace('-', '')}/"
 
 
+def roic_txt(it: dict) -> str:
+    v, n, negl = it.get("roic_tangible_median"), it.get("roic_years") or 0, it.get("negligible_capital_years") or 0
+    parts = []
+    if v is not None:
+        parts.append(("peste 100%" if v >= 1 else pct(v)) + (f" pe {n} ani" if n != 1 else " pe un an"))
+    if negl:
+        parts.append(f"capital tangibil neglijabil în {negl} ani (semnal pozitiv, procentul nu se forțează)")
+    return "; ".join(parts) if parts else "nedefinit (bilanț lipsă în etichetele standard)"
+
+
+def buyback_txt(it: dict) -> str:
+    ppr, price = it.get("price_per_share_retired"), it.get("price")
+    if it.get("net_buyback_last") is None:
+        return ""
+    if ppr is None:
+        return "; numărul de acțiuni diluate nu a scăzut: răscumpărările au acoperit cel mult diluarea"
+    s = f"; preț mediu plătit pe acțiune retrasă net {ro(ppr, 0)} USD (aproximare pe acțiunile medii diluate)"
+    if price:
+        if ppr > 2 * price:
+            s += f" față de prețul de azi {ro(price, 0)}: cea mai mare parte a răscumpărărilor doar neutralizează diluarea"
+        else:
+            s += f" față de prețul de azi {ro(price, 0)}"
+    return s
+
+
 def company_block(i: int, it: dict, bond: float, bond_date: str) -> str:
     idx = "S&P 500" if str(it.get("sp500")) == "True" else "Nasdaq (în afara S&P 500)"
     forms = it.get("forms") or ""
@@ -288,11 +328,21 @@ def company_block(i: int, it: dict, bond: float, bond_date: str) -> str:
              "Zece ani de fapte [F] și calcule [C] (etichete XBRL standard, ultima depunere pentru fiecare an):",
              f"- Venituri {bn(it.get('rev_last'))} în ultimul exercițiu, CAGR {pct(it.get('rev_cagr'))} pe fereastră; marja operațională mediană {pct(it.get('op_margin_median'))}, minimă {pct(it.get('op_margin_min'))}",
              f"- Ani cu pierdere: {it.get('loss_years')} din {it.get('years')} disponibili; ROE median pe capitalul de început de an {pct(it.get('roe_median'))}"
-             + (f" ({it.get('neg_equity_years')} ani cu capital propriu negativ)" if it.get('neg_equity_years') else ""),
-             f"- OE_jos (profit net + D&A minus capex total) {bn(it.get('oe_low_last'))}, CAGR {pct(it.get('oe_low_cagr'))}; marja FCF mediană {pct(it.get('fcf_margin_median'))}; capex pe CFO median {pct(it.get('capex_to_cfo_median'))}",
-             f"- Datorie netă {bn(it.get('net_debt'))} = {ro(it.get('nd_to_fcf'), 1, 'x')} FCF; acoperirea dobânzilor {ro(it.get('cover'), 0, 'x') if it.get('cover') is not None else 'nedisponibilă'}; etichete: {it.get('debt_tag') or 'fără datorie etichetată'}",
-             f"- Acțiuni diluate CAGR 10 ani {pct(it.get('shares_cagr10'))}, 5 ani {pct(it.get('shares_cagr5'))}; compensație în acțiuni {pct(it.get('sbc_to_rev'))} din venituri; R&D {pct(it.get('rd_to_rev'))} din venituri; răscumpărări în ultimul exercițiu {bn(it.get('buyback_last'))}"
+             + (f" (nedefinit în {it.get('neg_equity_years')} ani: capital propriu sub zero)" if it.get('neg_equity_years') else "")
+             + f"; ROIC tangibil median {roic_txt(it)}"
+             + (f"; ROIC cu fond comercial {pct(it.get('roic_with_goodwill_median'))}" if it.get('roic_with_goodwill_median') is not None else ""),
+             f"- Interval OE în ultimul exercițiu: OE_jos {bn(it.get('oe_low_last'))} (tot capexul e menținere) la OE_sus {bn(it.get('oe_high_last'))} (menținere = D&A tangibil); CAGR OE_jos {pct(it.get('oe_low_cagr'))}; "
+             f"capex pe D&A tangibil {ro(it.get('capex_to_da_tangible'), 2, 'x')}" + (" (peste 1,5x: investiție peste ritmul de înlocuire; menținere sau creștere, judecata ta)" if (it.get('capex_to_da_tangible') or 0) > 1.5 else "")
+             + ("; amortizarea necorporalelor neetichetată, D&A luat integral" if it.get('amort_missing') else ""),
+             f"- FCF după SBC (CFO minus compensația în acțiuni minus capex) {bn(it.get('fcf_last'))}" + (f", față de {bn(it.get('fcf_gross_last'))} înainte de SBC" if it.get('fcf_gross_last') is not None else "")
+             + f"; marja FCF după SBC mediană {pct(it.get('fcf_margin_median'))}; capex pe CFO median {pct(it.get('capex_to_cfo_median'))}",
+             f"- Datorie netă {bn(it.get('net_debt'))} = {ro(it.get('nd_to_fcf'), 1, 'x')} FCF după SBC; acoperirea dobânzilor {ro(it.get('cover'), 0, 'x') if it.get('cover') is not None else 'nedisponibilă'}; etichete: {it.get('debt_tag') or 'fără datorie etichetată'}",
+             f"- Acțiuni diluate CAGR 10 ani {pct(it.get('shares_cagr10'))}, 5 ani {pct(it.get('shares_cagr5'))}; compensație în acțiuni {pct(it.get('sbc_to_rev'))} din venituri; R&D {pct(it.get('rd_to_rev'))} din venituri"
              + (f"; {it.get('share_flags')}" if it.get('share_flags') else ""),
+             f"- Răscumpărări în ultimul exercițiu {bn(it.get('buyback_last'))}, emisiuni {bn(it.get('issuance_last')) if it.get('issuance_last') is not None else 'neetichetate'}, net {bn(it.get('net_buyback_last'))}"
+             + buyback_txt(it) + (f"; dividende plătite {bn(it.get('div_last'))}" if it.get('div_last') else ""),
+             f"- Direcție, ultimii 3 ani față de precedenții 7: " + (it.get('trend_breaks') or ("fără ruptură de trend peste pragurile propuse"
+             + (f" (venituri {pct(it.get('rev_cagr_short'))} pe an față de {pct(it.get('rev_cagr_long'))}; marja operațională {pct(it.get('op_margin_short'))} față de {pct(it.get('op_margin_long'))})" if it.get('rev_cagr_short') is not None else ""))),
              "",
              f"Filtre: K1 {it['K1']} | K3 {it['K3']} | K4 {it['K4']} | K5 {it['K5']} | K7 trece (nu e bancă, asigurător sau REIT; situații auditate în EDGAR)"
              + (f" | indicii K2: {it['K2_flags']}" if it.get('K2_flags') else " | indicii K2 din cifre: niciunul"),
@@ -306,12 +356,28 @@ def company_block(i: int, it: dict, bond: float, bond_date: str) -> str:
                   f"- Creșterea OE pe zece ani presupusă de preț: {pct(it['implied_g_r0'])} pe an la r = {pct(it['r_used'], 0)}, {pct(it['implied_g_r2'])} la r = {pct(it['r_used'] + 0.02, 0)}; istoricul OE: {pct(it.get('oe_low_cagr'))}",
                   f"- VI_jos pe acțiune la g = {pct(it['g_used'], 0)} (istoric plafonat la 8%), r = {pct(it['r_used'], 0)}, creștere terminală 2,5%: {ro(sig2(it['vi_low']), 0)} USD; prețul este {it['band']}",
                   f"- Grila VI_jos pe acțiune: {gl}",
+                  (f"- Pe OE_sus (menținere = D&A tangibil): randament {pct(it['oe_high_yield'])}; VI_sus la g = {pct(it.get('g_high_used') or 0, 0)}: {ro(sig2(it['vi_high']), 0)} USD, preț pe VI_sus {ro(it['p_to_vi_high'], 2)}; "
+                   f"referința pentru benzile de marjă rămâne VI_jos" if it.get('vi_high') else "- OE_sus indisponibil"),
                   ""]
     else:
         lines += [f"Prețul: {it.get('band') or 'indicator de preț indisponibil'}", ""]
     lines += ["Ce decizi tu (porțile 2 și 4, nu se calculează): poți descrie această afacere peste zece ani și ce o poate omorî? "
               "Dacă nu, răspunsul este „prea greu”, oricât de bune ar fi cifrele.", ""]
     return "\n".join(lines)
+
+
+def sanity_line(prev: dict, counts: dict, funnel: dict, n_circle: int, n_pool: int) -> str:
+    """Flag a pipeline problem (not a market event) when today's counts jump against the previous run."""
+    pc = prev.get("counts") or {}
+    checks = [("univers", pc.get("universe"), counts.get("universe")), ("cu fapte XBRL", pc.get("with_facts"), funnel.get("with_facts")),
+              ("trec K1 la K5", pc.get("k_pass"), funnel.get("K1_K3_K4_K5_pass")), ("în cerc", pc.get("in_circle"), n_circle),
+              ("eligibile", pc.get("eligible"), n_pool)]
+    alarms = [f"{name} {a} la {b}" for name, a, b in checks if a and b and abs(b - a) / a > 0.20]
+    if not pc:
+        return "- Verificare de sănătate: prima rulare cu această versiune, fără bază de comparație"
+    if alarms:
+        return "- Verificare de sănătate: ATENȚIE, salt peste 20% față de rularea anterioară (" + "; ".join(alarms) + "); probabil o problemă de date sau de cod, nu de piață; citește cu rezervă"
+    return "- Verificare de sănătate: numărătorile sunt în marja de 20% față de rularea anterioară"
 
 
 def write_brief(out_dir: Path, today: date, counts: dict, funnel: dict, items: list[dict], pool: list[dict], picks: list[dict],
@@ -331,11 +397,12 @@ def write_brief(out_dir: Path, today: date, counts: dict, funnel: dict, items: l
          "## Pâlnia de azi",
          f"- Univers: {counts['universe']} companii (S&P 500: {counts['sp500']} CIK-uri, inclusiv Dow 30; listate pe Nasdaq: {counts['nasdaq']}); cu fapte XBRL anuale: {funnel.get('with_facts')}",
          f"- K1 trece: {funnel.get('K1_pass')}; și K3: {funnel.get('K1_K3_pass')}; și K4: {funnel.get('K1_K3_K4_pass')}; și K5: {funnel.get('K1_K3_K4_K5_pass')}",
-         f"- În cercul tău după K7: {len(items)}; eligibile pentru brief (cel puțin 10 puncte de calitate din 15, exercițiu recent, preț disponibil, capitalizare peste 2 mld USD, venituri peste 500 mil USD, sediu în afara Chinei și Hong Kong): {len(pool)}; cu preț sub VI_jos: {len(under)}",
+         f"- În cercul tău după K7: {len(items)}; eligibile pentru brief (cel puțin 10 puncte de calitate din 16, exercițiu recent, preț disponibil, capitalizare peste 2 mld USD, venituri peste 500 mil USD, sediu în afara Chinei și Hong Kong): {len(pool)}; cu preț sub VI_jos: {len(under)}",
          (f"- Schimbări față de rularea anterioară ({prev.get('date')}): intrate în lista cercului: {', '.join(entered) or 'niciuna'}; ieșite: {', '.join(left) or 'niciuna'}; "
           f"intrate sub VI_jos: {', '.join(sorted(now_under - prev_under)) or 'niciuna'}; ieșite de sub VI_jos: {', '.join(sorted(prev_under - now_under)) or 'niciuna'}"
           if prev.get("date") else "- Prima rulare: fără comparație cu o rulare anterioară"),
          f"- Rotație: companiile arătate în ultimele {ROTATION_DAYS} de zile nu se repetă ({len(shown_recent)} excluse azi)",
+         sanity_line(prev, counts, funnel, len(items), len(pool)),
          "",
          "## Cele trei companii de azi: " + ", ".join(f"{p['ticker']} ({p['name']})" for p in picks), ""]
     for i, it in enumerate(picks, 1):
@@ -360,7 +427,7 @@ def write_brief(out_dir: Path, today: date, counts: dict, funnel: dict, items: l
           "",
           "## Metodă și surse",
           "SEC XBRL frames API și companyfacts (data.sec.gov), formulare 10-K și 20-F în US GAAP; SEC company_tickers_exchange.json; constituenții S&P 500 din github.com/datasets/s-and-p-500-companies; FRED DGS10; prețuri Yahoo Finance (vendor, doar pentru poarta 5). "
-          "Formule: OE_jos = profit net + D&A minus capex total; ROE pe capitalul de început de an; VI = suma OE × (1+g)^t / (1+r)^t pe zece ani plus valoarea terminală la 2,5%, actualizată; r = max(DGS10, 6%). "
+          "Formule: OE_jos = profit net + D&A minus capex total; OE_sus = profit net + D&A minus min(D&A tangibil, capex), unde D&A tangibil = D&A minus amortizarea necorporalelor dobândite; FCF după SBC = CFO minus compensația în acțiuni minus capex; ROE pe capitalul propriu de început de an; ROIC tangibil = NOPAT pe capitalul tangibil de început de an (capital de lucru fără numerar excedentar peste 2% din venituri și fără datoria curentă, plus imobilizări corporale nete), sub 5% din venituri sau negativ = neglijabil; direcția = ultimii 3 ani față de precedenții 7 (praguri propuse: venituri 5 puncte, marjă 3 puncte, randamente 5 puncte, acțiuni 2 puncte); VI = suma OE × (1+g)^t / (1+r)^t pe zece ani plus valoarea terminală la 2,5%, actualizată; r = max(DGS10, 6%). "
           "Limite: OE_jos penalizează companiile în plin ciclu de investiții; acțiunile pe clase (Visa) nu au CAGR; emitenții IFRS nu apar. Codul: tools/screen/ în repo-ul SixGates; fișierele zilei: data/screens/daily/" + today.isoformat() + "/.",
           ""]
     text = "\n".join(L)
@@ -431,6 +498,8 @@ def main() -> int:
         for it in picks:
             state.setdefault("presented", {}).setdefault(it["ticker"], []).append(today.isoformat())
         state["last_run"] = {"date": today.isoformat(), "in_circle_pass": sorted(it["ticker"] for it in items),
+                             "counts": {"universe": counts.get("universe"), "with_facts": funnel.get("with_facts"),
+                                        "k_pass": funnel.get("K1_K3_K4_K5_pass"), "in_circle": len(items), "eligible": len(pool)},
                              "under_vi": sorted(it["ticker"] for it in pool if it.get("discount_to_vi") and it["discount_to_vi"] > 0),
                              "picks": [it["ticker"] for it in picks]}
         json.dump(state, state_path.open("w", encoding="utf-8"), ensure_ascii=False, indent=1)

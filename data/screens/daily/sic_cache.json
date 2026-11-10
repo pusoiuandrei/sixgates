@@ -6514,5 +6514,1197 @@
 "10-K"
 ],
 "category": "Accelerated filer"
+},
+"4281": {
+"business_country": "PA",
+"last_annual_filing": "2026-02-12",
+"name": "Howmet Aerospace Inc.",
+"sic": "3350",
+"sicDescription": "Rolling Drawing & Extruding of  Nonferrous Metals",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HWM"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"31791": {
+"business_country": "MA",
+"last_annual_filing": "2026-02-24",
+"name": "REVVITY, INC.",
+"sic": "3826",
+"sicDescription": "Laboratory Analytical Instruments",
+"fiscalYearEnd": "1229",
+"stateOfIncorporation": "MA",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"RVTY"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"47217": {
+"business_country": "CA",
+"last_annual_filing": "2025-12-10",
+"name": "HP INC",
+"sic": "3570",
+"sicDescription": "Computer & office Equipment",
+"fiscalYearEnd": "1031",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"HPQ"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"52988": {
+"business_country": "TX",
+"last_annual_filing": "2025-11-20",
+"name": "JACOBS SOLUTIONS INC.",
+"sic": "1600",
+"sicDescription": "Heavy Construction Other Than Bldg Const - Contractors",
+"fiscalYearEnd": "1002",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"J"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"56978": {
+"business_country": null,
+"last_annual_filing": "2025-11-20",
+"name": "KULICKE & SOFFA INDUSTRIES INC",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "1003",
+"stateOfIncorporation": "PA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"KLIC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"101829": {
+"business_country": "VA",
+"last_annual_filing": "2026-02-06",
+"name": "RTX Corp",
+"sic": "3724",
+"sicDescription": "Aircraft Engines & Engine Parts",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"RTX"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"106532": {
+"business_country": "WI",
+"last_annual_filing": "2026-03-13",
+"name": "WEYCO GROUP INC",
+"sic": "5130",
+"sicDescription": "Wholesale-Apparel, Piece Goods & Notions",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "WI",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"WEYS"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer<br>Smaller reporting company"
+},
+"313616": {
+"business_country": "DC",
+"last_annual_filing": "2026-02-24",
+"name": "DANAHER CORP /DE/",
+"sic": "3823",
+"sicDescription": "Industrial Instruments For Measurement, Display, and Control",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"DHR"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"721371": {
+"business_country": "OH",
+"last_annual_filing": "2026-08-11",
+"name": "CARDINAL HEALTH INC",
+"sic": "5122",
+"sicDescription": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "OH",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"CAH"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"730272": {
+"business_country": "MA",
+"last_annual_filing": "2026-02-26",
+"name": "REPLIGEN CORP",
+"sic": "2836",
+"sicDescription": "Biological Products, (No Diagnostic Substances)",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"RGEN"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"796505": {
+"business_country": "MN",
+"last_annual_filing": "2025-11-25",
+"name": "Clearfield, Inc.",
+"sic": "3661",
+"sicDescription": "Telephone & Telegraph Apparatus",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "MN",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CLFD"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer"
+},
+"807863": {
+"business_country": "CA",
+"last_annual_filing": "2025-12-11",
+"name": "MITEK SYSTEMS INC",
+"sic": "3577",
+"sicDescription": "Computer Peripheral Equipment, NEC",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"MITK"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer"
+},
+"821002": {
+"business_country": "NY",
+"last_annual_filing": "2026-03-24",
+"name": "G III APPAREL GROUP LTD /DE/",
+"sic": "2300",
+"sicDescription": "Apparel & Other Finishd Prods of  Fabrics & Similar Matl",
+"fiscalYearEnd": "0131",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"GIII"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"833640": {
+"business_country": "CA",
+"last_annual_filing": "2026-02-06",
+"name": "POWER INTEGRATIONS INC",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "CA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"POWI"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"842023": {
+"business_country": "MN",
+"last_annual_filing": "2026-08-24",
+"name": "BIO-TECHNE Corp",
+"sic": "2836",
+"sicDescription": "Biological Products, (No Diagnostic Substances)",
+"fiscalYearEnd": "0630",
+"stateOfIncorporation": "MN",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"TECH"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"857005": {
+"business_country": "MA",
+"last_annual_filing": "2025-11-21",
+"name": "PTC INC.",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "MA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"PTC"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"860731": {
+"business_country": "TX",
+"last_annual_filing": "2026-02-18",
+"name": "TYLER TECHNOLOGIES INC",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"TYL"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"879169": {
+"business_country": "DE",
+"last_annual_filing": "2026-02-10",
+"name": "INCYTE CORP",
+"sic": "8731",
+"sicDescription": "Services-Commercial Physical & Biological Research",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"INCY"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"882835": {
+"business_country": "FL",
+"last_annual_filing": "2026-02-24",
+"name": "ROPER TECHNOLOGIES INC",
+"sic": "3823",
+"sicDescription": "Industrial Instruments For Measurement, Display, and Control",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ROP"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"885725": {
+"business_country": "MA",
+"last_annual_filing": "2026-02-17",
+"name": "BOSTON SCIENTIFIC CORP",
+"sic": "3841",
+"sicDescription": "Surgical & Medical Instruments & Apparatus",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"BSX"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"886136": {
+"business_country": "MI",
+"last_annual_filing": "2026-04-14",
+"name": "SAGA COMMUNICATIONS INC",
+"sic": "4832",
+"sicDescription": "Radio Broadcasting Stations",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "FL",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SGA"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"903129": {
+"business_country": "MI",
+"last_annual_filing": "2026-02-19",
+"name": "Gentherm Inc",
+"sic": "3714",
+"sicDescription": "Motor Vehicle Parts & Accessories",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MI",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"THRM"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"912061": {
+"business_country": "CA",
+"last_annual_filing": "2026-02-20",
+"name": "NATURAL HEALTH TRENDS CORP",
+"sic": "5190",
+"sicDescription": "Wholesale-Miscellaneous Nondurable Goods",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"NHTC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"912562": {
+"business_country": "NY",
+"last_annual_filing": "2026-02-26",
+"name": "GIBRALTAR INDUSTRIES, INC.",
+"sic": "3310",
+"sicDescription": "Steel Works, Blast Furnaces & Rolling & Finishing Mills",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ROCK"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"923601": {
+"business_country": "FL",
+"last_annual_filing": "2026-04-02",
+"name": "Algorhythm Holdings, Inc.",
+"sic": "7373",
+"sicDescription": "Services-Computer Integrated Systems Design",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"RIME"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"926326": {
+"business_country": "TX",
+"last_annual_filing": "2026-02-26",
+"name": "OMNICELL, INC.",
+"sic": "3571",
+"sicDescription": "Electronic Computers",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"OMCL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"927653": {
+"business_country": "TX",
+"last_annual_filing": "2026-05-08",
+"name": "MCKESSON CORP",
+"sic": "5122",
+"sicDescription": "Wholesale-Drugs, Proprietaries & Druggists' Sundries",
+"fiscalYearEnd": "0331",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MCK"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"928876": {
+"business_country": null,
+"last_annual_filing": "2026-04-30",
+"name": "TOWER SEMICONDUCTOR LTD",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "L3",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"TSEM"
+],
+"annual_forms": [
+"20-F",
+"20-F/A"
+],
+"category": "Large accelerated filer"
+},
+"935036": {
+"business_country": "NE",
+"last_annual_filing": "2026-02-26",
+"name": "ACI WORLDWIDE, INC.",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ACIW"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"943452": {
+"business_country": "PA",
+"last_annual_filing": "2026-02-13",
+"name": "WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP",
+"sic": "3743",
+"sicDescription": "Railroad Equipment",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"WAB"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1003935": {
+"business_country": "L3",
+"last_annual_filing": "2026-02-26",
+"name": "NICE Ltd.",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq",
+"OTC"
+],
+"tickers": [
+"NICE",
+"NCSYF"
+],
+"annual_forms": [
+"20-F"
+],
+"category": "Large accelerated filer"
+},
+"1013934": {
+"business_country": "VA",
+"last_annual_filing": "2026-02-27",
+"name": "Strategic Education, Inc.",
+"sic": "8200",
+"sicDescription": "Services-Educational Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MD",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"STRA"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1014473": {
+"business_country": "VA",
+"last_annual_filing": "2026-02-05",
+"name": "VERISIGN INC/CA",
+"sic": "7371",
+"sicDescription": "Services-Computer Programming Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"VRSN"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1029199": {
+"business_country": "KS",
+"last_annual_filing": "2026-02-26",
+"name": "EURONET WORLDWIDE, INC.",
+"sic": "6099",
+"sicDescription": "Functions Related To Depository Banking, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"EEFT"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1039399": {
+"business_country": "CA",
+"last_annual_filing": "2026-02-20",
+"name": "FORMFACTOR INC",
+"sic": "3674",
+"sicDescription": "Semiconductors & Related Devices",
+"fiscalYearEnd": "1226",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"FORM"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1050140": {
+"business_country": "A6",
+"last_annual_filing": "2026-03-11",
+"name": "DESCARTES SYSTEMS GROUP INC",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "0131",
+"stateOfIncorporation": "A6",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"DSGX"
+],
+"annual_forms": [
+"20-F",
+"40-F"
+],
+"category": "Smaller reporting company"
+},
+"1054905": {
+"business_country": "CO",
+"last_annual_filing": "2026-02-18",
+"name": "INNOSPEC INC.",
+"sic": "2800",
+"sicDescription": "Chemicals & Allied Products",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"IOSP"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1076930": {
+"business_country": "MA",
+"last_annual_filing": "2026-02-23",
+"name": "NOVANTA INC",
+"sic": "3690",
+"sicDescription": "Miscellaneous Electrical Machinery, Equipment & Supplies",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "A3",
+"exchanges": [
+"Nasdaq",
+"Nasdaq"
+],
+"tickers": [
+"NOVT",
+"NOVTU"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1084765": {
+"business_country": "TX",
+"last_annual_filing": "2026-07-24",
+"name": "RESOURCES CONNECTION, INC.",
+"sic": "7389",
+"sicDescription": "Services-Business Services, NEC",
+"fiscalYearEnd": "0531",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"RGP"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer"
+},
+"1086434": {
+"business_country": "L3",
+"last_annual_filing": "2026-03-30",
+"name": "AUDIOCODES LTD",
+"sic": "3661",
+"sicDescription": "Telephone & Telegraph Apparatus",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "L3",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"AUDC"
+],
+"annual_forms": [
+"20-F",
+"20-F/A"
+],
+"category": "Large accelerated filer"
+},
+"1092699": {
+"business_country": "MN",
+"last_annual_filing": "2026-02-19",
+"name": "SPS COMMERCE INC",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SPSC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1095565": {
+"business_country": "TN",
+"last_annual_filing": "2026-02-27",
+"name": "HEALTHSTREAM INC",
+"sic": "7370",
+"sicDescription": "Services-Computer Programming, Data Processing, Etc.",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "TN",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"HSTM"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer"
+},
+"1140536": {
+"business_country": "X0",
+"last_annual_filing": "2026-02-25",
+"name": "WILLIS TOWERS WATSON PLC",
+"sic": "6411",
+"sicDescription": "Insurance Agents, Brokers & Service",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "L2",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"WTW"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1145255": {
+"business_country": "CA",
+"last_annual_filing": "2025-12-03",
+"name": "HENNESSY ADVISORS INC",
+"sic": "6282",
+"sicDescription": "Investment Advice",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"HNNA"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"1156375": {
+"business_country": "IL",
+"last_annual_filing": "2026-02-26",
+"name": "CME GROUP INC.",
+"sic": "6200",
+"sicDescription": "Security & Commodity Brokers, Dealers, Exchanges & Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CME"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1286681": {
+"business_country": "MI",
+"last_annual_filing": "2026-02-23",
+"name": "DOMINOS PIZZA INC",
+"sic": "5140",
+"sicDescription": "Wholesale-Groceries & Related Products",
+"fiscalYearEnd": "0102",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"DPZ"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1289848": {
+"business_country": "IL",
+"last_annual_filing": "2026-02-24",
+"name": "Huron Consulting Group Inc.",
+"sic": "8742",
+"sicDescription": "Services-Management Consulting Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"HURN"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1324424": {
+"business_country": "WA",
+"last_annual_filing": "2026-02-13",
+"name": "Expedia Group, Inc.",
+"sic": "4700",
+"sicDescription": "Transportation Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"EXPE"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1329099": {
+"business_country": null,
+"last_annual_filing": "2026-03-17",
+"name": "Baidu, Inc.",
+"sic": "7370",
+"sicDescription": "Services-Computer Programming, Data Processing, Etc.",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "E9",
+"exchanges": [
+"Nasdaq",
+"OTC"
+],
+"tickers": [
+"BIDU",
+"BAIDF"
+],
+"annual_forms": [
+"20-F",
+"20-F/A"
+],
+"category": "Large accelerated filer"
+},
+"1334325": {
+"business_country": "FL",
+"last_annual_filing": "2026-01-29",
+"name": "Coda Octopus Group, Inc.",
+"sic": "3812",
+"sicDescription": "Search, Detection, Navigation, Guidance, Aeronautical Sys",
+"fiscalYearEnd": "1031",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CODA"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"1362004": {
+"business_country": "VA",
+"last_annual_filing": "2026-02-27",
+"name": "ICF International, Inc.",
+"sic": "8742",
+"sicDescription": "Services-Management Consulting Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ICFI"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1402436": {
+"business_country": "CT",
+"last_annual_filing": "2026-02-26",
+"name": "SS&C Technologies Holdings Inc",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SSNC"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1421517": {
+"business_country": "CA",
+"last_annual_filing": "2026-02-25",
+"name": "Energy Recovery, Inc.",
+"sic": "3559",
+"sicDescription": "Special Industry Machinery, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"ERII"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1434588": {
+"business_country": "AZ",
+"last_annual_filing": "2026-02-18",
+"name": "Grand Canyon Education, Inc.",
+"sic": "8200",
+"sicDescription": "Services-Educational Services",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LOPE"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
+},
+"1576427": {
+"business_country": null,
+"last_annual_filing": "2026-02-26",
+"name": "Criteo S.A.",
+"sic": "7311",
+"sicDescription": "Services-Advertising Agencies",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "N4",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CRTO"
+],
+"annual_forms": [
+"10-K",
+"10-K/A",
+"20-F"
+],
+"category": "Large accelerated filer"
+},
+"1596532": {
+"business_country": "CA",
+"last_annual_filing": "2026-02-17",
+"name": "Arista Networks, Inc.",
+"sic": "3576",
+"sicDescription": "Computer Communications Equipment",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"ANET"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1606366": {
+"business_country": "CA",
+"last_annual_filing": "2026-03-13",
+"name": "El Pollo Loco Holdings, Inc.",
+"sic": "5812",
+"sicDescription": "Retail-Eating  Places",
+"fiscalYearEnd": "1230",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"LOCO"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Accelerated filer"
+},
+"1613103": {
+"business_country": null,
+"last_annual_filing": "2026-06-18",
+"name": "Medtronic plc",
+"sic": "3845",
+"sicDescription": "Electromedical & Electrotherapeutic Apparatus",
+"fiscalYearEnd": "0424",
+"stateOfIncorporation": "",
+"exchanges": [
+"NYSE"
+],
+"tickers": [
+"MDT"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"1672909": {
+"business_country": "MN",
+"last_annual_filing": "2026-03-10",
+"name": "Canterbury Park Holding Corp",
+"sic": "7948",
+"sicDescription": "Services-Racing, Including Track Operation",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "MN",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"CPHC"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Non-accelerated filer<br>Smaller reporting company"
+},
+"1729149": {
+"business_country": "LA",
+"last_annual_filing": "2026-03-04",
+"name": "VIEMED HEALTHCARE, INC.",
+"sic": "8090",
+"sicDescription": "Services-Misc Health & Allied Services, NEC",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "A1",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"VMD"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Accelerated filer"
+},
+"1742341": {
+"business_country": null,
+"last_annual_filing": "2026-04-24",
+"name": "Biddance AI Systems, Inc.",
+"sic": "7372",
+"sicDescription": "Services-Prepackaged Software",
+"fiscalYearEnd": "1231",
+"stateOfIncorporation": "E9",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"BDAI"
+],
+"annual_forms": [
+"20-F",
+"20-F/A"
+],
+"category": "Non-accelerated filer<br>Emerging growth company"
 }
 }

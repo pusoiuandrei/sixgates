@@ -105,6 +105,18 @@ def main() -> int:
             "last_annual_filing": meta.get("last_annual_filing"), "accn_last": r.get("ni_accn_last", ""),
             "forms": "|".join(forms), "fy_end": r["fy_last"], "years": r["years_available"],
             "loss_years": int(r["loss_years"] or 0), "roe_median": f(r["roe_median"]), "neg_equity_years": int(r["neg_equity_years"] or 0),
+            "roic_tangible_median": f(r.get("roic_tangible_median")), "roic_years": int(r.get("roic_years") or 0),
+            "negligible_capital_years": int(r.get("negligible_capital_years") or 0),
+            "roic_with_goodwill_median": f(r.get("roic_with_goodwill_median")), "tax_clamped_last": r.get("tax_clamped_last"),
+            "oe_high_last": f(r.get("oe_high_last")), "oe_high_cagr": f(r.get("oe_high_cagr")),
+            "da_last": f(r.get("da_last")), "da_tangible_last": f(r.get("da_tangible_last")),
+            "amort_intangibles_last": f(r.get("amort_intangibles_last")), "capex_to_da_tangible": f(r.get("capex_to_da_tangible")),
+            "amort_missing": r.get("amort_missing"), "fcf_gross_last": f(r.get("fcf_gross_last")), "sbc_missing_last": r.get("sbc_missing_last"),
+            "issuance_last": f(r.get("issuance_last")), "net_buyback_last": f(r.get("net_buyback_last")),
+            "issuance_missing": r.get("issuance_missing"), "price_per_share_retired": f(r.get("price_per_share_retired")),
+            "trend_breaks": r.get("trend_breaks", ""),
+            **{k: f(r.get(k)) for k in ("rev_cagr_short", "rev_cagr_long", "op_margin_short", "op_margin_long", "roe_short", "roe_long",
+                                        "roic_short", "roic_long", "oe_cagr_short", "oe_cagr_long", "shares_cagr_short", "shares_cagr_long")},
             "rev_last": f(r["rev_last"]), "rev_cagr": f(r["rev_cagr"]), "rev_max_dev": f(r["rev_max_dev"]),
             "op_margin_median": f(r["op_margin_median"]), "op_margin_min": f(r["op_margin_min"]),
             "fcf_margin_median": f(r["fcf_margin_median"]), "capex_to_cfo_median": f(r["capex_to_cfo_median"]),
@@ -118,7 +130,15 @@ def main() -> int:
         # quality points (ranking aid only, never shown as a score to the user)
         pts = 0
         pts += 2 if q["loss_years"] == 0 else 0
-        pts += 2 if (q["roe_median"] or 0) >= 0.25 else (1 if (q["roe_median"] or 0) >= 0.15 else 0)
+        # return on capital for ranking: ROE, or tangible ROIC capped by the return on capital including goodwill
+        # (1983: the return on the price actually paid for acquisitions)
+        roic_for_rank = q["roic_tangible_median"]
+        if roic_for_rank is not None and q["roic_with_goodwill_median"] is not None:
+            roic_for_rank = min(roic_for_rank, q["roic_with_goodwill_median"])
+        best_return = max([x for x in (q["roe_median"], roic_for_rank) if x is not None] or [0])
+        if q["negligible_capital_years"] >= 5 and q["loss_years"] == 0 and (q["roic_with_goodwill_median"] is None or q["roic_with_goodwill_median"] >= 0.15):
+            best_return = max(best_return, 0.25)
+        pts += 2 if best_return >= 0.25 else (1 if best_return >= 0.15 else 0)
         pts += 2 if (q["fcf_margin_median"] or 0) >= 0.20 else (1 if (q["fcf_margin_median"] or 0) >= 0.12 else 0)
         pts += 1 if (q["op_margin_min"] or 0) >= 0.15 else 0
         pts += 1 if q["rev_max_dev"] is not None and q["rev_max_dev"] <= 0.20 else 0
@@ -129,6 +149,9 @@ def main() -> int:
         pts += 1 if (q["capex_to_cfo_median"] or 1) <= 0.25 else 0
         pts += 1 if (q["net_debt"] or 0) <= 0 else 0
         pts += 1 if int(q["years"] or 0) >= 10 else 0
+        neg_breaks = [b for b in (q["trend_breaks"] or "").split("; ") if b and "accelerare" not in b]
+        pts += 1 if not neg_breaks else 0
+        q["negative_trend_breaks"] = len(neg_breaks)
         q["quality_pts"] = pts
         out.append(q)
     out.sort(key=lambda q: (-q["quality_pts"], -(q["fcf_margin_median"] or 0)))

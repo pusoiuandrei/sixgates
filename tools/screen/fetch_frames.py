@@ -44,6 +44,9 @@ DURATIONS = {
     "PaymentsToAcquirePropertyPlantAndEquipment": "USD", "PaymentsToAcquireProductiveAssets": "USD",
     "DepreciationDepletionAndAmortization": "USD", "DepreciationAndAmortization": "USD",
     "DepreciationAmortizationAndAccretionNet": "USD",
+    "Depreciation": "USD", "AmortizationOfIntangibleAssets": "USD",
+    "ProceedsFromIssuanceOfCommonStock": "USD", "ProceedsFromStockOptionsExercised": "USD",
+    "ProceedsFromIssuanceOfSharesUnderIncentiveAndShareBasedCompensationPlans": "USD",
     "ShareBasedCompensation": "USD", "AllocatedShareBasedCompensationExpense": "USD",
     "PaymentsForRepurchaseOfCommonStock": "USD", "PaymentsOfDividends": "USD", "PaymentsOfDividendsCommonStock": "USD",
     # interest, R&D, shares
@@ -52,6 +55,7 @@ DURATIONS = {
     "ResearchAndDevelopmentExpense": "USD",
     "ResearchAndDevelopmentExpenseExcludingAcquiredInProcessCost": "USD",
     "WeightedAverageNumberOfDilutedSharesOutstanding": "shares",
+    "StockholdersEquityNoteStockSplitConversionRatio1": "pure",
 }
 INSTANTS = {
     "StockholdersEquity": "USD", "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest": "USD",
@@ -59,6 +63,8 @@ INSTANTS = {
     "ShortTermInvestments": "USD", "MarketableSecuritiesCurrent": "USD",
     "AvailableForSaleSecuritiesDebtSecuritiesCurrent": "USD",
     "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents": "USD",
+    "AssetsCurrent": "USD", "LiabilitiesCurrent": "USD", "PropertyPlantAndEquipmentNet": "USD",
+    "Goodwill": "USD", "IntangibleAssetsNetExcludingGoodwill": "USD",
     "LongTermDebt": "USD", "LongTermDebtNoncurrent": "USD", "LongTermDebtCurrent": "USD", "DebtCurrent": "USD",
     "ShortTermBorrowings": "USD", "CommercialPaper": "USD",
     "LongTermDebtAndCapitalLeaseObligations": "USD", "LongTermDebtAndCapitalLeaseObligationsCurrent": "USD",
