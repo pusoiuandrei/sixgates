@@ -19,109 +19,131 @@
  },
  "picks": [
   {
-   "ticker": "CME",
-   "name": "CME GROUP INC.",
-   "cik": "1156375",
+   "ticker": "CBOE",
+   "name": "Cboe Global Markets, Inc.",
+   "cik": "1374310",
    "sp500": "True",
-   "exchanges": "Nasdaq",
+   "exchanges": "CBOE",
    "sic": "6200",
    "sic_desc": "Security & Commodity Brokers, Dealers, Exchanges & Services",
    "gics_sub": "Financial Exchanges & Data",
    "category": "fintech / infrastructură de piață",
    "business_country": "IL",
    "state_inc": "DE",
-   "last_annual_filing": "2026-02-26",
-   "accn_last": "0001156375-26-000009",
+   "last_annual_filing": "2026-02-20",
+   "accn_last": "0001628280-26-010013",
    "forms": "10-K",
    "fy_end": "2025-12-31",
    "years": "12",
    "loss_years": 0,
-   "roe_median": 0.09914219634294263,
+   "roe_median": 0.17495355447900213,
    "neg_equity_years": 0,
-   "roic_tangible_median": 7.381459816443166,
-   "roic_years": 1,
-   "negligible_capital_years": 9,
-   "roic_with_goodwill_median": 0.12277274944697737,
+   "roic_tangible_median": 2.5519983827259187,
+   "roic_years": 4,
+   "negligible_capital_years": 6,
+   "roic_with_goodwill_median": 0.9178443796834208,
    "tax_clamped_last": "False",
-   "oe_high_last": 4179700000.0,
-   "oe_high_cagr": 0.11028328705686574,
-   "da_last": 107500000.0,
-   "da_tangible_last": 0.0,
-   "amort_intangibles_last": 223400000.0,
-   "capex_to_da_tangible": null,
+   "oe_high_last": 1180400000.0,
+   "oe_high_cagr": 0.2132769275676365,
+   "da_last": 122400000.0,
+   "da_tangible_last": 42000000.0,
+   "amort_intangibles_last": 70200000.0,
+   "capex_to_da_tangible": 1.6904761904761905,
    "amort_missing": "False",
-   "fcf_gross_last": 4193600000.0,
+   "fcf_gross_last": 1681600000.0,
    "sbc_missing_last": "False",
    "issuance_last": null,
-   "net_buyback_last": null,
-   "issuance_missing": "False",
-   "price_per_share_retired": null,
-   "trend_breaks": "",
-   "rev_cagr_short": 0.09113524548501961,
-   "rev_cagr_long": 0.05719424879673296,
-   "op_margin_short": 0.6413435343632241,
-   "op_margin_long": 0.600848707016775,
-   "roe_short": 0.13186525493774753,
-   "roe_long": 0.08755209309381665,
-   "roic_short": null,
-   "roic_long": 7.381459816443166,
-   "oe_cagr_short": 0.14396070019228668,
-   "oe_cagr_long": 0.09682896022602305,
-   "shares_cagr_short": 0.001046658135290368,
-   "shares_cagr_long": 0.009701193158474064,
-   "rev_last": 6520600000.0,
-   "rev_cagr": 0.06838895440518078,
-   "rev_max_dev": 0.18237440667270288,
-   "op_margin_median": 0.608580962562481,
-   "op_margin_min": 0.531594083812654,
-   "fcf_margin_median": 0.5064412993437426,
-   "capex_to_cfo_median": 0.04729139703000002,
-   "oe_low_last": 4096200000.0,
-   "oe_low_cagr": 0.11231973050734578,
-   "fcf_last": 4098800000.0,
-   "net_debt": -4541900000.0,
-   "nd_to_fcf": -1.108104811164243,
-   "cover": 31.191002949852507,
-   "shares_cagr5": 0.000994327738814249,
-   "shares_cagr10": 0.0068080663059819635,
-   "sbc_to_rev": 0.014538539398214888,
+   "net_buyback_last": 66700000.0,
+   "issuance_missing": "True",
+   "price_per_share_retired": 166.75,
+   "trend_breaks": "venituri +6,0% pe an în ultimii 3 ani față de +33,4% în cei 7 dinainte",
+   "rev_cagr_short": 0.059967260789602905,
+   "rev_cagr_long": 0.33378427194757676,
+   "op_margin_short": 0.2803498078706771,
+   "op_margin_long": 0.21521573654901646,
+   "roe_short": 0.21972123625660117,
+   "roe_long": 0.1395279532721421,
+   "roic_short": 4.068625636507931,
+   "roic_long": 1.9486116540503673,
+   "oe_cagr_short": 0.498764414597364,
+   "oe_cagr_long": 0.10605028592474519,
+   "shares_cagr_short": -0.00502363261247496,
+   "shares_cagr_long": 0.04614046830583085,
+   "rev_last": 4714200000.0,
+   "rev_cagr": 0.23543872925606646,
+   "rev_max_dev": 2.170388280472195,
+   "op_margin_median": 0.2235417117178461,
+   "op_margin_min": 0.12368321333838575,
+   "fcf_margin_median": 0.23675094433050162,
+   "capex_to_cfo_median": 0.06167814897681202,
+   "oe_low_last": 1151400000.0,
+   "oe_low_cagr": 0.22394256713794536,
+   "fcf_last": 1631200000.0,
+   "net_debt": -809700000.0,
+   "nd_to_fcf": -0.4963830308974988,
+   "cover": 28.051625239005737,
+   "shares_cagr5": -0.007806195619496248,
+   "shares_cagr10": 0.028799923910349134,
+   "sbc_to_rev": 0.010691103474608629,
    "rd_to_rev": null,
-   "buyback_last": null,
-   "div_last": 3933000000.0,
+   "buyback_last": 66700000.0,
+   "div_last": 284300000.0,
    "K1": "trece",
-   "K2_flags": "",
-   "K3": "trece (capital tangibil neglijabil în 9 ani cu NOPAT pozitiv)",
+   "K2_flags": "abatere venituri 217% într-un an",
+   "K3": "trece (ROE median 17%; capital tangibil neglijabil în 6 ani cu NOPAT pozitiv)",
    "K4": "trece (numerar net)",
    "K5": "trece",
    "share_flags": "",
-   "debt_tag": "ShortTermBorrowings",
+   "debt_tag": "LongTermDebtCurrent+LongTermDebtNoncurrent",
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+MarketableSecuritiesCurrent",
-   "negative_trend_breaks": 0,
-   "quality_pts": 13,
-   "price": 309.075,
+   "negative_trend_breaks": 1,
+   "quality_pts": 12,
+   "price": 364.81,
    "price_date": "2026-11-10",
    "price_currency": "USD",
-   "shares_basis": 360310000.0,
+   "shares_basis": 105100000.0,
    "split_adj": 1.0,
    "r_used": 0.06,
    "g_used": 0.08,
-   "oe_per_share": 11.36854375398962,
-   "oe_yield": 0.03678247594916968,
-   "implied_g_r0": 0.016182063091415233,
-   "implied_g_r2": 0.0733462850035752,
-   "vi_low": 527.5417042017522,
-   "p_to_vi": 0.5858778510557298,
-   "discount_to_vi": 0.41412214894427024,
+   "oe_per_share": 10.955280685061846,
+   "oe_yield": 0.030030099737018846,
+   "implied_g_r0": 0.04026721602690564,
+   "implied_g_r2": 0.09935668402231601,
+   "vi_low": 508.3647974330821,
+   "p_to_vi": 0.7176145984970984,
+   "discount_to_vi": 0.2823854015029016,
    "grid": {
     "r=6%": {
+     "g=0%": 260.0,
+     "g=4%": 360.0,
+     "g=8%": 510.0
+    },
+    "r=8%": {
+     "g=0%": 170.0,
+     "g=4%": 230.0,
+     "g=8%": 310.0
+    },
+    "r=10%": {
+     "g=0%": 130.0,
+     "g=4%": 170.0,
+     "g=8%": 220.0
+    }
+   },
+   "mcap": 38341531000.0,
+   "band": "sub VI_jos cu 28%: sub marja minimă propusă (30%)",
+   "oe_high_per_share": 11.231208372978116,
+   "oe_high_yield": 0.03078645972692118,
+   "vi_high": 521.1688439204536,
+   "grid_high": {
+    "r=6%": {
      "g=0%": 270.0,
-     "g=4%": 380.0,
-     "g=8%": 530.0
+     "g=4%": 370.0,
+     "g=8%": 520.0
     },
     "r=8%": {
      "g=0%": 170.0,
      "g=4%": 240.0,
-     "g=8%": 330.0
+     "g=8%": 320.0
     },
     "r=10%": {
      "g=0%": 130.0,
@@ -129,305 +151,283 @@
      "g=8%": 230.0
     }
    },
-   "mcap": 111362813250.0,
-   "band": "sub VI_jos cu 41%: între marjele propuse (30 la 50%)",
-   "oe_high_per_share": 11.600288640337487,
-   "oe_high_yield": 0.037532277409487946,
-   "vi_high": 538.2955082886731,
-   "grid_high": {
-    "r=6%": {
-     "g=0%": 280.0,
-     "g=4%": 390.0,
-     "g=8%": 540.0
-    },
-    "r=8%": {
-     "g=0%": 180.0,
-     "g=4%": 240.0,
-     "g=8%": 330.0
-    },
-    "r=10%": {
-     "g=0%": 130.0,
-     "g=4%": 180.0,
-     "g=8%": 240.0
-    }
-   },
-   "p_to_vi_high": 0.5741734702238154,
+   "p_to_vi_high": 0.6999842838949161,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
   },
   {
-   "ticker": "EXLS",
-   "name": "ExlService Holdings, Inc.",
-   "cik": "1297989",
-   "sp500": "False",
-   "exchanges": "Nasdaq",
-   "sic": "7389",
-   "sic_desc": "Services-Business Services, NEC",
-   "gics_sub": "",
-   "category": "servicii de afaceri (plăți, consultanță)",
+   "ticker": "MCO",
+   "name": "MOODYS CORP /DE/",
+   "cik": "1059556",
+   "sp500": "True",
+   "exchanges": "NYSE",
+   "sic": "7320",
+   "sic_desc": "Services-Consumer Credit Reporting, Collection Agencies",
+   "gics_sub": "Financial Exchanges & Data",
+   "category": "fintech / infrastructură de piață",
    "business_country": "NY",
    "state_inc": "DE",
-   "last_annual_filing": "2026-02-24",
-   "accn_last": "0001193125-26-181891",
+   "last_annual_filing": "2026-02-18",
+   "accn_last": "0001628280-26-009136",
    "forms": "10-K",
    "fy_end": "2025-12-31",
    "years": "12",
    "loss_years": 0,
-   "roe_median": 0.14672609179391938,
-   "neg_equity_years": 0,
-   "roic_tangible_median": 0.7737399616773948,
-   "roic_years": 10,
-   "negligible_capital_years": 0,
-   "roic_with_goodwill_median": 0.19812039431100262,
+   "roe_median": 0.6897615708274895,
+   "neg_equity_years": 3,
+   "roic_tangible_median": 4.79665060918633,
+   "roic_years": 3,
+   "negligible_capital_years": 4,
+   "roic_with_goodwill_median": 0.2619037754054659,
    "tax_clamped_last": "False",
-   "oe_high_last": 264304000.0,
-   "oe_high_cagr": 0.1526244701469932,
-   "da_last": 59248000.0,
-   "da_tangible_last": 45944000.0,
-   "amort_intangibles_last": 13140000.0,
-   "capex_to_da_tangible": 1.1448284868535608,
+   "oe_high_last": 2674000000.0,
+   "oe_high_cagr": 0.2747690416506623,
+   "da_last": 480000000.0,
+   "da_tangible_last": 265000000.0,
+   "amort_intangibles_last": 215000000.0,
+   "capex_to_da_tangible": 1.230188679245283,
    "amort_missing": "False",
-   "fcf_gross_last": 298119000.0,
+   "fcf_gross_last": 2575000000.0,
    "sbc_missing_last": "False",
-   "issuance_last": 6237000.0,
-   "net_buyback_last": 322253000.0,
+   "issuance_last": 28000000.0,
+   "net_buyback_last": 1579000000.0,
    "issuance_missing": "False",
-   "price_per_share_retired": 175.13083741379404,
-   "trend_breaks": "",
-   "rev_cagr_short": 0.13921360876866395,
-   "rev_cagr_long": 0.127860235495576,
-   "op_margin_short": 0.1464154567330689,
-   "op_margin_long": 0.09540082118823051,
-   "roe_short": 0.24347812324002643,
-   "roe_long": 0.13259033660372171,
-   "roic_short": 0.817195789456775,
-   "roic_long": 0.6565440391204959,
-   "oe_cagr_short": 0.18646056889876506,
-   "oe_cagr_long": 0.13951010694333643,
-   "shares_cagr_short": -0.013355102279809183,
-   "shares_cagr_long": -0.0035488475891339855,
-   "rev_last": 2087679000.0,
-   "rev_cagr": 0.13163206530628346,
-   "rev_max_dev": 0.25817767730886665,
-   "op_margin_median": 0.12544066709982238,
-   "op_margin_min": 0.05641526782559857,
-   "fcf_margin_median": 0.0820714532179812,
-   "capex_to_cfo_median": 0.245376292428317,
-   "oe_low_last": 257650000.0,
-   "oe_low_cagr": 0.15495010888328187,
-   "fcf_last": 218650000.0,
-   "net_debt": -29769000.0,
-   "nd_to_fcf": -0.1361490967299337,
-   "cover": 18.50159216888784,
-   "shares_cagr5": -0.012210882180857419,
-   "shares_cagr10": -0.006828380955395286,
-   "sbc_to_rev": 0.03806571795759789,
+   "price_per_share_retired": 563.9285714285714,
+   "trend_breaks": "OE_jos +22,5% pe an față de +31,3%",
+   "rev_cagr_short": 0.12173969738374057,
+   "rev_cagr_long": 0.07193866742966781,
+   "op_margin_short": 0.4056151241534989,
+   "op_margin_long": 0.4204366419086203,
+   "roe_short": 0.6379515680825725,
+   "roe_long": 2.1581593121633613,
+   "roic_short": 4.853095816399314,
+   "roic_long": 4.79665060918633,
+   "oe_cagr_short": 0.22484162719841416,
+   "oe_cagr_long": 0.31255174769353133,
+   "shares_cagr_short": -0.008738841154911303,
+   "shares_cagr_long": -0.009342064622686164,
+   "rev_last": 7718000000.0,
+   "rev_cagr": 0.08828836970652021,
+   "rev_max_dev": 0.19810682893847198,
+   "op_margin_median": 0.41709345038069245,
+   "op_margin_min": 0.1805948615504134,
+   "fcf_margin_median": 0.28767405741307217,
+   "capex_to_cfo_median": 0.10159251866795971,
+   "oe_low_last": 2613000000.0,
+   "oe_low_cagr": 0.28263849207153924,
+   "fcf_last": 2343000000.0,
+   "net_debt": 4546000000.0,
+   "nd_to_fcf": 1.9402475458813486,
+   "cover": 14.259574468085106,
+   "shares_cagr5": -0.01013467796075962,
+   "shares_cagr10": -0.009141030931847927,
+   "sbc_to_rev": 0.030059600932884168,
    "rd_to_rev": null,
-   "buyback_last": 328490000.0,
-   "div_last": null,
+   "buyback_last": 1607000000.0,
+   "div_last": 701000000.0,
    "K1": "trece",
-   "K2_flags": "abatere venituri 26% într-un an",
-   "K3": "trece (ROE median 15%; ROIC tangibil median 77%)",
-   "K4": "trece (numerar net)",
+   "K2_flags": "",
+   "K3": "trece (ROE median 69%); ROE nedefinit în 3 ani (capital propriu sub zero)",
+   "K4": "trece",
    "K5": "trece",
-   "share_flags": "2021: salt 5x în acțiuni, raport rotund: split sau scară; ajustat",
+   "share_flags": "",
    "debt_tag": "LongTermDebtCurrent+LongTermDebtNoncurrent",
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
-   "negative_trend_breaks": 0,
-   "quality_pts": 11,
-   "price": 43.89,
+   "negative_trend_breaks": 1,
+   "quality_pts": 14,
+   "price": 510.71,
    "price_date": "2026-11-10",
    "price_currency": "USD",
-   "shares_basis": 162481586.0,
+   "shares_basis": 179900000.0,
    "split_adj": 1.0,
    "r_used": 0.06,
    "g_used": 0.08,
-   "oe_per_share": 1.585718150240114,
-   "oe_yield": 0.03612937229984311,
-   "implied_g_r0": 0.0183052018751807,
-   "implied_g_r2": 0.07564070334027051,
-   "vi_low": 73.58307919321251,
-   "p_to_vi": 0.5964686512337272,
-   "discount_to_vi": 0.40353134876627283,
+   "oe_per_share": 14.52473596442468,
+   "oe_yield": 0.028440281107526152,
+   "implied_g_r0": 0.046748471614123877,
+   "implied_g_r2": 0.10634964993263851,
+   "vi_low": 674.0004814657171,
+   "p_to_vi": 0.7577294290493427,
+   "discount_to_vi": 0.2422705709506573,
    "grid": {
     "r=6%": {
-     "g=0%": 38.0,
-     "g=4%": 53.0,
-     "g=8%": 74.0
+     "g=0%": 340.0,
+     "g=4%": 480.0,
+     "g=8%": 670.0
     },
     "r=8%": {
-     "g=0%": 24.0,
-     "g=4%": 33.0,
-     "g=8%": 45.0
+     "g=0%": 220.0,
+     "g=4%": 300.0,
+     "g=8%": 420.0
     },
     "r=10%": {
-     "g=0%": 18.0,
-     "g=4%": 24.0,
-     "g=8%": 32.0
+     "g=0%": 170.0,
+     "g=4%": 220.0,
+     "g=8%": 300.0
     }
    },
-   "mcap": 7131316809.54,
-   "band": "sub VI_jos cu 40%: între marjele propuse (30 la 50%)",
-   "oe_high_per_share": 1.6266704831401633,
-   "oe_high_yield": 0.037062439807249103,
-   "vi_high": 75.48341611908728,
+   "mcap": 91876729000.0,
+   "band": "sub VI_jos cu 24%: sub marja minimă propusă (30%)",
+   "oe_high_per_share": 14.863813229571985,
+   "oe_high_yield": 0.02910421419116913,
+   "vi_high": 689.7348976040288,
    "grid_high": {
     "r=6%": {
-     "g=0%": 39.0,
-     "g=4%": 54.0,
-     "g=8%": 75.0
+     "g=0%": 350.0,
+     "g=4%": 490.0,
+     "g=8%": 690.0
     },
     "r=8%": {
-     "g=0%": 25.0,
-     "g=4%": 34.0,
-     "g=8%": 47.0
+     "g=0%": 230.0,
+     "g=4%": 310.0,
+     "g=8%": 430.0
     },
     "r=10%": {
-     "g=0%": 19.0,
-     "g=4%": 25.0,
-     "g=8%": 33.0
+     "g=0%": 170.0,
+     "g=4%": 230.0,
+     "g=8%": 300.0
     }
    },
-   "p_to_vi_high": 0.5814522216476853,
+   "p_to_vi_high": 0.7404439035549488,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
   },
   {
-   "ticker": "JKHY",
-   "name": "JACK HENRY & ASSOCIATES INC",
-   "cik": "779152",
+   "ticker": "NVDA",
+   "name": "NVIDIA CORP",
+   "cik": "1045810",
    "sp500": "True",
    "exchanges": "Nasdaq",
-   "sic": "7373",
-   "sic_desc": "Services-Computer Integrated Systems Design",
-   "gics_sub": "Transaction & Payment Processing Services",
-   "category": "fintech / infrastructură de piață",
-   "business_country": "MO",
+   "sic": "3674",
+   "sic_desc": "Semiconductors & Related Devices",
+   "gics_sub": "Semiconductors",
+   "category": "semiconductori / hardware / rețele",
+   "business_country": "CA",
    "state_inc": "DE",
-   "last_annual_filing": "2026-08-28",
-   "accn_last": "0000779152-26-000088",
-   "forms": "10-K|10-K/A",
-   "fy_end": "2026-06-30",
-   "years": "13",
+   "last_annual_filing": "2026-02-25",
+   "accn_last": "0001045810-26-000036",
+   "forms": "10-K",
+   "fy_end": "2026-01-25",
+   "years": "12",
    "loss_years": 0,
-   "roe_median": 0.2366626899643316,
+   "roe_median": 0.5415429885526128,
    "neg_equity_years": 0,
-   "roic_tangible_median": 1.3679762591075384,
+   "roic_tangible_median": 2.4318229311982793,
    "roic_years": 7,
    "negligible_capital_years": 0,
-   "roic_with_goodwill_median": 0.3851402698885354,
+   "roic_with_goodwill_median": 1.2478707007850893,
    "tax_clamped_last": "False",
-   "oe_high_last": 460673000.0,
-   "oe_high_cagr": 0.10496240465674767,
-   "da_last": null,
-   "da_tangible_last": 42103000.0,
-   "amort_intangibles_last": null,
-   "capex_to_da_tangible": 1.5937819157779731,
+   "oe_high_last": 120510000000.0,
+   "oe_high_cagr": 0.848793746723721,
+   "da_last": 2843000000.0,
+   "da_tangible_last": 2400000000.0,
+   "amort_intangibles_last": 488000000.0,
+   "capex_to_da_tangible": 2.5175,
    "amort_missing": "False",
-   "fcf_gross_last": 694857000.0,
+   "fcf_gross_last": 96676000000.0,
    "sbc_missing_last": "False",
-   "issuance_last": 11636000.0,
-   "net_buyback_last": 436537000.0,
-   "issuance_missing": "False",
-   "price_per_share_retired": 435.66566866267465,
-   "trend_breaks": "",
-   "rev_cagr_short": 0.06986892255213517,
-   "rev_cagr_long": 0.06950752289845896,
-   "op_margin_short": 0.23942991334103486,
-   "op_margin_long": 0.23135560345035044,
-   "roe_short": 0.2373724751478076,
-   "roe_long": 0.23043434617199185,
-   "roic_short": 1.4583488104873843,
-   "roic_long": 1.26592188642709,
-   "oe_cagr_short": 0.09984386091472564,
-   "oe_cagr_long": 0.09727895470079106,
-   "shares_cagr_short": -0.004825148960993508,
-   "shares_cagr_long": -0.011302158489888137,
-   "rev_last": 2544339000.0,
-   "rev_cagr": 0.06962797588319147,
-   "rev_max_dev": 0.10502580727722566,
-   "op_margin_median": 0.23539275839569265,
-   "op_margin_min": 0.22088986763064405,
-   "fcf_margin_median": 0.23534753438769818,
-   "capex_to_cfo_median": 0.09984726114265394,
-   "oe_low_last": 435673000.0,
-   "oe_low_cagr": 0.09813325813505358,
-   "fcf_last": 662397000.0,
-   "net_debt": 27944000.0,
-   "nd_to_fcf": 0.04218618139876841,
-   "cover": 137.870820668693,
-   "shares_cagr5": -0.00974421879189069,
-   "shares_cagr10": -0.00914785280922814,
-   "sbc_to_rev": 0.01275773393403945,
-   "rd_to_rev": 0.06934807036326528,
-   "buyback_last": 448173000.0,
-   "div_last": 170405000.0,
+   "issuance_last": null,
+   "net_buyback_last": 40086000000.0,
+   "issuance_missing": "True",
+   "price_per_share_retired": 138.22758620689655,
+   "trend_breaks": "venituri în accelerare: +100,0% pe an față de +25,5%",
+   "rev_cagr_short": 1.0004509499443963,
+   "rev_cagr_long": 0.25480974927104794,
+   "op_margin_short": 0.6038168363141272,
+   "op_margin_long": 0.27988422575976846,
+   "roe_short": 1.5135704110832378,
+   "roe_long": 0.3727903334079212,
+   "roic_short": 3.986623196496348,
+   "roic_long": 1.156312778777711,
+   "oe_cagr_short": 2.059947454680699,
+   "oe_cagr_long": null,
+   "shares_cagr_short": -0.007447968474157962,
+   "shares_cagr_long": -0.00579729374022131,
+   "rev_last": 215938000000.0,
+   "rev_cagr": 0.46586696824412144,
+   "rev_max_dev": 1.2585452658115224,
+   "op_margin_median": 0.32756754408588185,
+   "op_margin_min": 0.1565952398606065,
+   "fcf_margin_median": 0.38527953776960705,
+   "capex_to_cfo_median": 0.05882123873128371,
+   "oe_low_last": 116868000000.0,
+   "oe_low_cagr": 0.8512630491356368,
+   "fcf_last": 90290000000.0,
+   "net_debt": -2137000000.0,
+   "nd_to_fcf": -0.023668180307896778,
+   "cover": null,
+   "shares_cagr5": -0.004713548840719839,
+   "shares_cagr10": -0.006347823445527201,
+   "sbc_to_rev": 0.029573303448211987,
+   "rd_to_rev": 0.08565884652076058,
+   "buyback_last": 40086000000.0,
+   "div_last": 974000000.0,
    "K1": "trece",
-   "K2_flags": "",
-   "K3": "trece (ROE median 24%; ROIC tangibil median 137%)",
-   "K4": "trece",
+   "K2_flags": "abatere venituri 126% într-un an",
+   "K3": "trece (ROE median 54%; ROIC tangibil median 243%)",
+   "K4": "trece (numerar net)",
    "K5": "trece",
-   "share_flags": "",
-   "debt_tag": "LongTermDebt",
-   "cash_tag": "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents (include numerar restricționat)",
+   "share_flags": "2020: salt 4x în acțiuni, raport rotund: split sau scară; ajustat; 2023: salt 10x în acțiuni, raport rotund: split sau scară; ajustat",
+   "debt_tag": "DebtCurrent+LongTermDebtNoncurrent",
+   "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 0,
    "quality_pts": 15,
-   "price": 175.48,
+   "price": 168.89,
    "price_date": "2026-11-10",
    "price_currency": "USD",
-   "shares_basis": 72043000.0,
+   "shares_basis": 24514000000.0,
    "split_adj": 1.0,
    "r_used": 0.06,
    "g_used": 0.08,
-   "oe_per_share": 6.0474022458809324,
-   "oe_yield": 0.034462059755419036,
-   "implied_g_r0": 0.023907964183093378,
-   "implied_g_r2": 0.0816939651302021,
-   "vi_low": 280.62141957855926,
-   "p_to_vi": 0.6253264639012163,
-   "discount_to_vi": 0.37467353609878373,
+   "oe_per_share": 4.767398221424492,
+   "oe_yield": 0.028227830075341895,
+   "implied_g_r0": 0.04764276522186617,
+   "implied_g_r2": 0.10731434835128428,
+   "vi_low": 221.22458573078683,
+   "p_to_vi": 0.7634323257611432,
+   "discount_to_vi": 0.23656767423885683,
    "grid": {
     "r=6%": {
-     "g=0%": 140.0,
-     "g=4%": 200.0,
-     "g=8%": 280.0
+     "g=0%": 110.0,
+     "g=4%": 160.0,
+     "g=8%": 220.0
     },
     "r=8%": {
-     "g=0%": 93.0,
-     "g=4%": 130.0,
-     "g=8%": 170.0
+     "g=0%": 73.0,
+     "g=4%": 100.0,
+     "g=8%": 140.0
     },
     "r=10%": {
-     "g=0%": 69.0,
-     "g=4%": 92.0,
-     "g=8%": 120.0
+     "g=0%": 54.0,
+     "g=4%": 73.0,
+     "g=8%": 97.0
     }
    },
-   "mcap": 12642105640.0,
-   "band": "sub VI_jos cu 37%: între marjele propuse (30 la 50%)",
-   "oe_high_per_share": 6.394417223047347,
-   "oe_high_yield": 0.036439578430860195,
-   "vi_high": 296.7241743727833,
+   "mcap": 4140169459999.9995,
+   "band": "sub VI_jos cu 24%: sub marja minimă propusă (30%)",
+   "oe_high_per_share": 4.915966386554622,
+   "oe_high_yield": 0.029107504213124653,
+   "vi_high": 228.1186879763248,
    "grid_high": {
     "r=6%": {
-     "g=0%": 150.0,
-     "g=4%": 210.0,
-     "g=8%": 300.0
+     "g=0%": 120.0,
+     "g=4%": 160.0,
+     "g=8%": 230.0
     },
     "r=8%": {
-     "g=0%": 98.0,
-     "g=4%": 130.0,
-     "g=8%": 180.0
+     "g=0%": 75.0,
+     "g=4%": 100.0,
+     "g=8%": 140.0
     },
     "r=10%": {
-     "g=0%": 73.0,
-     "g=4%": 97.0,
-     "g=8%": 130.0
+     "g=0%": 56.0,
+     "g=4%": 75.0,
+     "g=8%": 100.0
     }
    },
-   "p_to_vi_high": 0.591390979083286,
+   "p_to_vi_high": 0.7403602111613414,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -514,7 +514,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 0,
    "quality_pts": 15,
-   "price": 167.415,
+   "price": 168.89,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 24514000000.0,
@@ -522,12 +522,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 4.767398221424492,
-   "oe_yield": 0.02847652971014839,
-   "implied_g_r0": 0.04659657507704551,
-   "implied_g_r2": 0.10618579026523578,
+   "oe_yield": 0.028227830075341895,
+   "implied_g_r0": 0.04764276522186617,
+   "implied_g_r2": 0.10731434835128428,
    "vi_low": 221.22458573078683,
-   "p_to_vi": 0.7567648932281472,
-   "discount_to_vi": 0.24323510677185278,
+   "p_to_vi": 0.7634323257611432,
+   "discount_to_vi": 0.23656767423885683,
    "grid": {
     "r=6%": {
      "g=0%": 110.0,
@@ -545,10 +545,10 @@
      "g=8%": 97.0
     }
    },
-   "mcap": 4104011310000.0,
+   "mcap": 4140169459999.9995,
    "band": "sub VI_jos cu 24%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 4.915966386554622,
-   "oe_high_yield": 0.029363954165126317,
+   "oe_high_yield": 0.029107504213124653,
    "vi_high": 228.1186879763248,
    "grid_high": {
     "r=6%": {
@@ -567,7 +567,7 @@
      "g=8%": 100.0
     }
    },
-   "p_to_vi_high": 0.7338942788298655,
+   "p_to_vi_high": 0.7403602111613414,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -652,7 +652,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 15,
-   "price": 109.335,
+   "price": 110.37,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 127076000.0,
@@ -660,12 +660,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 5.450761748874689,
-   "oe_yield": 0.049853768224948,
-   "implied_g_r0": -0.01978685278757869,
-   "implied_g_r2": 0.034425190022371877,
+   "oe_yield": 0.049386262108133454,
+   "implied_g_r0": -0.018673054762815056,
+   "implied_g_r2": 0.035631914714128965,
    "vi_low": 252.93513438693157,
-   "p_to_vi": 0.4322649768092045,
-   "discount_to_vi": 0.5677350231907955,
+   "p_to_vi": 0.4363569350201848,
+   "discount_to_vi": 0.5636430649798152,
    "grid": {
     "r=6%": {
      "g=0%": 130.0,
@@ -683,10 +683,10 @@
      "g=8%": 110.0
     }
    },
-   "mcap": 13893854460.0,
-   "band": "sub VI_jos cu 57%: peste marja maximă propusă (50%)",
+   "mcap": 14025378120.0,
+   "band": "sub VI_jos cu 56%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 5.628954326544745,
-   "oe_high_yield": 0.05148355354227599,
+   "oe_high_yield": 0.051000764035016265,
    "vi_high": 261.203916927103,
    "grid_high": {
     "r=6%": {
@@ -705,7 +705,7 @@
      "g=8%": 110.0
     }
    },
-   "p_to_vi_high": 0.4185810124375481,
+   "p_to_vi_high": 0.4225434338750829,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -790,7 +790,7 @@
    "cash_tag": "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents (include numerar restricționat)",
    "negative_trend_breaks": 0,
    "quality_pts": 15,
-   "price": 175.48,
+   "price": 175.19,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 72043000.0,
@@ -798,12 +798,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 6.0474022458809324,
-   "oe_yield": 0.034462059755419036,
-   "implied_g_r0": 0.023907964183093378,
-   "implied_g_r2": 0.0816939651302021,
+   "oe_yield": 0.03451910637525505,
+   "implied_g_r0": 0.023711736751776624,
+   "implied_g_r2": 0.08148199582660187,
    "vi_low": 280.62141957855926,
-   "p_to_vi": 0.6253264639012163,
-   "discount_to_vi": 0.37467353609878373,
+   "p_to_vi": 0.6242930431436864,
+   "discount_to_vi": 0.3757069568563136,
    "grid": {
     "r=6%": {
      "g=0%": 140.0,
@@ -821,10 +821,10 @@
      "g=8%": 120.0
     }
    },
-   "mcap": 12642105640.0,
-   "band": "sub VI_jos cu 37%: între marjele propuse (30 la 50%)",
+   "mcap": 12621213170.0,
+   "band": "sub VI_jos cu 38%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 6.394417223047347,
-   "oe_high_yield": 0.036439578430860195,
+   "oe_high_yield": 0.03649989852758346,
    "vi_high": 296.7241743727833,
    "grid_high": {
     "r=6%": {
@@ -843,7 +843,7 @@
      "g=8%": 130.0
     }
    },
-   "p_to_vi_high": 0.591390979083286,
+   "p_to_vi_high": 0.5904136404467796,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -928,7 +928,7 @@
    "cash_tag": "CashCashEquivalentsAndShortTermInvestments",
    "negative_trend_breaks": 0,
    "quality_pts": 14,
-   "price": 310.09,
+   "price": 311.115,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 93800000.0,
@@ -936,12 +936,12 @@
    "r_used": 0.06,
    "g_used": 0.0652481752138514,
    "oe_per_share": 8.892324093816631,
-   "oe_yield": 0.028676590969772105,
-   "implied_g_r0": 0.04576180866148738,
-   "implied_g_r2": 0.1052852539527428,
+   "oe_yield": 0.028582113025140642,
+   "implied_g_r0": 0.046155271799794284,
+   "implied_g_r2": 0.10570972269509682,
    "vi_low": 364.9837828351143,
-   "p_to_vi": 0.8495993920367875,
-   "discount_to_vi": 0.15040060796321253,
+   "p_to_vi": 0.852407735991245,
+   "discount_to_vi": 0.14759226400875503,
    "grid": {
     "r=6%": {
      "g=0%": 210.0,
@@ -959,10 +959,10 @@
      "g=8%": 180.0
     }
    },
-   "mcap": 29086441999.999996,
+   "mcap": 29182587000.0,
    "band": "sub VI_jos cu 15%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 8.892324093816631,
-   "oe_high_yield": 0.028676590969772105,
+   "oe_high_yield": 0.028582113025140642,
    "vi_high": 364.9837828351143,
    "grid_high": {
     "r=6%": {
@@ -981,7 +981,7 @@
      "g=8%": 180.0
     }
    },
-   "p_to_vi_high": 0.8495993920367875,
+   "p_to_vi_high": 0.852407735991245,
    "g_high_used": 0.0652481752138514,
    "eligible": true,
    "ineligible_reason": ""
@@ -1066,7 +1066,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 0,
    "quality_pts": 14,
-   "price": 658.395,
+   "price": 658.84,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 906000000.0,
@@ -1074,12 +1074,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 17.242825607064017,
-   "oe_yield": 0.026189180669756024,
-   "implied_g_r0": 0.05659571203563296,
-   "implied_g_r2": 0.1169695030147736,
+   "oe_yield": 0.026171491723429082,
+   "implied_g_r0": 0.056676513780212434,
+   "implied_g_r2": 0.11705662087198487,
    "vi_low": 800.1297090326058,
-   "p_to_vi": 0.8228603344775566,
-   "discount_to_vi": 0.17713966552244342,
+   "p_to_vi": 0.8234164943038653,
+   "discount_to_vi": 0.17658350569613468,
    "grid": {
     "r=6%": {
      "g=0%": 410.0,
@@ -1097,10 +1097,10 @@
      "g=8%": 350.0
     }
    },
-   "mcap": 596505870000.0,
+   "mcap": 596909040000.0,
    "band": "sub VI_jos cu 18%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 17.3598233995585,
-   "oe_high_yield": 0.02636688219011156,
+   "oe_high_yield": 0.026349073218927963,
    "vi_high": 805.5588313701719,
    "grid_high": {
     "r=6%": {
@@ -1119,7 +1119,7 @@
      "g=8%": 350.0
     }
    },
-   "p_to_vi_high": 0.8173146074013471,
+   "p_to_vi_high": 0.8178670189480532,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -1204,7 +1204,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 4,
    "quality_pts": 14,
-   "price": 165.03,
+   "price": 165.08,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 37137000.0,
@@ -1212,12 +1212,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 8.49274308640978,
-   "oe_yield": 0.05146181352729673,
-   "implied_g_r0": -0.023540006099830035,
-   "implied_g_r2": 0.03035814994405961,
+   "oe_yield": 0.05144622659564926,
+   "implied_g_r0": -0.02350418959866568,
+   "implied_g_r2": 0.03039696740472031,
    "vi_low": 394.0941125005546,
-   "p_to_vi": 0.4187578417573233,
-   "discount_to_vi": 0.5812421582426768,
+   "p_to_vi": 0.41888471500514407,
+   "discount_to_vi": 0.581115284994856,
    "grid": {
     "r=6%": {
      "g=0%": 200.0,
@@ -1235,10 +1235,10 @@
      "g=8%": 170.0
     }
    },
-   "mcap": 6128719110.0,
+   "mcap": 6130575960.0,
    "band": "sub VI_jos cu 58%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 8.49274308640978,
-   "oe_high_yield": 0.05146181352729673,
+   "oe_high_yield": 0.05144622659564926,
    "vi_high": 394.0941125005546,
    "grid_high": {
     "r=6%": {
@@ -1257,7 +1257,7 @@
      "g=8%": 170.0
     }
    },
-   "p_to_vi_high": 0.4187578417573233,
+   "p_to_vi_high": 0.41888471500514407,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -1342,7 +1342,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 1,
    "quality_pts": 14,
-   "price": 507.74,
+   "price": 510.71,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 179900000.0,
@@ -1350,12 +1350,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 14.52473596442468,
-   "oe_yield": 0.028606641124246032,
-   "implied_g_r0": 0.046052993206761594,
-   "implied_g_r2": 0.10559938527095525,
+   "oe_yield": 0.028440281107526152,
+   "implied_g_r0": 0.046748471614123877,
+   "implied_g_r2": 0.10634964993263851,
    "vi_low": 674.0004814657171,
-   "p_to_vi": 0.7533229040071926,
-   "discount_to_vi": 0.2466770959928074,
+   "p_to_vi": 0.7577294290493427,
+   "discount_to_vi": 0.2422705709506573,
    "grid": {
     "r=6%": {
      "g=0%": 340.0,
@@ -1373,10 +1373,10 @@
      "g=8%": 300.0
     }
    },
-   "mcap": 91342426000.0,
-   "band": "sub VI_jos cu 25%: sub marja minimă propusă (30%)",
+   "mcap": 91876729000.0,
+   "band": "sub VI_jos cu 24%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 14.863813229571985,
-   "oe_high_yield": 0.029274457851601182,
+   "oe_high_yield": 0.02910421419116913,
    "vi_high": 689.7348976040288,
    "grid_high": {
     "r=6%": {
@@ -1395,7 +1395,7 @@
      "g=8%": 300.0
     }
    },
-   "p_to_vi_high": 0.7361379013353757,
+   "p_to_vi_high": 0.7404439035549488,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -1480,7 +1480,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 2,
    "quality_pts": 14,
-   "price": 324.61,
+   "price": 325.98,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 36612000.0,
@@ -1488,12 +1488,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 16.376898284715395,
-   "oe_yield": 0.05045099745761188,
-   "implied_g_r0": -0.021194659925034276,
-   "implied_g_r2": 0.03289978057418452,
+   "oe_yield": 0.05023896645412416,
+   "implied_g_r0": -0.02069676375780366,
+   "implied_g_r2": 0.03343928756287162,
    "vi_low": 759.9475374869897,
-   "p_to_vi": 0.4271479069113469,
-   "discount_to_vi": 0.5728520930886531,
+   "p_to_vi": 0.42895066293386175,
+   "discount_to_vi": 0.5710493370661383,
    "grid": {
     "r=6%": {
      "g=0%": 390.0,
@@ -1511,10 +1511,10 @@
      "g=8%": 330.0
     }
    },
-   "mcap": 11884621320.0,
+   "mcap": 11934779760.0,
    "band": "sub VI_jos cu 57%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 18.81394078444226,
-   "oe_high_yield": 0.057958598886178055,
+   "oe_high_yield": 0.05771501559740554,
    "vi_high": 873.0351572682683,
    "grid_high": {
     "r=6%": {
@@ -1533,7 +1533,7 @@
      "g=8%": 380.0
     }
    },
-   "p_to_vi_high": 0.37181778682969246,
+   "p_to_vi_high": 0.3733870248936975,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -1618,7 +1618,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 0,
    "quality_pts": 14,
-   "price": 715.71,
+   "price": 730.66,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 24561000.0,
@@ -1626,12 +1626,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 26.78946296974879,
-   "oe_yield": 0.03743061151828085,
-   "implied_g_r0": 0.014112668400664607,
-   "implied_g_r2": 0.07110964307151424,
+   "oe_yield": 0.03666474553109352,
+   "implied_g_r0": 0.016561936278079226,
+   "implied_g_r2": 0.07375682669340466,
    "vi_low": 1243.1283421635594,
-   "p_to_vi": 0.5757329921014973,
-   "discount_to_vi": 0.4242670078985027,
+   "p_to_vi": 0.5877591035599335,
+   "discount_to_vi": 0.41224089644006645,
    "grid": {
     "r=6%": {
      "g=0%": 640.0,
@@ -1649,10 +1649,10 @@
      "g=8%": 550.0
     }
    },
-   "mcap": 17578553310.0,
-   "band": "sub VI_jos cu 42%: între marjele propuse (30 la 50%)",
+   "mcap": 17945740260.0,
+   "band": "sub VI_jos cu 41%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 26.78946296974879,
-   "oe_high_yield": 0.03743061151828085,
+   "oe_high_yield": 0.03666474553109352,
    "vi_high": 1243.1283421635594,
    "grid_high": {
     "r=6%": {
@@ -1671,7 +1671,7 @@
      "g=8%": 550.0
     }
    },
-   "p_to_vi_high": 0.5757329921014973,
+   "p_to_vi_high": 0.5877591035599335,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -1756,7 +1756,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 14,
-   "price": 86.265,
+   "price": 86.0,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 51244000.0,
@@ -1764,12 +1764,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 2.0822340176410896,
-   "oe_yield": 0.02413764583134631,
-   "implied_g_r0": 0.06636573877786345,
-   "implied_g_r2": 0.1275005363157221,
+   "oe_yield": 0.0242120234609429,
+   "implied_g_r0": 0.06599669589352308,
+   "implied_g_r2": 0.12710284535247374,
    "vi_low": 96.62321806412115,
-   "p_to_vi": 0.8927978360517115,
-   "discount_to_vi": 0.10720216394828852,
+   "p_to_vi": 0.8900552240241951,
+   "discount_to_vi": 0.10994477597580488,
    "grid": {
     "r=6%": {
      "g=0%": 49.0,
@@ -1787,10 +1787,10 @@
      "g=8%": 43.0
     }
    },
-   "mcap": 4420563660.0,
+   "mcap": 4406984000.0,
    "band": "sub VI_jos cu 11%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 2.0822340176410896,
-   "oe_high_yield": 0.02413764583134631,
+   "oe_high_yield": 0.0242120234609429,
    "vi_high": 96.62321806412115,
    "grid_high": {
     "r=6%": {
@@ -1809,7 +1809,7 @@
      "g=8%": 43.0
     }
    },
-   "p_to_vi_high": 0.8927978360517115,
+   "p_to_vi_high": 0.8900552240241951,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -1894,7 +1894,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+MarketableSecuritiesCurrent",
    "negative_trend_breaks": 0,
    "quality_pts": 13,
-   "price": 309.075,
+   "price": 309.09,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 360310000.0,
@@ -1902,12 +1902,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 11.36854375398962,
-   "oe_yield": 0.03678247594916968,
-   "implied_g_r0": 0.016182063091415233,
-   "implied_g_r2": 0.0733462850035752,
+   "oe_yield": 0.036780690911998516,
+   "implied_g_r0": 0.016187813512384408,
+   "implied_g_r2": 0.07335249975151437,
    "vi_low": 527.5417042017522,
-   "p_to_vi": 0.5858778510557298,
-   "discount_to_vi": 0.41412214894427024,
+   "p_to_vi": 0.5859062848267104,
+   "discount_to_vi": 0.41409371517328963,
    "grid": {
     "r=6%": {
      "g=0%": 270.0,
@@ -1925,10 +1925,10 @@
      "g=8%": 230.0
     }
    },
-   "mcap": 111362813250.0,
+   "mcap": 111368217899.99998,
    "band": "sub VI_jos cu 41%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 11.600288640337487,
-   "oe_high_yield": 0.037532277409487946,
+   "oe_high_yield": 0.037530455984785945,
    "vi_high": 538.2955082886731,
    "grid_high": {
     "r=6%": {
@@ -1947,7 +1947,7 @@
      "g=8%": 240.0
     }
    },
-   "p_to_vi_high": 0.5741734702238154,
+   "p_to_vi_high": 0.5742013359588419,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -2032,7 +2032,7 @@
    "cash_tag": "CashCashEquivalentsAndShortTermInvestments",
    "negative_trend_breaks": 1,
    "quality_pts": 13,
-   "price": 143.13,
+   "price": 144.57,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 109913789.0,
@@ -2040,12 +2040,12 @@
    "r_used": 0.06,
    "g_used": 0.04472258784380623,
    "oe_per_share": 9.599341534846005,
-   "oe_yield": 0.06706729221578987,
-   "implied_g_r0": -0.05491019717357065,
-   "implied_g_r2": -0.0036834024961612255,
+   "oe_yield": 0.06639926357367369,
+   "implied_g_r0": -0.053721378187294666,
+   "implied_g_r2": -0.0023917193406787773,
    "vi_low": 331.839321508554,
-   "p_to_vi": 0.43132320590979284,
-   "discount_to_vi": 0.5686767940902071,
+   "p_to_vi": 0.4356626554766908,
+   "discount_to_vi": 0.5643373445233092,
    "grid": {
     "r=6%": {
      "g=0%": 230.0,
@@ -2063,10 +2063,10 @@
      "g=8%": 200.0
     }
    },
-   "mcap": 15731960619.57,
-   "band": "sub VI_jos cu 57%: peste marja maximă propusă (50%)",
+   "mcap": 15890236475.73,
+   "band": "sub VI_jos cu 56%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 9.84134938701822,
-   "oe_high_yield": 0.0687581177043123,
+   "oe_high_yield": 0.06807324747193899,
    "vi_high": 340.62454952879153,
    "grid_high": {
     "r=6%": {
@@ -2085,7 +2085,7 @@
      "g=8%": 200.0
     }
    },
-   "p_to_vi_high": 0.4201987208438182,
+   "p_to_vi_high": 0.42442624937043805,
    "g_high_used": 0.04486939050207672,
    "eligible": true,
    "ineligible_reason": ""
@@ -2170,7 +2170,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 13,
-   "price": 650.34,
+   "price": 656.86,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 76636000.0,
@@ -2178,12 +2178,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 15.48085756041547,
-   "oe_yield": 0.02380425248395527,
-   "implied_g_r0": 0.06803460951728779,
-   "implied_g_r2": 0.12929886448194783,
+   "oe_yield": 0.023567971196930045,
+   "implied_g_r0": 0.06923215201010746,
+   "implied_g_r2": 0.1305892084489989,
    "vi_low": 718.367994762754,
-   "p_to_vi": 0.9053020245073408,
-   "discount_to_vi": 0.09469797549265924,
+   "p_to_vi": 0.9143781526861209,
+   "discount_to_vi": 0.08562184731387912,
    "grid": {
     "r=6%": {
      "g=0%": 370.0,
@@ -2201,10 +2201,10 @@
      "g=8%": 320.0
     }
    },
-   "mcap": 49839456240.0,
+   "mcap": 50339122960.0,
    "band": "sub VI_jos cu 9%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 15.688514536249283,
-   "oe_high_yield": 0.024123557733261497,
+   "oe_high_yield": 0.023884107018617793,
    "vi_high": 728.0040323495651,
    "grid_high": {
     "r=6%": {
@@ -2223,7 +2223,7 @@
      "g=8%": 320.0
     }
    },
-   "p_to_vi_high": 0.8933192277810444,
+   "p_to_vi_high": 0.9022752221303577,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -2308,7 +2308,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 13,
-   "price": 94.14,
+   "price": 95.08,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 87579000.0,
@@ -2316,12 +2316,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 1.8045079299832152,
-   "oe_yield": 0.019168344274306512,
-   "implied_g_r0": 0.09415386939958503,
-   "implied_g_r2": 0.157425105813081,
+   "oe_yield": 0.018978838136129734,
+   "implied_g_r0": 0.09535822754375489,
+   "implied_g_r2": 0.1587211773097893,
    "vi_low": 83.73571929956707,
-   "p_to_vi": 1.1242514041494205,
-   "discount_to_vi": -0.12425140414942049,
+   "p_to_vi": 1.1354771989221042,
+   "discount_to_vi": -0.1354771989221042,
    "grid": {
     "r=6%": {
      "g=0%": 43.0,
@@ -2339,10 +2339,10 @@
      "g=8%": 37.0
     }
    },
-   "mcap": 8244687060.0,
-   "band": "peste VI_jos cu 12%",
+   "mcap": 8327011320.0,
+   "band": "peste VI_jos cu 14%",
    "oe_high_per_share": 1.8045079299832152,
-   "oe_high_yield": 0.019168344274306512,
+   "oe_high_yield": 0.018978838136129734,
    "vi_high": 83.73571929956707,
    "grid_high": {
     "r=6%": {
@@ -2361,7 +2361,7 @@
      "g=8%": 37.0
     }
    },
-   "p_to_vi_high": 1.1242514041494205,
+   "p_to_vi_high": 1.1354771989221042,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -2446,7 +2446,7 @@
    "cash_tag": "CashCashEquivalentsAndShortTermInvestments",
    "negative_trend_breaks": 2,
    "quality_pts": 13,
-   "price": 234.69,
+   "price": 236.7,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 427000000.0,
@@ -2454,12 +2454,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 18.194379391100703,
-   "oe_yield": 0.07752515825600027,
-   "implied_g_r0": -0.0721642836704805,
-   "implied_g_r2": -0.022445795862840068,
+   "oe_yield": 0.07686683308449811,
+   "implied_g_r0": -0.07114612988093788,
+   "implied_g_r2": -0.02133782211641505,
    "vi_low": 844.2852592713226,
-   "p_to_vi": 0.27797476909943203,
-   "discount_to_vi": 0.7220252309005679,
+   "p_to_vi": 0.2803554810423774,
+   "discount_to_vi": 0.7196445189576226,
    "grid": {
     "r=6%": {
      "g=0%": 430.0,
@@ -2477,10 +2477,10 @@
      "g=8%": 370.0
     }
    },
-   "mcap": 100212630000.0,
+   "mcap": 101070900000.0,
    "band": "sub VI_jos cu 72%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 18.194379391100703,
-   "oe_high_yield": 0.07752515825600027,
+   "oe_high_yield": 0.07686683308449811,
    "vi_high": 844.2852592713226,
    "grid_high": {
     "r=6%": {
@@ -2499,7 +2499,7 @@
      "g=8%": 370.0
     }
    },
-   "p_to_vi_high": 0.27797476909943203,
+   "p_to_vi_high": 0.2803554810423774,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -2584,7 +2584,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 13,
-   "price": 202.685,
+   "price": 204.02,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 140082773.0,
@@ -2592,12 +2592,12 @@
    "r_used": 0.06,
    "g_used": 0.05695390541897738,
    "oe_per_share": 6.59181696810071,
-   "oe_yield": 0.032522470671735505,
-   "implied_g_r0": 0.030785130431919216,
-   "implied_g_r2": 0.08912121076680546,
+   "oe_yield": 0.032309660661213165,
+   "implied_g_r0": 0.03156512282330548,
+   "implied_g_r2": 0.0899633948368842,
    "vi_low": 252.45499403121104,
-   "p_to_vi": 0.8028559735084584,
-   "discount_to_vi": 0.1971440264915416,
+   "p_to_vi": 0.8081440447748758,
+   "discount_to_vi": 0.19185595522512422,
    "grid": {
     "r=6%": {
      "g=0%": 160.0,
@@ -2615,10 +2615,10 @@
      "g=8%": 130.0
     }
    },
-   "mcap": 28392676845.505,
-   "band": "sub VI_jos cu 20%: sub marja minimă propusă (30%)",
+   "mcap": 28579687347.460003,
+   "band": "sub VI_jos cu 19%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 6.9658815220626735,
-   "oe_high_yield": 0.034368016982325646,
+   "oe_high_yield": 0.03414313068357354,
    "vi_high": 232.0623939331129,
    "grid_high": {
     "r=6%": {
@@ -2637,7 +2637,7 @@
      "g=8%": 140.0
     }
    },
-   "p_to_vi_high": 0.8734073477601877,
+   "p_to_vi_high": 0.8791601109605225,
    "g_high_used": 0.040318057985765376,
    "eligible": true,
    "ineligible_reason": ""
@@ -2722,7 +2722,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 13,
-   "price": 123.81,
+   "price": 123.57,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 764600000.0,
@@ -2730,12 +2730,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 2.145752923097044,
-   "oe_yield": 0.01733101464418903,
-   "implied_g_r0": 0.10639575685900204,
-   "implied_g_r2": 0.17059602958487974,
+   "oe_yield": 0.017364675269863593,
+   "implied_g_r0": 0.10615942488226537,
+   "implied_g_r2": 0.17034182839823753,
    "vi_low": 99.57072588556089,
-   "p_to_vi": 1.2434377564174626,
-   "discount_to_vi": -0.24343775641746257,
+   "p_to_vi": 1.2410274094217417,
+   "discount_to_vi": -0.24102740942174172,
    "grid": {
     "r=6%": {
      "g=0%": 51.0,
@@ -2753,10 +2753,10 @@
      "g=8%": 44.0
     }
    },
-   "mcap": 94665126000.0,
+   "mcap": 94481622000.0,
    "band": "peste VI_jos cu 24%",
    "oe_high_per_share": 2.49037756343186,
-   "oe_high_yield": 0.020114510648831758,
+   "oe_high_yield": 0.020153577433291738,
    "vi_high": 115.56256037257185,
    "grid_high": {
     "r=6%": {
@@ -2775,7 +2775,7 @@
      "g=8%": 51.0
     }
    },
-   "p_to_vi_high": 1.071367747485332,
+   "p_to_vi_high": 1.0692909503009649,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -2860,7 +2860,7 @@
    "cash_tag": "CashCashEquivalentsAndShortTermInvestments",
    "negative_trend_breaks": 2,
    "quality_pts": 13,
-   "price": 542.505,
+   "price": 533.16,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 7453000000.0,
@@ -2868,12 +2868,12 @@
    "r_used": 0.06,
    "g_used": 0.0027912133427847596,
    "oe_per_share": 2.388434187575473,
-   "oe_yield": 0.0044026030867466166,
-   "implied_g_r0": 0.2809102142397536,
-   "implied_g_r2": 0.35776766912675917,
+   "oe_yield": 0.004479770026962775,
+   "implied_g_r0": 0.2785848396161096,
+   "implied_g_r2": 0.35527905382345903,
    "vi_low": 57.98947634080659,
-   "p_to_vi": 9.355231918489405,
-   "discount_to_vi": -8.355231918489405,
+   "p_to_vi": 9.194081989404358,
+   "discount_to_vi": -8.194081989404358,
    "grid": {
     "r=6%": {
      "g=0%": 57.0,
@@ -2891,10 +2891,10 @@
      "g=8%": 49.0
     }
    },
-   "mcap": 4043289765000.0,
-   "band": "peste VI_jos cu 836%",
+   "mcap": 3973641480000.0,
+   "band": "peste VI_jos cu 819%",
    "oe_high_per_share": 13.343485844626326,
-   "oe_high_yield": 0.024596060579398026,
+   "oe_high_yield": 0.02502716978885574,
    "vi_high": 619.1861873246352,
    "grid_high": {
     "r=6%": {
@@ -2913,7 +2913,7 @@
      "g=8%": 270.0
     }
    },
-   "p_to_vi_high": 0.8761581106065085,
+   "p_to_vi_high": 0.8610657196725672,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -2998,7 +2998,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 1,
    "quality_pts": 13,
-   "price": 127.57,
+   "price": 128.03,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 3218174000.0,
@@ -3006,12 +3006,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 1.5987473020414682,
-   "oe_yield": 0.012532314039676008,
-   "implied_g_r0": 0.14624259101065606,
-   "implied_g_r2": 0.21342147951850954,
+   "oe_yield": 0.01248728658940458,
+   "implied_g_r0": 0.14668929477005987,
+   "implied_g_r2": 0.2139012134673709,
    "vi_low": 74.18767913972525,
-   "p_to_vi": 1.719557768611879,
-   "discount_to_vi": -0.719557768611879,
+   "p_to_vi": 1.725758259115614,
+   "discount_to_vi": -0.725758259115614,
    "grid": {
     "r=6%": {
      "g=0%": 38.0,
@@ -3029,10 +3029,10 @@
      "g=8%": 33.0
     }
    },
-   "mcap": 410542457180.0,
-   "band": "peste VI_jos cu 72%",
+   "mcap": 412022817220.0,
+   "band": "peste VI_jos cu 73%",
    "oe_high_per_share": 1.5987473020414682,
-   "oe_high_yield": 0.012532314039676008,
+   "oe_high_yield": 0.01248728658940458,
    "vi_high": 74.18767913972525,
    "grid_high": {
     "r=6%": {
@@ -3051,7 +3051,7 @@
      "g=8%": 33.0
     }
    },
-   "p_to_vi_high": 1.719557768611879,
+   "p_to_vi_high": 1.725758259115614,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -3136,7 +3136,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 3,
    "quality_pts": 13,
-   "price": 88.39,
+   "price": 90.38,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 47658295.0,
@@ -3144,12 +3144,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 3.8929214735860778,
-   "oe_yield": 0.04404255542013891,
-   "implied_g_r0": -0.0051355037295118255,
-   "implied_g_r2": 0.05029097359976242,
+   "oe_yield": 0.04307282002197475,
+   "implied_g_r0": -0.0025028821046064187,
+   "implied_g_r2": 0.053140026746230196,
    "vi_low": 180.64568980336531,
-   "p_to_vi": 0.48930035416960915,
-   "discount_to_vi": 0.5106996458303908,
+   "p_to_vi": 0.5003163933685855,
+   "discount_to_vi": 0.49968360663141453,
    "grid": {
     "r=6%": {
      "g=0%": 92.0,
@@ -3167,10 +3167,10 @@
      "g=8%": 80.0
     }
    },
-   "mcap": 4212516695.05,
-   "band": "sub VI_jos cu 51%: peste marja maximă propusă (50%)",
+   "mcap": 4307356702.099999,
+   "band": "sub VI_jos cu 50%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 4.482136845222851,
-   "oe_high_yield": 0.05070864176063866,
+   "oe_high_yield": 0.04959213150279765,
    "vi_high": 207.98742222059332,
    "grid_high": {
     "r=6%": {
@@ -3189,7 +3189,7 @@
      "g=8%": 92.0
     }
    },
-   "p_to_vi_high": 0.424977621513347,
+   "p_to_vi_high": 0.4345455077766297,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -3274,7 +3274,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+MarketableSecuritiesCurrent",
    "negative_trend_breaks": 1,
    "quality_pts": 13,
-   "price": 347.435,
+   "price": 348.51,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 14720306000.0,
@@ -3282,12 +3282,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 9.276777262646577,
-   "oe_yield": 0.026700756292965814,
-   "implied_g_r0": 0.05428300932485708,
-   "implied_g_r2": 0.11447586015061917,
+   "oe_yield": 0.02661839620856382,
+   "implied_g_r0": 0.054652223900701125,
+   "implied_g_r2": 0.11487398206937527,
    "vi_low": 430.4761447497798,
-   "p_to_vi": 0.8070946653779186,
-   "discount_to_vi": 0.19290533462208137,
+   "p_to_vi": 0.8095919001564564,
+   "discount_to_vi": 0.19040809984354357,
    "grid": {
     "r=6%": {
      "g=0%": 220.0,
@@ -3305,10 +3305,10 @@
      "g=8%": 190.0
     }
    },
-   "mcap": 5114349515110.0,
+   "mcap": 5130173844060.0,
    "band": "sub VI_jos cu 19%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 9.29994254195531,
-   "oe_high_yield": 0.02676743143884557,
+   "oe_high_yield": 0.026684865690956676,
    "vi_high": 431.55109781230806,
    "grid_high": {
     "r=6%": {
@@ -3327,7 +3327,7 @@
      "g=8%": 190.0
     }
    },
-   "p_to_vi_high": 0.8050842687257115,
+   "p_to_vi_high": 0.8075752831280605,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -3412,7 +3412,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 1,
    "quality_pts": 13,
-   "price": 331.25,
+   "price": 331.64,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 273312000.0,
@@ -3420,12 +3420,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 4.371725354173984,
-   "oe_yield": 0.01319766144656297,
-   "implied_g_r0": 0.13983362137555166,
-   "implied_g_r2": 0.20653778124606192,
+   "oe_yield": 0.013182141340531854,
+   "implied_g_r0": 0.13997917883735933,
+   "implied_g_r2": 0.20669413805679981,
    "vi_low": 202.86392818197157,
-   "p_to_vi": 1.6328679177643866,
-   "discount_to_vi": -0.6328679177643866,
+   "p_to_vi": 1.6347903886713393,
+   "discount_to_vi": -0.6347903886713393,
    "grid": {
     "r=6%": {
      "g=0%": 100.0,
@@ -3443,10 +3443,10 @@
      "g=8%": 89.0
     }
    },
-   "mcap": 90534600000.0,
+   "mcap": 90641191680.0,
    "band": "peste VI_jos cu 63%",
    "oe_high_per_share": 4.483213323966749,
-   "oe_high_yield": 0.013534228902541127,
+   "oe_high_yield": 0.013518313001950154,
    "vi_high": 208.03737474251528,
    "grid_high": {
     "r=6%": {
@@ -3465,7 +3465,7 @@
      "g=8%": 92.0
     }
    },
-   "p_to_vi_high": 1.5922619693215372,
+   "p_to_vi_high": 1.5941366324703232,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -3550,7 +3550,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 3,
    "quality_pts": 13,
-   "price": 367.38,
+   "price": 372.53,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 808000000.0,
@@ -3558,12 +3558,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 6.4022277227722775,
-   "oe_yield": 0.017426718174022204,
-   "implied_g_r0": 0.10572508069392972,
-   "implied_g_r2": 0.1698746365188789,
+   "oe_yield": 0.017185804425877856,
+   "implied_g_r0": 0.10742084785735939,
+   "implied_g_r2": 0.17169859890905836,
    "vi_low": 297.0866099163956,
-   "p_to_vi": 1.2366090821238491,
-   "discount_to_vi": -0.23660908212384912,
+   "p_to_vi": 1.253944094299084,
+   "discount_to_vi": -0.25394409429908404,
    "grid": {
     "r=6%": {
      "g=0%": 150.0,
@@ -3581,10 +3581,10 @@
      "g=8%": 130.0
     }
    },
-   "mcap": 296843040000.0,
-   "band": "peste VI_jos cu 24%",
+   "mcap": 301004240000.0,
+   "band": "peste VI_jos cu 25%",
    "oe_high_per_share": 8.717821782178218,
-   "oe_high_yield": 0.02372971251069252,
+   "oe_high_yield": 0.023401663710783612,
    "vi_high": 404.5385811426813,
    "grid_high": {
     "r=6%": {
@@ -3603,7 +3603,7 @@
      "g=8%": 180.0
     }
    },
-   "p_to_vi_high": 0.9081457668692039,
+   "p_to_vi_high": 0.9208763202454802,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -3688,7 +3688,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 12,
-   "price": 422.51,
+   "price": 423.0,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": null,
@@ -3793,7 +3793,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 3,
    "quality_pts": 12,
-   "price": 5.355,
+   "price": 5.37,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 272171878.0,
@@ -3801,12 +3801,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 3.048996120017954,
-   "oe_yield": 0.5693736918801034,
-   "implied_g_r0": -0.3540021547591309,
-   "implied_g_r2": -0.3325337801561351,
+   "oe_yield": 0.5677832625731758,
+   "implied_g_r0": -0.3534669929718678,
+   "implied_g_r2": -0.331946985916563,
    "vi_low": 141.48448948831566,
-   "p_to_vi": 0.03784867174745849,
-   "discount_to_vi": 0.9621513282525415,
+   "p_to_vi": 0.037954690435826714,
+   "discount_to_vi": 0.9620453095641733,
    "grid": {
     "r=6%": {
      "g=0%": 72.0,
@@ -3824,10 +3824,10 @@
      "g=8%": 62.0
     }
    },
-   "mcap": 1457480406.69,
+   "mcap": 1461562984.8600001,
    "band": "sub VI_jos cu 96%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 3.139585934737901,
-   "oe_high_yield": 0.5862905573740245,
+   "oe_high_yield": 0.5846528742528679,
    "vi_high": 145.6881857817755,
    "grid_high": {
     "r=6%": {
@@ -3846,7 +3846,7 @@
      "g=8%": 64.0
     }
    },
-   "p_to_vi_high": 0.0367565837357683,
+   "p_to_vi_high": 0.03685954335407578,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "capitalizare sub 2 mld USD"
@@ -3931,7 +3931,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 12,
-   "price": 162.73,
+   "price": 159.26,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 32639000.0,
@@ -3939,12 +3939,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 6.991635773154814,
-   "oe_yield": 0.04296463942207838,
-   "implied_g_r0": -0.0022055022731893303,
-   "implied_g_r2": 0.05346182131387589,
+   "oe_yield": 0.04390076461857852,
+   "implied_g_r0": -0.0047542351861630805,
+   "implied_g_r2": 0.050703619672503364,
    "vi_low": 324.4372833269559,
-   "p_to_vi": 0.50157613925033,
-   "discount_to_vi": 0.49842386074967004,
+   "p_to_vi": 0.49088069770176096,
+   "discount_to_vi": 0.509119302298239,
    "grid": {
     "r=6%": {
      "g=0%": 170.0,
@@ -3962,10 +3962,10 @@
      "g=8%": 140.0
     }
    },
-   "mcap": 132783611749.99998,
-   "band": "sub VI_jos cu 50%: între marjele propuse (30 la 50%)",
+   "mcap": 129952178500.0,
+   "band": "sub VI_jos cu 51%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 6.991635773154814,
-   "oe_high_yield": 0.04296463942207838,
+   "oe_high_yield": 0.04390076461857852,
    "vi_high": 324.4372833269559,
    "grid_high": {
     "r=6%": {
@@ -3984,7 +3984,7 @@
      "g=8%": 140.0
     }
    },
-   "p_to_vi_high": 0.50157613925033,
+   "p_to_vi_high": 0.49088069770176096,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -4069,7 +4069,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 12,
-   "price": 471.17,
+   "price": 474.47,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 108200000.0,
@@ -4077,12 +4077,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 11.666358595194085,
-   "oe_yield": 0.02476040196785467,
-   "implied_g_r0": 0.06331160873967823,
-   "implied_g_r2": 0.12420909236167377,
+   "oe_yield": 0.024588190181031644,
+   "implied_g_r0": 0.06414811906282802,
+   "implied_g_r2": 0.12511065340488348,
    "vi_low": 541.361394064004,
-   "p_to_vi": 0.8703428156613151,
-   "discount_to_vi": 0.1296571843386849,
+   "p_to_vi": 0.8764385587936927,
+   "discount_to_vi": 0.1235614412063073,
    "grid": {
     "r=6%": {
      "g=0%": 280.0,
@@ -4100,10 +4100,10 @@
      "g=8%": 240.0
     }
    },
-   "mcap": 50980594000.0,
-   "band": "sub VI_jos cu 13%: sub marja minimă propusă (30%)",
+   "mcap": 51337654000.0,
+   "band": "sub VI_jos cu 12%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 11.666358595194085,
-   "oe_high_yield": 0.02476040196785467,
+   "oe_high_yield": 0.024588190181031644,
    "vi_high": 541.361394064004,
    "grid_high": {
     "r=6%": {
@@ -4122,7 +4122,7 @@
      "g=8%": 240.0
     }
    },
-   "p_to_vi_high": 0.8703428156613151,
+   "p_to_vi_high": 0.8764385587936927,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -4207,7 +4207,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+MarketableSecuritiesCurrent",
    "negative_trend_breaks": 1,
    "quality_pts": 12,
-   "price": 360.5,
+   "price": 364.81,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 105100000.0,
@@ -4215,12 +4215,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 10.955280685061846,
-   "oe_yield": 0.030389128113902486,
-   "implied_g_r0": 0.038852497956124554,
-   "implied_g_r2": 0.0978299241852173,
+   "oe_yield": 0.030030099737018846,
+   "implied_g_r0": 0.04026721602690564,
+   "implied_g_r2": 0.09935668402231601,
    "vi_low": 508.3647974330821,
-   "p_to_vi": 0.7091364347419313,
-   "discount_to_vi": 0.29086356525806867,
+   "p_to_vi": 0.7176145984970984,
+   "discount_to_vi": 0.2823854015029016,
    "grid": {
     "r=6%": {
      "g=0%": 260.0,
@@ -4238,10 +4238,10 @@
      "g=8%": 220.0
     }
    },
-   "mcap": 37888550000.0,
-   "band": "sub VI_jos cu 29%: sub marja minimă propusă (30%)",
+   "mcap": 38341531000.0,
+   "band": "sub VI_jos cu 28%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 11.231208372978116,
-   "oe_high_yield": 0.031154530854308228,
+   "oe_high_yield": 0.03078645972692118,
    "vi_high": 521.1688439204536,
    "grid_high": {
     "r=6%": {
@@ -4260,7 +4260,7 @@
      "g=8%": 230.0
     }
    },
-   "p_to_vi_high": 0.6917144111842254,
+   "p_to_vi_high": 0.6999842838949161,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -4345,7 +4345,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 3,
    "quality_pts": 12,
-   "price": 1.251,
+   "price": 1.29,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 1064433.0,
@@ -4353,12 +4353,12 @@
    "r_used": 0.06,
    "g_used": 0.0,
    "oe_per_share": 83.83618320739774,
-   "oe_yield": 67.01533429847942,
+   "oe_yield": 64.98928930806026,
    "implied_g_r0": -0.5,
    "implied_g_r2": -0.5,
    "vi_low": 1988.0138633218712,
-   "p_to_vi": 0.0006292712656991445,
-   "discount_to_vi": 0.9993707287343009,
+   "p_to_vi": 0.0006488888351334105,
+   "discount_to_vi": 0.9993511111648666,
    "grid": {
     "r=6%": {
      "g=0%": 2000.0,
@@ -4376,10 +4376,10 @@
      "g=8%": 1700.0
     }
    },
-   "mcap": 443868.561,
+   "mcap": 457706.19,
    "band": "sub VI_jos cu 100%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 83.83618320739774,
-   "oe_high_yield": 67.01533429847942,
+   "oe_high_yield": 64.98928930806026,
    "vi_high": 1988.0138633218712,
    "grid_high": {
     "r=6%": {
@@ -4398,7 +4398,7 @@
      "g=8%": 1700.0
     }
    },
-   "p_to_vi_high": 0.0006292712656991445,
+   "p_to_vi_high": 0.0006488888351334105,
    "g_high_used": 0.0,
    "eligible": false,
    "ineligible_reason": "sediu în China sau Hong Kong (în afara cercului)"
@@ -4483,7 +4483,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 1,
    "quality_pts": 12,
-   "price": 317.6,
+   "price": 317.31,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 58684000.0,
@@ -4491,12 +4491,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 12.635795105991411,
-   "oe_yield": 0.03978524907428026,
-   "implied_g_r0": 0.006889432106033877,
-   "implied_g_r2": 0.06330024071277174,
+   "oe_yield": 0.03982161011626299,
+   "implied_g_r0": 0.006781319341967351,
+   "implied_g_r2": 0.06318332598224308,
    "vi_low": 586.3467677484697,
-   "p_to_vi": 0.5416589933966237,
-   "discount_to_vi": 0.4583410066033763,
+   "p_to_vi": 0.5411644055248195,
+   "discount_to_vi": 0.4588355944751805,
    "grid": {
     "r=6%": {
      "g=0%": 300.0,
@@ -4514,10 +4514,10 @@
      "g=8%": 260.0
     }
    },
-   "mcap": 18638038400.0,
+   "mcap": 18621020040.0,
    "band": "sub VI_jos cu 46%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 12.635795105991411,
-   "oe_high_yield": 0.03978524907428026,
+   "oe_high_yield": 0.03982161011626299,
    "vi_high": 563.2699362114842,
    "grid_high": {
     "r=6%": {
@@ -4536,7 +4536,7 @@
      "g=8%": 260.0
     }
    },
-   "p_to_vi_high": 0.5638504375649024,
+   "p_to_vi_high": 0.5633355867245566,
    "g_high_used": 0.0751647497684671,
    "eligible": true,
    "ineligible_reason": ""
@@ -4621,7 +4621,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 0,
    "quality_pts": 12,
-   "price": 117.765,
+   "price": 120.17,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 52822000.0,
@@ -4629,12 +4629,12 @@
    "r_used": 0.06,
    "g_used": 0.05367525414412899,
    "oe_per_share": 8.570671311196092,
-   "oe_yield": 0.0727777464543463,
-   "implied_g_r0": -0.06462847884483552,
-   "implied_g_r2": -0.014247645344313276,
+   "oe_yield": 0.07132122252805269,
+   "implied_g_r0": -0.06222160262911952,
+   "implied_g_r2": -0.011630403098853381,
    "vi_low": 319.3614261710656,
-   "p_to_vi": 0.3687514845231162,
-   "discount_to_vi": 0.6312485154768839,
+   "p_to_vi": 0.3762821372661051,
+   "discount_to_vi": 0.6237178627338948,
    "grid": {
     "r=6%": {
      "g=0%": 200.0,
@@ -4652,10 +4652,10 @@
      "g=8%": 180.0
     }
    },
-   "mcap": 6220582830.0,
-   "band": "sub VI_jos cu 63%: peste marja maximă propusă (50%)",
+   "mcap": 6347619740.0,
+   "band": "sub VI_jos cu 62%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 8.570671311196092,
-   "oe_high_yield": 0.0727777464543463,
+   "oe_high_yield": 0.07132122252805269,
    "vi_high": 302.81268787825894,
    "grid_high": {
     "r=6%": {
@@ -4674,7 +4674,7 @@
      "g=8%": 180.0
     }
    },
-   "p_to_vi_high": 0.3889037834747055,
+   "p_to_vi_high": 0.3968459870093437,
    "g_high_used": 0.047323272818576845,
    "eligible": true,
    "ineligible_reason": ""
@@ -4759,7 +4759,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 0,
    "quality_pts": 12,
-   "price": 524.715,
+   "price": 527.38,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 169000000.0,
@@ -4767,12 +4767,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 13.692307692307692,
-   "oe_yield": 0.026094751802993418,
-   "implied_g_r0": 0.05702771215511515,
-   "implied_g_r2": 0.11743526734265852,
+   "oe_yield": 0.025962887656543084,
+   "implied_g_r0": 0.05763369164894139,
+   "implied_g_r2": 0.11808859074220057,
    "vi_low": 635.3727874706788,
-   "p_to_vi": 0.8258380124978435,
-   "discount_to_vi": 0.1741619875021565,
+   "p_to_vi": 0.8300324005052507,
+   "discount_to_vi": 0.16996759949474927,
    "grid": {
     "r=6%": {
      "g=0%": 320.0,
@@ -4790,10 +4790,10 @@
      "g=8%": 280.0
     }
    },
-   "mcap": 88676835000.0,
+   "mcap": 89127220000.0,
    "band": "sub VI_jos cu 17%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 14.1301775147929,
-   "oe_high_yield": 0.02692924256938128,
+   "oe_high_yield": 0.026793161505542302,
    "vi_high": 655.6915369403548,
    "grid_high": {
     "r=6%": {
@@ -4812,7 +4812,7 @@
      "g=8%": 290.0
     }
    },
-   "p_to_vi_high": 0.8002467173031865,
+   "p_to_vi_high": 0.8043111284627932,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -4897,7 +4897,7 @@
    "cash_tag": "CashCashEquivalentsAndShortTermInvestments",
    "negative_trend_breaks": 0,
    "quality_pts": 12,
-   "price": 79.65,
+   "price": 79.95,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 1277500000.0,
@@ -4905,12 +4905,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 1.6421917808219177,
-   "oe_yield": 0.020617599257023448,
-   "implied_g_r0": 0.08533655921658923,
-   "implied_g_r2": 0.147934183421914,
+   "oe_yield": 0.020540234907090903,
+   "implied_g_r0": 0.08579061818269229,
+   "implied_g_r2": 0.148423025326747,
    "vi_low": 76.20366068229987,
-   "p_to_vi": 1.0452253774535616,
-   "discount_to_vi": -0.04522537745356159,
+   "p_to_vi": 1.0491621962010325,
+   "discount_to_vi": -0.04916219620103246,
    "grid": {
     "r=6%": {
      "g=0%": 39.0,
@@ -4928,10 +4928,10 @@
      "g=8%": 34.0
     }
    },
-   "mcap": 203505750000.0,
+   "mcap": 204272250000.0,
    "band": "peste VI_jos cu 5%",
    "oe_high_per_share": 1.7817221135029355,
-   "oe_high_yield": 0.022369392511022417,
+   "oe_high_yield": 0.022285454828054226,
    "vi_high": 82.67837468993606,
    "grid_high": {
     "r=6%": {
@@ -4950,7 +4950,7 @@
      "g=8%": 36.0
     }
    },
-   "p_to_vi_high": 0.963371622854305,
+   "p_to_vi_high": 0.9670001412078052,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -5035,7 +5035,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+MarketableSecuritiesCurrent",
    "negative_trend_breaks": 0,
    "quality_pts": 12,
-   "price": 193.235,
+   "price": 192.96,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 117100000.0,
@@ -5043,12 +5043,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 10.203245089666952,
-   "oe_yield": 0.05280226195910136,
-   "implied_g_r0": -0.02658052685492801,
-   "implied_g_r2": 0.027062480986722703,
+   "oe_yield": 0.052877513938987104,
+   "implied_g_r0": -0.026748940581347525,
+   "implied_g_r2": 0.02687991191514827,
    "vi_low": 473.46761550722863,
-   "p_to_vi": 0.4081271742165221,
-   "discount_to_vi": 0.5918728257834779,
+   "p_to_vi": 0.4075463530769276,
+   "discount_to_vi": 0.5924536469230723,
    "grid": {
     "r=6%": {
      "g=0%": 240.0,
@@ -5066,10 +5066,10 @@
      "g=8%": 210.0
     }
    },
-   "mcap": 22627818500.0,
+   "mcap": 22595616000.0,
    "band": "sub VI_jos cu 59%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 10.777113578138342,
-   "oe_high_yield": 0.055772057743878396,
+   "oe_high_yield": 0.05585154217526089,
    "vi_high": 500.09719682802347,
    "grid_high": {
     "r=6%": {
@@ -5088,7 +5088,7 @@
      "g=8%": 220.0
     }
    },
-   "p_to_vi_high": 0.38639488728518284,
+   "p_to_vi_high": 0.3858449941809138,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -5173,7 +5173,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+MarketableSecuritiesCurrent",
    "negative_trend_breaks": 3,
    "quality_pts": 11,
-   "price": 79.315,
+   "price": 80.2,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 4839169.0,
@@ -5181,12 +5181,12 @@
    "r_used": 0.06,
    "g_used": 0.0,
    "oe_per_share": 2.7835533332272546,
-   "oe_yield": 0.03509491689122177,
-   "implied_g_r0": 0.021749418737976423,
-   "implied_g_r2": 0.07936211212754996,
+   "oe_yield": 0.03470764754647449,
+   "implied_g_r0": 0.023065546230033207,
+   "implied_g_r2": 0.08078394783013898,
    "vi_low": 66.00661437630056,
-   "p_to_vi": 1.2016220003018026,
-   "discount_to_vi": -0.20162200030180255,
+   "p_to_vi": 1.21502974751566,
+   "discount_to_vi": -0.21502974751565995,
    "grid": {
     "r=6%": {
      "g=0%": 66.0,
@@ -5204,10 +5204,10 @@
      "g=8%": 57.0
     }
    },
-   "mcap": 383818689.235,
-   "band": "peste VI_jos cu 20%",
+   "mcap": 388101353.8,
+   "band": "peste VI_jos cu 22%",
    "oe_high_per_share": 3.140868814459673,
-   "oe_high_yield": 0.03959993462093769,
+   "oe_high_yield": 0.03916295279874903,
    "vi_high": 82.86358038683485,
    "grid_high": {
     "r=6%": {
@@ -5226,7 +5226,7 @@
      "g=8%": 64.0
     }
    },
-   "p_to_vi_high": 0.9571756328863791,
+   "p_to_vi_high": 0.9678558375778554,
    "g_high_used": 0.012623817626492118,
    "eligible": false,
    "ineligible_reason": "capitalizare sub 2 mld USD"
@@ -5311,7 +5311,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 4,
    "quality_pts": 11,
-   "price": 294.8,
+   "price": 300.52,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 913000000.0,
@@ -5319,12 +5319,12 @@
    "r_used": 0.06,
    "g_used": 0.0,
    "oe_per_share": 0.4939759036144578,
-   "oe_yield": 0.001675630609275637,
-   "implied_g_r0": 0.41571936585900493,
-   "implied_g_r2": 0.5018831134148585,
+   "oe_yield": 0.0016437372008999663,
+   "implied_g_r0": 0.4185185568384385,
+   "implied_g_r2": 0.5048728398324178,
    "vi_low": 11.713688612267784,
-   "p_to_vi": 25.167136480924977,
-   "discount_to_vi": -24.167136480924977,
+   "p_to_vi": 25.65545405443546,
+   "discount_to_vi": -24.65545405443546,
    "grid": {
     "r=6%": {
      "g=0%": 12.0,
@@ -5342,10 +5342,10 @@
      "g=8%": 10.0
     }
    },
-   "mcap": 269152400000.0,
-   "band": "peste VI_jos cu 2 417%",
+   "mcap": 274374759999.99997,
+   "band": "peste VI_jos cu 2 466%",
    "oe_high_per_share": 3.376779846659365,
-   "oe_high_yield": 0.01145447709178889,
+   "oe_high_yield": 0.011236456297948106,
    "vi_high": 80.54037039245719,
    "grid_high": {
     "r=6%": {
@@ -5364,7 +5364,7 @@
      "g=8%": 69.0
     }
    },
-   "p_to_vi_high": 3.6602761889906676,
+   "p_to_vi_high": 3.731296473254665,
    "g_high_used": 0.0006871134016310787,
    "eligible": true,
    "ineligible_reason": ""
@@ -5449,7 +5449,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+AvailableForSaleSecuritiesDebtSecuritiesCurrent",
    "negative_trend_breaks": 1,
    "quality_pts": 11,
-   "price": 186.51,
+   "price": 185.02,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 1275700000.0,
@@ -5464,10 +5464,10 @@
    "p_to_vi": null,
    "discount_to_vi": null,
    "grid": null,
-   "mcap": 237930807000.0,
+   "mcap": 236030014000.0,
    "band": "OE_jos negativ (capex peste profit plus D&A): valoarea nu se calculează",
    "oe_high_per_share": 0.032690688249588463,
-   "oe_high_yield": 0.000175275793520929,
+   "oe_high_yield": 0.0001766873216386794,
    "vi_high": 0.7751968059058842,
    "grid_high": {
     "r=6%": {
@@ -5486,7 +5486,7 @@
      "g=8%": 0.67
     }
    },
-   "p_to_vi_high": 240.5969665755356,
+   "p_to_vi_high": 238.6748740325216,
    "g_high_used": 0.0,
    "eligible": false,
    "ineligible_reason": "OE_jos negativ (capex peste profit plus D&A)"
@@ -5571,7 +5571,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 11,
-   "price": 339.135,
+   "price": 340.44,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 277000000.0,
@@ -5579,12 +5579,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 15.851985559566787,
-   "oe_yield": 0.04674240511762805,
-   "implied_g_r0": -0.012169103184355323,
-   "implied_g_r2": 0.04267649681914876,
+   "oe_yield": 0.046563228644010066,
+   "implied_g_r0": -0.011715098823131542,
+   "implied_g_r2": 0.043168112977146955,
    "vi_low": 735.5896813205036,
-   "p_to_vi": 0.46103827801281455,
-   "discount_to_vi": 0.5389617219871854,
+   "p_to_vi": 0.46281236488915206,
+   "discount_to_vi": 0.537187635110848,
    "grid": {
     "r=6%": {
      "g=0%": 380.0,
@@ -5602,10 +5602,10 @@
      "g=8%": 320.0
     }
    },
-   "mcap": 93940395000.0,
+   "mcap": 94301880000.0,
    "band": "sub VI_jos cu 54%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 15.851985559566787,
-   "oe_high_yield": 0.04674240511762805,
+   "oe_high_yield": 0.046563228644010066,
    "vi_high": 735.5896813205036,
    "grid_high": {
     "r=6%": {
@@ -5624,7 +5624,7 @@
      "g=8%": 320.0
     }
    },
-   "p_to_vi_high": 0.46103827801281455,
+   "p_to_vi_high": 0.46281236488915206,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -5709,7 +5709,7 @@
    "cash_tag": "CashCashEquivalentsAndShortTermInvestments",
    "negative_trend_breaks": 2,
    "quality_pts": 11,
-   "price": 97.74,
+   "price": 98.15,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 3987000000.0,
@@ -5717,12 +5717,12 @@
    "r_used": 0.06,
    "g_used": 0.02856983466946761,
    "oe_per_share": 3.1494858289440684,
-   "oe_yield": 0.03222310035752065,
-   "implied_g_r0": 0.031883891959229804,
-   "implied_g_r2": 0.09030756920149285,
+   "oe_yield": 0.032088495455364935,
+   "implied_g_r0": 0.032381339773976836,
+   "implied_g_r2": 0.09084464936088399,
    "vi_low": 95.05084164739048,
-   "p_to_vi": 1.0282917889626424,
-   "discount_to_vi": -0.028291788962642395,
+   "p_to_vi": 1.032605269968113,
+   "discount_to_vi": -0.03260526996811297,
    "grid": {
     "r=6%": {
      "g=0%": 75.0,
@@ -5740,10 +5740,10 @@
      "g=8%": 64.0
     }
    },
-   "mcap": 389689380000.0,
+   "mcap": 391324050000.0,
    "band": "peste VI_jos cu 3%",
    "oe_high_per_share": 3.503135189365438,
-   "oe_high_yield": 0.03584136678294903,
+   "oe_high_yield": 0.035691647369999364,
    "vi_high": 115.76333556002533,
    "grid_high": {
     "r=6%": {
@@ -5762,7 +5762,7 @@
      "g=8%": 72.0
     }
    },
-   "p_to_vi_high": 0.844308774683847,
+   "p_to_vi_high": 0.8478504832741927,
    "g_high_used": 0.03935468237725437,
    "eligible": true,
    "ineligible_reason": ""
@@ -5847,7 +5847,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+AvailableForSaleSecuritiesDebtSecuritiesCurrent",
    "negative_trend_breaks": 1,
    "quality_pts": 11,
-   "price": 28.535,
+   "price": 28.71,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 30144000.0,
@@ -5855,12 +5855,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 1.9285761677282378,
-   "oe_yield": 0.06758633845201464,
-   "implied_g_r0": -0.055825980330880653,
-   "implied_g_r2": -0.00467851627196797,
+   "oe_yield": 0.0671743701751389,
+   "implied_g_r0": -0.0550996826214421,
+   "implied_g_r2": -0.0038892957811224593,
    "vi_low": 89.49293596633217,
-   "p_to_vi": 0.31885198191212605,
-   "discount_to_vi": 0.681148018087874,
+   "p_to_vi": 0.32080744351488133,
+   "discount_to_vi": 0.6791925564851187,
    "grid": {
     "r=6%": {
      "g=0%": 46.0,
@@ -5878,10 +5878,10 @@
      "g=8%": 39.0
     }
    },
-   "mcap": 860159040.0,
+   "mcap": 865434240.0,
    "band": "sub VI_jos cu 68%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 1.9285761677282378,
-   "oe_high_yield": 0.06758633845201464,
+   "oe_high_yield": 0.0671743701751389,
    "vi_high": 89.49293596633217,
    "grid_high": {
     "r=6%": {
@@ -5900,7 +5900,7 @@
      "g=8%": 39.0
     }
    },
-   "p_to_vi_high": 0.31885198191212605,
+   "p_to_vi_high": 0.32080744351488133,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "capitalizare sub 2 mld USD"
@@ -5985,7 +5985,7 @@
    "cash_tag": "CashCashEquivalentsAndShortTermInvestments",
    "negative_trend_breaks": 1,
    "quality_pts": 11,
-   "price": 173.92,
+   "price": 175.99,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 201000000.0,
@@ -5993,12 +5993,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 6.253731343283582,
-   "oe_yield": 0.035957516923203675,
-   "implied_g_r0": 0.018870375006335594,
-   "implied_g_r2": 0.07625141782948541,
+   "oe_yield": 0.035534583460898814,
+   "implied_g_r0": 0.020273066129859463,
+   "implied_g_r2": 0.07776704185857597,
    "vi_low": 290.1958387852413,
-   "p_to_vi": 0.5993194138414544,
-   "discount_to_vi": 0.4006805861585456,
+   "p_to_vi": 0.6064525278401424,
+   "discount_to_vi": 0.39354747215985764,
    "grid": {
     "r=6%": {
      "g=0%": 150.0,
@@ -6016,10 +6016,10 @@
      "g=8%": 130.0
     }
    },
-   "mcap": 34957920000.0,
-   "band": "sub VI_jos cu 40%: între marjele propuse (30 la 50%)",
+   "mcap": 35373990000.0,
+   "band": "sub VI_jos cu 39%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 6.45273631840796,
-   "oe_high_yield": 0.03710174976085534,
+   "oe_high_yield": 0.03666535779537451,
    "vi_high": 299.4303921276515,
    "grid_high": {
     "r=6%": {
@@ -6038,7 +6038,7 @@
      "g=8%": 130.0
     }
    },
-   "p_to_vi_high": 0.5808361628363209,
+   "p_to_vi_high": 0.5877492887394441,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -6123,7 +6123,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 3,
    "quality_pts": 11,
-   "price": 256.03,
+   "price": 258.51,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 617498483.0,
@@ -6131,12 +6131,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 12.347087822724255,
-   "oe_yield": 0.04822516042152973,
-   "implied_g_r0": -0.015860656387304772,
-   "implied_g_r2": 0.03867850772922299,
+   "oe_yield": 0.047762515271069804,
+   "implied_g_r0": -0.014721156225701637,
+   "implied_g_r2": 0.03991271438131483,
    "vi_low": 572.9497016399134,
-   "p_to_vi": 0.4468629606877941,
-   "discount_to_vi": 0.5531370393122059,
+   "p_to_vi": 0.451191438375978,
+   "discount_to_vi": 0.5488085616240219,
    "grid": {
     "r=6%": {
      "g=0%": 290.0,
@@ -6154,10 +6154,10 @@
      "g=8%": 250.0
     }
    },
-   "mcap": 158098136602.49,
+   "mcap": 159629532840.33,
    "band": "sub VI_jos cu 55%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 12.609791302110779,
-   "oe_high_yield": 0.04925122564586486,
+   "oe_high_yield": 0.04877873700093141,
    "vi_high": 585.1400968404123,
    "grid_high": {
     "r=6%": {
@@ -6176,7 +6176,7 @@
      "g=8%": 260.0
     }
    },
-   "p_to_vi_high": 0.4375533336076063,
+   "p_to_vi_high": 0.44179163485100303,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -6261,7 +6261,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+MarketableSecuritiesCurrent",
    "negative_trend_breaks": 2,
    "quality_pts": 11,
-   "price": 30.92,
+   "price": 31.34,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 35891000.0,
@@ -6269,12 +6269,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 1.1986570449416287,
-   "oe_yield": 0.03876639860742654,
-   "implied_g_r0": 0.009960207218718709,
-   "implied_g_r2": 0.06662066744808459,
+   "oe_yield": 0.03824687443974565,
+   "implied_g_r0": 0.011557690392483999,
+   "implied_g_r2": 0.06834775584206365,
    "vi_low": 55.62203866436562,
-   "p_to_vi": 0.555894762983741,
-   "discount_to_vi": 0.44410523701625904,
+   "p_to_vi": 0.5634457267758874,
+   "discount_to_vi": 0.43655427322411255,
    "grid": {
     "r=6%": {
      "g=0%": 28.0,
@@ -6292,10 +6292,10 @@
      "g=8%": 24.0
     }
    },
-   "mcap": 1109749720.0,
+   "mcap": 1124823940.0,
    "band": "sub VI_jos cu 44%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 1.207127134936335,
-   "oe_high_yield": 0.03904033424761756,
+   "oe_high_yield": 0.03851713895776436,
    "vi_high": 56.015081591168055,
    "grid_high": {
     "r=6%": {
@@ -6314,7 +6314,7 @@
      "g=8%": 25.0
     }
    },
-   "p_to_vi_high": 0.5519941973069479,
+   "p_to_vi_high": 0.5594921779948171,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "capitalizare sub 2 mld USD"
@@ -6399,7 +6399,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 0,
    "quality_pts": 11,
-   "price": 43.89,
+   "price": 44.3,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 162481586.0,
@@ -6407,12 +6407,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 1.585718150240114,
-   "oe_yield": 0.03612937229984311,
-   "implied_g_r0": 0.0183052018751807,
-   "implied_g_r2": 0.07564070334027051,
+   "oe_yield": 0.03579499210474298,
+   "implied_g_r0": 0.019407401389877177,
+   "implied_g_r2": 0.07683169707530679,
    "vi_low": 73.58307919321251,
-   "p_to_vi": 0.5964686512337272,
-   "discount_to_vi": 0.40353134876627283,
+   "p_to_vi": 0.6020405844077036,
+   "discount_to_vi": 0.3979594155922964,
    "grid": {
     "r=6%": {
      "g=0%": 38.0,
@@ -6430,10 +6430,10 @@
      "g=8%": 32.0
     }
    },
-   "mcap": 7131316809.54,
+   "mcap": 7197934259.799999,
    "band": "sub VI_jos cu 40%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 1.6266704831401633,
-   "oe_high_yield": 0.037062439807249103,
+   "oe_high_yield": 0.03671942399864929,
    "vi_high": 75.48341611908728,
    "grid_high": {
     "r=6%": {
@@ -6452,7 +6452,7 @@
      "g=8%": 33.0
     }
    },
-   "p_to_vi_high": 0.5814522216476853,
+   "p_to_vi_high": 0.586883878309238,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -6675,7 +6675,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 0,
    "quality_pts": 10,
-   "price": 94.315,
+   "price": 93.73,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 63323000.0,
@@ -6683,12 +6683,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 12.510857034568797,
-   "oe_yield": 0.13264970613973173,
-   "implied_g_r0": -0.13747380936666947,
-   "implied_g_r2": -0.09374961686557953,
+   "oe_yield": 0.1334776169270116,
+   "implied_g_r0": -0.1382495727769643,
+   "implied_g_r2": -0.0945994860235983,
    "vi_low": 580.5491876410936,
-   "p_to_vi": 0.16245824127878603,
-   "discount_to_vi": 0.837541758721214,
+   "p_to_vi": 0.16145057472364538,
+   "discount_to_vi": 0.8385494252763546,
    "grid": {
     "r=6%": {
      "g=0%": 300.0,
@@ -6706,10 +6706,10 @@
      "g=8%": 260.0
     }
    },
-   "mcap": 5972308745.0,
+   "mcap": 5935264790.0,
    "band": "sub VI_jos cu 84%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 12.510857034568797,
-   "oe_high_yield": 0.13264970613973173,
+   "oe_high_yield": 0.1334776169270116,
    "vi_high": 580.5491876410936,
    "grid_high": {
     "r=6%": {
@@ -6728,7 +6728,7 @@
      "g=8%": 260.0
     }
    },
-   "p_to_vi_high": 0.16245824127878603,
+   "p_to_vi_high": 0.16145057472364538,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "seria de acțiuni variază cu peste 15% pe an (verificare manuală)"
@@ -6813,7 +6813,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+MarketableSecuritiesCurrent",
    "negative_trend_breaks": 1,
    "quality_pts": 10,
-   "price": 244.28,
+   "price": 246.47,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 42200000.0,
@@ -6821,12 +6821,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 9.881516587677725,
-   "oe_yield": 0.04045159893432833,
-   "implied_g_r0": 0.004923866944166799,
-   "implied_g_r2": 0.061174516063519424,
+   "oe_yield": 0.04009216775947468,
+   "implied_g_r0": 0.005979991968182552,
+   "implied_g_r2": 0.06231673216444433,
    "vi_low": 458.5382449649275,
-   "p_to_vi": 0.5327363697191374,
-   "discount_to_vi": 0.4672636302808626,
+   "p_to_vi": 0.5375124162627959,
+   "discount_to_vi": 0.4624875837372041,
    "grid": {
     "r=6%": {
      "g=0%": 230.0,
@@ -6844,10 +6844,10 @@
      "g=8%": 200.0
     }
    },
-   "mcap": 10308616000.0,
-   "band": "sub VI_jos cu 47%: între marjele propuse (30 la 50%)",
+   "mcap": 10401034000.0,
+   "band": "sub VI_jos cu 46%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 10.286729857819905,
-   "oe_high_yield": 0.04211040550933316,
+   "oe_high_yield": 0.04173623507047473,
    "vi_high": 477.3416118447843,
    "grid_high": {
     "r=6%": {
@@ -6866,7 +6866,7 @@
      "g=8%": 210.0
     }
    },
-   "p_to_vi_high": 0.511750901112371,
+   "p_to_vi_high": 0.5163388103699282,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -6951,7 +6951,7 @@
    "cash_tag": "CashCashEquivalentsAndShortTermInvestments",
    "negative_trend_breaks": 2,
    "quality_pts": 10,
-   "price": 286.97,
+   "price": 287.38,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 12230000000.0,
@@ -6959,12 +6959,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 3.329762878168438,
-   "oe_yield": 0.011603174123317551,
-   "implied_g_r0": 0.15582473106219596,
-   "implied_g_r2": 0.22371051798747754,
+   "oe_yield": 0.011586620078531694,
+   "implied_g_r0": 0.1560027676663268,
+   "implied_g_r2": 0.22390165701797005,
    "vi_low": 154.51308640301977,
-   "p_to_vi": 1.8572536908070691,
-   "discount_to_vi": -0.8572536908070691,
+   "p_to_vi": 1.8599071877343816,
+   "discount_to_vi": -0.8599071877343816,
    "grid": {
     "r=6%": {
      "g=0%": 79.0,
@@ -6982,10 +6982,10 @@
      "g=8%": 68.0
     }
    },
-   "mcap": 3509643100000.0005,
+   "mcap": 3514657400000.0,
    "band": "peste VI_jos cu 86%",
    "oe_high_per_share": 9.078822567457072,
-   "oe_high_yield": 0.03163683509585347,
+   "oe_high_yield": 0.031591699378721805,
    "vi_high": 421.2903282094367,
    "grid_high": {
     "r=6%": {
@@ -7004,7 +7004,7 @@
      "g=8%": 190.0
     }
    },
-   "p_to_vi_high": 0.6811692098882891,
+   "p_to_vi_high": 0.6821424104878437,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -7089,7 +7089,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 1,
    "quality_pts": 10,
-   "price": 58.655,
+   "price": 58.78,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 968000000.0,
@@ -7097,12 +7097,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 5.520661157024794,
-   "oe_yield": 0.09412089603656626,
-   "implied_g_r0": -0.09544528852796602,
-   "implied_g_r2": -0.04780983671485822,
+   "oe_yield": 0.09392074101777464,
+   "implied_g_r0": -0.09518831410310652,
+   "implied_g_r2": -0.04752955648691065,
    "vi_low": 256.17872069808595,
-   "p_to_vi": 0.22896124955330158,
-   "discount_to_vi": 0.7710387504466985,
+   "p_to_vi": 0.22944919015843604,
+   "discount_to_vi": 0.770550809841564,
    "grid": {
     "r=6%": {
      "g=0%": 130.0,
@@ -7120,10 +7120,10 @@
      "g=8%": 110.0
     }
    },
-   "mcap": 56778040000.0,
+   "mcap": 56899040000.0,
    "band": "sub VI_jos cu 77%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 5.586776859504132,
-   "oe_high_yield": 0.09524809239628561,
+   "oe_high_yield": 0.09504554031140068,
    "vi_high": 259.2467293292007,
    "grid_high": {
     "r=6%": {
@@ -7142,7 +7142,7 @@
      "g=8%": 110.0
     }
    },
-   "p_to_vi_high": 0.226251648966872,
+   "p_to_vi_high": 0.2267338151269753,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -7227,7 +7227,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 2,
    "quality_pts": 10,
-   "price": 78.99,
+   "price": 79.71,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": null,
@@ -7332,7 +7332,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 4,
    "quality_pts": 10,
-   "price": 167.45,
+   "price": 169.01,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 134718000.0,
@@ -7340,12 +7340,12 @@
    "r_used": 0.06,
    "g_used": 0.0,
    "oe_per_share": 0.7255452129633754,
-   "oe_yield": 0.004332906616681848,
-   "implied_g_r0": 0.283048668001047,
-   "implied_g_r2": 0.3600561445936826,
+   "oe_yield": 0.0042929129220955885,
+   "implied_g_r0": 0.2842926344842819,
+   "implied_g_r2": 0.36138733818208146,
    "vi_low": 17.204909463372758,
-   "p_to_vi": 9.732687077283462,
-   "discount_to_vi": -8.732687077283462,
+   "p_to_vi": 9.823358870896852,
+   "discount_to_vi": -8.823358870896852,
    "grid": {
     "r=6%": {
      "g=0%": 17.0,
@@ -7363,10 +7363,10 @@
      "g=8%": 15.0
     }
    },
-   "mcap": 22558529100.0,
-   "band": "peste VI_jos cu 873%",
+   "mcap": 22768689180.0,
+   "band": "peste VI_jos cu 882%",
    "oe_high_per_share": 0.9103089416410576,
-   "oe_high_yield": 0.005436303025625904,
+   "oe_high_yield": 0.005386124736057379,
    "vi_high": 23.310014011694523,
    "grid_high": {
     "r=6%": {
@@ -7385,7 +7385,7 @@
      "g=8%": 19.0
     }
    },
-   "p_to_vi_high": 7.183607865529001,
+   "p_to_vi_high": 7.250531892224881,
    "g_high_used": 0.00909042327187648,
    "eligible": false,
    "ineligible_reason": "sediu în China sau Hong Kong (în afara cercului)"
@@ -7470,7 +7470,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 1,
    "quality_pts": 10,
-   "price": 64.59,
+   "price": 65.0,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 489000000.0,
@@ -7478,12 +7478,12 @@
    "r_used": 0.06,
    "g_used": 0.04815454147299869,
    "oe_per_share": 5.0961145194274025,
-   "oe_yield": 0.07889943519782322,
-   "implied_g_r0": -0.07426337263083999,
-   "implied_g_r2": -0.02473039344383604,
+   "oe_yield": 0.07840176183734465,
+   "implied_g_r0": -0.07350727813520569,
+   "implied_g_r2": -0.023907427124285563,
    "vi_low": 181.3112956231709,
-   "p_to_vi": 0.35623814709394,
-   "discount_to_vi": 0.64376185290606,
+   "p_to_vi": 0.358499451325377,
+   "discount_to_vi": 0.641500548674623,
    "grid": {
     "r=6%": {
      "g=0%": 120.0,
@@ -7501,10 +7501,10 @@
      "g=8%": 100.0
     }
    },
-   "mcap": 31584510000.0,
+   "mcap": 31785000000.0,
    "band": "sub VI_jos cu 64%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 5.0961145194274025,
-   "oe_high_yield": 0.07889943519782322,
+   "oe_high_yield": 0.07840176183734465,
    "vi_high": 177.70115881212146,
    "grid_high": {
     "r=6%": {
@@ -7523,7 +7523,7 @@
      "g=8%": 100.0
     }
    },
-   "p_to_vi_high": 0.3634754012397253,
+   "p_to_vi_high": 0.3657826456197886,
    "g_high_used": 0.04575593466191896,
    "eligible": true,
    "ineligible_reason": ""
@@ -7608,7 +7608,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 10,
-   "price": 95.495,
+   "price": 96.61,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 26371000.0,
@@ -7616,12 +7616,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 5.908839255242501,
-   "oe_yield": 0.06187590193457774,
-   "implied_g_r0": -0.045351394862345684,
-   "implied_g_r2": 0.006698750728717395,
+   "oe_yield": 0.06116177678545183,
+   "implied_g_r0": -0.043975623731625946,
+   "implied_g_r2": 0.008192330487396204,
    "vi_low": 274.1915937536785,
-   "p_to_vi": 0.3482783651120554,
-   "discount_to_vi": 0.6517216348879447,
+   "p_to_vi": 0.35234486468899595,
+   "discount_to_vi": 0.647655135311004,
    "grid": {
     "r=6%": {
      "g=0%": 140.0,
@@ -7639,10 +7639,10 @@
      "g=8%": 120.0
     }
    },
-   "mcap": 2518298645.0,
+   "mcap": 2547702310.0,
    "band": "sub VI_jos cu 65%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 5.908839255242501,
-   "oe_high_yield": 0.06187590193457774,
+   "oe_high_yield": 0.06116177678545183,
    "vi_high": 260.758824364996,
    "grid_high": {
     "r=6%": {
@@ -7661,7 +7661,7 @@
      "g=8%": 120.0
     }
    },
-   "p_to_vi_high": 0.366219629316672,
+   "p_to_vi_high": 0.3704956111658587,
    "g_high_used": 0.07395234982306031,
    "eligible": true,
    "ineligible_reason": ""
@@ -7746,7 +7746,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 10,
-   "price": 203.727,
+   "price": 205.18,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 27616000.0,
@@ -7754,12 +7754,12 @@
    "r_used": 0.06,
    "g_used": 0.05907035070238642,
    "oe_per_share": 5.627643395133256,
-   "oe_yield": 0.027623453912015865,
-   "implied_g_r0": 0.05022534966654313,
-   "implied_g_r2": 0.11009998082916572,
+   "oe_yield": 0.027427836022678894,
+   "implied_g_r0": 0.05107377311500627,
+   "implied_g_r2": 0.1110150219909426,
    "vi_low": 219.37551143277975,
-   "p_to_vi": 0.9286679204502973,
-   "discount_to_vi": 0.07133207954970266,
+   "p_to_vi": 0.9352912668325358,
+   "discount_to_vi": 0.06470873316746417,
    "grid": {
     "r=6%": {
      "g=0%": 130.0,
@@ -7777,10 +7777,10 @@
      "g=8%": 110.0
     }
    },
-   "mcap": 5626124832.0,
-   "band": "sub VI_jos cu 7%: sub marja minimă propusă (30%)",
+   "mcap": 5666250880.0,
+   "band": "sub VI_jos cu 6%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 6.296096465816918,
-   "oe_high_yield": 0.03090457556345952,
+   "oe_high_yield": 0.030685722126020654,
    "vi_high": 274.19472731158965,
    "grid_high": {
     "r=6%": {
@@ -7799,7 +7799,7 @@
      "g=8%": 130.0
     }
    },
-   "p_to_vi_high": 0.7430011583282145,
+   "p_to_vi_high": 0.7483003120145245,
    "g_high_used": 0.07236072380290137,
    "eligible": true,
    "ineligible_reason": ""
@@ -7884,7 +7884,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 2,
    "quality_pts": 10,
-   "price": 62.757,
+   "price": 63.26,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 4343863000.0,
@@ -7892,12 +7892,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 2.446248650107059,
-   "oe_yield": 0.038979693900394526,
-   "implied_g_r0": 0.009310626269559363,
-   "implied_g_r2": 0.0659183329813563,
+   "oe_yield": 0.038669754190753386,
+   "implied_g_r0": 0.010255727687536909,
+   "implied_g_r2": 0.0669401775569668,
    "vi_low": 113.5148185822685,
-   "p_to_vi": 0.5528529295452084,
-   "discount_to_vi": 0.44714707045479163,
+   "p_to_vi": 0.5572840690764358,
+   "discount_to_vi": 0.4427159309235642,
    "grid": {
     "r=6%": {
      "g=0%": 58.0,
@@ -7915,10 +7915,10 @@
      "g=8%": 50.0
     }
    },
-   "mcap": 272607810291.0,
-   "band": "sub VI_jos cu 45%: între marjele propuse (30 la 50%)",
+   "mcap": 274792773380.0,
+   "band": "sub VI_jos cu 44%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 2.527934237336675,
-   "oe_high_yield": 0.04028131104636415,
+   "oe_high_yield": 0.0399610217726316,
    "vi_high": 117.30532639297292,
    "grid_high": {
     "r=6%": {
@@ -7937,7 +7937,7 @@
      "g=8%": 52.0
     }
    },
-   "p_to_vi_high": 0.5349884948085307,
+   "p_to_vi_high": 0.5392764501424169,
    "g_high_used": 0.08,
    "eligible": true,
    "ineligible_reason": ""
@@ -8022,7 +8022,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 10,
-   "price": 42.625,
+   "price": 43.16,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 4524000.0,
@@ -8030,12 +8030,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 0.39616489832007074,
-   "oe_yield": 0.009294191162934212,
-   "implied_g_r0": 0.1836963095762182,
-   "implied_g_r2": 0.25361996385052044,
+   "oe_yield": 0.009178982815571612,
+   "implied_g_r0": 0.18527551516275909,
+   "implied_g_r2": 0.25531386885083107,
    "vi_low": 18.383489576784257,
-   "p_to_vi": 2.3186566305577445,
-   "discount_to_vi": -1.3186566305577445,
+   "p_to_vi": 2.3477588310820465,
+   "discount_to_vi": -1.3477588310820465,
    "grid": {
     "r=6%": {
      "g=0%": 9.4,
@@ -8053,10 +8053,10 @@
      "g=8%": 8.1
     }
    },
-   "mcap": 771342000.0,
-   "band": "peste VI_jos cu 132%",
+   "mcap": 781023359.9999999,
+   "band": "peste VI_jos cu 135%",
    "oe_high_per_share": 0.39616489832007074,
-   "oe_high_yield": 0.009294191162934212,
+   "oe_high_yield": 0.009178982815571612,
    "vi_high": 16.471097086603454,
    "grid_high": {
     "r=6%": {
@@ -8075,7 +8075,7 @@
      "g=8%": 8.1
     }
    },
-   "p_to_vi_high": 2.587866477617236,
+   "p_to_vi_high": 2.6203476169843967,
    "g_high_used": 0.06679153150646533,
    "eligible": false,
    "ineligible_reason": "capitalizare sub 2 mld USD"
@@ -8160,7 +8160,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 3,
    "quality_pts": 9,
-   "price": 15.51,
+   "price": 15.77,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 16644000.0,
@@ -8168,12 +8168,12 @@
    "r_used": 0.06,
    "g_used": 0.0,
    "oe_per_share": 1.4406392694063928,
-   "oe_yield": 0.09288454348203692,
-   "implied_g_r0": -0.09384974394427742,
-   "implied_g_r2": -0.04606970282299988,
+   "oe_yield": 0.09135315595474906,
+   "implied_g_r0": -0.09184572873528002,
+   "implied_g_r2": -0.0438844714844549,
    "vi_low": 34.161989847995365,
-   "p_to_vi": 0.4540133659957203,
-   "discount_to_vi": 0.5459866340042797,
+   "p_to_vi": 0.46162416387830485,
+   "discount_to_vi": 0.5383758361216952,
    "grid": {
     "r=6%": {
      "g=0%": 34.0,
@@ -8191,10 +8191,10 @@
      "g=8%": 29.0
     }
    },
-   "mcap": 258148440.0,
-   "band": "sub VI_jos cu 55%: peste marja maximă propusă (50%)",
+   "mcap": 262475880.0,
+   "band": "sub VI_jos cu 54%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 1.572819033886085,
-   "oe_high_yield": 0.10140677201070826,
+   "oe_high_yield": 0.09973487849626411,
    "vi_high": 37.29637877391036,
    "grid_high": {
     "r=6%": {
@@ -8213,7 +8213,7 @@
      "g=8%": 32.0
     }
    },
-   "p_to_vi_high": 0.4158580674553205,
+   "p_to_vi_high": 0.42282925362800805,
    "g_high_used": 0.0,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -8298,7 +8298,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+MarketableSecuritiesCurrent",
    "negative_trend_breaks": 4,
    "quality_pts": 9,
-   "price": 80.915,
+   "price": 82.71,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 155100000.0,
@@ -8306,12 +8306,12 @@
    "r_used": 0.06,
    "g_used": 0.0,
    "oe_per_share": 1.8188265635074146,
-   "oe_yield": 0.02247823720580133,
-   "implied_g_r0": 0.07492200245081759,
-   "implied_g_r2": 0.13671892376407124,
+   "oe_yield": 0.021990407006497577,
+   "implied_g_r0": 0.07756295156233428,
+   "implied_g_r2": 0.13956345028761652,
    "vi_low": 43.12997425330968,
-   "p_to_vi": 1.8760734593712585,
-   "discount_to_vi": -0.8760734593712585,
+   "p_to_vi": 1.9176918473039208,
+   "discount_to_vi": -0.9176918473039208,
    "grid": {
     "r=6%": {
      "g=0%": 43.0,
@@ -8329,10 +8329,10 @@
      "g=8%": 37.0
     }
    },
-   "mcap": 12549916500.000002,
-   "band": "peste VI_jos cu 88%",
+   "mcap": 12828320999.999998,
+   "band": "peste VI_jos cu 92%",
    "oe_high_per_share": 1.8188265635074146,
-   "oe_high_yield": 0.02247823720580133,
+   "oe_high_yield": 0.021990407006497577,
    "vi_high": 43.12997425330968,
    "grid_high": {
     "r=6%": {
@@ -8351,7 +8351,7 @@
      "g=8%": 37.0
     }
    },
-   "p_to_vi_high": 1.8760734593712585,
+   "p_to_vi_high": 1.9176918473039208,
    "g_high_used": 0.0,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -8436,7 +8436,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 9,
-   "price": 77.99,
+   "price": 78.82,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 253100000.0,
@@ -8444,12 +8444,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 5.617147372580008,
-   "oe_yield": 0.07202394374381342,
-   "implied_g_r0": -0.06338868789352797,
-   "implied_g_r2": -0.012899423345269334,
+   "oe_yield": 0.07126550840624217,
+   "implied_g_r0": -0.06212859844794333,
+   "implied_g_r2": -0.011529281503079358,
    "vi_low": 260.6560313974543,
-   "p_to_vi": 0.2992065811094893,
-   "discount_to_vi": 0.7007934188905107,
+   "p_to_vi": 0.30239085425118534,
+   "discount_to_vi": 0.6976091457488147,
    "grid": {
     "r=6%": {
      "g=0%": 130.0,
@@ -8467,10 +8467,10 @@
      "g=8%": 110.0
     }
    },
-   "mcap": 19739269000.0,
+   "mcap": 19949342000.0,
    "band": "sub VI_jos cu 70%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 5.655077044646385,
-   "oe_high_yield": 0.07251028394212572,
+   "oe_high_yield": 0.07174672728554156,
    "vi_high": 262.41610588673865,
    "grid_high": {
     "r=6%": {
@@ -8489,7 +8489,7 @@
      "g=8%": 120.0
     }
    },
-   "p_to_vi_high": 0.29719974593960796,
+   "p_to_vi_high": 0.3003626615586601,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -8574,7 +8574,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 3,
    "quality_pts": 9,
-   "price": 289.345,
+   "price": 291.46,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 173000000.0,
@@ -8582,12 +8582,12 @@
    "r_used": 0.06,
    "g_used": 0.07455157835649806,
    "oe_per_share": 4.173410404624278,
-   "oe_yield": 0.01442364791036402,
-   "implied_g_r0": 0.12887465321452385,
-   "implied_g_r2": 0.19476332743616676,
+   "oe_yield": 0.014318981694312352,
+   "implied_g_r0": 0.12977100612167602,
+   "implied_g_r2": 0.19572656160734125,
    "vi_low": 185.09367444149865,
-   "p_to_vi": 1.5632354853458346,
-   "discount_to_vi": -0.5632354853458346,
+   "p_to_vi": 1.5746621319148313,
+   "discount_to_vi": -0.5746621319148313,
    "grid": {
     "r=6%": {
      "g=0%": 99.0,
@@ -8605,10 +8605,10 @@
      "g=8%": 85.0
     }
    },
-   "mcap": 50056685000.00001,
-   "band": "peste VI_jos cu 56%",
+   "mcap": 50422580000.0,
+   "band": "peste VI_jos cu 57%",
    "oe_high_per_share": 4.173410404624278,
-   "oe_high_yield": 0.01442364791036402,
+   "oe_high_yield": 0.014318981694312352,
    "vi_high": 182.22454564236952,
    "grid_high": {
     "r=6%": {
@@ -8627,7 +8627,7 @@
      "g=8%": 85.0
     }
    },
-   "p_to_vi_high": 1.587848656612173,
+   "p_to_vi_high": 1.5994552159400848,
    "g_high_used": 0.07267295336826396,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -8712,7 +8712,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 3,
    "quality_pts": 9,
-   "price": 240.055,
+   "price": 245.4,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 159719000.0,
@@ -8720,9 +8720,9 @@
    "r_used": 0.06,
    "g_used": null,
    "oe_per_share": 2.8676550692153095,
-   "oe_yield": 0.011945825203454665,
-   "implied_g_r0": 0.15219905042042858,
-   "implied_g_r2": 0.21981775915316903,
+   "oe_yield": 0.011685635978872492,
+   "implied_g_r0": 0.15494187188860964,
+   "implied_g_r2": 0.22276266877872042,
    "vi_low": null,
    "p_to_vi": null,
    "discount_to_vi": null,
@@ -8743,10 +8743,10 @@
      "g=8%": 59.0
     }
    },
-   "mcap": 38341344545.0,
+   "mcap": 39195042600.0,
    "band": null,
    "oe_high_per_share": 3.572417808776664,
-   "oe_high_yield": 0.01488166382194357,
+   "oe_high_yield": 0.01455752978311599,
    "vi_high": 165.77315615303485,
    "grid_high": {
     "r=6%": {
@@ -8765,7 +8765,7 @@
      "g=8%": 73.0
     }
    },
-   "p_to_vi_high": 1.4480933196348826,
+   "p_to_vi_high": 1.4803361756197546,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -8850,7 +8850,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 1,
    "quality_pts": 9,
-   "price": 80.81,
+   "price": 80.92,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 37992000.0,
@@ -8858,12 +8858,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 2.3137502632133082,
-   "oe_yield": 0.028631979497751616,
-   "implied_g_r0": 0.04594743084074826,
-   "implied_g_r2": 0.10548550466826423,
+   "oe_yield": 0.028593058121766043,
+   "implied_g_r0": 0.04610962116177342,
+   "implied_g_r2": 0.1056604751876854,
    "vi_low": 107.36641238896142,
-   "p_to_vi": 0.7526562376625361,
-   "discount_to_vi": 0.2473437623374639,
+   "p_to_vi": 0.7536807666334912,
+   "discount_to_vi": 0.24631923336650885,
    "grid": {
     "r=6%": {
      "g=0%": 55.0,
@@ -8881,10 +8881,10 @@
      "g=8%": 47.0
     }
    },
-   "mcap": 3070133520.0,
+   "mcap": 3074312640.0,
    "band": "sub VI_jos cu 25%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 3.0118972415245313,
-   "oe_high_yield": 0.0372713431694658,
+   "oe_high_yield": 0.03722067772521665,
    "vi_high": 139.76296683705036,
    "grid_high": {
     "r=6%": {
@@ -8903,7 +8903,7 @@
      "g=8%": 62.0
     }
    },
-   "p_to_vi_high": 0.5781932212001222,
+   "p_to_vi_high": 0.5789802680301187,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -8988,7 +8988,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 9,
-   "price": 97.04,
+   "price": 98.01,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 148208000.0,
@@ -8996,9 +8996,9 @@
    "r_used": 0.06,
    "g_used": null,
    "oe_per_share": 4.383197938033034,
-   "oe_yield": 0.045168981224577846,
-   "implied_g_r0": -0.008121278603026638,
-   "implied_g_r2": 0.04705908765605227,
+   "oe_yield": 0.044721946107877095,
+   "implied_g_r0": -0.00694539186916493,
+   "implied_g_r2": 0.048331982768088255,
    "vi_low": null,
    "p_to_vi": null,
    "discount_to_vi": null,
@@ -9019,10 +9019,10 @@
      "g=8%": 90.0
     }
    },
-   "mcap": 14382104320.0,
+   "mcap": 14525866080.0,
    "band": null,
    "oe_high_per_share": 4.383197938033034,
-   "oe_high_yield": 0.045168981224577846,
+   "oe_high_yield": 0.044721946107877095,
    "vi_high": null,
    "grid_high": {
     "r=6%": {
@@ -9125,7 +9125,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 0,
    "quality_pts": 9,
-   "price": 61.08,
+   "price": 61.45,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 104805000.0,
@@ -9133,12 +9133,12 @@
    "r_used": 0.06,
    "g_used": 0.05482897177142543,
    "oe_per_share": 2.9645436763513193,
-   "oe_yield": 0.048535423646878184,
-   "implied_g_r0": -0.016618734964601478,
-   "implied_g_r2": 0.037857365456995695,
+   "oe_yield": 0.0482431843181663,
+   "implied_g_r0": -0.015904828028583562,
+   "implied_g_r2": 0.0386306627736871,
    "vi_low": 111.53680384086348,
-   "p_to_vi": 0.5476219319243417,
-   "discount_to_vi": 0.4523780680756583,
+   "p_to_vi": 0.5509392226056123,
+   "discount_to_vi": 0.44906077739438766,
    "grid": {
     "r=6%": {
      "g=0%": 70.0,
@@ -9156,10 +9156,10 @@
      "g=8%": 61.0
     }
    },
-   "mcap": 6401489400.0,
+   "mcap": 6440267250.0,
    "band": "sub VI_jos cu 45%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 2.965221124946329,
-   "oe_high_yield": 0.048546514815755226,
+   "oe_high_yield": 0.04825420870539184,
    "vi_high": 102.13164616540618,
    "grid_high": {
     "r=6%": {
@@ -9178,7 +9178,7 @@
      "g=8%": 61.0
     }
    },
-   "p_to_vi_high": 0.5980516548326124,
+   "p_to_vi_high": 0.6016744300829082,
    "g_high_used": 0.0442881186450661,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -9263,7 +9263,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 9,
-   "price": 179.75,
+   "price": 179.0,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 54770000.0,
@@ -9271,12 +9271,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 6.305367902136206,
-   "oe_yield": 0.0350785418755839,
-   "implied_g_r0": 0.021804768124520257,
-   "implied_g_r2": 0.079421909417832,
+   "oe_yield": 0.035225519006347523,
+   "implied_g_r0": 0.021308909946310073,
+   "implied_g_r2": 0.07888619638484606,
    "vi_low": 292.5919625848851,
-   "p_to_vi": 0.6143367658223078,
-   "discount_to_vi": 0.3856632341776922,
+   "p_to_vi": 0.6117734691638003,
+   "discount_to_vi": 0.38822653083619973,
    "grid": {
     "r=6%": {
      "g=0%": 150.0,
@@ -9294,10 +9294,10 @@
      "g=8%": 130.0
     }
    },
-   "mcap": 9844907500.0,
+   "mcap": 9803830000.0,
    "band": "sub VI_jos cu 39%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 6.600821617673909,
-   "oe_high_yield": 0.036722234312511315,
+   "oe_high_yield": 0.03687609842275927,
    "vi_high": 306.3020876440249,
    "grid_high": {
     "r=6%": {
@@ -9316,7 +9316,7 @@
      "g=8%": 130.0
     }
    },
-   "p_to_vi_high": 0.5868389647050009,
+   "p_to_vi_high": 0.5843904015699313,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -9401,7 +9401,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 9,
-   "price": 15.88,
+   "price": 16.3,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 5165000.0,
@@ -9409,12 +9409,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 0.3932236205227493,
-   "oe_yield": 0.024762192728132824,
-   "implied_g_r0": 0.06330294198397668,
-   "implied_g_r2": 0.12419975143591577,
+   "oe_yield": 0.024124148498328175,
+   "implied_g_r0": 0.06643283581571369,
+   "implied_g_r2": 0.12757284115694356,
    "vi_low": 18.24700360854534,
-   "p_to_vi": 0.8702798739275287,
-   "discount_to_vi": 0.1297201260724713,
+   "p_to_vi": 0.8932973517014305,
+   "discount_to_vi": 0.10670264829856946,
    "grid": {
     "r=6%": {
      "g=0%": 9.3,
@@ -9432,10 +9432,10 @@
      "g=8%": 8.0
     }
    },
-   "mcap": 82020200.0,
-   "band": "sub VI_jos cu 13%: sub marja minimă propusă (30%)",
+   "mcap": 84189500.0,
+   "band": "sub VI_jos cu 11%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 0.3932236205227493,
-   "oe_high_yield": 0.024762192728132824,
+   "oe_high_yield": 0.024124148498328175,
    "vi_high": 18.24700360854534,
    "grid_high": {
     "r=6%": {
@@ -9454,7 +9454,7 @@
      "g=8%": 8.0
     }
    },
-   "p_to_vi_high": 0.8702798739275287,
+   "p_to_vi_high": 0.8932973517014305,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -9539,7 +9539,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 2,
    "quality_pts": 9,
-   "price": 1330.355,
+   "price": 1357.6,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 48309000.0,
@@ -9547,12 +9547,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 10.391086547020224,
-   "oe_yield": 0.007810762200330156,
-   "implied_g_r0": 0.20583733816972616,
-   "implied_g_r2": 0.2773621817827788,
+   "oe_yield": 0.007654011893798045,
+   "implied_g_r0": 0.20843663378627075,
+   "implied_g_r2": 0.28014850704575534,
    "vi_low": 482.18414109539907,
-   "p_to_vi": 2.7590185711578434,
-   "discount_to_vi": -1.7590185711578434,
+   "p_to_vi": 2.815521881154946,
+   "discount_to_vi": -1.8155218811549458,
    "grid": {
     "r=6%": {
      "g=0%": 250.0,
@@ -9570,10 +9570,10 @@
      "g=8%": 210.0
     }
    },
-   "mcap": 64268119695.0,
-   "band": "peste VI_jos cu 176%",
+   "mcap": 65584298399.99999,
+   "band": "peste VI_jos cu 182%",
    "oe_high_per_share": 12.91676499203047,
-   "oe_high_yield": 0.009709261807585547,
+   "oe_high_yield": 0.009514411455532168,
    "vi_high": 599.3847905346688,
    "grid_high": {
     "r=6%": {
@@ -9592,7 +9592,7 @@
      "g=8%": 260.0
     }
    },
-   "p_to_vi_high": 2.219534130676363,
+   "p_to_vi_high": 2.2649890711924487,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -9677,7 +9677,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 9,
-   "price": 13.2,
+   "price": 13.4,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 27906603.0,
@@ -9685,12 +9685,12 @@
    "r_used": 0.06,
    "g_used": 0.0,
    "oe_per_share": 0.36751158856561655,
-   "oe_yield": 0.02784178701254671,
-   "implied_g_r0": 0.049285707628566544,
-   "implied_g_r2": 0.10908650852798119,
+   "oe_yield": 0.02742623795265795,
+   "implied_g_r0": 0.05108072990411616,
+   "implied_g_r2": 0.11102252484605712,
    "vi_low": 8.714830578492025,
-   "p_to_vi": 1.5146593936751054,
-   "discount_to_vi": -0.5146593936751054,
+   "p_to_vi": 1.5376087784277588,
+   "discount_to_vi": -0.5376087784277588,
    "grid": {
     "r=6%": {
      "g=0%": 8.7,
@@ -9708,10 +9708,10 @@
      "g=8%": 7.5
     }
    },
-   "mcap": 368367159.59999996,
-   "band": "peste VI_jos cu 51%",
+   "mcap": 373948480.2,
+   "band": "peste VI_jos cu 54%",
    "oe_high_per_share": 0.49948752271998137,
-   "oe_high_yield": 0.03783996384242283,
+   "oe_high_yield": 0.03727518826268517,
    "vi_high": 11.84438606021844,
    "grid_high": {
     "r=6%": {
@@ -9730,7 +9730,7 @@
      "g=8%": 10.0
     }
    },
-   "p_to_vi_high": 1.1144520224931405,
+   "p_to_vi_high": 1.131337659197582,
    "g_high_used": 0.0,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -9815,7 +9815,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 4,
    "quality_pts": 9,
-   "price": 8.375,
+   "price": 8.44,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 28984336.0,
@@ -9823,12 +9823,12 @@
    "r_used": 0.06,
    "g_used": 0.0,
    "oe_per_share": 0.08566696163058557,
-   "oe_yield": 0.010228890940965442,
-   "implied_g_r0": 0.17160882383496923,
-   "implied_g_r2": 0.24065189652368646,
+   "oe_yield": 0.010150113937273173,
+   "implied_g_r0": 0.17258112601116682,
+   "implied_g_r2": 0.2416952087008094,
    "vi_low": 2.03142725294344,
-   "p_to_vi": 4.122717162460546,
-   "discount_to_vi": -3.122717162460546,
+   "p_to_vi": 4.154714370288597,
+   "discount_to_vi": -3.1547143702885974,
    "grid": {
     "r=6%": {
      "g=0%": 2.0,
@@ -9846,10 +9846,10 @@
      "g=8%": 1.8
     }
    },
-   "mcap": 242743814.0,
-   "band": "peste VI_jos cu 312%",
+   "mcap": 244627795.83999997,
+   "band": "peste VI_jos cu 315%",
    "oe_high_per_share": 0.17906223554681397,
-   "oe_high_yield": 0.02138056543842555,
+   "oe_high_yield": 0.021215904685641468,
    "vi_high": 4.246116569785119,
    "grid_high": {
     "r=6%": {
@@ -9868,7 +9868,7 @@
      "g=8%": 3.7
     }
    },
-   "p_to_vi_high": 1.9723905037359417,
+   "p_to_vi_high": 1.9876986091380713,
    "g_high_used": 0.0,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -9953,7 +9953,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 4,
    "quality_pts": 9,
-   "price": 216.64,
+   "price": 221.69,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 38600000.0,
@@ -9961,12 +9961,12 @@
    "r_used": 0.06,
    "g_used": 0.0,
    "oe_per_share": 2.66839378238342,
-   "oe_yield": 0.012317179571563053,
-   "implied_g_r0": 0.1483924539170257,
-   "implied_g_r2": 0.21573023892967835,
+   "oe_yield": 0.01203659967695169,
+   "implied_g_r0": 0.15125705977033965,
+   "implied_g_r2": 0.21880630019467306,
    "vi_low": 63.27582708598338,
-   "p_to_vi": 3.4237403124832366,
-   "discount_to_vi": -2.4237403124832366,
+   "p_to_vi": 3.503549620912153,
+   "discount_to_vi": -2.503549620912153,
    "grid": {
     "r=6%": {
      "g=0%": 63.0,
@@ -9984,10 +9984,10 @@
      "g=8%": 55.0
     }
    },
-   "mcap": 8362303999.999999,
-   "band": "peste VI_jos cu 242%",
+   "mcap": 8557234000.0,
+   "band": "peste VI_jos cu 250%",
    "oe_high_per_share": 4.419689119170984,
-   "oe_high_yield": 0.020401076067074336,
+   "oe_high_yield": 0.019936348591145223,
    "vi_high": 134.141341534317,
    "grid_high": {
     "r=6%": {
@@ -10006,7 +10006,7 @@
      "g=8%": 90.0
     }
    },
-   "p_to_vi_high": 1.6150129223553171,
+   "p_to_vi_high": 1.6526597800819345,
    "g_high_used": 0.0292410363485891,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -10091,7 +10091,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 9,
-   "price": 34.55,
+   "price": 34.59,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 100410297.0,
@@ -10099,12 +10099,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 1.7713920316359586,
-   "oe_yield": 0.05127039165371805,
-   "implied_g_r0": -0.023099397439368008,
-   "implied_g_r2": 0.030835668475000966,
+   "oe_yield": 0.05121110238901296,
+   "implied_g_r0": -0.022962595486776094,
+   "implied_g_r2": 0.030983927062242178,
    "vi_low": 82.19902138747494,
-   "p_to_vi": 0.42032130573837395,
-   "discount_to_vi": 0.5796786942616261,
+   "p_to_vi": 0.420807929536624,
+   "discount_to_vi": 0.579192070463376,
    "grid": {
     "r=6%": {
      "g=0%": 42.0,
@@ -10122,10 +10122,10 @@
      "g=8%": 36.0
     }
    },
-   "mcap": 3469175761.35,
+   "mcap": 3473192173.2300005,
    "band": "sub VI_jos cu 58%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 1.7713920316359586,
-   "oe_high_yield": 0.05127039165371805,
+   "oe_high_yield": 0.05121110238901296,
    "vi_high": 82.19902138747494,
    "grid_high": {
     "r=6%": {
@@ -10144,7 +10144,7 @@
      "g=8%": 36.0
     }
    },
-   "p_to_vi_high": 0.42032130573837395,
+   "p_to_vi_high": 0.420807929536624,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -10229,7 +10229,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 9,
-   "price": 84.045,
+   "price": 82.9,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 18516000.0,
@@ -10237,12 +10237,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 6.939295744221214,
-   "oe_yield": 0.08256643160475,
-   "implied_g_r0": -0.07969848359967086,
-   "implied_g_r2": -0.03064792319026971,
+   "oe_yield": 0.08370682441762622,
+   "implied_g_r0": -0.08134207618456085,
+   "implied_g_r2": -0.03243799942870401,
    "vi_low": 322.0085159615745,
-   "p_to_vi": 0.26100241401699187,
-   "discount_to_vi": 0.7389975859830081,
+   "p_to_vi": 0.257446607436595,
+   "discount_to_vi": 0.742553392563405,
    "grid": {
     "r=6%": {
      "g=0%": 160.0,
@@ -10260,10 +10260,10 @@
      "g=8%": 140.0
     }
    },
-   "mcap": 1556177220.0,
+   "mcap": 1534976400.0,
    "band": "sub VI_jos cu 74%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 7.304331389068913,
-   "oe_high_yield": 0.08690976725645681,
+   "oe_high_yield": 0.08811014944594588,
    "vi_high": 338.9474951610662,
    "grid_high": {
     "r=6%": {
@@ -10282,7 +10282,7 @@
      "g=8%": 150.0
     }
    },
-   "p_to_vi_high": 0.247958758214343,
+   "p_to_vi_high": 0.24458065388742978,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -10367,7 +10367,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 3,
    "quality_pts": 9,
-   "price": 28.225,
+   "price": 28.42,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 953000000.0,
@@ -10375,12 +10375,12 @@
    "r_used": 0.06,
    "g_used": 0.006904337666538085,
    "oe_per_share": 2.6736621196222456,
-   "oe_yield": 0.09472673585906981,
-   "implied_g_r0": -0.09622002143683855,
-   "implied_g_r2": -0.04865487587987255,
+   "oe_yield": 0.09407678112675037,
+   "implied_g_r0": -0.0953886941907866,
+   "implied_g_r2": -0.04774810904827981,
    "vi_low": 67.21081154588646,
-   "p_to_vi": 0.41994731726651013,
-   "discount_to_vi": 0.5800526827334899,
+   "p_to_vi": 0.4228486361989094,
+   "discount_to_vi": 0.5771513638010906,
    "grid": {
     "r=6%": {
      "g=0%": 63.0,
@@ -10398,10 +10398,10 @@
      "g=8%": 55.0
     }
    },
-   "mcap": 26898425000.0,
+   "mcap": 27084260000.0,
    "band": "sub VI_jos cu 58%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 3.0661070304302203,
-   "oe_high_yield": 0.10863089567511852,
+   "oe_high_yield": 0.10788553942400493,
    "vi_high": 83.89318717396029,
    "grid_high": {
     "r=6%": {
@@ -10420,7 +10420,7 @@
      "g=8%": 63.0
     }
    },
-   "p_to_vi_high": 0.3364397151996723,
+   "p_to_vi_high": 0.3387640994145151,
    "g_high_used": 0.016940677987302255,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -10505,7 +10505,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 9,
-   "price": 248.015,
+   "price": 249.88,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 106900000.0,
@@ -10513,12 +10513,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 10.243217960710945,
-   "oe_yield": 0.041300800196403226,
-   "implied_g_r0": 0.0024658721436466857,
-   "implied_g_r2": 0.058515836749742145,
+   "oe_yield": 0.040992548266011467,
+   "implied_g_r0": 0.0033521438519777957,
+   "implied_g_r2": 0.059474520251066365,
    "vi_low": 475.3225018470014,
-   "p_to_vi": 0.5217825771686946,
-   "discount_to_vi": 0.4782174228313054,
+   "p_to_vi": 0.525706228989833,
+   "discount_to_vi": 0.474293771010167,
    "grid": {
     "r=6%": {
      "g=0%": 240.0,
@@ -10536,10 +10536,10 @@
      "g=8%": 210.0
     }
    },
-   "mcap": 26512803500.0,
-   "band": "sub VI_jos cu 48%: între marjele propuse (30 la 50%)",
+   "mcap": 26712172000.0,
+   "band": "sub VI_jos cu 47%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 10.5799812909261,
-   "oe_high_yield": 0.04265863472340826,
+   "oe_high_yield": 0.042340248482976225,
    "vi_high": 490.94954300361513,
    "grid_high": {
     "r=6%": {
@@ -10558,7 +10558,7 @@
      "g=8%": 220.0
     }
    },
-   "p_to_vi_high": 0.5051741131739351,
+   "p_to_vi_high": 0.5089728742209257,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -10643,7 +10643,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+MarketableSecuritiesCurrent",
    "negative_trend_breaks": 2,
    "quality_pts": 8,
-   "price": 168.822,
+   "price": 173.53,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 1073000000.0,
@@ -10651,12 +10651,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 11.895619757688722,
-   "oe_yield": 0.07046249752809895,
-   "implied_g_r0": -0.060780275533200145,
-   "implied_g_r2": -0.010063371218280992,
+   "oe_yield": 0.06855079673652234,
+   "implied_g_r0": -0.057509666870846965,
+   "implied_g_r2": -0.006508262006490739,
    "vi_low": 551.9999443468625,
-   "p_to_vi": 0.30583698735649983,
-   "discount_to_vi": 0.6941630126435001,
+   "p_to_vi": 0.3143659737236463,
+   "discount_to_vi": 0.6856340262763537,
    "grid": {
     "r=6%": {
      "g=0%": 280.0,
@@ -10674,10 +10674,10 @@
      "g=8%": 240.0
     }
    },
-   "mcap": 181146006000.0,
+   "mcap": 186197690000.0,
    "band": "sub VI_jos cu 69%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 13.101584342963653,
-   "oe_high_yield": 0.07760590647524405,
+   "oe_high_yield": 0.07550039960216477,
    "vi_high": 607.9610794130518,
    "grid_high": {
     "r=6%": {
@@ -10696,7 +10696,7 @@
      "g=8%": 270.0
     }
    },
-   "p_to_vi_high": 0.27768553895421566,
+   "p_to_vi_high": 0.2854294557268901,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -10781,7 +10781,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 3,
    "quality_pts": 8,
-   "price": 256.795,
+   "price": 261.56,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 254331000.0,
@@ -10789,12 +10789,12 @@
    "r_used": 0.06,
    "g_used": 0.02217775647803344,
    "oe_per_share": 9.656707204391129,
-   "oe_yield": 0.0376047321964646,
-   "implied_g_r0": 0.013562936126911285,
-   "implied_g_r2": 0.0705154310515318,
+   "oe_yield": 0.03691966357390705,
+   "implied_g_r0": 0.015740966476435303,
+   "implied_g_r2": 0.07286956443726955,
    "vi_low": 276.1552719329999,
-   "p_to_vi": 0.9298935276611449,
-   "discount_to_vi": 0.07010647233885514,
+   "p_to_vi": 0.9471483132266946,
+   "discount_to_vi": 0.05285168677330543,
    "grid": {
     "r=6%": {
      "g=0%": 230.0,
@@ -10812,10 +10812,10 @@
      "g=8%": 200.0
     }
    },
-   "mcap": 65310929145.00001,
-   "band": "sub VI_jos cu 7%: sub marja minimă propusă (30%)",
+   "mcap": 66522816360.0,
+   "band": "sub VI_jos cu 5%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 9.656707204391129,
-   "oe_high_yield": 0.0376047321964646,
+   "oe_high_yield": 0.03691966357390705,
    "vi_high": 276.1552719329999,
    "grid_high": {
     "r=6%": {
@@ -10834,7 +10834,7 @@
      "g=8%": 200.0
     }
    },
-   "p_to_vi_high": 0.9298935276611449,
+   "p_to_vi_high": 0.9471483132266946,
    "g_high_used": 0.02217775647803344,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -10919,7 +10919,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 1,
    "quality_pts": 8,
-   "price": 416.76,
+   "price": 421.66,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 43812000.0,
@@ -10927,12 +10927,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 9.99602848534648,
-   "oe_yield": 0.023985095703393994,
-   "implied_g_r0": 0.06712636665243232,
-   "implied_g_r2": 0.12832018652739208,
+   "oe_yield": 0.023706371212224256,
+   "implied_g_r0": 0.06852919343437425,
+   "implied_g_r2": 0.12983178482202573,
    "vi_low": 463.8520127574252,
-   "p_to_vi": 0.8984762133994397,
-   "discount_to_vi": 0.10152378660056027,
+   "p_to_vi": 0.9090399273970817,
+   "discount_to_vi": 0.09096007260291827,
    "grid": {
     "r=6%": {
      "g=0%": 240.0,
@@ -10950,10 +10950,10 @@
      "g=8%": 200.0
     }
    },
-   "mcap": 18259089120.0,
-   "band": "sub VI_jos cu 10%: sub marja minimă propusă (30%)",
+   "mcap": 18473767920.0,
+   "band": "sub VI_jos cu 9%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 9.99602848534648,
-   "oe_high_yield": 0.023985095703393994,
+   "oe_high_yield": 0.023706371212224256,
    "vi_high": 463.8520127574252,
    "grid_high": {
     "r=6%": {
@@ -10972,7 +10972,7 @@
      "g=8%": 200.0
     }
    },
-   "p_to_vi_high": 0.8984762133994397,
+   "p_to_vi_high": 0.9090399273970817,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -11057,7 +11057,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 4,
    "quality_pts": 8,
-   "price": 4.505,
+   "price": 4.48,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 338597079.0,
@@ -11065,12 +11065,12 @@
    "r_used": 0.06,
    "g_used": 0.0,
    "oe_per_share": 0.13261780087594907,
-   "oe_yield": 0.02943791362396206,
-   "implied_g_r0": 0.04263914783314904,
-   "implied_g_r2": 0.10191618591568974,
+   "oe_yield": 0.029602187695524345,
+   "implied_g_r0": 0.0419762774626683,
+   "implied_g_r2": 0.10120093158376153,
    "vi_low": 3.144776116684925,
-   "p_to_vi": 1.4325344103506352,
-   "discount_to_vi": -0.4325344103506352,
+   "p_to_vi": 1.4245847188392557,
+   "discount_to_vi": -0.42458471883925575,
    "grid": {
     "r=6%": {
      "g=0%": 3.1,
@@ -11088,10 +11088,10 @@
      "g=8%": 2.7
     }
    },
-   "mcap": 1525379840.895,
-   "band": "peste VI_jos cu 43%",
+   "mcap": 1516914913.92,
+   "band": "peste VI_jos cu 42%",
    "oe_high_per_share": 0.322442238197808,
-   "oe_high_yield": 0.07157430370650567,
+   "oe_high_yield": 0.07197371388343927,
    "vi_high": 7.646097605278523,
    "grid_high": {
     "r=6%": {
@@ -11110,7 +11110,7 @@
      "g=8%": 6.6
     }
    },
-   "p_to_vi_high": 0.5891894444154036,
+   "p_to_vi_high": 0.5859198026594913,
    "g_high_used": 0.0,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -11195,7 +11195,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 2,
    "quality_pts": 8,
-   "price": 80.29,
+   "price": 80.96,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 1065247496.0,
@@ -11203,12 +11203,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 1.835558409986631,
-   "oe_yield": 0.022861606800182222,
-   "implied_g_r0": 0.0728881648264722,
-   "implied_g_r2": 0.13452805601035467,
+   "oe_yield": 0.022672411190546332,
+   "implied_g_r0": 0.07388739847489767,
+   "implied_g_r2": 0.13560446682106597,
    "vi_low": 85.17657430190947,
-   "p_to_vi": 0.9426300676922162,
-   "discount_to_vi": 0.057369932307783755,
+   "p_to_vi": 0.9504960802137479,
+   "discount_to_vi": 0.049503919786252126,
    "grid": {
     "r=6%": {
      "g=0%": 44.0,
@@ -11226,10 +11226,10 @@
      "g=8%": 37.0
     }
    },
-   "mcap": 85528721453.84001,
-   "band": "sub VI_jos cu 6%: sub marja minimă propusă (30%)",
+   "mcap": 86242437276.15999,
+   "band": "sub VI_jos cu 5%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 1.9425973848991802,
-   "oe_high_yield": 0.024194761301521733,
+   "oe_high_yield": 0.023994532916244815,
    "vi_high": 90.14357134773238,
    "grid_high": {
     "r=6%": {
@@ -11248,7 +11248,7 @@
      "g=8%": 40.0
     }
    },
-   "p_to_vi_high": 0.8906902488950451,
+   "p_to_vi_high": 0.8981228365991137,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -11333,7 +11333,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 8,
-   "price": 488.654,
+   "price": 501.62,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 229000000.0,
@@ -11341,12 +11341,12 @@
    "r_used": 0.06,
    "g_used": 0.051739970961756976,
    "oe_per_share": 12.624454148471616,
-   "oe_yield": 0.025835159741804253,
-   "implied_g_r0": 0.05822371162399864,
-   "implied_g_r2": 0.11872468741854625,
+   "oe_yield": 0.02516736603100278,
+   "implied_g_r0": 0.06135856670083528,
+   "implied_g_r2": 0.12210402021675038,
    "vi_low": 462.8540570378162,
-   "p_to_vi": 1.055740989130135,
-   "discount_to_vi": -0.05574098913013503,
+   "p_to_vi": 1.0837541388537868,
+   "discount_to_vi": -0.0837541388537868,
    "grid": {
     "r=6%": {
      "g=0%": 300.0,
@@ -11364,10 +11364,10 @@
      "g=8%": 260.0
     }
    },
-   "mcap": 111901766000.0,
-   "band": "peste VI_jos cu 6%",
+   "mcap": 114870980000.0,
+   "band": "peste VI_jos cu 8%",
    "oe_high_per_share": 13.93886462882096,
-   "oe_high_yield": 0.028525018988529636,
+   "oe_high_yield": 0.027787697118976436,
    "vi_high": 546.2727821551856,
    "grid_high": {
     "r=6%": {
@@ -11386,7 +11386,7 @@
      "g=8%": 280.0
     }
    },
-   "p_to_vi_high": 0.894523790975152,
+   "p_to_vi_high": 0.9182591854951678,
    "g_high_used": 0.059709895529016954,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -11471,7 +11471,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 8,
-   "price": 137.95,
+   "price": 137.24,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 130000000.0,
@@ -11479,12 +11479,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 12.407692307692308,
-   "oe_yield": 0.08994340201299246,
-   "implied_g_r0": -0.0899729052669363,
-   "implied_g_r2": -0.04184268466329938,
+   "oe_yield": 0.0904087169024505,
+   "implied_g_r0": -0.09059408633948657,
+   "implied_g_r2": -0.042519866184773936,
    "vi_low": 575.761969769778,
-   "p_to_vi": 0.239595539898476,
-   "discount_to_vi": 0.760404460101524,
+   "p_to_vi": 0.23836239141476515,
+   "discount_to_vi": 0.7616376085852349,
    "grid": {
     "r=6%": {
      "g=0%": 290.0,
@@ -11502,10 +11502,10 @@
      "g=8%": 250.0
     }
    },
-   "mcap": 17933500000.0,
+   "mcap": 17841200000.0,
    "band": "sub VI_jos cu 76%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 12.407692307692308,
-   "oe_high_yield": 0.08994340201299246,
+   "oe_high_yield": 0.0904087169024505,
    "vi_high": 575.761969769778,
    "grid_high": {
     "r=6%": {
@@ -11524,7 +11524,7 @@
      "g=8%": 250.0
     }
    },
-   "p_to_vi_high": 0.239595539898476,
+   "p_to_vi_high": 0.23836239141476515,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -11609,7 +11609,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 8,
-   "price": 152.16,
+   "price": 152.53,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 46500000.0,
@@ -11617,12 +11617,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 7.655913978494624,
-   "oe_yield": 0.050314892077383176,
-   "implied_g_r0": -0.020875294196595118,
-   "implied_g_r2": 0.03324583909994672,
+   "oe_yield": 0.0501928406116477,
+   "implied_g_r0": -0.020588172828728657,
+   "implied_g_r2": 0.033556951077368447,
    "vi_low": 355.26220374704616,
-   "p_to_vi": 0.42830337253760037,
-   "discount_to_vi": 0.5716966274623996,
+   "p_to_vi": 0.4293448568162473,
+   "discount_to_vi": 0.5706551431837528,
    "grid": {
     "r=6%": {
      "g=0%": 180.0,
@@ -11640,10 +11640,10 @@
      "g=8%": 160.0
     }
    },
-   "mcap": 7075440000.0,
+   "mcap": 7092645000.0,
    "band": "sub VI_jos cu 57%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 7.698924731182796,
-   "oe_high_yield": 0.050597560010402186,
+   "oe_high_yield": 0.050474822862274935,
    "vi_high": 357.25805882427676,
    "grid_high": {
     "r=6%": {
@@ -11662,7 +11662,7 @@
      "g=8%": 160.0
     }
    },
-   "p_to_vi_high": 0.4259106162664406,
+   "p_to_vi_high": 0.4269462821971621,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -11747,7 +11747,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 8,
-   "price": 168.59,
+   "price": 168.75,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 32347000.0,
@@ -11755,12 +11755,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 7.393174019228986,
-   "oe_yield": 0.04385298071788947,
-   "implied_g_r0": -0.004625467459333399,
-   "implied_g_r2": 0.05084298216311545,
+   "oe_yield": 0.043811401595431024,
+   "implied_g_r0": -0.00451330540728373,
+   "implied_g_r2": 0.0509643716573146,
    "vi_low": 343.0701157477145,
-   "p_to_vi": 0.49141558025991694,
-   "discount_to_vi": 0.5085844197400831,
+   "p_to_vi": 0.49188195722676903,
+   "discount_to_vi": 0.508118042773231,
    "grid": {
     "r=6%": {
      "g=0%": 180.0,
@@ -11778,10 +11778,10 @@
      "g=8%": 150.0
     }
    },
-   "mcap": 5453380730.0,
+   "mcap": 5458556250.0,
    "band": "sub VI_jos cu 51%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 7.393174019228986,
-   "oe_high_yield": 0.04385298071788947,
+   "oe_high_yield": 0.043811401595431024,
    "vi_high": 343.0701157477145,
    "grid_high": {
     "r=6%": {
@@ -11800,7 +11800,7 @@
      "g=8%": 150.0
     }
    },
-   "p_to_vi_high": 0.49141558025991694,
+   "p_to_vi_high": 0.49188195722676903,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -11885,7 +11885,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 8,
-   "price": 188.484,
+   "price": 188.94,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 75605000.0,
@@ -11900,7 +11900,7 @@
    "p_to_vi": null,
    "discount_to_vi": null,
    "grid": null,
-   "mcap": 14250332820.0,
+   "mcap": 14284808700.0,
    "band": null,
    "oe_high_per_share": null,
    "oe_high_yield": null,
@@ -11990,7 +11990,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 0,
    "quality_pts": 8,
-   "price": 74.84,
+   "price": 76.09,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 378000000.0,
@@ -11998,12 +11998,12 @@
    "r_used": 0.06,
    "g_used": 0.009578974143891195,
    "oe_per_share": 0.6534391534391535,
-   "oe_yield": 0.008731148495980137,
-   "implied_g_r0": 0.19162217128193915,
-   "implied_g_r2": 0.2621207060571368,
+   "oe_yield": 0.008587713936642836,
+   "implied_g_r0": 0.19372883258825635,
+   "implied_g_r2": 0.2643798433460677,
    "vi_low": 16.80162074506992,
-   "p_to_vi": 4.454332182325936,
-   "discount_to_vi": -3.4543321823259356,
+   "p_to_vi": 4.528729766878413,
+   "discount_to_vi": -3.5287297668784134,
    "grid": {
     "r=6%": {
      "g=0%": 15.0,
@@ -12021,10 +12021,10 @@
      "g=8%": 13.0
     }
    },
-   "mcap": 28289520000.0,
-   "band": "peste VI_jos cu 345%",
+   "mcap": 28762020000.0,
+   "band": "peste VI_jos cu 353%",
    "oe_high_per_share": 1.119047619047619,
-   "oe_high_yield": 0.014952533659107684,
+   "oe_high_yield": 0.014706894717408582,
    "vi_high": 34.65914047130162,
    "grid_high": {
     "r=6%": {
@@ -12043,7 +12043,7 @@
      "g=8%": 23.0
     }
    },
-   "p_to_vi_high": 2.159314944984537,
+   "p_to_vi_high": 2.1953804671816335,
    "g_high_used": 0.03164764463772429,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -12128,7 +12128,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 7,
-   "price": 1.189,
+   "price": 1.19,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 35434939.0,
@@ -12143,10 +12143,10 @@
    "p_to_vi": null,
    "discount_to_vi": null,
    "grid": null,
-   "mcap": 42132142.471,
+   "mcap": 42167577.41,
    "band": "OE_jos negativ (capex peste profit plus D&A): valoarea nu se calculează",
    "oe_high_per_share": 0.10890381383187932,
-   "oe_high_yield": 0.09159277866432239,
+   "oe_high_yield": 0.09151580994275574,
    "vi_high": 5.053532342062569,
    "grid_high": {
     "r=6%": {
@@ -12165,7 +12165,7 @@
      "g=8%": 2.2
     }
    },
-   "p_to_vi_high": 0.23528097170833912,
+   "p_to_vi_high": 0.23547885309749667,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -12250,7 +12250,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 3,
    "quality_pts": 7,
-   "price": 318.455,
+   "price": 321.38,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 51212395.0,
@@ -12258,12 +12258,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 10.114738824458415,
-   "oe_yield": 0.031761909294746246,
-   "implied_g_r0": 0.03359722777049334,
-   "implied_g_r2": 0.09215734130553155,
+   "oe_yield": 0.031472832237408724,
+   "implied_g_r0": 0.03468421977864844,
+   "implied_g_r2": 0.0933307943393119,
    "vi_low": 469.3606034755197,
-   "p_to_vi": 0.6784868556114543,
-   "discount_to_vi": 0.3215131443885457,
+   "p_to_vi": 0.6847187378323756,
+   "discount_to_vi": 0.3152812621676244,
    "grid": {
     "r=6%": {
      "g=0%": 240.0,
@@ -12281,10 +12281,10 @@
      "g=8%": 210.0
     }
    },
-   "mcap": 16308843249.724998,
+   "mcap": 16458639505.1,
    "band": "sub VI_jos cu 32%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 10.407636666865512,
-   "oe_high_yield": 0.03268165570289527,
+   "oe_high_yield": 0.03238420768829894,
    "vi_high": 482.9521267421854,
    "grid_high": {
     "r=6%": {
@@ -12303,7 +12303,7 @@
      "g=8%": 210.0
     }
    },
-   "p_to_vi_high": 0.6593924788118823,
+   "p_to_vi_high": 0.6654489797320273,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -12388,7 +12388,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+AvailableForSaleSecuritiesDebtSecuritiesCurrent",
    "negative_trend_breaks": 2,
    "quality_pts": 7,
-   "price": 40.59,
+   "price": 41.46,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": null,
@@ -12493,7 +12493,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 0,
    "quality_pts": 7,
-   "price": 20.88,
+   "price": 21.53,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 17829033.0,
@@ -12501,12 +12501,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 0.7206938817152899,
-   "oe_yield": 0.03451599050360584,
-   "implied_g_r0": 0.023722446088218274,
-   "implied_g_r2": 0.0814935643608069,
+   "oe_yield": 0.03347393784093311,
+   "implied_g_r0": 0.02736058426791177,
+   "implied_g_r2": 0.08542314034151388,
    "vi_low": 33.44281262359885,
-   "p_to_vi": 0.624349400123902,
-   "discount_to_vi": 0.37565059987609795,
+   "p_to_vi": 0.6437855643997898,
+   "discount_to_vi": 0.35621443560021016,
    "grid": {
     "r=6%": {
      "g=0%": 17.0,
@@ -12524,10 +12524,10 @@
      "g=8%": 15.0
     }
    },
-   "mcap": 372270209.03999996,
-   "band": "sub VI_jos cu 38%: între marjele propuse (30 la 50%)",
+   "mcap": 383859080.49,
+   "band": "sub VI_jos cu 36%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 1.0008020625683962,
-   "oe_high_yield": 0.047931133264769936,
+   "oe_high_yield": 0.046484071647394154,
    "vi_high": 46.44084916070969,
    "grid_high": {
     "r=6%": {
@@ -12546,7 +12546,7 @@
      "g=8%": 20.0
     }
    },
-   "p_to_vi_high": 0.4496041820369014,
+   "p_to_vi_high": 0.4636004808072073,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -12631,7 +12631,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 3,
    "quality_pts": 7,
-   "price": 43.06,
+   "price": 43.94,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 56324000.0,
@@ -12646,7 +12646,7 @@
    "p_to_vi": null,
    "discount_to_vi": null,
    "grid": null,
-   "mcap": 2425311440.0,
+   "mcap": 2474876560.0,
    "band": "OE_jos negativ (capex peste profit plus D&A): valoarea nu se calculează",
    "oe_high_per_share": null,
    "oe_high_yield": null,
@@ -12736,7 +12736,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 0,
    "quality_pts": 7,
-   "price": 163.67,
+   "price": 166.47,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 17991000.0,
@@ -12744,12 +12744,12 @@
    "r_used": 0.06,
    "g_used": 0.06761786709604256,
    "oe_per_share": 7.060863765215942,
-   "oe_yield": 0.043140855167201946,
-   "implied_g_r0": -0.0026895201240189626,
-   "implied_g_r2": 0.052938062400694874,
+   "oe_yield": 0.0424152325657232,
+   "implied_g_r0": -0.0006834829258375863,
+   "implied_g_r2": 0.0551086926313652,
    "vi_low": 295.59373654689585,
-   "p_to_vi": 0.5536991477288417,
-   "discount_to_vi": 0.44630085227115834,
+   "p_to_vi": 0.5631716082508723,
+   "discount_to_vi": 0.4368283917491277,
    "grid": {
     "r=6%": {
      "g=0%": 170.0,
@@ -12767,10 +12767,10 @@
      "g=8%": 140.0
     }
    },
-   "mcap": 2944586970.0,
-   "band": "sub VI_jos cu 45%: între marjele propuse (30 la 50%)",
+   "mcap": 2994961770.0,
+   "band": "sub VI_jos cu 44%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 7.060863765215942,
-   "oe_high_yield": 0.043140855167201946,
+   "oe_high_yield": 0.0424152325657232,
    "vi_high": 289.76426462540394,
    "grid_high": {
     "r=6%": {
@@ -12789,7 +12789,7 @@
      "g=8%": 140.0
     }
    },
-   "p_to_vi_high": 0.5648384565694677,
+   "p_to_vi_high": 0.5745014838707112,
    "g_high_used": 0.06522849073862624,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -12874,7 +12874,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+AvailableForSaleSecuritiesDebtSecuritiesCurrent",
    "negative_trend_breaks": 1,
    "quality_pts": 7,
-   "price": 704.76,
+   "price": 725.11,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 1143000000.0,
@@ -12882,12 +12882,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 55.7830271216098,
-   "oe_yield": 0.07915180646122055,
-   "implied_g_r0": -0.07464505396926252,
-   "implied_g_r2": -0.025145854143936164,
+   "oe_yield": 0.07693043417082897,
+   "implied_g_r0": -0.07124485717131407,
+   "implied_g_r2": -0.021445254410739023,
    "vi_low": 2588.5349812669997,
-   "p_to_vi": 0.27226211161923103,
-   "discount_to_vi": 0.727737888380769,
+   "p_to_vi": 0.28012370133977615,
+   "discount_to_vi": 0.7198762986602238,
    "grid": {
     "r=6%": {
      "g=0%": 1300.0,
@@ -12905,10 +12905,10 @@
      "g=8%": 1100.0
     }
    },
-   "mcap": 805540680000.0,
-   "band": "sub VI_jos cu 73%: peste marja maximă propusă (50%)",
+   "mcap": 828800730000.0,
+   "band": "sub VI_jos cu 72%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 74.41119860017498,
-   "oe_high_yield": 0.10558374283468838,
+   "oe_high_yield": 0.10262056598333354,
    "vi_high": 3452.949768298634,
    "grid_high": {
     "r=6%": {
@@ -12927,7 +12927,7 @@
      "g=8%": 1500.0
     }
    },
-   "p_to_vi_high": 0.2041037510798355,
+   "p_to_vi_high": 0.20999726282067585,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -13012,7 +13012,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 3,
    "quality_pts": 7,
-   "price": 146.78,
+   "price": 147.6,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 113597000.0,
@@ -13020,12 +13020,12 @@
    "r_used": 0.06,
    "g_used": 0.0,
    "oe_per_share": 0.6968229794800919,
-   "oe_yield": 0.00474739732579433,
-   "implied_g_r0": 0.2708430886984833,
-   "implied_g_r2": 0.34699302631357554,
+   "oe_yield": 0.004721022896206585,
+   "implied_g_r0": 0.27158481453411654,
+   "implied_g_r2": 0.3477869530433314,
    "vi_low": 16.523816930700104,
-   "p_to_vi": 8.8829354994422,
-   "discount_to_vi": -7.882935499442199,
+   "p_to_vi": 8.93256083742791,
+   "discount_to_vi": -7.932560837427911,
    "grid": {
     "r=6%": {
      "g=0%": 17.0,
@@ -13043,10 +13043,10 @@
      "g=8%": 14.0
     }
    },
-   "mcap": 16673767660.0,
-   "band": "peste VI_jos cu 788%",
+   "mcap": 16766917200.0,
+   "band": "peste VI_jos cu 793%",
    "oe_high_per_share": 4.487759359842249,
-   "oe_high_yield": 0.03057473334134248,
+   "oe_high_yield": 0.030404873711668355,
    "vi_high": 208.24832731172913,
    "grid_high": {
     "r=6%": {
@@ -13065,7 +13065,7 @@
      "g=8%": 92.0
     }
    },
-   "p_to_vi_high": 0.704831591661639,
+   "p_to_vi_high": 0.7087691983189666,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -13150,7 +13150,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+MarketableSecuritiesCurrent",
    "negative_trend_breaks": 1,
    "quality_pts": 7,
-   "price": 268.665,
+   "price": 270.87,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 10827000000.0,
@@ -13158,12 +13158,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 1.0720421169298975,
-   "oe_yield": 0.003990255957902583,
-   "implied_g_r0": 0.29413335571898347,
-   "implied_g_r2": 0.37191701177996006,
+   "oe_yield": 0.003957773533170515,
+   "implied_g_r0": 0.2952372340192383,
+   "implied_g_r2": 0.3730980554223501,
    "vi_low": 49.74664632335006,
-   "p_to_vi": 5.400665569568137,
-   "discount_to_vi": -4.400665569568137,
+   "p_to_vi": 5.444990165555324,
+   "discount_to_vi": -4.444990165555324,
    "grid": {
     "r=6%": {
      "g=0%": 25.0,
@@ -13181,10 +13181,10 @@
      "g=8%": 22.0
     }
    },
-   "mcap": 2908835955000.0,
-   "band": "peste VI_jos cu 440%",
+   "mcap": 2932709490000.0,
+   "band": "peste VI_jos cu 444%",
    "oe_high_per_share": 9.380807241156369,
-   "oe_high_yield": 0.034916372587260595,
+   "oe_high_yield": 0.03463213807788374,
    "vi_high": 435.303513438216,
    "grid_high": {
     "r=6%": {
@@ -13203,7 +13203,7 @@
      "g=8%": 190.0
     }
    },
-   "p_to_vi_high": 0.6171900563769112,
+   "p_to_vi_high": 0.6222554875804959,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -13288,7 +13288,7 @@
    "cash_tag": "CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalents (include numerar restricționat)",
    "negative_trend_breaks": 2,
    "quality_pts": 6,
-   "price": 113.77,
+   "price": 113.13,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 140621000.0,
@@ -13296,12 +13296,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 6.881617966022144,
-   "oe_yield": 0.06048710526520299,
-   "implied_g_r0": -0.04266133144395495,
-   "implied_g_r2": 0.00961900642865865,
+   "oe_yield": 0.060829293432530226,
+   "implied_g_r0": -0.04332971543365177,
+   "implied_g_r2": 0.008893489220024864,
    "vi_low": 319.3320576513332,
-   "p_to_vi": 0.3562749096873363,
-   "discount_to_vi": 0.6437250903126637,
+   "p_to_vi": 0.35427072631562234,
+   "discount_to_vi": 0.6457292736843776,
    "grid": {
     "r=6%": {
      "g=0%": 160.0,
@@ -13319,10 +13319,10 @@
      "g=8%": 140.0
     }
    },
-   "mcap": 15998451170.0,
-   "band": "sub VI_jos cu 64%: peste marja maximă propusă (50%)",
+   "mcap": 15908453730.0,
+   "band": "sub VI_jos cu 65%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 6.881617966022144,
-   "oe_high_yield": 0.06048710526520299,
+   "oe_high_yield": 0.060829293432530226,
    "vi_high": 319.3320576513332,
    "grid_high": {
     "r=6%": {
@@ -13341,7 +13341,7 @@
      "g=8%": 140.0
     }
    },
-   "p_to_vi_high": 0.3562749096873363,
+   "p_to_vi_high": 0.35427072631562234,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -13426,7 +13426,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 6,
-   "price": 185.96,
+   "price": 188.23,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 124100000.0,
@@ -13434,12 +13434,12 @@
    "r_used": 0.06,
    "g_used": 0.049977375166807114,
    "oe_per_share": 7.298952457695407,
-   "oe_yield": 0.039250120766269124,
-   "implied_g_r0": 0.008492216128653696,
-   "implied_g_r2": 0.06503341506636506,
+   "oe_yield": 0.03877677552831858,
+   "implied_g_r0": 0.009928520986209333,
+   "implied_g_r2": 0.06658640863063658,
    "vi_low": 263.6819023087414,
-   "p_to_vi": 0.7052436984555052,
-   "discount_to_vi": 0.29475630154449484,
+   "p_to_vi": 0.7138525562501599,
+   "discount_to_vi": 0.28614744374984014,
    "grid": {
     "r=6%": {
      "g=0%": 170.0,
@@ -13457,10 +13457,10 @@
      "g=8%": 150.0
     }
    },
-   "mcap": 23077636000.0,
+   "mcap": 23359343000.0,
    "band": "sub VI_jos cu 29%: sub marja minimă propusă (30%)",
    "oe_high_per_share": 7.33682514101531,
-   "oe_high_yield": 0.039453781141187944,
+   "oe_high_yield": 0.038977979817326196,
    "vi_high": 234.67462079536688,
    "grid_high": {
     "r=6%": {
@@ -13479,7 +13479,7 @@
      "g=8%": 150.0
     }
    },
-   "p_to_vi_high": 0.7924163225223857,
+   "p_to_vi_high": 0.802089290107489,
    "g_high_used": 0.03547655375400116,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -13564,7 +13564,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 4,
    "quality_pts": 6,
-   "price": 68.66,
+   "price": 69.7,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 53193000.0,
@@ -13572,12 +13572,12 @@
    "r_used": 0.06,
    "g_used": 0.0,
    "oe_per_share": 0.01849867463764029,
-   "oe_yield": 0.0002694243320367068,
-   "implied_g_r0": 0.7055971082357761,
-   "implied_g_r2": 0.8111441814169502,
+   "oe_yield": 0.00026540422722582914,
+   "implied_g_r0": 0.7081962674466797,
+   "implied_g_r2": 0.8139148594600922,
    "vi_low": 0.43866049509592286,
-   "p_to_vi": 156.5219589354313,
-   "discount_to_vi": -155.5219589354313,
+   "p_to_vi": 158.89281295950425,
+   "discount_to_vi": -157.89281295950425,
    "grid": {
     "r=6%": {
      "g=0%": 0.44,
@@ -13595,10 +13595,10 @@
      "g=8%": 0.38
     }
    },
-   "mcap": 3652231380.0,
-   "band": "peste VI_jos cu 15 552%",
+   "mcap": 3707552100.0,
+   "band": "peste VI_jos cu 15 789%",
    "oe_high_per_share": 0.061023066944898764,
-   "oe_high_yield": 0.0008887717294625512,
+   "oe_high_yield": 0.0008755102861534973,
    "vi_high": 1.4470446819932579,
    "grid_high": {
     "r=6%": {
@@ -13617,7 +13617,7 @@
      "g=8%": 1.2
     }
    },
-   "p_to_vi_high": 47.44843117451151,
+   "p_to_vi_high": 48.16713738513622,
    "g_high_used": 0.0,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -13702,7 +13702,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 6,
-   "price": 223.285,
+   "price": 224.76,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 36327000.0,
@@ -13710,9 +13710,9 @@
    "r_used": 0.06,
    "g_used": null,
    "oe_per_share": 4.415971591378313,
-   "oe_yield": 0.01977728728476303,
-   "implied_g_r0": 0.09036673503096615,
-   "implied_g_r2": 0.15334911746640756,
+   "oe_yield": 0.01964749773704535,
+   "implied_g_r0": 0.0911635760248205,
+   "implied_g_r2": 0.15420679371826573,
    "vi_low": null,
    "p_to_vi": null,
    "discount_to_vi": null,
@@ -13733,10 +13733,10 @@
      "g=8%": 90.0
     }
    },
-   "mcap": 8111274195.0,
+   "mcap": 8164856520.0,
    "band": null,
    "oe_high_per_share": 4.415971591378313,
-   "oe_high_yield": 0.01977728728476303,
+   "oe_high_yield": 0.01964749773704535,
    "vi_high": null,
    "grid_high": {
     "r=6%": {
@@ -13839,7 +13839,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 1,
    "quality_pts": 6,
-   "price": 197.83,
+   "price": 197.0,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 17280000.0,
@@ -13847,12 +13847,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 9.652256944444444,
-   "oe_yield": 0.04879066342033283,
-   "implied_g_r0": -0.01723875271389036,
-   "implied_g_r2": 0.03718573453997254,
+   "oe_yield": 0.04899622814438804,
+   "implied_g_r0": -0.0177357522565203,
+   "implied_g_r2": 0.03664733989960711,
    "vi_low": 447.8997651813117,
-   "p_to_vi": 0.44168364303544033,
-   "discount_to_vi": 0.5583163569645597,
+   "p_to_vi": 0.4398305498558446,
+   "discount_to_vi": 0.5601694501441554,
    "grid": {
     "r=6%": {
      "g=0%": 230.0,
@@ -13870,10 +13870,10 @@
      "g=8%": 200.0
     }
    },
-   "mcap": 3418502400.0,
+   "mcap": 3404160000.0,
    "band": "sub VI_jos cu 56%: peste marja maximă propusă (50%)",
    "oe_high_per_share": 10.188715277777778,
-   "oe_high_yield": 0.051502377181306055,
+   "oe_high_yield": 0.05171936689227299,
    "vi_high": 472.7933794844261,
    "grid_high": {
     "r=6%": {
@@ -13892,7 +13892,7 @@
      "g=8%": 210.0
     }
    },
-   "p_to_vi_high": 0.41842802497727566,
+   "p_to_vi_high": 0.41667250124108224,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -13977,7 +13977,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 3,
    "quality_pts": 6,
-   "price": 34.339,
+   "price": 34.47,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 248454000.0,
@@ -13985,12 +13985,12 @@
    "r_used": 0.06,
    "g_used": 0.03638686896100629,
    "oe_per_share": 0.44792597422460495,
-   "oe_yield": 0.0130442346668396,
-   "implied_g_r0": 0.1412805960362059,
-   "implied_g_r2": 0.20809207482761105,
+   "oe_yield": 0.012994661277186103,
+   "implied_g_r0": 0.14175198726731242,
+   "implied_g_r2": 0.20859841062303042,
    "vi_low": 14.437375027520744,
-   "p_to_vi": 2.3784794628208017,
-   "discount_to_vi": -1.3784794628208017,
+   "p_to_vi": 2.387553134437026,
+   "discount_to_vi": -1.387553134437026,
    "grid": {
     "r=6%": {
      "g=0%": 11.0,
@@ -14008,10 +14008,10 @@
      "g=8%": 9.2
     }
    },
-   "mcap": 8531661906.0,
-   "band": "peste VI_jos cu 138%",
+   "mcap": 8564209380.0,
+   "band": "peste VI_jos cu 139%",
    "oe_high_per_share": 1.5068463377526624,
-   "oe_high_yield": 0.043881485708746976,
+   "oe_high_yield": 0.043714718240576225,
    "vi_high": 69.92314074608207,
    "grid_high": {
     "r=6%": {
@@ -14030,7 +14030,7 @@
      "g=8%": 31.0
     }
    },
-   "p_to_vi_high": 0.4910963614277306,
+   "p_to_vi_high": 0.4929698470664223,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -14115,7 +14115,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 5,
-   "price": 217.68,
+   "price": 217.76,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 299000000.0,
@@ -14123,12 +14123,12 @@
    "r_used": 0.06,
    "g_used": 0.0,
    "oe_per_share": 5.832775919732441,
-   "oe_yield": 0.026795185224790706,
-   "implied_g_r0": 0.05386113853864527,
-   "implied_g_r2": 0.11402094958282272,
+   "oe_yield": 0.026785341291938103,
+   "implied_g_r0": 0.0539050454126454,
+   "implied_g_r2": 0.11406829561087062,
    "vi_low": 138.3130641979759,
-   "p_to_vi": 1.5738209637841685,
-   "discount_to_vi": -0.5738209637841685,
+   "p_to_vi": 1.5743993617862941,
+   "discount_to_vi": -0.5743993617862941,
    "grid": {
     "r=6%": {
      "g=0%": 140.0,
@@ -14146,10 +14146,10 @@
      "g=8%": 120.0
     }
    },
-   "mcap": 65086320000.0,
+   "mcap": 65110240000.0,
    "band": "peste VI_jos cu 57%",
    "oe_high_per_share": 6.7959866220735785,
-   "oe_high_yield": 0.031220078197691924,
+   "oe_high_yield": 0.031208608661248985,
    "vi_high": 161.15375369855906,
    "grid_high": {
     "r=6%": {
@@ -14168,7 +14168,7 @@
      "g=8%": 140.0
     }
    },
-   "p_to_vi_high": 1.350759724822633,
+   "p_to_vi_high": 1.3512561451551661,
    "g_high_used": 0.0,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -14253,7 +14253,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 0,
    "quality_pts": 5,
-   "price": 258.49,
+   "price": 253.77,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 131943000.0,
@@ -14261,9 +14261,9 @@
    "r_used": 0.06,
    "g_used": null,
    "oe_per_share": 10.747065020501276,
-   "oe_yield": 0.04157632798367935,
-   "implied_g_r0": 0.0016793254539732017,
-   "implied_g_r2": 0.057664977216543734,
+   "oe_yield": 0.04234962769634423,
+   "implied_g_r0": -0.0005004110569677978,
+   "implied_g_r2": 0.05530677016485763,
    "vi_low": null,
    "p_to_vi": null,
    "discount_to_vi": null,
@@ -14284,10 +14284,10 @@
      "g=8%": 220.0
     }
    },
-   "mcap": 34105946070.0,
+   "mcap": 33483175110.0,
    "band": null,
    "oe_high_per_share": 10.747065020501276,
-   "oe_high_yield": 0.04157632798367935,
+   "oe_high_yield": 0.04234962769634423,
    "vi_high": null,
    "grid_high": {
     "r=6%": {
@@ -14390,7 +14390,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 2,
    "quality_pts": 5,
-   "price": 18.04,
+   "price": 18.53,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 46926000.0,
@@ -14398,12 +14398,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 0.1905340323061842,
-   "oe_yield": 0.010561753453779613,
-   "implied_g_r0": 0.16758684443327765,
-   "implied_g_r2": 0.2363358429113619,
+   "oe_yield": 0.010282462617710967,
+   "implied_g_r0": 0.17095217081622793,
+   "implied_g_r2": 0.2399472683800442,
    "vi_low": 8.841470841501753,
-   "p_to_vi": 2.04038449296473,
-   "discount_to_vi": -1.04038449296473,
+   "p_to_vi": 2.095805136066322,
+   "discount_to_vi": -1.0958051360663221,
    "grid": {
     "r=6%": {
      "g=0%": 4.5,
@@ -14421,10 +14421,10 @@
      "g=8%": 3.9
     }
    },
-   "mcap": 846545040.0,
-   "band": "peste VI_jos cu 104%",
+   "mcap": 869538780.0,
+   "band": "peste VI_jos cu 110%",
    "oe_high_per_share": 0.1905340323061842,
-   "oe_high_yield": 0.010561753453779613,
+   "oe_high_yield": 0.010282462617710967,
    "vi_high": 8.841470841501753,
    "grid_high": {
     "r=6%": {
@@ -14443,7 +14443,7 @@
      "g=8%": 3.9
     }
    },
-   "p_to_vi_high": 2.04038449296473,
+   "p_to_vi_high": 2.095805136066322,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -14528,7 +14528,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 3,
    "quality_pts": 5,
-   "price": 35.28,
+   "price": 35.9,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 46362000.0,
@@ -14536,12 +14536,12 @@
    "r_used": 0.06,
    "g_used": 0.0,
    "oe_per_share": 0.8720935248695052,
-   "oe_yield": 0.024719204219657176,
-   "implied_g_r0": 0.06351117371913884,
-   "implied_g_r2": 0.12442417994807375,
+   "oe_yield": 0.024292298742883155,
+   "implied_g_r0": 0.06559971020181277,
+   "implied_g_r2": 0.12667503402090563,
    "vi_low": 20.680020860024413,
-   "p_to_vi": 1.7059944106825409,
-   "discount_to_vi": -0.7059944106825409,
+   "p_to_vi": 1.735975038081157,
+   "discount_to_vi": -0.7359750380811569,
    "grid": {
     "r=6%": {
      "g=0%": 21.0,
@@ -14559,10 +14559,10 @@
      "g=8%": 18.0
     }
    },
-   "mcap": 1635651360.0,
-   "band": "peste VI_jos cu 71%",
+   "mcap": 1664395800.0,
+   "band": "peste VI_jos cu 74%",
    "oe_high_per_share": 0.980264009317976,
-   "oe_high_yield": 0.02778526103509002,
+   "oe_high_yield": 0.0273054041592751,
    "vi_high": 23.24507588112212,
    "grid_high": {
     "r=6%": {
@@ -14581,7 +14581,7 @@
      "g=8%": 20.0
     }
    },
-   "p_to_vi_high": 1.5177407972521066,
+   "p_to_vi_high": 1.5444131128500744,
    "g_high_used": 0.0,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -14666,7 +14666,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 3,
    "quality_pts": 5,
-   "price": 30.0,
+   "price": 30.19,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 13989489.0,
@@ -14681,7 +14681,7 @@
    "p_to_vi": null,
    "discount_to_vi": null,
    "grid": null,
-   "mcap": 419684670.0,
+   "mcap": 422342672.91,
    "band": "OE_jos negativ (capex peste profit plus D&A): valoarea nu se calculează",
    "oe_high_per_share": null,
    "oe_high_yield": null,
@@ -14771,7 +14771,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 1,
    "quality_pts": 5,
-   "price": 0.08,
+   "price": 0.0801,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 2811872.0,
@@ -14786,7 +14786,7 @@
    "p_to_vi": null,
    "discount_to_vi": null,
    "grid": null,
-   "mcap": 1124.7488,
+   "mcap": 1126.1547360000002,
    "band": "OE_jos negativ (capex peste profit plus D&A): valoarea nu se calculează",
    "oe_high_per_share": null,
    "oe_high_yield": null,
@@ -14876,7 +14876,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 2,
    "quality_pts": 5,
-   "price": 1.86,
+   "price": 1.75,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 8614147.0,
@@ -14884,7 +14884,7 @@
    "r_used": 0.06,
    "g_used": null,
    "oe_per_share": 396.93599377860625,
-   "oe_yield": 213.40644826806786,
+   "oe_yield": 226.8205678734893,
    "implied_g_r0": -0.5,
    "implied_g_r2": -0.5,
    "vi_low": null,
@@ -14907,10 +14907,10 @@
      "g=8%": 8100.0
     }
    },
-   "mcap": 4272.616912,
+   "mcap": 4019.935266666667,
    "band": null,
    "oe_high_per_share": 456.0699683903699,
-   "oe_high_yield": 245.198907736758,
+   "oe_high_yield": 260.6114105087828,
    "vi_high": null,
    "grid_high": {
     "r=6%": {
@@ -15013,7 +15013,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+ShortTermInvestments",
    "negative_trend_breaks": 1,
    "quality_pts": 4,
-   "price": 39.52,
+   "price": 39.94,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 262475000.0,
@@ -15021,9 +15021,9 @@
    "r_used": 0.06,
    "g_used": null,
    "oe_per_share": 2.1209486617773123,
-   "oe_yield": 0.05366772929598462,
-   "implied_g_r0": -0.028503226408877758,
-   "implied_g_r2": 0.024978033616048445,
+   "oe_yield": 0.053103371601835564,
+   "implied_g_r0": -0.02725298558429451,
+   "implied_g_r2": 0.026333487075534845,
    "vi_low": null,
    "p_to_vi": null,
    "discount_to_vi": null,
@@ -15044,10 +15044,10 @@
      "g=8%": 43.0
     }
    },
-   "mcap": 10373012000.0,
+   "mcap": 10483251500.0,
    "band": null,
    "oe_high_per_share": 2.1209486617773123,
-   "oe_high_yield": 0.05366772929598462,
+   "oe_high_yield": 0.053103371601835564,
    "vi_high": null,
    "grid_high": {
     "r=6%": {
@@ -15150,7 +15150,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 2,
    "quality_pts": 4,
-   "price": 196.08,
+   "price": 196.55,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 120777000.0,
@@ -15158,12 +15158,12 @@
    "r_used": 0.06,
    "g_used": 0.08,
    "oe_per_share": 6.834852662344652,
-   "oe_yield": 0.034857469718199974,
-   "implied_g_r0": 0.02255460881204041,
-   "implied_g_r2": 0.08023198711786972,
+   "oe_yield": 0.03477411682698881,
+   "implied_g_r0": 0.022838589186289115,
+   "implied_g_r2": 0.08053877053396363,
    "vi_low": 317.16197777712944,
-   "p_to_vi": 0.6182329968246886,
-   "discount_to_vi": 0.3817670031753114,
+   "p_to_vi": 0.6197148894629363,
+   "discount_to_vi": 0.3802851105370637,
    "grid": {
     "r=6%": {
      "g=0%": 160.0,
@@ -15181,10 +15181,10 @@
      "g=8%": 140.0
     }
    },
-   "mcap": 23681954160.0,
+   "mcap": 23738719350.0,
    "band": "sub VI_jos cu 38%: între marjele propuse (30 la 50%)",
    "oe_high_per_share": 6.834852662344652,
-   "oe_high_yield": 0.034857469718199974,
+   "oe_high_yield": 0.03477411682698881,
    "vi_high": 317.16197777712944,
    "grid_high": {
     "r=6%": {
@@ -15203,7 +15203,7 @@
      "g=8%": 140.0
     }
    },
-   "p_to_vi_high": 0.6182329968246886,
+   "p_to_vi_high": 0.6197148894629363,
    "g_high_used": 0.08,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -15288,7 +15288,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue+MarketableSecuritiesCurrent",
    "negative_trend_breaks": 2,
    "quality_pts": 4,
-   "price": 83.52,
+   "price": 85.63,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 78313000.0,
@@ -15303,10 +15303,10 @@
    "p_to_vi": null,
    "discount_to_vi": null,
    "grid": null,
-   "mcap": 6540701760.0,
+   "mcap": 6705942190.0,
    "band": "OE_jos negativ (capex peste profit plus D&A): valoarea nu se calculează",
    "oe_high_per_share": 0.21416623038320584,
-   "oe_high_yield": 0.002564250842710798,
+   "oe_high_yield": 0.002501065402116149,
    "vi_high": 5.078540300480059,
    "grid_high": {
     "r=6%": {
@@ -15325,7 +15325,7 @@
      "g=8%": 4.4
     }
    },
-   "p_to_vi_high": 16.445670420712247,
+   "p_to_vi_high": 16.86114413464547,
    "g_high_used": 0.0,
    "eligible": false,
    "ineligible_reason": "sub 10 puncte de calitate"
@@ -15410,7 +15410,7 @@
    "cash_tag": "CashAndCashEquivalentsAtCarryingValue",
    "negative_trend_breaks": 3,
    "quality_pts": 4,
-   "price": 2.65,
+   "price": 2.77,
    "price_date": "2026-11-10",
    "price_currency": "USD",
    "shares_basis": 33551000.0,
@@ -15425,7 +15425,7 @@
    "p_to_vi": null,
    "discount_to_vi": null,
    "grid": null,
-   "mcap": 88910150.0,
+   "mcap": 92936270.0,
    "band": "OE_jos negativ (capex peste profit plus D&A): valoarea nu se calculează",
    "oe_high_per_share": null,
    "oe_high_yield": null,

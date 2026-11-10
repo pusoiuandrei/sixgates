@@ -13,7 +13,8 @@ Pipeline (all deterministic, nothing estimated):
                    among names with at least MIN_QUALITY points; state kept in data/screens/daily/state.json
   8. brief         Romanian markdown, data/screens/daily/<date>/brief.md (+ picks.json, universe_today.csv)
 
-Usage: python3 tools/screen/daily.py [--skip-fetch] [--workdir DIR] [--date AAAA-LL-ZZ]
+Usage: python3 tools/screen/daily.py [--skip-fetch] [--workdir DIR] [--date AAAA-LL-ZZ] [--skip-tests]
+The regression tests in tools/screen/tests run first; if any fails, no brief is produced (exit code 2).
 Gate 2 (understanding the business) and gate 4 (moat) stay with the user; the brief only asks the question.
 Language rule: no buy/sell/cheap/expensive verdicts; the price is placed against the value range.
 """
@@ -142,6 +143,18 @@ def build_universe(work: Path) -> dict:
             "nasdaq": sum("Nasdaq" in u["exchanges"] for u in scope), "sp500_rows": len(sp)}
 
 
+def band_text(price: float, vi_low: float) -> str:
+    """Where the price sits against VI_jos and the proposed margin bands; facts, never a verdict word."""
+    disc = 1 - price / vi_low
+    if disc >= MARGIN_BUSINESS[1]:
+        return f"sub VI_jos cu {pct(disc, 0)}: peste marja maximă propusă (50%)"
+    if disc >= MARGIN_BUSINESS[0]:
+        return f"sub VI_jos cu {pct(disc, 0)}: între marjele propuse (30 la 50%)"
+    if disc > 0:
+        return f"sub VI_jos cu {pct(disc, 0)}: sub marja minimă propusă (30%)"
+    return f"peste VI_jos cu {pct(-disc, 0)}"
+
+
 # ---------- step 6: price gate ----------
 def yahoo(ticker: str):
     url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}?range=2y&interval=1d&events=splits"
@@ -215,15 +228,7 @@ def price_gate(work: Path, ranked: list[dict], bond: float) -> list[dict]:
                         vi_low=vi_low, p_to_vi=(price / vi_low) if vi_low else None,
                         discount_to_vi=(1 - price / vi_low) if vi_low else None, grid=grid)
             if vi_low:
-                disc = 1 - price / vi_low
-                if disc >= MARGIN_BUSINESS[1]:
-                    item["band"] = f"sub VI_jos cu {pct(disc, 0)}: peste marja maximă propusă (50%)"
-                elif disc >= MARGIN_BUSINESS[0]:
-                    item["band"] = f"sub VI_jos cu {pct(disc, 0)}: între marjele propuse (30 la 50%)"
-                elif disc > 0:
-                    item["band"] = f"sub VI_jos cu {pct(disc, 0)}: sub marja minimă propusă (30%)"
-                else:
-                    item["band"] = f"peste VI_jos cu {pct(-disc, 0)}"
+                item["band"] = band_text(price, vi_low)
         elif oe is not None and oe <= 0:
             item["band"] = "OE_jos negativ (capex peste profit plus D&A): valoarea nu se calculează"
         out.append(item)
@@ -441,6 +446,7 @@ def main() -> int:
     ap.add_argument("--date", default=date.today().isoformat())
     ap.add_argument("--skip-fetch", action="store_true", help="reuse frames.db already in workdir")
     ap.add_argument("--no-state", action="store_true", help="do not update state.json (dry run)")
+    ap.add_argument("--skip-tests", action="store_true", help="skip the regression tests (development only)")
     args = ap.parse_args()
     today = date.fromisoformat(args.date)
     work = Path(args.workdir).resolve()
@@ -452,6 +458,16 @@ def main() -> int:
     state_path = daily_dir / "state.json"
     state = json.load(state_path.open()) if state_path.exists() else {"presented": {}, "last_run": {}}
     t0 = time.time()
+
+    if not args.skip_tests:
+        log("0/8 regression tests (tools/screen/tests)")
+        res = subprocess.run([sys.executable, "-m", "unittest", "discover", "-s", str(TOOLS / "tests"), "-p", "test_*.py"],
+                             capture_output=True, text=True)
+        if res.returncode != 0:
+            print(res.stderr[-4000:], file=sys.stderr)
+            log("regression tests FAILED: the brief is not produced until the screen is fixed")
+            return 2
+        log("tests ok: " + (res.stderr.strip().splitlines()[-1] if res.stderr.strip() else ""))
 
     log("1/8 universe")
     counts = build_universe(work)

@@ -1,0 +1,16 @@
+name: tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  screen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Screen regression tests (synthetic rules, frozen SEC fixtures, pipeline, brief helpers)
+        run: python -m unittest discover -s tools/screen/tests -p "test_*.py" -v
