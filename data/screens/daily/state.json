@@ -71,10 +71,19 @@
   ],
   "JKHY": [
    "2026-11-10"
+  ],
+  "CBOE": [
+   "2026-11-11"
+  ],
+  "MCO": [
+   "2026-11-11"
+  ],
+  "NVDA": [
+   "2026-11-11"
   ]
  },
  "last_run": {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "in_circle_pass": [
    "AAPL",
    "ACIW",
@@ -111,7 +120,6 @@
    "EXPO",
    "FDS",
    "FFIV",
-   "FICO",
    "FLEX",
    "FORM",
    "FTNT",
@@ -191,9 +199,9 @@
   "counts": {
    "universe": 3798,
    "with_facts": 3229,
-   "k_pass": 370,
-   "in_circle": 111,
-   "eligible": 44
+   "k_pass": 369,
+   "in_circle": 110,
+   "eligible": 43
   },
   "under_vi": [
    "AAPL",
@@ -210,7 +218,6 @@
    "EXPO",
    "FDS",
    "FFIV",
-   "FICO",
    "INTU",
    "JKHY",
    "MA",
@@ -232,9 +239,9 @@
    "VRSN"
   ],
   "picks": [
-   "CME",
-   "EXLS",
-   "JKHY"
+   "CBOE",
+   "MCO",
+   "NVDA"
   ]
  }
 }
