@@ -7706,5 +7706,44 @@
 "20-F/A"
 ],
 "category": "Non-accelerated filer<br>Emerging growth company"
+},
+"829224": {
+"business_country": "WA",
+"last_annual_filing": "2026-11-12",
+"name": "STARBUCKS CORP",
+"sic": "5810",
+"sicDescription": "Retail-Eating & Drinking Places",
+"fiscalYearEnd": "0928",
+"stateOfIncorporation": "WA",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"SBUX"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
+},
+"876523": {
+"business_country": "TX",
+"last_annual_filing": "2026-11-12",
+"name": "EZCORP INC",
+"sic": "5900",
+"sicDescription": "Retail-Miscellaneous Retail",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"EZPW"
+],
+"annual_forms": [
+"10-K",
+"10-K/A"
+],
+"category": "Large accelerated filer"
 }
 }

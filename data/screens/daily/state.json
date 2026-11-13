@@ -89,10 +89,19 @@
   ],
   "AAPL": [
    "2026-11-12"
+  ],
+  "MSI": [
+   "2026-11-13"
+  ],
+  "VRSN": [
+   "2026-11-13"
+  ],
+  "ROP": [
+   "2026-11-13"
   ]
  },
  "last_run": {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "in_circle_pass": [
    "AAPL",
    "ACIW",
@@ -206,9 +215,9 @@
    "ZBRA"
   ],
   "counts": {
-   "universe": 3798,
-   "with_facts": 3229,
-   "k_pass": 369,
+   "universe": 3794,
+   "with_facts": 3225,
+   "k_pass": 370,
    "in_circle": 110,
    "eligible": 43
   },
@@ -248,9 +257,9 @@
    "VRSN"
   ],
   "picks": [
-   "VRSK",
-   "MA",
-   "AAPL"
+   "MSI",
+   "VRSN",
+   "ROP"
   ]
  }
 }
