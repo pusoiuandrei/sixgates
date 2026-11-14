@@ -98,10 +98,19 @@
   ],
   "ROP": [
    "2026-11-13"
+  ],
+  "EXPO": [
+   "2026-11-14"
+  ],
+  "MSCI": [
+   "2026-11-14"
+  ],
+  "PLXS": [
+   "2026-11-14"
   ]
  },
  "last_run": {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "in_circle_pass": [
    "AAPL",
    "ACIW",
@@ -215,7 +224,7 @@
    "ZBRA"
   ],
   "counts": {
-   "universe": 3794,
+   "universe": 3795,
    "with_facts": 3225,
    "k_pass": 370,
    "in_circle": 110,
@@ -257,9 +266,9 @@
    "VRSN"
   ],
   "picks": [
-   "MSI",
-   "VRSN",
-   "ROP"
+   "EXPO",
+   "MSCI",
+   "PLXS"
   ]
  }
 }
