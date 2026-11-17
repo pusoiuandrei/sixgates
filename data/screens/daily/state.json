@@ -125,10 +125,19 @@
   ],
   "CDNS": [
    "2026-11-16"
+  ],
+  "NTES": [
+   "2026-11-17"
+  ],
+  "GOOGL": [
+   "2026-11-17"
+  ],
+  "MSFT": [
+   "2026-11-17"
   ]
  },
  "last_run": {
-  "date": "2026-11-16",
+  "date": "2026-11-17",
   "in_circle_pass": [
    "AAPL",
    "ACIW",
@@ -252,12 +261,14 @@
    "AAPL",
    "ACN",
    "ADBE",
+   "APH",
    "BKNG",
    "BR",
    "CBOE",
    "CHKP",
    "CME",
    "CRUS",
+   "CSCO",
    "CTSH",
    "EXLS",
    "EXPO",
@@ -284,9 +295,9 @@
    "VRSN"
   ],
   "picks": [
-   "AMAT",
-   "FTNT",
-   "CDNS"
+   "NTES",
+   "GOOGL",
+   "MSFT"
   ]
  }
 }
