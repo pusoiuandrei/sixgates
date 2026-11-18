@@ -7745,5 +7745,24 @@
 "10-K/A"
 ],
 "category": "Large accelerated filer"
+},
+"80420": {
+"business_country": "TX",
+"last_annual_filing": "2026-11-17",
+"name": "POWELL INDUSTRIES INC",
+"sic": "3613",
+"sicDescription": "Switchgear & Switchboard Apparatus",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "NV",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"POWL"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
 }
 }
