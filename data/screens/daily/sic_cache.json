@@ -7764,5 +7764,24 @@
 "10-K"
 ],
 "category": "Large accelerated filer"
+},
+"1319161": {
+"business_country": "NY",
+"last_annual_filing": "2026-11-19",
+"name": "Warner Music Group Corp.",
+"sic": "7900",
+"sicDescription": "Services-Amusement & Recreation Services",
+"fiscalYearEnd": "0930",
+"stateOfIncorporation": "DE",
+"exchanges": [
+"Nasdaq"
+],
+"tickers": [
+"WMG"
+],
+"annual_forms": [
+"10-K"
+],
+"category": "Large accelerated filer"
 }
 }

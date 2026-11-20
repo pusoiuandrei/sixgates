@@ -24,13 +24,16 @@
    "2026-11-19"
   ],
   "BR": [
-   "2026-11-06"
+   "2026-11-06",
+   "2026-11-20"
   ],
   "SEIC": [
-   "2026-11-06"
+   "2026-11-06",
+   "2026-11-20"
   ],
   "MKTX": [
-   "2026-11-06"
+   "2026-11-06",
+   "2026-11-20"
   ],
   "CARG": [
    "2026-11-07"
@@ -145,7 +148,7 @@
   ]
  },
  "last_run": {
-  "date": "2026-11-19",
+  "date": "2026-11-20",
   "in_circle_pass": [
    "AAPL",
    "ACIW",
@@ -261,20 +264,22 @@
   "counts": {
    "universe": 3793,
    "with_facts": 3225,
-   "k_pass": 370,
+   "k_pass": 371,
    "in_circle": 110,
-   "eligible": 43
+   "eligible": 42
   },
   "under_vi": [
    "AAPL",
    "ACN",
    "ADBE",
+   "APH",
    "BKNG",
    "BR",
    "CBOE",
    "CHKP",
    "CME",
    "CRUS",
+   "CSCO",
    "CTSH",
    "EXLS",
    "EXPO",
@@ -293,7 +298,6 @@
    "NVDA",
    "OLED",
    "PLUS",
-   "PLXS",
    "PYPL",
    "ROP",
    "SEIC",
@@ -301,9 +305,9 @@
    "VRSN"
   ],
   "picks": [
-   "PLUS",
-   "CTSH",
-   "CRUS"
+   "BR",
+   "SEIC",
+   "MKTX"
   ]
  }
 }
