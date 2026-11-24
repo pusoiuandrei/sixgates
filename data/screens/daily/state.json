@@ -78,13 +78,16 @@
    "2026-11-23"
   ],
   "NTAP": [
-   "2026-11-10"
+   "2026-11-10",
+   "2026-11-24"
   ],
   "CME": [
-   "2026-11-10"
+   "2026-11-10",
+   "2026-11-24"
   ],
   "EXLS": [
-   "2026-11-10"
+   "2026-11-10",
+   "2026-11-24"
   ],
   "JKHY": [
    "2026-11-10"
@@ -157,7 +160,7 @@
   ]
  },
  "last_run": {
-  "date": "2026-11-23",
+  "date": "2026-11-24",
   "in_circle_pass": [
    "AAPL",
    "ACIW",
@@ -271,9 +274,9 @@
    "ZBRA"
   ],
   "counts": {
-   "universe": 3794,
-   "with_facts": 3223,
-   "k_pass": 371,
+   "universe": 3790,
+   "with_facts": 3219,
+   "k_pass": 370,
    "in_circle": 110,
    "eligible": 42
   },
@@ -281,14 +284,12 @@
    "AAPL",
    "ACN",
    "ADBE",
-   "APH",
    "BKNG",
    "BR",
    "CBOE",
    "CHKP",
    "CME",
    "CRUS",
-   "CSCO",
    "CTSH",
    "EXLS",
    "EXPO",
@@ -314,9 +315,9 @@
    "VRSN"
   ],
   "picks": [
-   "FFIV",
-   "NFLX",
-   "MORN"
+   "CME",
+   "EXLS",
+   "NTAP"
   ]
  }
 }
